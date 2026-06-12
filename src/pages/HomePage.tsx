@@ -85,6 +85,7 @@ function Nav() {
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
             <button onClick={() => scrollTo("ventures")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 15, fontWeight: 500, fontFamily: "Inter, sans-serif" }}>Our Ventures</button>
             <button onClick={() => scrollTo("resources")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 15, fontWeight: 500, fontFamily: "Inter, sans-serif" }}>Resources</button>
+            <a href="https://merch.foundherai.ai" target="_blank" rel="noopener noreferrer" style={{ color: C.ink, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Merch</a>
             <a href="mailto:hello@foundherai.ai" style={{ color: C.ink, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <button
               onClick={() => scrollTo("waitlist")}
@@ -110,6 +111,7 @@ function Nav() {
         >
           <button onClick={() => scrollTo("ventures")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 16, fontWeight: 500, fontFamily: "Inter, sans-serif", textAlign: "left", padding: "4px 0" }}>Our Ventures</button>
           <button onClick={() => scrollTo("resources")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 16, fontWeight: 500, fontFamily: "Inter, sans-serif", textAlign: "left", padding: "4px 0" }}>Resources</button>
+          <a href="https://merch.foundherai.ai" target="_blank" rel="noopener noreferrer" style={{ color: C.ink, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Merch</a>
           <a href="mailto:hello@foundherai.ai" style={{ color: C.ink, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <button
             onClick={() => scrollTo("waitlist")}
