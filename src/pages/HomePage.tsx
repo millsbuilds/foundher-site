@@ -464,11 +464,11 @@ function Founder() {
         {/* Photo */}
         <div style={{ flexShrink: 0, textAlign: "center" }}>
           <img
-            src="https://foundherai.ai/mills-photo.jpg"
+            src="/mills-photo.jpg"
             alt="Mills Gardner"
             style={{
-              width: 200,
-              height: 200,
+              width: 300,
+              height: 300,
               borderRadius: "50%",
               objectFit: "cover",
               border: `3px solid ${C.border}`,
