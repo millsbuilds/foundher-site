@@ -153,7 +153,7 @@ function Hero() {
             marginBottom: 24,
           }}
         >
-          FoundHer AI, PBC
+          FOR WOMEN WHO BUILD
         </p>
 
         <h1
@@ -166,7 +166,7 @@ function Hero() {
             marginBottom: 28,
           }}
         >
-          In 2013 I was told I was too old to build. I believed them. Then AI arrived — and I stopped believing them.
+          You don't need investors. You don't need a team. You don't need permission. You need the right tools — and someone who's already built with them.
         </h1>
 
         <p
@@ -177,7 +177,7 @@ function Hero() {
             marginBottom: 40,
           }}
         >
-          FoundHer AI is what I built instead. And it's just getting started.
+          FoundHer AI is what that looks like.
         </p>
 
         <button
