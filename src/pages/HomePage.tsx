@@ -166,7 +166,7 @@ function Hero() {
             marginBottom: 28,
           }}
         >
-          You don't need investors. You don't need a team. You don't need permission. You need the right tools — and someone who's already built with them.
+          You don't need investors. You don't need a team. You don't need permission. You have AI.
         </h1>
 
         <p
@@ -229,13 +229,13 @@ function Vision() {
             marginBottom: 32,
           }}
         >
-          The platform where women founders access the tools, resources, and community to build in the AI economy — at a fraction of the cost of going it alone.
+          The media company for women who build in the AI economy.
         </h2>
         <p style={{ fontSize: 17, color: C.muted, lineHeight: 1.75, marginBottom: 28 }}>
-          Most platforms were built for founders who already have funding, a team, and a network. FoundHer AI is being built for everyone else. We're creating a space where women founders get access to the AI tools, legal resources, and infrastructure they need — without the gatekeepers, the cohorts, or the equity asks. This is the platform we wish had existed when we started.
+          FoundHer AI produces the events, content, and community that women founders actually need — without the gatekeepers, the cohorts, or the equity asks. We're building the stage, the mic, and the network.
         </p>
         <p style={{ fontSize: 16, fontStyle: "italic", color: C.gold, marginBottom: 36 }}>
-          Platform launching 2026. Founding member waitlist open.
+          Annual Summit. Podcast. Newsletter. Coming 2026.
         </p>
         <button
           onClick={() => scrollTo("waitlist")}
@@ -251,139 +251,8 @@ function Vision() {
             fontFamily: "Inter, sans-serif",
           }}
         >
-          Join the Founding Member Waitlist →
+          Join the Newsletter →
         </button>
-      </div>
-    </section>
-  );
-}
-
-// ─── VENTURES ─────────────────────────────────────────────────────────────────
-
-type BadgeStyle = "filled" | "outline";
-
-function VentureCard({
-  badge,
-  badgeStyle,
-  name,
-  description,
-  link,
-}: {
-  badge: string;
-  badgeStyle: BadgeStyle;
-  name: string;
-  description: string;
-  link: string;
-}) {
-  return (
-    <div
-      style={{
-        background: C.white,
-        border: `1px solid ${C.border}`,
-        borderRadius: 10,
-        padding: "32px 28px",
-        display: "flex",
-        flexDirection: "column",
-        gap: 16,
-        fontFamily: "Inter, sans-serif",
-      }}
-    >
-      <span
-        style={{
-          display: "inline-block",
-          fontSize: 11,
-          fontWeight: 700,
-          letterSpacing: "0.1em",
-          textTransform: "uppercase",
-          padding: "4px 10px",
-          borderRadius: 4,
-          background: badgeStyle === "filled" ? C.gold : "transparent",
-          color: badgeStyle === "filled" ? C.white : C.gold,
-          border: badgeStyle === "outline" ? `1.5px solid ${C.gold}` : "none",
-          alignSelf: "flex-start",
-        }}
-      >
-        {badge}
-      </span>
-      <h3 style={{ fontSize: 22, fontWeight: 700, color: C.ink, margin: 0 }}>{name}</h3>
-      <p style={{ fontSize: 15, color: C.muted, lineHeight: 1.65, margin: 0 }}>{description}</p>
-      <a
-        href={`https://${link}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: C.gold, fontSize: 14, fontWeight: 600, textDecoration: "none", marginTop: "auto" }}
-      >
-        {link} →
-      </a>
-    </div>
-  );
-}
-
-function Ventures() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 640 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 640);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  return (
-    <section
-      id="ventures"
-      style={{ background: C.white, padding: "96px 24px", fontFamily: "Inter, sans-serif" }}
-    >
-      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <div style={{ textAlign: "center", marginBottom: 60 }}>
-          <p style={{ color: C.gold, fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 16 }}>
-            Built by FoundHer AI
-          </p>
-          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: C.ink, letterSpacing: "-0.02em", marginBottom: 16 }}>
-            Proof that it works.
-          </h2>
-          <p style={{ fontSize: 17, color: C.muted, lineHeight: 1.65, maxWidth: 640, margin: "0 auto" }}>
-            Our ventures span AI intelligence, wellness, and productivity — all built without investors, without a team, and without permission.
-          </p>
-        </div>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-            gap: 24,
-          }}
-        >
-          <VentureCard
-            badge="Live"
-            badgeStyle="filled"
-            name="Adaptz.ai™"
-            description="The AI displacement intelligence platform. Helping professionals assess their risk and adapt before the window closes."
-            link="adaptz.ai"
-          />
-          <VentureCard
-            badge="Coming Soon"
-            badgeStyle="outline"
-            name="Flowse™"
-            description="Not a task app. Not a to-do list. A Done list. 5 tasks. Every day."
-            link="flowse.app"
-          />
-          <VentureCard
-            badge="In Development"
-            badgeStyle="outline"
-            name="SafeSalt™"
-            description="A performance and wellness brand built around the science of sodium. For the athlete and the health-conscious."
-            link="safesalt.health"
-          />
-          <VentureCard
-            badge="In Development"
-            badgeStyle="outline"
-            name="SafeSupplements.Health"
-            description="Physician-formulated supplements for the health-conscious. Built with Dr. RS Isaac Gardner, MD."
-            link="safesupplements.health"
-          />
-        </div>
       </div>
     </section>
   );
@@ -492,7 +361,7 @@ function Founder() {
             Founder, FoundHer AI, PBC
           </p>
           <p style={{ fontSize: 16, color: C.muted, lineHeight: 1.8 }}>
-            Mills Gardner spent eight years as a corporate executive of an Inc. 500 company before becoming a serial entrepreneur. In 2013, she pitched a real estate crowdfunding platform to investors and was told she was too old to build. She retired. Then AI arrived. Within months she was building tech stacks, launching platforms, and developing ventures — without investors, without a team, without startup capital. She came out of retirement and launched Adaptz.ai™, now used by more than 9,000 professionals navigating AI displacement. She believes the next generation of world-changers will be women who finally have the tools to match their vision.
+            Mills Gardner is a serial entrepreneur and the founder of FoundHer AI, PBC. She builds AI ventures for the people everyone else is building past.
           </p>
         </div>
       </div>
@@ -651,7 +520,6 @@ export default function HomePage() {
       <main>
         <Hero />
         <Vision />
-        <Ventures />
         <Resources />
         <Founder />
         <Waitlist />
