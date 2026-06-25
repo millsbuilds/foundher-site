@@ -241,7 +241,7 @@ function Purpose() {
 // alter table foundher_club_waitlist enable row level security;
 // create policy "Allow public inserts" on foundher_club_waitlist for insert with check (true);
 
-function FoundHerClub() {
+function FoundHersClub() {
   return (
     <section id="foundhers-club" style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
       <div style={{ maxWidth: 860, margin: "0 auto", textAlign: "center" }}>
@@ -258,11 +258,16 @@ function FoundHerClub() {
         <h2 style={{ color: "#FDFCF8", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em" }}>
           Your people are assembling.
         </h2>
-        <p style={{ color: "#FDFCF8", fontSize: "clamp(18px, 2.5vw, 22px)", lineHeight: 1.7, marginBottom: 16, maxWidth: 640, margin: "0 auto 16px" }}>
+        <ul style={{ listStyle: "none", padding: 0, margin: "0 auto 32px", maxWidth: 500, color: "#7A7569", fontSize: 17, lineHeight: 2, textAlign: "left", display: "inline-block" }}>
+          <li>✦ Virtual co-working rooms</li>
+          <li>✦ Community of women AI founders</li>
+          <li>✦ First access to tee drops & Agent Series</li>
+          <li>✦ Monthly newsletter</li>
+          <li>✦ FoundHers Summit early access</li>
+          <li>✦ Your seat before anyone else</li>
+        </ul>
+        <p style={{ color: "#FDFCF8", fontSize: "clamp(18px, 2.5vw, 22px)", lineHeight: 1.7, maxWidth: 640, margin: "0 auto 16px" }}>
           The FoundHers Club opens September 8th — the day after Labor Day, when the kids are back in school and it's time to build.
-        </p>
-        <p style={{ color: "#7A7569", fontSize: "clamp(16px, 2vw, 19px)", lineHeight: 1.7, marginBottom: 16, maxWidth: 640, margin: "0 auto 16px" }}>
-          Including virtual co-working rooms — because the best work happens when you're surrounded by women who get it.
         </p>
         <p style={{ color: "#B8973E", fontSize: 16, fontWeight: 600, marginBottom: 56, fontStyle: "italic" }}>
           Join before launch and lock in your founding member status. Free to join. Built for women who mean business.
@@ -312,7 +317,7 @@ function FoundHerClub() {
               <li>✦ Summit early access & discounts</li>
             </ul>
             <a
-              href="#box"
+              href="#foundhers-club"
               style={{ display: "block", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}
             >
               I'm in
@@ -429,7 +434,7 @@ export default function HomePage() {
         <Hero />
         <BuiltBetter />
         <Purpose />
-        <FoundHerClub />
+        <FoundHersClub />
         <Waitlist />
       </main>
       <Footer />
