@@ -236,6 +236,20 @@ function Purpose() {
 }
 
 
+// ─── LIFESTYLE IMAGE ──────────────────────────────────────────────────────────
+
+function LifestyleImage() {
+  return (
+    <section style={{ background: "#000000", padding: "0" }}>
+      <img
+        src="/foundher-lifestyle.jpg"
+        alt="Women wearing FoundHer AI gear"
+        style={{ width: "100%", height: "auto", display: "block" }}
+      />
+    </section>
+  );
+}
+
 // ─── FOUNDHERS CLUB ────────────────────────────────────────────────────────────
 // NOTE: Run in Supabase SQL editor:
 // alter table foundher_club_waitlist enable row level security;
@@ -444,6 +458,7 @@ export default function HomePage() {
         <Hero />
         <BuiltBetter />
         <Purpose />
+        <LifestyleImage />
         <FoundHersClub />
         <Waitlist />
       </main>
