@@ -383,7 +383,7 @@ function Waitlist() {
           <img
             src="/liz-bryant.jpg"
             alt="Liz Bryant - Locals Mark Founder"
-            style={{ width: "100%", height: "400px", objectFit: "cover", objectPosition: "center top", display: "block" }}
+            style={{ width: "100%", height: "500px", objectFit: "cover", objectPosition: "center center", display: "block" }}
           />
           <div style={{ background: "#111111", padding: "24px 32px", textAlign: "center" }}>
             <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 4 }}>Liz Bryant</h3>
