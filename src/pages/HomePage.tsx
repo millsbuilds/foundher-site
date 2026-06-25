@@ -163,7 +163,7 @@ function Hero() {
             marginBottom: 28,
           }}
         >
-          You don't need investors. You don't need a team. You don't need permission. You have AI.
+          You don't need investors. You don't need a team. You don't need permission. You have AI. And us.
         </h1>
 
         <p
@@ -174,11 +174,11 @@ function Hero() {
             marginBottom: 40,
           }}
         >
-          The best is being built right now.
+          The FoundHer Club opens September 8th. First Class membership — $38.
         </p>
 
         <button
-          onClick={() => scrollTo("box")}
+          onClick={() => scrollTo("foundher-club")}
           style={{
             background: C.ink,
             color: C.white,
@@ -191,7 +191,7 @@ function Hero() {
             fontFamily: "Inter, sans-serif",
           }}
         >
-          See What We're Building →
+          Save My Seat →
         </button>
       </div>
     </section>
@@ -254,20 +254,13 @@ function FoundHerBox() {
           First box ships August. Founding member pricing locked in today.
         </p>
 
-        <div style={{
-          width: "100%",
-          marginBottom: 64,
-          maxHeight: 420,
-          background: "#000000",
-        }}>
+        <div style={{ width: "100%", marginBottom: 64 }}>
           <img
             src="/foundher-lifestyle.jpg"
             alt="Women wearing FoundHer AI gear"
             style={{
               width: "100%",
-              height: "100%",
-              objectFit: "contain",
-              objectPosition: "center 35%",
+              height: "auto",
               display: "block"
             }}
           />
@@ -285,7 +278,7 @@ function FoundHerBox() {
             <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$29<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
             <button
               onClick={async () => {
-                const stripe = await stripePromise;
+                await stripePromise;
                 const { url } = await createCheckoutSession('price_1Tm6ccCps5fpuWPnyGULSbMK');
                 if (url) window.location.href = url;
               }}
@@ -308,7 +301,7 @@ function FoundHerBox() {
             <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$49<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/quarter</span></p>
             <button
               onClick={async () => {
-                const stripe = await stripePromise;
+                await stripePromise;
                 const { url } = await createCheckoutSession('price_1Tm6dPCps5fpuWPnNwmgFJcC');
                 if (url) window.location.href = url;
               }}
@@ -366,10 +359,10 @@ function FoundHerClub() {
   };
 
   return (
-    <section style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
+    <section id="foundher-club" style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
       <div style={{ maxWidth: 860, margin: "0 auto", textAlign: "center" }}>
         <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 24 }}>
-          THE FOUNDHER CLUB — FOUNDING MEMBERSHIP
+          THE FOUNDHER CLUB — FIRST CLASS & CLUB MEMBERSHIP
         </p>
         <h2 style={{ color: "#FDFCF8", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em" }}>
           Your people are assembling.
@@ -386,41 +379,36 @@ function FoundHerClub() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24, marginBottom: 56 }}>
 
-          <div style={{ background: "#111111", border: "1px solid #333333", borderRadius: 12, padding: "40px 32px", textAlign: "left" }}>
-            <p style={{ color: "#B8973E", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>FOUNDING MEMBER</p>
-            <p style={{ color: "#FDFCF8", fontSize: 36, fontWeight: 800, marginBottom: 24 }}>Free</p>
+          <div style={{ background: "#111111", border: "2px solid #B8973E", borderRadius: 12, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: "#B8973E", color: "#000000", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 20, whiteSpace: "nowrap" }}>
+              FOUNDING OFFER
+            </div>
+            <p style={{ color: "#B8973E", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>FIRST CLASS MEMBER</p>
+            <p style={{ color: "#FDFCF8", fontSize: 36, fontWeight: 800, marginBottom: 8 }}>$38<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}> one-time</span></p>
+            <p style={{ color: "#B8973E", fontSize: 14, fontWeight: 600, marginBottom: 24, fontStyle: "italic" }}>Includes your FoundHer Club hat — shipped free.</p>
             <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", color: "#7A7569", fontSize: 15, lineHeight: 2 }}>
-              <li>✦ Community access</li>
+              <li>✦ FoundHer Club hat shipped to your door</li>
+              <li>✦ First Class status — locked in forever</li>
+              <li>✦ Community access September 8th</li>
               <li>✦ Virtual co-working rooms</li>
-              <li>✦ Monthly newsletter</li>
               <li>✦ First access to tee drops</li>
               <li>✦ First access to Agent Series</li>
               <li>✦ Your seat before anyone else</li>
             </ul>
-            {submitted ? (
-              <p style={{ color: "#B8973E", fontWeight: 700, fontSize: 15 }}>You're in. See you September 8th. 🖤</p>
-            ) : (
-              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  style={{ padding: "13px 18px", borderRadius: 6, border: "1px solid #333", background: "#1A1A1A", color: "#FDFCF8", fontSize: 15, fontFamily: "Inter, sans-serif", outline: "none" }}
-                />
-                <button
-                  onClick={handleSubmit}
-                  style={{ background: "#B8973E", color: "#000000", border: "none", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "Inter, sans-serif" }}
-                >
-                  Save my seat
-                </button>
-              </div>
-            )}
+            <button
+              onClick={async () => {
+                const { url } = await createCheckoutSession('price_1Tm7jzCps5fpuWPnjE142af7');
+                if (url) window.location.href = url;
+              }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", fontFamily: "Inter, sans-serif" }}
+            >
+              I'm First Class — $38
+            </button>
           </div>
 
           <div style={{ background: "#111111", border: "2px solid #B8973E", borderRadius: 12, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: "#B8973E", color: "#000000", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 20, whiteSpace: "nowrap" }}>
-              FULL MEMBER
+              CLUB MEMBER
             </div>
             <p style={{ color: "#B8973E", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>CLUB MEMBER</p>
             <p style={{ color: "#FDFCF8", fontSize: 36, fontWeight: 800, marginBottom: 24 }}>$29<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
