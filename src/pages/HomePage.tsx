@@ -214,7 +214,7 @@ function BuiltBetter() {
           Women are building the next era of business — with AI, without permission, and without apology. You belong here.
         </p>
         <a href="#foundhers-club" style={{ display: "inline-block", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "16px 36px", fontSize: 16, fontWeight: 700, textDecoration: "none", letterSpacing: "0.02em" }}>
-          I want in — show me the Club
+          I want in
         </a>
       </div>
     </section>
