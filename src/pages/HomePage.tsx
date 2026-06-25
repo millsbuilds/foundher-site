@@ -244,7 +244,7 @@ function LifestyleImage() {
       <img
         src="/foundher-lifestyle.jpg"
         alt="Women wearing FoundHer AI gear"
-        style={{ width: "100%", height: "auto", display: "block" }}
+        style={{ width: "100%", maxHeight: "500px", height: "auto", display: "block", objectFit: "cover", objectPosition: "center 20%" }}
       />
     </section>
   );
