@@ -325,24 +325,26 @@ function Vision() {
           FoundHer AI produces the events, content, and community that women founders actually need — without the gatekeepers, the cohorts, or the equity asks. We're building the stage, the mic, and the network.
         </p>
         <p style={{ fontSize: 16, fontStyle: "italic", color: C.gold, marginBottom: 36 }}>
-          Annual Summit. Podcast. Newsletter. Coming 2026.
+          Annual Summit. Podcast. Newsletter.
         </p>
-        <button
-          onClick={() => scrollTo("waitlist")}
+        <a
+          href="#box"
           style={{
-            background: "transparent",
-            color: C.gold,
-            border: `2px solid ${C.gold}`,
+            display: "inline-block",
+            background: C.gold,
+            color: C.white,
+            border: "none",
             borderRadius: 6,
             padding: "14px 28px",
             fontSize: 15,
             fontWeight: 600,
             cursor: "pointer",
             fontFamily: "Inter, sans-serif",
+            textDecoration: "none",
           }}
         >
-          Join the Newsletter →
-        </button>
+          Order Your First Box — Ships August
+        </a>
       </div>
     </section>
   );
@@ -369,11 +371,12 @@ function Resources() {
           We're curating the best AI tools, legal resources, and founder infrastructure — vetted, affordable, and built for women who are building without a safety net. No gatekeepers. No cohorts. Just what works.
         </p>
         <p style={{ fontSize: 16, fontStyle: "italic", color: C.gold, marginBottom: 36 }}>
-          Launching 2026. Join the waitlist to be first in.
+          Founding member pricing. First box ships August.
         </p>
-        <button
-          onClick={() => scrollTo("waitlist")}
+        <a
+          href="#box"
           style={{
+            display: "inline-block",
             background: C.ink,
             color: C.white,
             border: "none",
@@ -383,10 +386,11 @@ function Resources() {
             fontWeight: 600,
             cursor: "pointer",
             fontFamily: "Inter, sans-serif",
+            textDecoration: "none",
           }}
         >
-          Join the Founding Member Waitlist →
-        </button>
+          Order Now — $29/mo
+        </a>
       </div>
     </section>
   );
@@ -451,7 +455,7 @@ function Founder() {
             Founder, FoundHer AI, PBC
           </p>
           <p style={{ fontSize: 16, color: C.muted, lineHeight: 1.8 }}>
-            Mills Gardner is a serial entrepreneur and the founder of FoundHer AI, PBC. She builds AI ventures for the people everyone else is building past.
+            Mills Gardner is a serial entrepreneur who founded, scaled, and sold multiple companies over a 30-year career — then retired. When AI arrived, she came back. Now she builds solo using AI tools, ships faster than teams of ten, and has zero interest in asking anyone's permission. She started FoundHer AI for every woman who recognized herself in that sentence.
           </p>
         </div>
       </div>
