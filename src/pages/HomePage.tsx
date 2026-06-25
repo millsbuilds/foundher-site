@@ -291,8 +291,6 @@ function FoundHerBox() {
 // ─── VISION ───────────────────────────────────────────────────────────────────
 
 function Vision() {
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
   return (
     <section
       id="vision"
@@ -350,8 +348,6 @@ function Vision() {
 // ─── RESOURCES ────────────────────────────────────────────────────────────────
 
 function Resources() {
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
   return (
     <section
       id="resources"
