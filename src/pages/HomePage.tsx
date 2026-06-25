@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react";
+import { loadStripe } from '@stripe/stripe-js';
+import { createCheckoutSession } from '../api/checkout';
+
+const stripePromise = loadStripe('pk_live_51R1zvlCps5fpuWPnL80EVc0k2eCojZ42BoAqDVBZU0r8moOVgsW9rC4qfJM5XF9zA7z8QPSV9JqqP4slSrMXrNZ300OxmU4NMg');
 
 const C = {
   white: "#FFFFFF",
@@ -263,9 +267,16 @@ function FoundHerBox() {
               A monthly limited-edition founder tee. Bold sayings. Black or brown. Ships in a printed poly bag. The uniform for women who build.
             </p>
             <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$29<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
-            <a href="#stripe-tee" style={{ display: "block", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}>
+            <button
+              onClick={async () => {
+                const stripe = await stripePromise;
+                const { url } = await createCheckoutSession('price_1Tm6ccCps5fpuWPnyGULSbMK');
+                if (url) window.location.href = url;
+              }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none", border: "none", cursor: "pointer", fontFamily: "Inter, sans-serif" }}
+            >
               Order Now — Ships August
-            </a>
+            </button>
           </div>
 
           {/* 02 - FoundHer Box */}
@@ -279,9 +290,16 @@ function FoundHerBox() {
               Quarterly box with a founder tee, a 30-day AI agent, prompt cards, self-care, and a partner founder product. Everything a builder actually needs.
             </p>
             <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$49<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/quarter</span></p>
-            <a href="#stripe-box" style={{ display: "block", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}>
+            <button
+              onClick={async () => {
+                const stripe = await stripePromise;
+                const { url } = await createCheckoutSession('price_1Tm6dPCps5fpuWPnNwmgFJcC');
+                if (url) window.location.href = url;
+              }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none", border: "none", cursor: "pointer", fontFamily: "Inter, sans-serif" }}
+            >
               Order Now — Ships August
-            </a>
+            </button>
           </div>
 
           {/* 03 - Agent */}
