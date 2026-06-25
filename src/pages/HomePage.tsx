@@ -261,7 +261,7 @@ function FoundHersClub() {
   return (
     <section id="foundhers-club" style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
       <div style={{ maxWidth: 860, margin: "0 auto", textAlign: "center" }}>
-        <div style={{ display: "flex", justifyContent: "center", marginBottom: 40 }}>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: 16 }}>
           <img
             src="/foundhers-club-badge.png"
             alt="FoundHers Club Badge"
