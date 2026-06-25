@@ -257,9 +257,8 @@ function FoundHerBox() {
         <div style={{
           width: "100%",
           marginBottom: 64,
-          borderRadius: 16,
-          overflow: "hidden",
-          maxHeight: 520,
+          maxHeight: 420,
+          background: "#000000",
         }}>
           <img
             src="/foundher-lifestyle.jpg"
@@ -267,7 +266,7 @@ function FoundHerBox() {
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "cover",
+              objectFit: "contain",
               objectPosition: "center 35%",
               display: "block"
             }}
