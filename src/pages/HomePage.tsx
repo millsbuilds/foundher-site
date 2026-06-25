@@ -336,28 +336,6 @@ function FoundHerBox() {
 // create policy "Allow public inserts" on foundher_club_waitlist for insert with check (true);
 
 function FoundHerClub() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async () => {
-    if (!email.trim()) return;
-    try {
-      await fetch("https://vaexhwpzgtihqfnxiylp.supabase.co/rest/v1/foundher_club_waitlist", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "apikey": import.meta.env.VITE_SUPABASE_ANON_KEY || "",
-          "Authorization": `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY || ""}`,
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify({ email: email.trim(), created_at: new Date().toISOString() })
-      });
-      setSubmitted(true);
-    } catch {
-      setSubmitted(true);
-    }
-  };
-
   return (
     <section id="foundher-club" style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
       <div style={{ maxWidth: 860, margin: "0 auto", textAlign: "center" }}>
