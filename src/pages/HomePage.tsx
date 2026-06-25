@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef } from "react";
-import { supabase } from "../lib/supabase";
+import { useState, useEffect } from "react";
 
 const C = {
   white: "#FFFFFF",
@@ -83,14 +82,12 @@ function Nav() {
           </button>
         ) : (
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
-            <button onClick={() => scrollTo("ventures")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 15, fontWeight: 500, fontFamily: "Inter, sans-serif" }}>Our Ventures</button>
-            <button onClick={() => scrollTo("resources")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 15, fontWeight: 500, fontFamily: "Inter, sans-serif" }}>Resources</button>
             <a href="mailto:hello@foundherai.ai" style={{ color: C.ink, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <button
-              onClick={() => scrollTo("waitlist")}
+              onClick={() => scrollTo("box")}
               style={{ background: C.gold, color: C.white, border: "none", borderRadius: 6, padding: "10px 20px", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "Inter, sans-serif" }}
             >
-              Join the Waitlist
+              Order Now
             </button>
           </div>
         )}
@@ -108,14 +105,12 @@ function Nav() {
             gap: 16,
           }}
         >
-          <button onClick={() => scrollTo("ventures")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 16, fontWeight: 500, fontFamily: "Inter, sans-serif", textAlign: "left", padding: "4px 0" }}>Our Ventures</button>
-          <button onClick={() => scrollTo("resources")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 16, fontWeight: 500, fontFamily: "Inter, sans-serif", textAlign: "left", padding: "4px 0" }}>Resources</button>
           <a href="mailto:hello@foundherai.ai" style={{ color: C.ink, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <button
-            onClick={() => scrollTo("waitlist")}
+            onClick={() => scrollTo("box")}
             style={{ background: C.gold, color: C.white, border: "none", borderRadius: 6, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: "Inter, sans-serif", textAlign: "center", marginTop: 8 }}
           >
-            Join the Waitlist
+            Order Now
           </button>
         </div>
       )}
@@ -272,11 +267,11 @@ function FoundHerBox() {
           {/* 03 - Agent */}
           <div style={{ background: "#111111", border: "1px solid #222222", borderRadius: 12, padding: "48px 36px" }}>
             <p style={{ color: "#B8973E", fontSize: 48, fontWeight: 800, marginBottom: 8, lineHeight: 1 }}>03</p>
-            <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>The Agent</h3>
+            <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>The Agent Series</h3>
             <p style={{ color: "#7A7569", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
-              A dedicated AI agent built for your business. Not a chatbot. A builder tool. Priced for founders, not VCs. Waitlist opening soon.
+              For a fraction of the cost of a human assistant, deploy AI agents trained to handle your email, social media, content, and more. Built for solo founders who move fast.
             </p>
-            <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$47<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
+            <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>From $47<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
             <a href="#waitlist" style={{ display: "block", textAlign: "center", background: "transparent", color: "#B8973E", border: "1px solid #B8973E", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}>
               Join the Waitlist
             </a>
@@ -288,274 +283,31 @@ function FoundHerBox() {
   );
 }
 
-// ─── VISION ───────────────────────────────────────────────────────────────────
-
-function Vision() {
-  return (
-    <section
-      id="vision"
-      style={{
-        background: C.cream,
-        padding: "96px 24px",
-        fontFamily: "Inter, sans-serif",
-      }}
-    >
-      <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
-        <p style={{ color: C.gold, fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 20 }}>
-          The Mission
-        </p>
-        <h2
-          style={{
-            fontSize: "clamp(26px, 4vw, 42px)",
-            fontWeight: 700,
-            color: C.ink,
-            lineHeight: 1.25,
-            letterSpacing: "-0.02em",
-            marginBottom: 32,
-          }}
-        >
-          The media company for women who build in the AI economy.
-        </h2>
-        <p style={{ fontSize: 17, color: C.muted, lineHeight: 1.75, marginBottom: 28 }}>
-          FoundHer AI produces the events, content, and community that women founders actually need — without the gatekeepers, the cohorts, or the equity asks. We're building the stage, the mic, and the network.
-        </p>
-        <p style={{ fontSize: 16, fontStyle: "italic", color: C.gold, marginBottom: 36 }}>
-          Annual Summit. Podcast. Newsletter.
-        </p>
-        <a
-          href="#box"
-          style={{
-            display: "inline-block",
-            background: C.gold,
-            color: C.white,
-            border: "none",
-            borderRadius: 6,
-            padding: "14px 28px",
-            fontSize: 15,
-            fontWeight: 600,
-            cursor: "pointer",
-            fontFamily: "Inter, sans-serif",
-            textDecoration: "none",
-          }}
-        >
-          Order Your First Box — Ships August
-        </a>
-      </div>
-    </section>
-  );
-}
-
-// ─── RESOURCES ────────────────────────────────────────────────────────────────
-
-function Resources() {
-  return (
-    <section
-      id="resources"
-      style={{ background: C.cream, padding: "96px 24px", fontFamily: "Inter, sans-serif" }}
-    >
-      <div style={{ maxWidth: 760, margin: "0 auto", textAlign: "center" }}>
-        <p style={{ color: C.gold, fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 20 }}>
-          For Women Founders
-        </p>
-        <h2 style={{ fontSize: "clamp(26px, 4vw, 42px)", fontWeight: 700, color: C.ink, letterSpacing: "-0.02em", lineHeight: 1.25, marginBottom: 28 }}>
-          The tools, resources, and community we wish had existed.
-        </h2>
-        <p style={{ fontSize: 17, color: C.muted, lineHeight: 1.75, marginBottom: 24 }}>
-          We're curating the best AI tools, legal resources, and founder infrastructure — vetted, affordable, and built for women who are building without a safety net. No gatekeepers. No cohorts. Just what works.
-        </p>
-        <p style={{ fontSize: 16, fontStyle: "italic", color: C.gold, marginBottom: 36 }}>
-          Founding member pricing. First box ships August.
-        </p>
-        <a
-          href="#box"
-          style={{
-            display: "inline-block",
-            background: C.ink,
-            color: C.white,
-            border: "none",
-            borderRadius: 6,
-            padding: "14px 28px",
-            fontSize: 15,
-            fontWeight: 600,
-            cursor: "pointer",
-            fontFamily: "Inter, sans-serif",
-            textDecoration: "none",
-          }}
-        >
-          Order Now — $29/mo
-        </a>
-      </div>
-    </section>
-  );
-}
-
-// ─── FOUNDER ──────────────────────────────────────────────────────────────────
-
-function Founder() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  return (
-    <section
-      id="founder"
-      style={{ background: C.white, padding: "96px 24px", fontFamily: "Inter, sans-serif" }}
-    >
-      <div
-        style={{
-          maxWidth: 1000,
-          margin: "0 auto",
-          display: "flex",
-          flexDirection: isMobile ? "column" : "row",
-          alignItems: isMobile ? "center" : "flex-start",
-          gap: 56,
-        }}
-      >
-        {/* Photo */}
-        <div style={{ flexShrink: 0, textAlign: "center" }}>
-          <img
-            src="/mills-photo.jpg"
-            alt="Mills Gardner"
-            style={{
-              width: 300,
-              height: 300,
-              borderRadius: "50%",
-              objectFit: "cover",
-              border: `3px solid ${C.border}`,
-              background: C.cream,
-            }}
-            onError={(e) => {
-              (e.target as HTMLImageElement).style.display = "none";
-            }}
-          />
-        </div>
-
-        {/* Text */}
-        <div style={{ textAlign: isMobile ? "center" : "left" }}>
-          <p style={{ color: C.gold, fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 16 }}>
-            The Founder
-          </p>
-          <h2 style={{ fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 700, color: C.ink, letterSpacing: "-0.02em", marginBottom: 8 }}>
-            Mills Gardner
-          </h2>
-          <p style={{ fontSize: 12, fontWeight: 700, color: C.gold, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 24 }}>
-            Founder, FoundHer AI, PBC
-          </p>
-          <p style={{ fontSize: 16, color: C.muted, lineHeight: 1.8 }}>
-            Mills Gardner is a serial entrepreneur who founded, scaled, and sold multiple companies over a 30-year career — then retired. When AI arrived, she came back. Now she builds solo using AI tools, ships faster than teams of ten, and has zero interest in asking anyone's permission. She started FoundHer AI for every woman who recognized herself in that sentence.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 // ─── WAITLIST ─────────────────────────────────────────────────────────────────
 
 function Waitlist() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [errorMsg, setErrorMsg] = useState("");
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.trim()) return;
-    setStatus("loading");
-    setErrorMsg("");
-
-    const { error } = await supabase.from("foundher_waitlist").insert([
-      { email: email.trim(), created_at: new Date().toISOString() },
-    ]);
-
-    if (error) {
-      setStatus("error");
-      setErrorMsg(error.message.includes("duplicate") ? "You're already on the list!" : "Something went wrong. Please try again.");
-    } else {
-      setStatus("success");
-      setEmail("");
-    }
-  };
-
   return (
-    <section
-      id="waitlist"
-      style={{ background: C.ink, padding: "96px 24px", fontFamily: "Inter, sans-serif" }}
-    >
-      <div style={{ maxWidth: 640, margin: "0 auto", textAlign: "center" }}>
-        <h2
-          style={{
-            fontSize: "clamp(28px, 5vw, 48px)",
-            fontWeight: 800,
-            color: C.cream,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.2,
-            marginBottom: 16,
-          }}
-        >
-          The FoundHer Resource Platform is coming.
+    <section id="waitlist" style={{ background: "#000000", padding: "80px 24px", fontFamily: "Inter, sans-serif", textAlign: "center" }}>
+      <div style={{ maxWidth: 560, margin: "0 auto" }}>
+        <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
+          STAY IN THE LOOP
+        </p>
+        <h2 style={{ color: "#FDFCF8", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 800, marginBottom: 16, lineHeight: 1.2 }}>
+          We're building. We're sourcing.<br />We ship in August.
         </h2>
-        <p style={{ fontSize: 18, color: C.gold, fontWeight: 600, marginBottom: 20 }}>
-          AI tools. Legal resources. Community. At a fraction of the cost.
+        <p style={{ color: "#7A7569", fontSize: 16, marginBottom: 40, lineHeight: 1.6 }}>
+          Get early access, founding member pricing, and first pick of the tee drops.
         </p>
-        <p style={{ fontSize: 16, color: "#A09A93", lineHeight: 1.7, marginBottom: 48 }}>
-          We're building a platform where women founders get everything they need to build in the AI economy — without going it alone. Join the founding member waitlist and be first in.
-        </p>
-
-        {status === "success" ? (
-          <div style={{ background: "#2A261F", borderRadius: 8, padding: "24px 32px", color: C.cream, fontSize: 17, fontWeight: 600 }}>
-            You're in. We'll be in touch before launch.
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <div style={{ display: "flex", gap: 0, borderRadius: 8, overflow: "hidden", border: `2px solid ${C.gold}` }}>
-              <input
-                ref={inputRef}
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                style={{
-                  flex: 1,
-                  padding: "14px 20px",
-                  fontSize: 16,
-                  border: "none",
-                  outline: "none",
-                  background: "#2A261F",
-                  color: C.cream,
-                  fontFamily: "Inter, sans-serif",
-                }}
-              />
-              <button
-                type="submit"
-                disabled={status === "loading"}
-                style={{
-                  background: C.gold,
-                  color: C.white,
-                  border: "none",
-                  padding: "14px 24px",
-                  fontSize: 15,
-                  fontWeight: 600,
-                  cursor: status === "loading" ? "wait" : "pointer",
-                  fontFamily: "Inter, sans-serif",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                {status === "loading" ? "Joining..." : "Join the Waitlist"}
-              </button>
-            </div>
-            {status === "error" && (
-              <p style={{ color: "#E07070", fontSize: 14, margin: 0 }}>{errorMsg}</p>
-            )}
-          </form>
-        )}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
+          <input
+            type="email"
+            placeholder="your@email.com"
+            style={{ flex: 1, minWidth: 240, padding: "14px 20px", borderRadius: 6, border: "1px solid #333", background: "#111", color: "#FDFCF8", fontSize: 15, fontFamily: "Inter, sans-serif", outline: "none" }}
+          />
+          <button style={{ background: "#B8973E", color: "#000000", border: "none", borderRadius: 6, padding: "14px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}>
+            Count me in
+          </button>
+        </div>
       </div>
     </section>
   );
@@ -564,8 +316,6 @@ function Waitlist() {
 // ─── FOOTER ───────────────────────────────────────────────────────────────────
 
 function Footer() {
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
   return (
     <footer
       style={{
@@ -587,7 +337,6 @@ function Footer() {
         </p>
         <div style={{ display: "flex", justifyContent: "center", gap: 24, marginBottom: 32, flexWrap: "wrap" }}>
           <a href="https://adaptz.ai" target="_blank" rel="noopener noreferrer" style={{ color: "#A09A93", fontSize: 14, textDecoration: "none" }}>Adaptz.ai</a>
-          <button onClick={() => scrollTo("resources")} style={{ background: "none", border: "none", cursor: "pointer", color: "#A09A93", fontSize: 14, fontFamily: "Inter, sans-serif" }}>Incubator</button>
           <a href="mailto:hello@foundherai.ai" style={{ color: "#A09A93", fontSize: 14, textDecoration: "none" }}>Contact</a>
         </div>
         <p style={{ fontSize: 13, color: "#6B6560" }}>
@@ -608,9 +357,6 @@ export default function HomePage() {
         <Hero />
         <BuiltBetter />
         <FoundHerBox />
-        <Vision />
-        <Resources />
-        <Founder />
         <Waitlist />
       </main>
       <Footer />
