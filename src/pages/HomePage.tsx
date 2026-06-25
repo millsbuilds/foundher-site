@@ -151,7 +151,7 @@ function Hero() {
             marginBottom: 24,
           }}
         >
-          FOR WOMEN WHO BUILD BUSINESSES
+          FOR WOMEN WHO BUILD BUSINESSES — FOUNDERS. CREATORS. EMPIRE BUILDERS.
         </p>
 
         <h1
@@ -233,6 +233,17 @@ function BuiltBetter() {
           }}
         >
           Women have been pivoting, adapting, and thinking their way through impossible problems since the beginning of time. Ask any independent woman, wife, mother, or daughter.
+        </p>
+
+        <p
+          style={{
+            color: C.white,
+            fontSize: "clamp(17px, 2.5vw, 21px)",
+            lineHeight: 1.85,
+            marginBottom: 20,
+          }}
+        >
+          Whether you built a company, a community, or an audience of millions — if you built it, you belong here.
         </p>
 
         <p
