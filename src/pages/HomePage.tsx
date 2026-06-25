@@ -240,12 +240,14 @@ function Purpose() {
 
 function LifestyleImage() {
   return (
-    <section style={{ background: "#000000", padding: "0" }}>
-      <img
-        src="/foundher-lifestyle.jpg"
-        alt="Women wearing FoundHer AI gear"
-        style={{ width: "100%", maxHeight: "500px", height: "auto", display: "block", objectFit: "cover", objectPosition: "center 20%" }}
-      />
+    <section style={{ background: "#000000", padding: "40px 24px" }}>
+      <div style={{ maxWidth: 700, margin: "0 auto" }}>
+        <img
+          src="/foundher-lifestyle.jpg"
+          alt="Women wearing FoundHer AI gear"
+          style={{ width: "100%", height: "auto", display: "block", borderRadius: 12 }}
+        />
+      </div>
     </section>
   );
 }
