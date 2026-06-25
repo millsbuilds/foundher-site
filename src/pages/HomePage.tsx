@@ -233,6 +233,26 @@ function FoundHerBox() {
           First box ships August. Founding member pricing locked in today.
         </p>
 
+        <div style={{
+          width: "100%",
+          marginBottom: 64,
+          borderRadius: 16,
+          overflow: "hidden",
+          maxHeight: 520,
+        }}>
+          <img
+            src="/foundher-lifestyle.jpg"
+            alt="Women wearing FoundHer AI gear"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "center top",
+              display: "block"
+            }}
+          />
+        </div>
+
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
 
           {/* 01 - Tee Drop */}
