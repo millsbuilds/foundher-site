@@ -270,7 +270,7 @@ function FoundHersClub() {
           The FoundHers Club opens September 8th — the day after Labor Day, when the kids are back in school and it's time to build.
         </p>
         <p style={{ color: "#B8973E", fontSize: 16, fontWeight: 600, marginBottom: 56, fontStyle: "italic" }}>
-          Join before launch and lock in your founding member status. Free to join. Built for women who mean business.
+          Join before launch and lock in your founding member status. Built for women who mean business.
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24, marginBottom: 56 }}>
@@ -358,13 +358,13 @@ function Waitlist() {
     <section id="waitlist" style={{ background: "#000000", padding: "80px 24px", fontFamily: "Inter, sans-serif", textAlign: "center" }}>
       <div style={{ maxWidth: 560, margin: "0 auto" }}>
         <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
-          STAY IN THE LOOP
+          GET IN THE LOOP
         </p>
         <h2 style={{ color: "#FDFCF8", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 800, marginBottom: 16, lineHeight: 1.2 }}>
-          We're building. We're sourcing.<br />We ship in August.
+          Follow the founders who are building right now.
         </h2>
         <p style={{ color: "#7A7569", fontSize: 16, marginBottom: 40, lineHeight: 1.6 }}>
-          Get early access, founding member pricing, and first pick of the tee drops.
+          Women building businesses in the age of AI — their journeys, their tools, their wins. Subscribe and get a front row seat.
         </p>
         {submitted ? (
           <p style={{ color: "#B8973E", fontWeight: 700, fontSize: 17 }}>You're in. We'll be in touch. 🖤</p>
