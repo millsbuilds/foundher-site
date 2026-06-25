@@ -363,6 +363,16 @@ function Waitlist() {
         <h2 style={{ color: "#FDFCF8", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 800, marginBottom: 16, lineHeight: 1.2 }}>
           Follow the founders who are building right now.
         </h2>
+        <div style={{ maxWidth: 420, margin: "0 auto 40px", background: "#111111", borderRadius: 12, padding: "32px", border: "1px solid #222222" }}>
+          <img
+            src="/liz-bryant.jpg"
+            alt="Liz Bryant - Locals Mark"
+            style={{ width: 80, height: 80, borderRadius: "50%", objectFit: "cover", marginBottom: 16, border: "2px solid #B8973E" }}
+          />
+          <h3 style={{ color: "#FDFCF8", fontSize: 18, fontWeight: 700, marginBottom: 4 }}>Liz Bryant</h3>
+          <p style={{ color: "#B8973E", fontSize: 13, fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 12 }}>Founder, Locals Mark</p>
+          <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ color: "#7A7569", fontSize: 14, textDecoration: "none" }}>@localsmarkco</a>
+        </div>
         <p style={{ color: "#7A7569", fontSize: 16, marginBottom: 40, lineHeight: 1.6 }}>
           Women building businesses in the age of AI — their journeys, their tools, their wins. Subscribe and get a front row seat.
         </p>
