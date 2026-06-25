@@ -91,7 +91,7 @@ function Nav() {
               onClick={() => scrollTo("box")}
               style={{ background: C.gold, color: C.white, border: "none", borderRadius: 6, padding: "10px 20px", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "Inter, sans-serif" }}
             >
-              Order Now
+              Join Now
             </button>
           </div>
         )}
@@ -114,7 +114,7 @@ function Nav() {
             onClick={() => scrollTo("box")}
             style={{ background: C.gold, color: C.white, border: "none", borderRadius: 6, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: "Inter, sans-serif", textAlign: "center", marginTop: 8 }}
           >
-            Order Now
+            Join Now
           </button>
         </div>
       )}
@@ -174,11 +174,11 @@ function Hero() {
             marginBottom: 40,
           }}
         >
-          The FoundHer Club opens September 8th. First Class membership — $38.
+          The FoundHers Club opens September 8th. First Class membership — $38.
         </p>
 
         <button
-          onClick={() => scrollTo("foundher-club")}
+          onClick={() => scrollTo("foundhers-club")}
           style={{
             background: C.ink,
             color: C.white,
@@ -213,7 +213,7 @@ function BuiltBetter() {
         <p style={{ color: "#7A7569", fontSize: "clamp(17px, 2vw, 20px)", lineHeight: 1.7, marginBottom: 48 }}>
           Women are building the next era of business — with AI, without permission, and without apology. You belong here.
         </p>
-        <a href="#foundher-club" style={{ display: "inline-block", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "16px 36px", fontSize: 16, fontWeight: 700, textDecoration: "none", letterSpacing: "0.02em" }}>
+        <a href="#foundhers-club" style={{ display: "inline-block", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "16px 36px", fontSize: 16, fontWeight: 700, textDecoration: "none", letterSpacing: "0.02em" }}>
           I want in — show me the Club
         </a>
       </div>
@@ -330,30 +330,30 @@ function FoundHerBox() {
   );
 }
 
-// ─── FOUNDHER CLUB ────────────────────────────────────────────────────────────
+// ─── FOUNDHERS CLUB ────────────────────────────────────────────────────────────
 // NOTE: Run in Supabase SQL editor:
 // alter table foundher_club_waitlist enable row level security;
 // create policy "Allow public inserts" on foundher_club_waitlist for insert with check (true);
 
 function FoundHerClub() {
   return (
-    <section id="foundher-club" style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
+    <section id="foundhers-club" style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
       <div style={{ maxWidth: 860, margin: "0 auto", textAlign: "center" }}>
         <div style={{ display: "flex", justifyContent: "center", marginBottom: 40 }}>
           <img
-            src="/foundher-club-badge.png"
+            src="/foundhers-club-badge.png"
             alt="FoundHers Club Badge"
             style={{ width: 180, height: "auto", display: "block" }}
           />
         </div>
         <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 24 }}>
-          THE FOUNDHER CLUB — FIRST CLASS & CLUB MEMBERSHIP
+          THE FOUNDHERS CLUB — FIRST CLASS & CLUB MEMBERSHIP
         </p>
         <h2 style={{ color: "#FDFCF8", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em" }}>
           Your people are assembling.
         </h2>
         <p style={{ color: "#FDFCF8", fontSize: "clamp(18px, 2.5vw, 22px)", lineHeight: 1.7, marginBottom: 16, maxWidth: 640, margin: "0 auto 16px" }}>
-          The FoundHer Club opens September 8th — the day after Labor Day, when the kids are back in school and it's time to build.
+          The FoundHers Club opens September 8th — the day after Labor Day, when the kids are back in school and it's time to build.
         </p>
         <p style={{ color: "#7A7569", fontSize: "clamp(16px, 2vw, 19px)", lineHeight: 1.7, marginBottom: 16, maxWidth: 640, margin: "0 auto 16px" }}>
           Including virtual co-working rooms — because the best work happens when you're surrounded by women who get it.
@@ -370,9 +370,9 @@ function FoundHerClub() {
             </div>
             <p style={{ color: "#B8973E", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>FIRST CLASS MEMBER</p>
             <p style={{ color: "#FDFCF8", fontSize: 36, fontWeight: 800, marginBottom: 8 }}>$38<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}> one-time</span></p>
-            <p style={{ color: "#B8973E", fontSize: 14, fontWeight: 600, marginBottom: 24, fontStyle: "italic" }}>Includes your FoundHer Club hat — shipped free.</p>
+            <p style={{ color: "#B8973E", fontSize: 14, fontWeight: 600, marginBottom: 24, fontStyle: "italic" }}>Includes your FoundHers Club hat — shipped free.</p>
             <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", color: "#7A7569", fontSize: 15, lineHeight: 2 }}>
-              <li>✦ FoundHer Club hat shipped to your door</li>
+              <li>✦ FoundHers Club hat shipped to your door</li>
               <li>✦ First Class status — locked in forever</li>
               <li>✦ Community access September 8th</li>
               <li>✦ Virtual co-working rooms</li>
