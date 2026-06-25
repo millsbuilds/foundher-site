@@ -173,7 +173,7 @@ function Hero() {
           marginBottom: 8,
           color: C.espresso,
         }}>
-          <span style={{ color: C.coral, display: "block" }}>Build.</span>
+          <span style={{ color: C.gold, display: "block" }}>Build.</span>
           <span style={{ color: C.gold, display: "block" }}>Launch.</span>
           <span style={{ color: C.espresso, display: "block" }}>Grow.</span>
         </h1>
@@ -301,19 +301,17 @@ function FoundHersClub() {
   return (
     <section id="foundhers-club" style={{ background: C.bg, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
-        <div style={{ display: "flex", justifyContent: "center", marginBottom: 32 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 32, marginBottom: 32, flexWrap: "wrap", justifyContent: "center" }}>
           <img
             src="/foundhers-club-badge.png"
             alt="FoundHers Club Badge"
-            style={{ width: 120, height: "auto", display: "block" }}
+            style={{ width: 200, height: "auto", display: "block" }}
           />
+          <div style={{ textAlign: "left" }}>
+            <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 12 }}>THE FOUNDHERS CLUB</p>
+            <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,5vw,56px)", color: C.espresso, lineHeight: 1.1, margin: 0 }}>Your people are assembling.</h2>
+          </div>
         </div>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.gold, marginBottom: 24 }}>
-          THE FOUNDHERS CLUB
-        </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,5vw,56px)", color: C.espresso, lineHeight: 1.1, textAlign: "center", marginBottom: 16 }}>
-          Your people are assembling.
-        </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, textAlign: "center", maxWidth: 620, margin: "0 auto 48px", lineHeight: 1.7 }}>
           The FoundHers Club is where women who build businesses come to stay in the game. Monthly merch drops. A members-only podcast. Virtual co-working rooms. Our annual FoundHers Summit. And a community of women who actually get it.
         </p>
@@ -335,7 +333,7 @@ function FoundHersClub() {
 
           {/* FOUNDING MEMBER */}
           <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 36px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               FOUNDING MEMBER — ORIGINAL CLASS
             </div>
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>FOUNDING MEMBER</p>
@@ -363,7 +361,7 @@ function FoundHersClub() {
                 const { url } = await createCheckoutSession('price_1Tm7jzCps5fpuWPnjE142af7');
                 if (url) window.location.href = url;
               }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
               I'm a Founding Member — $38 + $29/mo
             </button>
@@ -408,7 +406,7 @@ function FoundHersClub() {
 
 function AIAgents() {
   return (
-    <section style={{ background: C.espresso, padding: "96px 24px", fontFamily: font.body }}>
+    <section style={{ background: C.plum, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
           <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
@@ -461,15 +459,15 @@ function LizSpotlight() {
   }, []);
 
   return (
-    <section style={{ background: C.plum, padding: "96px 24px", fontFamily: font.body }}>
+    <section style={{ background: C.cream, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 860, margin: "0 auto", display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: 56, flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
 
         {/* LEFT: Video */}
-        <div style={{ flex: isMobile ? "none" : "0 0 420px", width: isMobile ? "100%" : undefined, maxWidth: "100%" }}>
+        <div style={{ flex: isMobile ? "none" : "0 0 340px", width: isMobile ? "100%" : undefined, maxWidth: "100%" }}>
           <video
             controls
             playsInline
-            style={{ width: "100%", display: "block", borderRadius: 0, border: "1px solid rgba(192,139,42,0.25)" }}
+            style={{ width: "100%", display: "block", borderRadius: 0, border: `1px solid ${C.sand}` }}
           >
             <source src="/liz-bryant.mp4" type="video/mp4" />
           </video>
@@ -480,14 +478,14 @@ function LizSpotlight() {
           <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
             FOUNDER SPOTLIGHT
           </p>
-          <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(26px, 3vw, 38px)", color: "#FFFCF7", lineHeight: 1.3, marginBottom: 24 }}>
+          <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(22px, 2.5vw, 32px)", color: C.espresso, lineHeight: 1.3, marginBottom: 24 }}>
             Follow the founders building right now.
           </h2>
-          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#FFFCF7", marginBottom: 4 }}>Liz Bryant</h3>
+          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: C.espresso, marginBottom: 4 }}>Liz Bryant</h3>
           <p style={{ fontFamily: font.body, fontSize: 12, fontWeight: 600, letterSpacing: "0.12em", color: C.gold, textTransform: "uppercase", marginBottom: 16 }}>
             Founder, Locals Mark
           </p>
-          <p style={{ fontFamily: font.body, fontSize: 15, color: "rgba(255,255,255,0.65)", lineHeight: 1.75, marginBottom: 24 }}>
+          <p style={{ fontFamily: font.body, fontSize: 15, color: C.taupe, lineHeight: 1.75, marginBottom: 24 }}>
             Women building businesses in the age of AI — their journeys, their breakthroughs, their real talk. A front row seat to what it actually looks like.
           </p>
           <a
@@ -526,13 +524,13 @@ function MillsAbout() {
             You have the dream.<br />We've got the roadmap.
           </h2>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            I've been building businesses for decades — long before anyone was talking about AI, venture capital, or the gender gap in tech. I watched brilliant women get passed over, underfunded, and underestimated. I was one of them.
+            I've been building businesses for decades — and I've won big. I've also lost even bigger. That's the founder story nobody tells you about, and it's exactly why I'm here.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            Then AI arrived. And everything changed.
+            I watched brilliant women get passed over, underfunded, and underestimated for years. I was one of them. But at 71, I can tell you this: every loss taught me something a win never could. And now, with AI, the rules have finally changed.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            For the first time in history, a woman with a dream and a laptop can build a multi-million dollar business — without a VC check, without a team, without asking permission. The tools are here. The playing field just leveled. And it gives me more joy than I can say to be building a place where women come to claim what was always theirs.
+            For the first time in history, a woman with a dream and a laptop can build a multi-million dollar business — without a VC check, without a team, without asking permission. I started FoundHer AI because there is room in this world for every one of us to succeed at our dreams. Women helping women. No competition. Just momentum.
           </p>
           <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.espresso, lineHeight: 1.6, marginBottom: 32 }}>
             "It's about time women were rewarded for being the natural builders we've always been."
@@ -550,12 +548,30 @@ function MillsAbout() {
 
 function LifestyleImage() {
   return (
-    <section style={{ background: C.bg, padding: 0 }}>
-      <img
-        src="/foundher-lifestyle.jpg"
-        alt="Women wearing FoundHer AI gear"
-        style={{ width: "100%", height: "auto", display: "block" }}
-      />
+    <section style={{ background: C.bg, padding: "80px 24px" }}>
+      <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", alignItems: "center", gap: 56, flexWrap: "wrap" }}>
+        <div style={{ flex: "0 0 420px", maxWidth: "100%" }}>
+          <img
+            src="/foundher-lifestyle.jpg"
+            alt="Women wearing FoundHer AI gear"
+            style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
+          />
+        </div>
+        <div style={{ flex: 1, minWidth: 260 }}>
+          <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: font.body }}>
+            THE COMMUNITY
+          </p>
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.2, marginBottom: 20, letterSpacing: "-0.02em" }}>
+            Follow the women who build.
+          </h2>
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.75, marginBottom: 24 }}>
+            FoundHers are everywhere — at the farmers market, at the coffee shop, at the kitchen table at midnight. They're building brands, businesses, and movements. With a hat, a tee, and a community behind them.
+          </p>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.espresso, lineHeight: 1.6 }}>
+            "Built Better. By Her."
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
@@ -668,11 +684,11 @@ export default function HomePage() {
         <Divider />
         <Purpose />
         <Divider />
-        <FoundHersClub />
+        <LizSpotlight />
         <Divider />
         <AIAgents />
         <Divider />
-        <LizSpotlight />
+        <FoundHersClub />
         <Divider />
         <MillsAbout />
         <Divider />
