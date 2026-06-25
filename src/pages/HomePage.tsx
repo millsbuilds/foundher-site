@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import { loadStripe } from '@stripe/stripe-js';
 import { createCheckoutSession } from '../api/checkout';
-
-const stripePromise = loadStripe('pk_live_51R1zvlCps5fpuWPnL80EVc0k2eCojZ42BoAqDVBZU0r8moOVgsW9rC4qfJM5XF9zA7z8QPSV9JqqP4slSrMXrNZ300OxmU4NMg');
 
 const C = {
   white: "#FFFFFF",
@@ -88,7 +85,7 @@ function Nav() {
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
             <a href="mailto:hello@foundherai.ai" style={{ color: C.ink, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <button
-              onClick={() => scrollTo("box")}
+              onClick={() => scrollTo("foundhers-club")}
               style={{ background: C.gold, color: C.white, border: "none", borderRadius: 6, padding: "10px 20px", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "Inter, sans-serif" }}
             >
               Join Now
@@ -111,7 +108,7 @@ function Nav() {
         >
           <a href="mailto:hello@foundherai.ai" style={{ color: C.ink, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <button
-            onClick={() => scrollTo("box")}
+            onClick={() => scrollTo("foundhers-club")}
             style={{ background: C.gold, color: C.white, border: "none", borderRadius: 6, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: "Inter, sans-serif", textAlign: "center", marginTop: 8 }}
           >
             Join Now
@@ -238,97 +235,6 @@ function Purpose() {
   );
 }
 
-// ─── FOUNDHER BOX ─────────────────────────────────────────────────────────────
-
-function FoundHerBox() {
-  return (
-    <section id="box" style={{ background: "#0A0A0A", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
-      <div style={{ maxWidth: 960, margin: "0 auto" }}>
-        <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, textAlign: "center" }}>
-          FOUNDHER BOX
-        </p>
-        <h2 style={{ color: "#FDFCF8", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 800, lineHeight: 1.1, marginBottom: 16, textAlign: "center", letterSpacing: "-0.02em" }}>
-          Built better. By her.
-        </h2>
-        <p style={{ color: "#7A7569", fontSize: 17, textAlign: "center", marginBottom: 72, lineHeight: 1.6 }}>
-          First box ships August. Founding member pricing locked in today.
-        </p>
-
-        <div style={{ width: "100%", marginBottom: 64 }}>
-          <img
-            src="/foundher-lifestyle.jpg"
-            alt="Women wearing FoundHer AI gear"
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block"
-            }}
-          />
-        </div>
-
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
-
-          {/* 01 - Tee Drop */}
-          <div style={{ background: "#111111", border: "1px solid #222222", borderRadius: 12, padding: "48px 36px" }}>
-            <p style={{ color: "#B8973E", fontSize: 48, fontWeight: 800, marginBottom: 8, lineHeight: 1 }}>01</p>
-            <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>The Tee Drop</h3>
-            <p style={{ color: "#7A7569", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
-              A monthly limited-edition founder tee. Bold sayings. Black or brown. Ships in a printed poly bag. The uniform for women who build.
-            </p>
-            <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$29<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
-            <button
-              onClick={async () => {
-                await stripePromise;
-                const { url } = await createCheckoutSession('price_1Tm6ccCps5fpuWPnyGULSbMK');
-                if (url) window.location.href = url;
-              }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none", border: "none", cursor: "pointer", fontFamily: "Inter, sans-serif" }}
-            >
-              Order Now — Ships August
-            </button>
-          </div>
-
-          {/* 02 - FoundHer Box */}
-          <div style={{ background: "#111111", border: "2px solid #B8973E", borderRadius: 12, padding: "48px 36px", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: "#B8973E", color: "#000000", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 20 }}>
-              MOST POPULAR
-            </div>
-            <p style={{ color: "#B8973E", fontSize: 48, fontWeight: 800, marginBottom: 8, lineHeight: 1 }}>02</p>
-            <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>The FoundHer Box</h3>
-            <p style={{ color: "#7A7569", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
-              Quarterly box with a founder tee, a 30-day AI agent, prompt cards, self-care, and a partner founder product. Everything a builder actually needs.
-            </p>
-            <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$49<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/quarter</span></p>
-            <button
-              onClick={async () => {
-                await stripePromise;
-                const { url } = await createCheckoutSession('price_1Tm6dPCps5fpuWPnNwmgFJcC');
-                if (url) window.location.href = url;
-              }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none", border: "none", cursor: "pointer", fontFamily: "Inter, sans-serif" }}
-            >
-              Order Now — Ships August
-            </button>
-          </div>
-
-          {/* 03 - Agent */}
-          <div style={{ background: "#111111", border: "1px solid #222222", borderRadius: 12, padding: "48px 36px" }}>
-            <p style={{ color: "#B8973E", fontSize: 48, fontWeight: 800, marginBottom: 8, lineHeight: 1 }}>03</p>
-            <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>The Agent Series</h3>
-            <p style={{ color: "#7A7569", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
-              For a fraction of the cost of a human assistant, deploy AI agents trained to handle your email, social media, content, and more. Built for solo founders who move fast.
-            </p>
-            <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>From $47<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
-            <a href="#waitlist" style={{ display: "block", textAlign: "center", background: "transparent", color: "#B8973E", border: "1px solid #B8973E", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}>
-              Join the Waitlist
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  );
-}
 
 // ─── FOUNDHERS CLUB ────────────────────────────────────────────────────────────
 // NOTE: Run in Supabase SQL editor:
@@ -523,7 +429,6 @@ export default function HomePage() {
         <Hero />
         <BuiltBetter />
         <Purpose />
-        <FoundHerBox />
         <FoundHerClub />
         <Waitlist />
       </main>
