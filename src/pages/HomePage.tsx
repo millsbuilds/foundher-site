@@ -380,15 +380,21 @@ function Waitlist() {
           Follow the founders who are building right now.
         </h2>
         <div style={{ maxWidth: 560, margin: "0 auto 40px", borderRadius: 16, overflow: "hidden", border: "1px solid #222222" }}>
-          <img
-            src="/liz-bryant.jpg"
-            alt="Liz Bryant - Locals Mark Founder"
-            style={{ width: "100%", height: "500px", objectFit: "cover", objectPosition: "center center", display: "block" }}
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ width: "100%", height: "560px", objectFit: "cover", display: "block" }}
+          >
+            <source src="/liz-bryant.mp4" type="video/mp4" />
+          </video>
           <div style={{ background: "#111111", padding: "24px 32px", textAlign: "center" }}>
             <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 4 }}>Liz Bryant</h3>
             <p style={{ color: "#B8973E", fontSize: 13, fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 12 }}>Founder, Locals Mark</p>
-            <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ color: "#7A7569", fontSize: 14, textDecoration: "none" }}>@localsmarkco →</a>
+            <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ color: "#7A7569", fontSize: 15, textDecoration: "none" }}>
+              Follow Liz's founder journey → @localsmarkco
+            </a>
           </div>
         </div>
         <p style={{ color: "#7A7569", fontSize: 16, marginBottom: 40, lineHeight: 1.6 }}>
