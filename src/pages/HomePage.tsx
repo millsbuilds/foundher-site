@@ -178,7 +178,7 @@ function Hero() {
         </p>
 
         <button
-          onClick={() => scrollTo("ventures")}
+          onClick={() => scrollTo("box")}
           style={{
             background: C.ink,
             color: C.white,
@@ -448,6 +448,28 @@ function FoundHerClub() {
 // ─── WAITLIST ─────────────────────────────────────────────────────────────────
 
 function Waitlist() {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async () => {
+    if (!email.trim()) return;
+    try {
+      await fetch("https://vaexhwpzgtihqfnxiylp.supabase.co/rest/v1/foundher_waitlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "apikey": import.meta.env.VITE_SUPABASE_ANON_KEY || "",
+          "Authorization": `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY || ""}`,
+          "Prefer": "return=minimal"
+        },
+        body: JSON.stringify({ email: email.trim(), created_at: new Date().toISOString() })
+      });
+      setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    }
+  };
+
   return (
     <section id="waitlist" style={{ background: "#000000", padding: "80px 24px", fontFamily: "Inter, sans-serif", textAlign: "center" }}>
       <div style={{ maxWidth: 560, margin: "0 auto" }}>
@@ -460,16 +482,25 @@ function Waitlist() {
         <p style={{ color: "#7A7569", fontSize: 16, marginBottom: 40, lineHeight: 1.6 }}>
           Get early access, founding member pricing, and first pick of the tee drops.
         </p>
-        <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <input
-            type="email"
-            placeholder="your@email.com"
-            style={{ flex: 1, minWidth: 240, padding: "14px 20px", borderRadius: 6, border: "1px solid #333", background: "#111", color: "#FDFCF8", fontSize: 15, fontFamily: "Inter, sans-serif", outline: "none" }}
-          />
-          <button style={{ background: "#B8973E", color: "#000000", border: "none", borderRadius: 6, padding: "14px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}>
-            Count me in
-          </button>
-        </div>
+        {submitted ? (
+          <p style={{ color: "#B8973E", fontWeight: 700, fontSize: 17 }}>You're in. We'll be in touch. 🖤</p>
+        ) : (
+          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
+            <input
+              type="email"
+              placeholder="your@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              style={{ flex: 1, minWidth: 240, padding: "14px 20px", borderRadius: 6, border: "1px solid #333", background: "#111", color: "#FDFCF8", fontSize: 15, fontFamily: "Inter, sans-serif", outline: "none" }}
+            />
+            <button
+              onClick={handleSubmit}
+              style={{ background: "#B8973E", color: "#000000", border: "none", borderRadius: 6, padding: "14px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+            >
+              Count me in
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
