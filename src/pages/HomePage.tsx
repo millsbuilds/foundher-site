@@ -94,7 +94,7 @@ function Nav() {
             <a href="mailto:hello@foundherai.ai" style={{ color: C.espresso, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <button
               onClick={() => scrollTo("foundhers-club")}
-              style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 24, padding: "10px 24px", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: font.body }}
+              style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "10px 24px", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: font.body }}
             >
               Join Now
             </button>
@@ -117,7 +117,7 @@ function Nav() {
           <a href="mailto:hello@foundherai.ai" style={{ color: C.espresso, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <button
             onClick={() => scrollTo("foundhers-club")}
-            style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 24, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, textAlign: "center", marginTop: 8 }}
+            style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, textAlign: "center", marginTop: 8 }}
           >
             Join Now
           </button>
@@ -190,7 +190,7 @@ function Hero() {
             background: C.coral,
             color: "#FFFFFF",
             border: "none",
-            borderRadius: 24,
+            borderRadius: 0,
             padding: "16px 36px",
             fontSize: 16,
             fontWeight: 600,
@@ -220,7 +220,7 @@ function BuiltBetter() {
         <p style={{ color: C.taupe, fontSize: "clamp(17px, 2vw, 20px)", lineHeight: 1.7, marginBottom: 48 }}>
           Women are building the next era of business — with AI, without permission, and without apology. You belong here.
         </p>
-        <a href="#foundhers-club" style={{ display: "inline-block", background: C.coral, color: "#FFFFFF", borderRadius: 24, padding: "16px 36px", fontSize: 16, fontWeight: 600, textDecoration: "none", letterSpacing: "0.02em" }}>
+        <a href="#foundhers-club" style={{ display: "inline-block", background: C.coral, color: "#FFFFFF", borderRadius: 0, padding: "16px 36px", fontSize: 16, fontWeight: 600, textDecoration: "none", letterSpacing: "0.02em" }}>
           I want in
         </a>
       </div>
@@ -255,7 +255,7 @@ function LifestyleImage() {
         <img
           src="/foundher-lifestyle.jpg"
           alt="Women wearing FoundHer AI gear"
-          style={{ width: "100%", height: "auto", display: "block", borderRadius: 16 }}
+          style={{ width: "100%", height: "auto", display: "block", borderRadius: 0 }}
         />
       </div>
     </section>
@@ -301,8 +301,8 @@ function FoundHersClub() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24, marginBottom: 56 }}>
 
-          <div style={{ background: C.cream, border: `2px solid ${C.gold}`, borderRadius: 16, padding: "40px 32px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 20, whiteSpace: "nowrap" }}>
+          <div style={{ background: C.cream, border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 0, whiteSpace: "nowrap" }}>
               FOUNDING OFFER
             </div>
             <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>FIRST CLASS MEMBER</p>
@@ -322,14 +322,14 @@ function FoundHersClub() {
                 const { url } = await createCheckoutSession('price_1Tm7jzCps5fpuWPnjE142af7');
                 if (url) window.location.href = url;
               }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", borderRadius: 24, padding: "14px 24px", fontSize: 15, fontWeight: 600, border: "none", cursor: "pointer", fontFamily: font.body }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", borderRadius: 0, padding: "14px 24px", fontSize: 15, fontWeight: 600, border: "none", cursor: "pointer", fontFamily: font.body }}
             >
               I'm First Class — $38
             </button>
           </div>
 
-          <div style={{ background: C.cream, border: `1px solid ${C.sand}`, borderRadius: 16, padding: "40px 32px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 20, whiteSpace: "nowrap" }}>
+          <div style={{ background: C.cream, border: `1px solid ${C.sand}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 0, whiteSpace: "nowrap" }}>
               CLUB MEMBER
             </div>
             <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>CLUB MEMBER</p>
@@ -344,7 +344,7 @@ function FoundHersClub() {
             </ul>
             <a
               href="#foundhers-club"
-              style={{ display: "block", textAlign: "center", background: C.espresso, color: "#FFFFFF", borderRadius: 24, padding: "14px 24px", fontSize: 15, fontWeight: 600, textDecoration: "none", fontFamily: font.body }}
+              style={{ display: "block", textAlign: "center", background: C.espresso, color: "#FFFFFF", borderRadius: 0, padding: "14px 24px", fontSize: 15, fontWeight: 600, textDecoration: "none", fontFamily: font.body }}
             >
               I'm in
             </a>
@@ -389,11 +389,9 @@ function Waitlist() {
         <h2 style={{ color: "#FFFCF7", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 700, marginBottom: 16, lineHeight: 1.2, fontFamily: font.display }}>
           Follow the founders who are building right now.
         </h2>
-        <div style={{ maxWidth: 560, margin: "0 auto 40px", borderRadius: 16, overflow: "hidden", border: `1px solid rgba(255,255,255,0.12)` }}>
+        <div style={{ maxWidth: 560, margin: "0 auto 40px", borderRadius: 0, overflow: "hidden", border: `1px solid rgba(255,255,255,0.12)` }}>
           <video
-            autoPlay
-            muted
-            loop
+            controls
             playsInline
             style={{ width: "100%", height: "560px", objectFit: "cover", display: "block" }}
           >
@@ -419,11 +417,11 @@ function Waitlist() {
               placeholder="your@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              style={{ flex: 1, minWidth: 240, padding: "14px 20px", borderRadius: 24, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#FFFCF7", fontSize: 15, fontFamily: font.body, outline: "none" }}
+              style={{ flex: 1, minWidth: 240, padding: "14px 20px", borderRadius: 0, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#FFFCF7", fontSize: 15, fontFamily: font.body, outline: "none" }}
             />
             <button
               onClick={handleSubmit}
-              style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 24, padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}
+              style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}
             >
               Count me in
             </button>
