@@ -150,8 +150,8 @@ function Hero() {
         </div>
         <div style={{ padding: "48px 24px 64px" }}>
           <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, lineHeight: 1.05, letterSpacing: "-0.02em", marginBottom: 8, color: C.espresso }}>
-            <span style={{ color: C.gold, display: "block" }}>Build.</span>
-            <span style={{ color: C.gold, display: "block" }}>Launch.</span>
+            <span style={{ color: C.espresso, display: "block" }}>Build.</span>
+            <span style={{ color: C.espresso, display: "block" }}>Launch.</span>
             <span style={{ color: C.espresso, display: "block" }}>Grow.</span>
           </h1>
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
@@ -177,8 +177,8 @@ function Hero() {
       <div style={{ flex: 1, background: C.cream, display: "flex", alignItems: "center", padding: "80px 56px" }}>
         <div>
           <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 58, lineHeight: 1.05, letterSpacing: "-0.02em", marginBottom: 8, color: C.espresso }}>
-            <span style={{ color: C.gold, display: "block" }}>Build.</span>
-            <span style={{ color: C.gold, display: "block" }}>Launch.</span>
+            <span style={{ color: C.espresso, display: "block" }}>Build.</span>
+            <span style={{ color: C.espresso, display: "block" }}>Launch.</span>
             <span style={{ color: C.espresso, display: "block" }}>Grow.</span>
           </h1>
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
@@ -504,7 +504,7 @@ function MillsAbout() {
             Then AI arrived — and I couldn't stay on the sidelines.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            I've won big. I've lost even bigger. That's the founder story nobody tells you about. But every loss taught me something a win never could. And at 71, I can tell you this: the playing field just changed. For all of us.
+            I've won big. I've lost even bigger. That's the founder story nobody tells you about. At 71, I can tell you this: every barrier that stood in the way of generations of female founders is gone. The playing field is level. The rules have finally changed.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
             In the past month, I built a business from scratch using AI. It's already scaling. No team. No office. No permission. Just a laptop and everything I've learned across five decades of building.
@@ -513,10 +513,13 @@ function MillsAbout() {
             I'm not here to run the show. I'm here to open the door. This is for the next generation of women who are ready to step through it — and I'll be right there with you, building alongside you.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            There is room in this world for every one of us to succeed at our dreams. Women helping women. No competition. Just momentum.
+            There is room in this world for every one of you to succeed in your dreams. Here, you are among women helping women. No competition. Just momentum.
           </p>
           <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.espresso, lineHeight: 1.6, marginBottom: 8 }}>
             "It's about time women were rewarded for being the natural builders we've always been."
+          </p>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.gold, lineHeight: 1.6, marginTop: 16, marginBottom: 8 }}>
+            "Dream big. Dream bigger than you ever thought possible."
           </p>
           <p style={{ fontSize: 14, color: C.gold, fontWeight: 600, letterSpacing: "0.05em" }}>
             — Mills Gardner, Founder, FoundHer AI, PBC
@@ -562,66 +565,6 @@ function LifestyleImage() {
   );
 }
 
-// ─── WAITLIST ─────────────────────────────────────────────────────────────────
-
-function Waitlist() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async () => {
-    if (!email.trim()) return;
-    try {
-      await fetch("https://vaexhwpzgtihqfnxiylp.supabase.co/rest/v1/foundher_waitlist", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "apikey": import.meta.env.VITE_SUPABASE_ANON_KEY || "",
-          "Authorization": `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY || ""}`,
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify({ email: email.trim(), created_at: new Date().toISOString() })
-      });
-      setSubmitted(true);
-    } catch {
-      setSubmitted(true);
-    }
-  };
-
-  return (
-    <section id="waitlist" style={{ background: C.cream, padding: "80px 24px", fontFamily: font.body, textAlign: "center" }}>
-      <div style={{ maxWidth: 560, margin: "0 auto" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>
-          GET IN THE LOOP
-        </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 40px)", color: C.espresso, marginBottom: 16, lineHeight: 1.2 }}>
-          Follow the founders who are building right now.
-        </h2>
-        <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.7, marginBottom: 40 }}>
-          Women building businesses in the age of AI — their journeys, their breakthroughs, their real talk. Subscribe for a front row seat.
-        </p>
-        {submitted ? (
-          <p style={{ color: C.coral, fontWeight: 600, fontSize: 17 }}>You're in. We'll be in touch. 🖤</p>
-        ) : (
-          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-            <input
-              type="email"
-              placeholder="your@email.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              style={{ flex: 1, minWidth: 240, padding: "14px 20px", borderRadius: 0, border: `1px solid ${C.sand}`, background: "#FFFFFF", color: C.espresso, fontSize: 15, fontFamily: font.body, outline: "none" }}
-            />
-            <button
-              onClick={handleSubmit}
-              style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}
-            >
-              Count me in
-            </button>
-          </div>
-        )}
-      </div>
-    </section>
-  );
-}
 
 // ─── FOOTER ───────────────────────────────────────────────────────────────────
 
@@ -681,8 +624,6 @@ export default function HomePage() {
         <FoundHersClubTiers />
         <Divider />
         <LifestyleImage />
-        <Divider />
-        <Waitlist />
       </main>
       <Footer />
     </div>
