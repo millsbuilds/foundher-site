@@ -18,6 +18,8 @@ const font = {
   body: "'Plus Jakarta Sans', sans-serif",
 };
 
+const Divider = () => <hr style={{ border: "none", borderTop: `1px solid ${C.sand}`, margin: 0 }} />;
+
 // ─── NAV ──────────────────────────────────────────────────────────────────────
 
 function Nav() {
@@ -156,22 +158,18 @@ function Hero() {
             <span style={{ width: 1, height: 20, background: C.sand, display: "inline-block" }} />
             <span style={{ fontFamily: font.display, fontSize: 13, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: C.espresso }}>GROW.</span>
           </div>
-
           <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,4vw,54px)", color: C.espresso, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
             The world is about to see what we can do.
           </h1>
-
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.taupe, lineHeight: 1.75, maxWidth: 420, marginBottom: 36 }}>
             AI just untied our hands. No venture capital. No team. No office lease. No permission. For the first time, women who build have every tool they need — and each other.
           </p>
-
           <button
             onClick={() => scrollTo("foundhers-club")}
             style={{ width: "100%", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}
           >
             Join the FoundHers Club →
           </button>
-
           <p style={{ fontFamily: font.body, fontSize: 12, color: C.taupe, letterSpacing: "0.05em", marginTop: 24 }}>
             ⚡ Opens September 8th  ·  Founding Member spots are limited
           </p>
@@ -198,15 +196,12 @@ function Hero() {
             <span style={{ width: 1, height: 20, background: C.sand, display: "inline-block" }} />
             <span style={{ fontFamily: font.display, fontSize: 13, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: C.espresso }}>GROW.</span>
           </div>
-
           <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,4vw,54px)", color: C.espresso, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
             The world is about to see what we can do.
           </h1>
-
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.taupe, lineHeight: 1.75, maxWidth: 420, marginBottom: 36 }}>
             AI just untied our hands. No venture capital. No team. No office lease. No permission. For the first time, women who build have every tool they need — and each other.
           </p>
-
           <div style={{ display: "flex", gap: 12 }}>
             <button
               onClick={() => scrollTo("foundhers-club")}
@@ -221,7 +216,6 @@ function Hero() {
               How It Works
             </button>
           </div>
-
           <p style={{ fontFamily: font.body, fontSize: 12, color: C.taupe, letterSpacing: "0.05em", marginTop: 24 }}>
             ⚡ Opens September 8th  ·  Founding Member spots are limited
           </p>
@@ -285,25 +279,6 @@ function Purpose() {
   );
 }
 
-// ─── LIFESTYLE IMAGE ──────────────────────────────────────────────────────────
-
-function LifestyleImage() {
-  return (
-    <section style={{ background: C.bg, padding: "0 24px" }}>
-      <div style={{ maxWidth: 860, margin: "0 auto" }}>
-        <img
-          src="/foundher-lifestyle.jpg"
-          alt="Women wearing FoundHer AI gear"
-          style={{ width: "100%", height: "auto", display: "block" }}
-        />
-        <p style={{ fontFamily: font.body, fontSize: 13, color: C.taupe, letterSpacing: "0.1em", textTransform: "uppercase", textAlign: "center", marginTop: 24 }}>
-          WOMEN BUILDING IN THE AGE OF AI
-        </p>
-      </div>
-    </section>
-  );
-}
-
 // ─── FOUNDHERS CLUB ────────────────────────────────────────────────────────────
 // NOTE: Run in Supabase SQL editor:
 // alter table foundher_club_waitlist enable row level security;
@@ -326,9 +301,19 @@ function FoundHersClub() {
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,5vw,56px)", color: C.espresso, lineHeight: 1.1, textAlign: "center", marginBottom: 16 }}>
           Your people are assembling.
         </h2>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, textAlign: "center", maxWidth: 560, margin: "0 auto 48px", lineHeight: 1.7 }}>
-          The FoundHers Club is an online community for women building businesses with AI. Co-working rooms. Founder stories. A members-only podcast. And the people who get it.
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, textAlign: "center", maxWidth: 620, margin: "0 auto 48px", lineHeight: 1.7 }}>
+          The FoundHers Club is where women who build businesses come to stay in the game. Monthly merch drops. A members-only podcast. Virtual co-working rooms. Our annual FoundHers Summit. And a community of women who actually get it.
         </p>
+
+        <ul style={{ listStyle: "none", padding: 0, margin: "0 auto 48px", maxWidth: 500, fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 2.2, textAlign: "left", display: "inline-block" }}>
+          <li>⚡ Monthly tee & merch drops — shipped to you</li>
+          <li>⚡ Members-only founder podcast — weekly</li>
+          <li>⚡ Virtual co-working rooms — show up and build</li>
+          <li>⚡ Annual FoundHers Summit — early access & discounts</li>
+          <li>⚡ Community of women AI founders</li>
+          <li>⚡ AI tools & agents — built for members</li>
+        </ul>
+
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.gold, textAlign: "center", marginBottom: 56 }}>
           Opens September 8th
         </p>
@@ -351,12 +336,13 @@ function FoundHersClub() {
               You've shown up through the fear, the debt, and the 3am doubt. The $38 is your founding badge — and the hat that says you were here first. Then $29/mo to stay in the club.
             </p>
             <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
-              <li>⚡ FoundHers Club hat — shipped to your door</li>
+              <li>⚡ FoundHers Club hat — wear it like the badge it is</li>
               <li>⚡ Founding Member status — locked in forever</li>
               <li>⚡ Community access September 8th</li>
-              <li>⚡ Virtual co-working rooms</li>
+              <li>⚡ Monthly tee & merch drops</li>
               <li>⚡ Members-only founder podcast</li>
-              <li>⚡ First access to Agent Series</li>
+              <li>⚡ Annual Summit early access</li>
+              <li>⚡ AI agents — first access</li>
               <li>⚡ Your seat before anyone else</li>
             </ul>
             <button
@@ -385,11 +371,12 @@ function FoundHersClub() {
               Full access to the FoundHers Club community, co-working rooms, and members-only podcast. Join after launch.
             </p>
             <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
-              <li>⚡ Online community access</li>
-              <li>⚡ Virtual co-working rooms</li>
+              <li>⚡ Full community access</li>
+              <li>⚡ Monthly tee & merch drops</li>
               <li>⚡ Members-only founder podcast</li>
-              <li>⚡ Monthly founder stories</li>
-              <li>⚡ Summit early access & discounts</li>
+              <li>⚡ Virtual co-working rooms</li>
+              <li>⚡ Annual Summit early access & discounts</li>
+              <li>⚡ AI tools built for founders</li>
             </ul>
             <a
               href="#foundhers-club"
@@ -404,33 +391,54 @@ function FoundHersClub() {
   );
 }
 
-// ─── LIZ BRYANT / WAITLIST ───────────────────────────────────────────────────
+// ─── AI AGENTS ────────────────────────────────────────────────────────────────
+
+function AIAgents() {
+  return (
+    <section style={{ background: C.espresso, padding: "96px 24px", fontFamily: font.body }}>
+      <div style={{ maxWidth: 900, margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: 64 }}>
+          <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
+            MEMBER TOOLS
+          </p>
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 52px)", color: "#FFFCF7", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
+            Run a million-dollar business.<br />Without a single employee.
+          </h2>
+          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: 580, margin: "0 auto" }}>
+            FoundHers Club members get exclusive access to AI agents built specifically for women-owned businesses. These aren't generic tools — they're built for the way you actually work.
+          </p>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 2 }}>
+          {[
+            { icon: "⚡", title: "The Launch Agent", body: "Takes your idea from concept to live product. Competitor research, pricing strategy, launch copy — done." },
+            { icon: "📣", title: "The Marketing Agent", body: "Writes your emails, social posts, and ad copy. Knows your brand voice. Runs while you sleep." },
+            { icon: "💰", title: "The Revenue Agent", body: "Identifies your highest-leverage revenue moves. Upsell strategies, pricing optimization, retention plays." },
+            { icon: "🛠", title: "The Operations Agent", body: "Your virtual COO. Manages workflows, vendor comms, and the 100 things that eat your day." },
+            { icon: "📊", title: "The Analytics Agent", body: "Turns your numbers into decisions. Know what's working, what's not, and exactly what to do next." },
+            { icon: "🎙", title: "The Content Agent", body: "Podcasts, blogs, newsletters — a full content engine that sounds like you and never runs out of ideas." },
+          ].map((agent) => (
+            <div key={agent.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", padding: "32px 28px" }}>
+              <div style={{ fontSize: 32, marginBottom: 16 }}>{agent.icon}</div>
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: "#FFFCF7", marginBottom: 12 }}>{agent.title}</h3>
+              <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", lineHeight: 1.7 }}>{agent.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <p style={{ textAlign: "center", marginTop: 48, fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.gold }}>
+          Available exclusively to FoundHers Club members. First access to Founding Members.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+// ─── LIZ BRYANT SPOTLIGHT ────────────────────────────────────────────────────
 
 function LizSpotlight() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async () => {
-    if (!email.trim()) return;
-    try {
-      await fetch("https://vaexhwpzgtihqfnxiylp.supabase.co/rest/v1/foundher_waitlist", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "apikey": import.meta.env.VITE_SUPABASE_ANON_KEY || "",
-          "Authorization": `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY || ""}`,
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify({ email: email.trim(), created_at: new Date().toISOString() })
-      });
-      setSubmitted(true);
-    } catch {
-      setSubmitted(true);
-    }
-  };
-
   return (
-    <section id="waitlist" style={{ background: C.plum, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
+    <section style={{ background: C.plum, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 760, margin: "0 auto" }}>
         <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>
           FOUNDER SPOTLIGHT
@@ -454,13 +462,105 @@ function LizSpotlight() {
             Follow her journey → @localsmarkco
           </a>
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <p style={{ fontFamily: font.body, fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: 560, margin: "40px auto 40px" }}>
+// ─── MILLS ABOUT ─────────────────────────────────────────────────────────────
+
+function MillsAbout() {
+  return (
+    <section style={{ background: C.cream, padding: "96px 24px", fontFamily: font.body }}>
+      <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", alignItems: "center", gap: 72, flexWrap: "wrap" }}>
+        <div style={{ flex: "0 0 380px", maxWidth: "100%" }}>
+          <img
+            src="/images/mills-boat.jpg"
+            alt="Mills Gardner, Founder of FoundHer AI"
+            style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
+          />
+        </div>
+        <div style={{ flex: 1, minWidth: 280 }}>
+          <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
+            FROM THE FOUNDER
+          </p>
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.2, marginBottom: 24, letterSpacing: "-0.02em" }}>
+            You have the dream.<br />We've got the roadmap.
+          </h2>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
+            I've been building businesses for decades — long before anyone was talking about AI, venture capital, or the gender gap in tech. I watched brilliant women get passed over, underfunded, and underestimated. I was one of them.
+          </p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
+            Then AI arrived. And everything changed.
+          </p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
+            For the first time in history, a woman with a dream and a laptop can build a multi-million dollar business — without a VC check, without a team, without asking permission. The tools are here. The playing field just leveled. And it gives me more joy than I can say to be building a place where women come to claim what was always theirs.
+          </p>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.espresso, lineHeight: 1.6, marginBottom: 32 }}>
+            "It's about time women were rewarded for being the natural builders we've always been."
+          </p>
+          <p style={{ fontSize: 14, color: C.gold, fontWeight: 600, letterSpacing: "0.05em" }}>
+            — Mills Gardner, Founder & CEO, FoundHer AI, PBC
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── LIFESTYLE IMAGE ──────────────────────────────────────────────────────────
+
+function LifestyleImage() {
+  return (
+    <section style={{ background: C.bg, padding: 0 }}>
+      <img
+        src="/foundher-lifestyle.jpg"
+        alt="Women wearing FoundHer AI gear"
+        style={{ width: "100%", height: "auto", display: "block" }}
+      />
+    </section>
+  );
+}
+
+// ─── WAITLIST ─────────────────────────────────────────────────────────────────
+
+function Waitlist() {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async () => {
+    if (!email.trim()) return;
+    try {
+      await fetch("https://vaexhwpzgtihqfnxiylp.supabase.co/rest/v1/foundher_waitlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "apikey": import.meta.env.VITE_SUPABASE_ANON_KEY || "",
+          "Authorization": `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY || ""}`,
+          "Prefer": "return=minimal"
+        },
+        body: JSON.stringify({ email: email.trim(), created_at: new Date().toISOString() })
+      });
+      setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    }
+  };
+
+  return (
+    <section id="waitlist" style={{ background: C.cream, padding: "80px 24px", fontFamily: font.body, textAlign: "center" }}>
+      <div style={{ maxWidth: 560, margin: "0 auto" }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>
+          GET IN THE LOOP
+        </p>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 40px)", color: C.espresso, marginBottom: 16, lineHeight: 1.2 }}>
+          Follow the founders who are building right now.
+        </h2>
+        <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.7, marginBottom: 40 }}>
           Women building businesses in the age of AI — their journeys, their breakthroughs, their real talk. Subscribe for a front row seat.
         </p>
-
         {submitted ? (
-          <p style={{ color: C.gold, fontWeight: 600, fontSize: 17 }}>You're in. We'll be in touch. 🖤</p>
+          <p style={{ color: C.coral, fontWeight: 600, fontSize: 17 }}>You're in. We'll be in touch. 🖤</p>
         ) : (
           <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
             <input
@@ -468,7 +568,7 @@ function LizSpotlight() {
               placeholder="your@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              style={{ flex: 1, minWidth: 240, padding: "14px 20px", borderRadius: 0, border: "1px solid rgba(255,255,255,0.2)", background: "rgba(255,255,255,0.08)", color: "#FFFCF7", fontSize: 15, fontFamily: font.body, outline: "none" }}
+              style={{ flex: 1, minWidth: 240, padding: "14px 20px", borderRadius: 0, border: `1px solid ${C.sand}`, background: "#FFFFFF", color: C.espresso, fontSize: 15, fontFamily: font.body, outline: "none" }}
             />
             <button
               onClick={handleSubmit}
@@ -525,11 +625,22 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
+        <Divider />
         <ThreePillars />
+        <Divider />
         <Purpose />
-        <LifestyleImage />
+        <Divider />
         <FoundHersClub />
+        <Divider />
+        <AIAgents />
+        <Divider />
         <LizSpotlight />
+        <Divider />
+        <MillsAbout />
+        <Divider />
+        <LifestyleImage />
+        <Divider />
+        <Waitlist />
       </main>
       <Footer />
     </div>
