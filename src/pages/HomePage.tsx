@@ -85,7 +85,6 @@ function Nav() {
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
             <button onClick={() => scrollTo("ventures")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 15, fontWeight: 500, fontFamily: "Inter, sans-serif" }}>Our Ventures</button>
             <button onClick={() => scrollTo("resources")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 15, fontWeight: 500, fontFamily: "Inter, sans-serif" }}>Resources</button>
-            <a href="https://merch.foundherai.ai" target="_blank" rel="noopener noreferrer" style={{ color: C.ink, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Merch</a>
             <a href="mailto:hello@foundherai.ai" style={{ color: C.ink, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <button
               onClick={() => scrollTo("waitlist")}
@@ -111,7 +110,6 @@ function Nav() {
         >
           <button onClick={() => scrollTo("ventures")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 16, fontWeight: 500, fontFamily: "Inter, sans-serif", textAlign: "left", padding: "4px 0" }}>Our Ventures</button>
           <button onClick={() => scrollTo("resources")} style={{ background: "none", border: "none", cursor: "pointer", color: C.ink, fontSize: 16, fontWeight: 500, fontFamily: "Inter, sans-serif", textAlign: "left", padding: "4px 0" }}>Resources</button>
-          <a href="https://merch.foundherai.ai" target="_blank" rel="noopener noreferrer" style={{ color: C.ink, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Merch</a>
           <a href="mailto:hello@foundherai.ai" style={{ color: C.ink, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <button
             onClick={() => scrollTo("waitlist")}
@@ -153,7 +151,7 @@ function Hero() {
             marginBottom: 24,
           }}
         >
-          FOR WOMEN WHO BUILD
+          FOR WOMEN WHO BUILD BUSINESSES
         </p>
 
         <h1
@@ -177,7 +175,7 @@ function Hero() {
             marginBottom: 40,
           }}
         >
-          FoundHer AI is what that looks like.
+          The best is being built right now.
         </p>
 
         <button
@@ -196,6 +194,87 @@ function Hero() {
         >
           See What We're Building →
         </button>
+      </div>
+    </section>
+  );
+}
+
+// ─── BUILT BETTER ────────────────────────────────────────────────────────────
+
+function BuiltBetter() {
+  return (
+    <section
+      style={{
+        background: "#000000",
+        padding: "96px 24px",
+        fontFamily: "Inter, sans-serif",
+      }}
+    >
+      <div style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
+        <p
+          style={{
+            color: C.gold,
+            fontSize: 12,
+            fontWeight: 700,
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            marginBottom: 32,
+          }}
+        >
+          BUILT BETTER. BY HER.
+        </p>
+
+        <p
+          style={{
+            color: C.white,
+            fontSize: "clamp(17px, 2.5vw, 21px)",
+            lineHeight: 1.85,
+            marginBottom: 20,
+          }}
+        >
+          Women have been pivoting, adapting, and thinking their way through impossible problems since the beginning of time. Ask any independent woman, wife, mother, or daughter.
+        </p>
+
+        <p
+          style={{
+            color: C.white,
+            fontSize: "clamp(17px, 2.5vw, 21px)",
+            lineHeight: 1.85,
+            marginBottom: 20,
+          }}
+        >
+          Now she has better tools — and there's nothing to hold her back anymore.
+        </p>
+
+        <p
+          style={{
+            color: C.white,
+            fontSize: "clamp(17px, 2.5vw, 21px)",
+            lineHeight: 1.85,
+            marginBottom: 48,
+          }}
+        >
+          FoundHer Box is coming. For the woman who builds businesses, not excuses.
+        </p>
+
+        <a
+          href="#waitlist"
+          style={{
+            display: "inline-block",
+            background: C.gold,
+            color: C.ink,
+            border: "none",
+            borderRadius: 6,
+            padding: "16px 32px",
+            fontSize: 16,
+            fontWeight: 600,
+            cursor: "pointer",
+            fontFamily: "Inter, sans-serif",
+            textDecoration: "none",
+          }}
+        >
+          I'm in — notify me first
+        </a>
       </div>
     </section>
   );
@@ -519,6 +598,7 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
+        <BuiltBetter />
         <Vision />
         <Resources />
         <Founder />
