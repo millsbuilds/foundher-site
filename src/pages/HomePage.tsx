@@ -213,8 +213,8 @@ function BuiltBetter() {
         <p style={{ color: "#7A7569", fontSize: "clamp(17px, 2vw, 20px)", lineHeight: 1.7, marginBottom: 48 }}>
           Women are building the next era of business — with AI, without permission, and without apology. You belong here.
         </p>
-        <a href="#box" style={{ display: "inline-block", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "16px 36px", fontSize: 16, fontWeight: 700, textDecoration: "none", letterSpacing: "0.02em" }}>
-          I'm in — show me the box
+        <a href="#foundher-club" style={{ display: "inline-block", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "16px 36px", fontSize: 16, fontWeight: 700, textDecoration: "none", letterSpacing: "0.02em" }}>
+          I want in — show me the Club
         </a>
       </div>
     </section>
@@ -339,6 +339,13 @@ function FoundHerClub() {
   return (
     <section id="foundher-club" style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
       <div style={{ maxWidth: 860, margin: "0 auto", textAlign: "center" }}>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: 40 }}>
+          <img
+            src="/foundher-club-badge.png"
+            alt="FoundHers Club Badge"
+            style={{ width: 180, height: "auto", display: "block" }}
+          />
+        </div>
         <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 24 }}>
           THE FOUNDHER CLUB — FIRST CLASS & CLUB MEMBERSHIP
         </p>
