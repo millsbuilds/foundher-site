@@ -203,89 +203,86 @@ function Hero() {
 
 function BuiltBetter() {
   return (
-    <section
-      style={{
-        background: "#000000",
-        padding: "96px 24px",
-        fontFamily: "Inter, sans-serif",
-      }}
-    >
-      <div style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
-        <p
-          style={{
-            color: C.gold,
-            fontSize: 12,
-            fontWeight: 700,
-            letterSpacing: "0.12em",
-            textTransform: "uppercase",
-            marginBottom: 32,
-          }}
-        >
-          BUILT BETTER. BY HER.
+    <section style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
+      <div style={{ maxWidth: 680, margin: "0 auto", textAlign: "center" }}>
+        <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 32 }}>
+          WOMEN BUILDING IN THE AGE OF AI
         </p>
-
-        <p
-          style={{
-            color: C.white,
-            fontSize: "clamp(17px, 2.5vw, 21px)",
-            lineHeight: 1.85,
-            marginBottom: 20,
-          }}
-        >
-          Women have been pivoting, adapting, and thinking their way through impossible problems since the beginning of time. Ask any independent woman, wife, mother, or daughter.
+        <h2 style={{ color: "#FDFCF8", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em" }}>
+          You're not behind.<br />You're early.
+        </h2>
+        <p style={{ color: "#7A7569", fontSize: "clamp(17px, 2vw, 20px)", lineHeight: 1.7, marginBottom: 48 }}>
+          Women are building the next era of business — with AI, without permission, and without apology. You belong here.
         </p>
-
-        <p
-          style={{
-            color: C.white,
-            fontSize: "clamp(17px, 2.5vw, 21px)",
-            lineHeight: 1.85,
-            marginBottom: 20,
-          }}
-        >
-          Whether you built a company, a community, or an audience of millions — if you built it, you belong here.
-        </p>
-
-        <p
-          style={{
-            color: C.white,
-            fontSize: "clamp(17px, 2.5vw, 21px)",
-            lineHeight: 1.85,
-            marginBottom: 20,
-          }}
-        >
-          Now she has better tools — and there's nothing to hold her back anymore.
-        </p>
-
-        <p
-          style={{
-            color: C.white,
-            fontSize: "clamp(17px, 2.5vw, 21px)",
-            lineHeight: 1.85,
-            marginBottom: 48,
-          }}
-        >
-          FoundHer Box is coming. For the woman who builds businesses, not excuses.
-        </p>
-
-        <a
-          href="#waitlist"
-          style={{
-            display: "inline-block",
-            background: C.gold,
-            color: C.ink,
-            border: "none",
-            borderRadius: 6,
-            padding: "16px 32px",
-            fontSize: 16,
-            fontWeight: 600,
-            cursor: "pointer",
-            fontFamily: "Inter, sans-serif",
-            textDecoration: "none",
-          }}
-        >
-          I'm in — notify me first
+        <a href="#box" style={{ display: "inline-block", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "16px 36px", fontSize: 16, fontWeight: 700, textDecoration: "none", letterSpacing: "0.02em" }}>
+          I'm in — show me the box
         </a>
+      </div>
+    </section>
+  );
+}
+
+// ─── FOUNDHER BOX ─────────────────────────────────────────────────────────────
+
+function FoundHerBox() {
+  return (
+    <section id="box" style={{ background: "#0A0A0A", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
+      <div style={{ maxWidth: 960, margin: "0 auto" }}>
+        <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, textAlign: "center" }}>
+          FOUNDHER BOX
+        </p>
+        <h2 style={{ color: "#FDFCF8", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 800, lineHeight: 1.1, marginBottom: 16, textAlign: "center", letterSpacing: "-0.02em" }}>
+          Built better. By her.
+        </h2>
+        <p style={{ color: "#7A7569", fontSize: 17, textAlign: "center", marginBottom: 72, lineHeight: 1.6 }}>
+          First box ships August. Founding member pricing locked in today.
+        </p>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
+
+          {/* 01 - Tee Drop */}
+          <div style={{ background: "#111111", border: "1px solid #222222", borderRadius: 12, padding: "48px 36px" }}>
+            <p style={{ color: "#B8973E", fontSize: 48, fontWeight: 800, marginBottom: 8, lineHeight: 1 }}>01</p>
+            <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>The Tee Drop</h3>
+            <p style={{ color: "#7A7569", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
+              A monthly limited-edition founder tee. Bold sayings. Black or brown. Ships in a printed poly bag. The uniform for women who build.
+            </p>
+            <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$29<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
+            <a href="#stripe-tee" style={{ display: "block", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}>
+              Order Now — Ships August
+            </a>
+          </div>
+
+          {/* 02 - FoundHer Box */}
+          <div style={{ background: "#111111", border: "2px solid #B8973E", borderRadius: 12, padding: "48px 36px", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: "#B8973E", color: "#000000", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 20 }}>
+              MOST POPULAR
+            </div>
+            <p style={{ color: "#B8973E", fontSize: 48, fontWeight: 800, marginBottom: 8, lineHeight: 1 }}>02</p>
+            <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>The FoundHer Box</h3>
+            <p style={{ color: "#7A7569", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
+              Quarterly box with a founder tee, a 30-day AI agent, prompt cards, self-care, and a partner founder product. Everything a builder actually needs.
+            </p>
+            <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$49<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/quarter</span></p>
+            <a href="#stripe-box" style={{ display: "block", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}>
+              Order Now — Ships August
+            </a>
+          </div>
+
+          {/* 03 - Agent */}
+          <div style={{ background: "#111111", border: "1px solid #222222", borderRadius: 12, padding: "48px 36px" }}>
+            <p style={{ color: "#B8973E", fontSize: 48, fontWeight: 800, marginBottom: 8, lineHeight: 1 }}>03</p>
+            <h3 style={{ color: "#FDFCF8", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>The Agent</h3>
+            <p style={{ color: "#7A7569", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
+              A dedicated AI agent built for your business. Not a chatbot. A builder tool. Priced for founders, not VCs. Waitlist opening soon.
+            </p>
+            <p style={{ color: "#FDFCF8", fontSize: 32, fontWeight: 800, marginBottom: 24 }}>$47<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
+            <a href="#waitlist" style={{ display: "block", textAlign: "center", background: "transparent", color: "#B8973E", border: "1px solid #B8973E", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}>
+              Join the Waitlist
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
   );
@@ -614,6 +611,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <BuiltBetter />
+        <FoundHerBox />
         <Vision />
         <Resources />
         <Founder />
