@@ -279,7 +279,7 @@ function FoundHersClub() {
           />
         </div>
         <p style={{ color: C.gold, fontSize: 12, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 24 }}>
-          THE FOUNDHERS CLUB — FIRST CLASS & CLUB MEMBERSHIP
+          THE FOUNDHERS CLUB — FOUNDING MEMBER & CLUB MEMBERSHIP
         </p>
         <h2 style={{ color: C.espresso, fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 700, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em", fontFamily: font.display }}>
           Your people are assembling.
@@ -303,14 +303,15 @@ function FoundHersClub() {
 
           <div style={{ background: C.cream, border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 0, whiteSpace: "nowrap" }}>
-              FOUNDING OFFER
+              FOUNDING MEMBER — ORIGINAL CLASS
             </div>
-            <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>FIRST CLASS MEMBER</p>
+            <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>FOUNDING MEMBER</p>
             <p style={{ color: C.espresso, fontSize: 36, fontWeight: 700, marginBottom: 8, fontFamily: font.display }}>$38<span style={{ fontSize: 16, fontWeight: 400, color: C.taupe, fontFamily: font.body }}> one-time</span></p>
-            <p style={{ color: C.gold, fontSize: 14, fontWeight: 600, marginBottom: 24, fontStyle: "italic", fontFamily: font.display }}>Includes your FoundHers Club hat — shipped free.</p>
+            <p style={{ color: C.espresso, fontSize: 22, fontWeight: 700, marginBottom: 8, fontFamily: font.display }}>For the woman who builds anyway.</p>
+            <p style={{ color: C.taupe, fontSize: 15, fontWeight: 400, fontStyle: "italic", marginBottom: 24, fontFamily: font.body }}>You've shown up through the fear, the debt, and the 3am doubt. This is your seat at the table — and the hat that says you earned it.</p>
             <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", color: C.taupe, fontSize: 15, lineHeight: 2 }}>
-              <li>✦ FoundHers Club hat shipped to your door</li>
-              <li>✦ First Class status — locked in forever</li>
+              <li>✦ FoundHers Club hat — wear it like the badge it is</li>
+              <li>✦ Founding Member status — locked in forever</li>
               <li>✦ Community access September 8th</li>
               <li>✦ Virtual co-working rooms</li>
               <li>✦ First access to tee drops</li>
@@ -324,7 +325,7 @@ function FoundHersClub() {
               }}
               style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", borderRadius: 0, padding: "14px 24px", fontSize: 15, fontWeight: 600, border: "none", cursor: "pointer", fontFamily: font.body }}
             >
-              I'm First Class — $38
+              I'm a Founding Member — $38
             </button>
           </div>
 
