@@ -437,31 +437,56 @@ function AIAgents() {
 // ─── LIZ BRYANT SPOTLIGHT ────────────────────────────────────────────────────
 
 function LizSpotlight() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   return (
-    <section style={{ background: C.plum, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
-      <div style={{ maxWidth: 760, margin: "0 auto" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>
-          FOUNDER SPOTLIGHT
-        </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(28px,3vw,40px)", color: "#FFFFFF", marginBottom: 48 }}>
-          Follow the founders building right now.
-        </h2>
+    <section style={{ background: C.plum, padding: "96px 24px", fontFamily: font.body }}>
+      <div style={{ maxWidth: 860, margin: "0 auto", display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: 56, flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
 
-        <video
-          controls
-          playsInline
-          style={{ width: "100%", maxWidth: 680, display: "block", margin: "0 auto 32px", borderRadius: 0, border: "1px solid rgba(192,139,42,0.25)" }}
-        >
-          <source src="/liz-bryant.mp4" type="video/mp4" />
-        </video>
+        {/* LEFT: Video */}
+        <div style={{ flex: isMobile ? "none" : "0 0 420px", width: isMobile ? "100%" : undefined, maxWidth: "100%" }}>
+          <video
+            controls
+            playsInline
+            style={{ width: "100%", display: "block", borderRadius: 0, border: "1px solid rgba(192,139,42,0.25)" }}
+          >
+            <source src="/liz-bryant.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-        <div style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 0, padding: "24px 32px", maxWidth: 480, margin: "0 auto", textAlign: "center" }}>
-          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#FFFFFF", marginBottom: 4 }}>Liz Bryant</h3>
-          <p style={{ fontFamily: font.body, fontSize: 12, fontWeight: 600, letterSpacing: "0.12em", color: C.gold, textTransform: "uppercase", marginBottom: 12 }}>FOUNDER, LOCALS MARK</p>
-          <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ fontFamily: font.body, fontSize: 14, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
+        {/* RIGHT: Byline + copy */}
+        <div style={{ flex: 1, minWidth: 260 }}>
+          <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
+            FOUNDER SPOTLIGHT
+          </p>
+          <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(26px, 3vw, 38px)", color: "#FFFCF7", lineHeight: 1.3, marginBottom: 24 }}>
+            Follow the founders building right now.
+          </h2>
+          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#FFFCF7", marginBottom: 4 }}>Liz Bryant</h3>
+          <p style={{ fontFamily: font.body, fontSize: 12, fontWeight: 600, letterSpacing: "0.12em", color: C.gold, textTransform: "uppercase", marginBottom: 16 }}>
+            Founder, Locals Mark
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 15, color: "rgba(255,255,255,0.65)", lineHeight: 1.75, marginBottom: 24 }}>
+            Women building businesses in the age of AI — their journeys, their breakthroughs, their real talk. A front row seat to what it actually looks like.
+          </p>
+          <a
+            href="https://www.instagram.com/localsmarkco"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ fontFamily: font.body, fontSize: 14, color: C.gold, textDecoration: "none", fontWeight: 600, letterSpacing: "0.05em" }}
+          >
             Follow her journey → @localsmarkco
           </a>
         </div>
+
       </div>
     </section>
   );
