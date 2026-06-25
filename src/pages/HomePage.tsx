@@ -461,8 +461,8 @@ export default function HomePage() {
       <main>
         <Hero />
         <BuiltBetter />
-        <Purpose />
         <LifestyleImage />
+        <Purpose />
         <FoundHersClub />
         <Waitlist />
       </main>
