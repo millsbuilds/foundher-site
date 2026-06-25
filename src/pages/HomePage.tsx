@@ -140,86 +140,99 @@ function Hero() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
-  if (isMobile) {
-    return (
-      <section style={{ background: C.bg, fontFamily: font.body }}>
-        <img
-          src="/images/mills-hero.jpg"
-          alt="Mills Gardner — Built Better. By Her."
-          style={{ width: "100%", height: 400, objectFit: "cover", objectPosition: "center top", display: "block" }}
-        />
-        <div style={{ padding: "48px 24px 64px" }}>
-          <div style={{ display: "flex", gap: 24, marginBottom: 32, alignItems: "center" }}>
-            <span style={{ fontFamily: font.display, fontSize: 13, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral }}>BUILD.</span>
-            <span style={{ width: 1, height: 20, background: C.sand, display: "inline-block" }} />
-            <span style={{ fontFamily: font.display, fontSize: 13, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: C.gold }}>LAUNCH.</span>
-            <span style={{ width: 1, height: 20, background: C.sand, display: "inline-block" }} />
-            <span style={{ fontFamily: font.display, fontSize: 13, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: C.espresso }}>GROW.</span>
-          </div>
-          <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,4vw,54px)", color: C.espresso, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
-            The world is about to see what we can do.
-          </h1>
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.taupe, lineHeight: 1.75, maxWidth: 420, marginBottom: 36 }}>
-            AI just untied our hands. No venture capital. No team. No office lease. No permission. For the first time, women who build have every tool they need — and each other.
-          </p>
+  return (
+    <section style={{ position: "relative", width: "100%", minHeight: "100vh", display: "flex", alignItems: "center" }}>
+      <img
+        src="/images/mills-hero.jpg"
+        alt="Mills Gardner, Founder of FoundHer AI"
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: "center top",
+          display: "block",
+          zIndex: 0,
+        }}
+      />
+      <div style={{
+        position: "relative",
+        zIndex: 1,
+        background: "rgba(253, 250, 246, 0.95)",
+        padding: isMobile ? "40px 28px" : "56px 56px",
+        maxWidth: isMobile ? "90%" : 520,
+        margin: isMobile ? "80px auto 40px" : "0 0 0 7%",
+      }}>
+        <h1 style={{
+          fontFamily: font.display,
+          fontWeight: 700,
+          fontSize: isMobile ? 42 : 58,
+          lineHeight: 1.05,
+          letterSpacing: "-0.02em",
+          marginBottom: 8,
+          color: C.espresso,
+        }}>
+          <span style={{ color: C.coral, display: "block" }}>Build.</span>
+          <span style={{ color: C.gold, display: "block" }}>Launch.</span>
+          <span style={{ color: C.espresso, display: "block" }}>Grow.</span>
+        </h1>
+        <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
+        <p style={{
+          fontFamily: font.body,
+          fontSize: isMobile ? 16 : 17,
+          color: C.taupe,
+          lineHeight: 1.75,
+          marginBottom: 32,
+          maxWidth: 380,
+        }}>
+          The FoundHers Club is where women who build businesses with AI come to find their people, their tools, and their edge.
+        </p>
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
           <button
-            onClick={() => scrollTo("foundhers-club")}
-            style={{ width: "100%", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}
+            onClick={() => document.getElementById("foundhers-club")?.scrollIntoView({ behavior: "smooth" })}
+            style={{
+              background: C.coral,
+              color: "#FFFFFF",
+              border: "none",
+              borderRadius: 0,
+              padding: "14px 28px",
+              fontSize: 15,
+              fontWeight: 600,
+              cursor: "pointer",
+              fontFamily: font.body,
+              whiteSpace: "nowrap",
+            }}
           >
             Join the FoundHers Club →
           </button>
-          <p style={{ fontFamily: font.body, fontSize: 12, color: C.taupe, letterSpacing: "0.05em", marginTop: 24 }}>
-            ⚡ Opens September 8th  ·  Founding Member spots are limited
-          </p>
+          <button
+            onClick={() => document.getElementById("foundhers-club")?.scrollIntoView({ behavior: "smooth" })}
+            style={{
+              background: "transparent",
+              color: C.espresso,
+              border: `1.5px solid ${C.espresso}`,
+              borderRadius: 0,
+              padding: "14px 24px",
+              fontSize: 15,
+              fontWeight: 500,
+              cursor: "pointer",
+              fontFamily: font.body,
+              whiteSpace: "nowrap",
+            }}
+          >
+            How It Works
+          </button>
         </div>
-      </section>
-    );
-  }
-
-  return (
-    <section style={{ display: "flex", minHeight: "100vh", fontFamily: font.body }}>
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <img
-          src="/images/mills-hero.jpg"
-          alt="Mills Gardner — Built Better. By Her."
-          style={{ width: "100%", height: "100vh", objectFit: "cover", objectPosition: "center top", display: "block" }}
-        />
-      </div>
-      <div style={{ flex: 1, background: C.bg, display: "flex", alignItems: "center", padding: "120px 64px 80px 48px" }}>
-        <div>
-          <div style={{ display: "flex", gap: 24, marginBottom: 32, alignItems: "center" }}>
-            <span style={{ fontFamily: font.display, fontSize: 13, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral }}>BUILD.</span>
-            <span style={{ width: 1, height: 20, background: C.sand, display: "inline-block" }} />
-            <span style={{ fontFamily: font.display, fontSize: 13, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: C.gold }}>LAUNCH.</span>
-            <span style={{ width: 1, height: 20, background: C.sand, display: "inline-block" }} />
-            <span style={{ fontFamily: font.display, fontSize: 13, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: C.espresso }}>GROW.</span>
-          </div>
-          <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,4vw,54px)", color: C.espresso, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
-            The world is about to see what we can do.
-          </h1>
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.taupe, lineHeight: 1.75, maxWidth: 420, marginBottom: 36 }}>
-            AI just untied our hands. No venture capital. No team. No office lease. No permission. For the first time, women who build have every tool they need — and each other.
-          </p>
-          <div style={{ display: "flex", gap: 12 }}>
-            <button
-              onClick={() => scrollTo("foundhers-club")}
-              style={{ background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}
-            >
-              Join the FoundHers Club →
-            </button>
-            <button
-              onClick={() => scrollTo("pillars")}
-              style={{ background: "transparent", color: C.espresso, fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: `1.5px solid ${C.espresso}`, borderRadius: 0, cursor: "pointer" }}
-            >
-              How It Works
-            </button>
-          </div>
-          <p style={{ fontFamily: font.body, fontSize: 12, color: C.taupe, letterSpacing: "0.05em", marginTop: 24 }}>
-            ⚡ Opens September 8th  ·  Founding Member spots are limited
-          </p>
-        </div>
+        <p style={{
+          fontFamily: font.body,
+          fontSize: 12,
+          color: C.taupe,
+          marginTop: 20,
+          letterSpacing: "0.03em",
+        }}>
+          ⚡ Opens September 8th · Founding Member spots are limited
+        </p>
       </div>
     </section>
   );
