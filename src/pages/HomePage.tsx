@@ -221,6 +221,23 @@ function BuiltBetter() {
   );
 }
 
+// ─── PURPOSE ─────────────────────────────────────────────────────────────────
+
+function Purpose() {
+  return (
+    <section style={{ background: "#F4F1EA", padding: "80px 24px", fontFamily: "Inter, sans-serif", textAlign: "center" }}>
+      <div style={{ maxWidth: 760, margin: "0 auto" }}>
+        <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 24 }}>
+          OUR PURPOSE
+        </p>
+        <h2 style={{ color: "#1C1A17", fontSize: "clamp(24px, 4vw, 38px)", fontWeight: 800, lineHeight: 1.3, letterSpacing: "-0.02em", margin: 0 }}>
+          FoundHer AI is the home base for women building businesses in the age of AI — the tools, the community, and the voice that says: she was always going to win.
+        </h2>
+      </div>
+    </section>
+  );
+}
+
 // ─── FOUNDHER BOX ─────────────────────────────────────────────────────────────
 
 function FoundHerBox() {
@@ -251,7 +268,7 @@ function FoundHerBox() {
               width: "100%",
               height: "100%",
               objectFit: "cover",
-              objectPosition: "center top",
+              objectPosition: "center 35%",
               display: "block"
             }}
           />
@@ -315,6 +332,114 @@ function FoundHerBox() {
             </a>
           </div>
 
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── FOUNDHER CLUB ────────────────────────────────────────────────────────────
+// NOTE: Run in Supabase SQL editor:
+// alter table foundher_club_waitlist enable row level security;
+// create policy "Allow public inserts" on foundher_club_waitlist for insert with check (true);
+
+function FoundHerClub() {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async () => {
+    if (!email.trim()) return;
+    try {
+      await fetch("https://vaexhwpzgtihqfnxiylp.supabase.co/rest/v1/foundher_club_waitlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "apikey": import.meta.env.VITE_SUPABASE_ANON_KEY || "",
+          "Authorization": `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY || ""}`,
+          "Prefer": "return=minimal"
+        },
+        body: JSON.stringify({ email: email.trim(), created_at: new Date().toISOString() })
+      });
+      setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    }
+  };
+
+  return (
+    <section style={{ background: "#000000", padding: "96px 24px", fontFamily: "Inter, sans-serif" }}>
+      <div style={{ maxWidth: 860, margin: "0 auto", textAlign: "center" }}>
+        <p style={{ color: "#B8973E", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 24 }}>
+          THE FOUNDHER CLUB — FOUNDING MEMBERSHIP
+        </p>
+        <h2 style={{ color: "#FDFCF8", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em" }}>
+          Your people are assembling.
+        </h2>
+        <p style={{ color: "#FDFCF8", fontSize: "clamp(18px, 2.5vw, 22px)", lineHeight: 1.7, marginBottom: 16, maxWidth: 640, margin: "0 auto 16px" }}>
+          The FoundHer Club opens September 8th — the day after Labor Day, when the kids are back in school and it's time to build.
+        </p>
+        <p style={{ color: "#7A7569", fontSize: "clamp(16px, 2vw, 19px)", lineHeight: 1.7, marginBottom: 16, maxWidth: 640, margin: "0 auto 16px" }}>
+          Including virtual co-working rooms — because the best work happens when you're surrounded by women who get it.
+        </p>
+        <p style={{ color: "#B8973E", fontSize: 16, fontWeight: 600, marginBottom: 56, fontStyle: "italic" }}>
+          Join before launch and lock in your founding member status. Free to join. Built for women who mean business.
+        </p>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24, marginBottom: 56 }}>
+
+          <div style={{ background: "#111111", border: "1px solid #333333", borderRadius: 12, padding: "40px 32px", textAlign: "left" }}>
+            <p style={{ color: "#B8973E", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>FOUNDING MEMBER</p>
+            <p style={{ color: "#FDFCF8", fontSize: 36, fontWeight: 800, marginBottom: 24 }}>Free</p>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", color: "#7A7569", fontSize: 15, lineHeight: 2 }}>
+              <li>✦ Community access</li>
+              <li>✦ Virtual co-working rooms</li>
+              <li>✦ Monthly newsletter</li>
+              <li>✦ First access to tee drops</li>
+              <li>✦ First access to Agent Series</li>
+              <li>✦ Your seat before anyone else</li>
+            </ul>
+            {submitted ? (
+              <p style={{ color: "#B8973E", fontWeight: 700, fontSize: 15 }}>You're in. See you September 8th. 🖤</p>
+            ) : (
+              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                <input
+                  type="email"
+                  placeholder="your@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  style={{ padding: "13px 18px", borderRadius: 6, border: "1px solid #333", background: "#1A1A1A", color: "#FDFCF8", fontSize: 15, fontFamily: "Inter, sans-serif", outline: "none" }}
+                />
+                <button
+                  onClick={handleSubmit}
+                  style={{ background: "#B8973E", color: "#000000", border: "none", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "Inter, sans-serif" }}
+                >
+                  Save my seat
+                </button>
+              </div>
+            )}
+          </div>
+
+          <div style={{ background: "#111111", border: "2px solid #B8973E", borderRadius: 12, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: "#B8973E", color: "#000000", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", padding: "4px 16px", borderRadius: 20, whiteSpace: "nowrap" }}>
+              FULL MEMBER
+            </div>
+            <p style={{ color: "#B8973E", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>CLUB MEMBER</p>
+            <p style={{ color: "#FDFCF8", fontSize: 36, fontWeight: 800, marginBottom: 24 }}>$29<span style={{ fontSize: 16, fontWeight: 400, color: "#7A7569" }}>/mo</span></p>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", color: "#7A7569", fontSize: 15, lineHeight: 2 }}>
+              <li>✦ Everything in Founding</li>
+              <li>✦ Monthly tee drop shipped to you</li>
+              <li>✦ Priority Agent Series access</li>
+              <li>✦ FoundHer Box quarterly drops</li>
+              <li>✦ Premium co-working rooms</li>
+              <li>✦ Summit early access & discounts</li>
+            </ul>
+            <a
+              href="#box"
+              style={{ display: "block", textAlign: "center", background: "#B8973E", color: "#000000", borderRadius: 6, padding: "14px 24px", fontSize: 15, fontWeight: 700, textDecoration: "none" }}
+            >
+              I'm in
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -394,7 +519,9 @@ export default function HomePage() {
       <main>
         <Hero />
         <BuiltBetter />
+        <Purpose />
         <FoundHerBox />
+        <FoundHerClub />
         <Waitlist />
       </main>
       <Footer />
