@@ -9,7 +9,7 @@ const C = {
   taupe: "#786860",
   gold: "#C08B2A",
   coral: "#E05C3A",
-  plum: "#2A1535",
+
   sand: "#EDE4D8",
 };
 
@@ -406,7 +406,7 @@ function FoundHersClub() {
 
 function AIAgents() {
   return (
-    <section style={{ background: C.plum, padding: "96px 24px", fontFamily: font.body }}>
+    <section style={{ background: C.espresso, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
           <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
