@@ -172,7 +172,7 @@ function Hero() {
             Join the FoundHers Club →
           </button>
           <p style={{ fontFamily: font.body, fontSize: 12, color: C.taupe, letterSpacing: "0.03em", marginTop: 20 }}>
-            ⚡ Opens September 8th · Founding Member spots are limited
+            ⚡ The membership site goes live September 8th · Founding Member spots are limited
           </p>
         </div>
       </section>
@@ -214,7 +214,7 @@ function Hero() {
             </button>
           </div>
           <p style={{ fontFamily: font.body, fontSize: 12, color: C.taupe, marginTop: 20, letterSpacing: "0.03em" }}>
-            ⚡ Opens September 8th · Founding Member spots are limited
+            ⚡ The membership site goes live September 8th · Founding Member spots are limited
           </p>
         </div>
       </div>
