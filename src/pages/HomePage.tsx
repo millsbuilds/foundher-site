@@ -253,6 +253,9 @@ function Purpose() {
         <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(26px,3.5vw,40px)", color: C.espresso, lineHeight: 1.4, textAlign: "center", margin: 0 }}>
           FoundHer AI is the home base for women building businesses in the age of AI — the tools, the community, and the voice that says: she was always going to win.
         </h2>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "24px auto 0", textAlign: "center" }}>
+          Most women today are going it alone in their businesses. And going solo — though rewarding and powerful — is often a lonely place to be. The FoundHers Club changes that. Here, you stay connected, supported, and empowered by a community of women who are building right alongside you.
+        </p>
       </div>
     </section>
   );
