@@ -161,7 +161,7 @@ function Hero() {
               <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.gold, display: "block" }}>Together.</span>
             </div>
             <div style={{ paddingTop: "calc(clamp(42px,5vw,64px) * 2.1)", flexShrink: 0 }}>
-              <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 140, height: 140, display: "block" }} />
+              <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 400, height: 400, display: "block" }} />
             </div>
           </div>
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
@@ -198,7 +198,7 @@ function Hero() {
               <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.gold, display: "block" }}>Together.</span>
             </div>
             <div style={{ paddingTop: "calc(clamp(42px,5vw,64px) * 2.1)", flexShrink: 0 }}>
-              <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 140, height: 140, display: "block" }} />
+              <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 400, height: 400, display: "block" }} />
             </div>
           </div>
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
