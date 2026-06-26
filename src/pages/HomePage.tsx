@@ -153,6 +153,7 @@ function Hero() {
             <span style={{ color: C.espresso, display: "block" }}>Build.</span>
             <span style={{ color: C.espresso, display: "block" }}>Launch.</span>
             <span style={{ color: C.espresso, display: "block" }}>Grow.</span>
+            <span style={{ color: C.gold, display: "block" }}>Together.</span>
           </h1>
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
@@ -180,6 +181,7 @@ function Hero() {
             <span style={{ color: C.espresso, display: "block" }}>Build.</span>
             <span style={{ color: C.espresso, display: "block" }}>Launch.</span>
             <span style={{ color: C.espresso, display: "block" }}>Grow.</span>
+            <span style={{ color: C.gold, display: "block" }}>Together.</span>
           </h1>
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.taupe, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
