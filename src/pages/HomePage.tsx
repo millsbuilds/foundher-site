@@ -147,15 +147,23 @@ function Hero() {
       <section style={{ background: C.cream, fontFamily: font.body }}>
         <div style={{ overflow: "hidden" }}>
           <img src="/images/mills-hero.jpg" alt="Mills Gardner, Founder of FoundHer AI" style={{ width: "100%", height: 400, objectFit: "cover", objectPosition: "center top", display: "block" }} />
+          <div style={{ background: C.espresso, padding: "12px 20px", textAlign: "center" }}>
+            <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.gold, letterSpacing: "0.12em", textTransform: "uppercase", margin: 0 }}>Mills Gardner</p>
+            <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.6)", letterSpacing: "0.1em", textTransform: "uppercase", margin: "4px 0 0" }}>Serial Founder</p>
+          </div>
         </div>
         <div style={{ padding: "48px 24px 64px" }}>
-          <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 160, height: 160, display: "block", marginBottom: 20 }} />
-          <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, lineHeight: 1.05, letterSpacing: "-0.02em", marginBottom: 8, color: C.espresso }}>
-            <span style={{ color: C.espresso, display: "block" }}>Build.</span>
-            <span style={{ color: C.espresso, display: "block" }}>Launch.</span>
-            <span style={{ color: C.espresso, display: "block" }}>Grow.</span>
-            <span style={{ color: C.gold, display: "block" }}>Together.</span>
-          </h1>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 8 }}>
+            <div>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Build.</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Launch.</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Grow.</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.gold, display: "block" }}>Together.</span>
+            </div>
+            <div style={{ paddingTop: "calc(clamp(42px,5vw,64px) * 2.1)", flexShrink: 0 }}>
+              <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 140, height: 140, display: "block" }} />
+            </div>
+          </div>
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
             The FoundHers Club is where women who build businesses with AI come to find their people, their tools, and their edge.
@@ -175,16 +183,24 @@ function Hero() {
     <section style={{ display: "flex", minHeight: "80vh", fontFamily: font.body }}>
       <div style={{ flex: 1, minWidth: 0, overflow: "hidden" }}>
         <img src="/images/mills-hero.jpg" alt="Mills Gardner, Founder of FoundHer AI" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", maxHeight: 700 }} />
+        <div style={{ background: C.espresso, padding: "12px 20px", textAlign: "center" }}>
+          <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.gold, letterSpacing: "0.12em", textTransform: "uppercase", margin: 0 }}>Mills Gardner</p>
+          <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.6)", letterSpacing: "0.1em", textTransform: "uppercase", margin: "4px 0 0" }}>Serial Founder</p>
+        </div>
       </div>
       <div style={{ flex: 1, background: C.cream, display: "flex", alignItems: "center", padding: "80px 56px" }}>
         <div>
-          <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 160, height: 160, display: "block", marginBottom: 20 }} />
-          <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 58, lineHeight: 1.05, letterSpacing: "-0.02em", marginBottom: 8, color: C.espresso }}>
-            <span style={{ color: C.espresso, display: "block" }}>Build.</span>
-            <span style={{ color: C.espresso, display: "block" }}>Launch.</span>
-            <span style={{ color: C.espresso, display: "block" }}>Grow.</span>
-            <span style={{ color: C.gold, display: "block" }}>Together.</span>
-          </h1>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 8 }}>
+            <div>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Build.</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Launch.</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Grow.</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.gold, display: "block" }}>Together.</span>
+            </div>
+            <div style={{ paddingTop: "calc(clamp(42px,5vw,64px) * 2.1)", flexShrink: 0 }}>
+              <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 140, height: 140, display: "block" }} />
+            </div>
+          </div>
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.taupe, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
             The FoundHers Club is where women who build businesses with AI come to find their people, their tools, and their edge.
