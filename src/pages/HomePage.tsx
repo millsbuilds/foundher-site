@@ -634,7 +634,7 @@ function LifestyleImage() {
             FoundHers are everywhere. Be one of us.
           </h2>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.75, marginBottom: 24 }}>
-            From the farmers market to the boardroom to the kitchen table at midnight — women who build are showing up. In the hats. In the tees. In the community. In the work. Join the women who stopped waiting and started building.
+            From the home office to the coffee shop to the kitchen table at midnight — women who build are showing up. In the hats. In the tees. In the community. In the work. Join the women who stopped waiting and started building.
           </p>
           <button
             onClick={() => document.getElementById("foundhers-club")?.scrollIntoView({ behavior: "smooth" })}
