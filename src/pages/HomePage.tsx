@@ -236,7 +236,7 @@ function ThreePillars() {
   }, []);
 
   const pillars = [
-    { icon: "⚡", title: "Online Community", body: "Virtual co-working rooms, live sessions, and a private community of women who are building right now. Show up, stay accountable, move forward." },
+    { icon: "⚡", title: "Online Community", body: "Virtual co-working rooms, live sessions, and a private community of women who are building right now. Share tips, tools, and apps that actually work. Show up, stay accountable, move forward." },
     { icon: "🎙", title: "Founder Stories", body: "Real stories from women in the middle of it — the pivots, the breakthroughs, the 3am moments. Our members-only podcast drops every week." },
     { icon: "🛠", title: "AI Tools & Roadmaps", body: "Built-for-founders AI tools, early access to new launches, and a roadmap that evolves with you. No fluff. Just what works." },
   ];
