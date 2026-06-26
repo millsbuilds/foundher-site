@@ -443,7 +443,7 @@ function AIAgents() {
             Run a million-dollar business.<br />Without a single employee.
           </h2>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: 580, margin: "0 auto" }}>
-            FoundHers Club members get exclusive access to AI agents built specifically for women-owned businesses. These aren't generic tools — they're built for the way you actually work.
+            FoundHers Club members get exclusive access to AI agents built specifically for women-owned businesses. These aren't generic tools — they're built for the way we actually work.
           </p>
         </div>
 
