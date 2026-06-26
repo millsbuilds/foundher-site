@@ -155,7 +155,7 @@ function Hero() {
         <div style={{ padding: "48px 24px 64px" }}>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Build.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Launch.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Grow.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Scale.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.gold, display: "block" }}>Together.</span>
           <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 180, height: 180, display: "block", margin: "16px 0 0 0" }} />
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
@@ -186,7 +186,7 @@ function Hero() {
         <div>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Build.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Launch.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Grow.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Scale.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.gold, display: "block" }}>Together.</span>
           <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 180, height: 180, display: "block", margin: "16px 0 0 0" }} />
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
@@ -669,7 +669,7 @@ function Footer() {
           <span style={{ color: C.sand }}> AI™</span>
         </div>
         <p style={{ fontFamily: font.body, fontSize: 15, color: "rgba(255,255,255,0.45)", marginBottom: 28, lineHeight: 1.6 }}>
-          Build. Launch. Grow. Together.
+          Build. Launch. Scale. Together.
         </p>
         <div style={{ display: "flex", justifyContent: "center", gap: 24, marginBottom: 32, flexWrap: "wrap" }}>
           <a href="https://foundherai.ai" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.45)", fontSize: 14, textDecoration: "none" }}>FoundHer AI</a>
