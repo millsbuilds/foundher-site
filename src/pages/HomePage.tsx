@@ -283,7 +283,7 @@ function MembershipBenefits() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 32 }}>
           {[
             { title: "Online Community", body: "A private community of women building businesses with AI. Show up, get support, move forward — together." },
-            { title: "Monthly Merch Drops", body: "A new tee or merch piece shipped to you every month. Wear the brand. Own the identity." },
+            { title: "Monthly Tee Drops", body: "A new FoundHer AI tee shipped to your door every month — part of the Merch Club. Wear the brand. Own the identity." },
             { title: "Members-Only Podcast", body: "Founder stories, AI tools, real talk — a weekly podcast exclusively for FoundHers Club members." },
             { title: "Virtual Co-Working Rooms", body: "Drop in, get focused, get things done. Alongside other women who are building right now." },
             { title: "AI Agents & Tools", body: "Exclusive access to AI agents built for women-owned businesses. Run your business without a team." },
@@ -333,11 +333,11 @@ function FoundHersClub() {
         </p>
 
         <ul style={{ listStyle: "none", padding: 0, margin: "0 auto 48px", maxWidth: 500, fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 2.2, textAlign: "left", display: "inline-block" }}>
-          <li>⚡ Monthly tee & merch drops — shipped to you</li>
+          <li>⚡ Private online community of women AI founders</li>
           <li>⚡ Members-only founder podcast — weekly</li>
           <li>⚡ Virtual co-working rooms — show up and build</li>
+          <li>⚡ Monthly tee drops — with Merch Club membership</li>
           <li>⚡ Annual FoundHers Summit — early access & discounts</li>
-          <li>⚡ Community of women AI founders</li>
           <li>⚡ AI tools & agents — built for members</li>
         </ul>
 
@@ -354,33 +354,91 @@ function FoundHersClub() {
 function FoundHersClubTiers() {
   return (
     <section style={{ background: C.bg, padding: "64px 24px", fontFamily: font.body }}>
-      <div style={{ maxWidth: 900, margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 24, maxWidth: 780, margin: "0 auto" }}>
+      <div style={{ maxWidth: 960, margin: "0 auto" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 }}>
+
+          {/* FOUNDHERS CLUB */}
+          <div style={{ background: C.cream, border: `1.5px solid ${C.sand}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
+              CLUB MEMBER
+            </div>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.taupe, marginBottom: 16 }}>FOUNDHERS CLUB</p>
+            <p style={{ marginBottom: 0 }}>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$9</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>/mo</span>
+            </p>
+            <div style={{ height: 1, background: C.sand, margin: "20px 0" }} />
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
+              Your home base. Community, co-working rooms, founder podcast, and AI tools — all for less than a coffee a week.
+            </p>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
+              <li>⚡ Private online community</li>
+              <li>⚡ Virtual co-working rooms</li>
+              <li>⚡ Members-only founder podcast — weekly</li>
+              <li>⚡ AI tools & agents built for founders</li>
+              <li>⚡ Share tips, apps & what's working</li>
+            </ul>
+            <a
+              href="#foundhers-club"
+              style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer", textDecoration: "none", boxSizing: "border-box" }}
+            >
+              Join the Club — $9/mo
+            </a>
+          </div>
+
+          {/* MERCH CLUB */}
+          <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
+              MOST POPULAR
+            </div>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>MERCH CLUB</p>
+            <p style={{ marginBottom: 0 }}>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$29</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>/mo</span>
+            </p>
+            <div style={{ height: 1, background: C.sand, margin: "20px 0" }} />
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
+              Everything in the FoundHers Club plus a brand new FoundHer AI tee shipped to your door every month. Wear the movement.
+            </p>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
+              <li>⚡ Everything in FoundHers Club</li>
+              <li>⚡ Monthly tee drop — new design every month</li>
+              <li>⚡ Shipped via our Fourthwall store</li>
+              <li>⚡ You pay shipping — we handle everything else</li>
+              <li>⚡ First access to limited drops & collab designs</li>
+            </ul>
+            <a
+              href="#foundhers-club"
+              style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer", textDecoration: "none", boxSizing: "border-box" }}
+            >
+              Join the Merch Club — $29/mo
+            </a>
+          </div>
 
           {/* FOUNDING MEMBER */}
-          <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 36px", textAlign: "left", position: "relative" }}>
+          <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               FOUNDING MEMBER — ORIGINAL CLASS
             </div>
-            <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 100, height: 100, display: "block", marginBottom: 12 }} />
+            <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", marginBottom: 12 }} />
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>FOUNDING MEMBER</p>
-            <p style={{ marginBottom: 0 }}>
+            <p style={{ marginBottom: 4 }}>
               <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$38</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>+ $29/mo</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>one-time</span>
             </p>
-            <div style={{ height: 1, background: C.sand, margin: "20px 0" }} />
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, marginBottom: 0 }}>+ $9/mo</p>
+            <div style={{ height: 2, background: C.gold, margin: "20px 0" }} />
             <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.espresso, marginBottom: 8 }}>For the woman who builds anyway.</h3>
             <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
-              You've shown up through the fear, the debt, and the 3am doubt. The $38 is your founding badge — and the hat that says you were here first. Then $29/mo to stay in the club.
+              You've shown up through the fear, the debt, and the 3am doubt. The $38 is your founding badge — and the hat that says you were here first. Then just $9/mo to stay in the club.
             </p>
             <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
               <li>⚡ FoundHers Club hat — wear it like the badge it is</li>
               <li>⚡ Founding Member status — locked in forever</li>
+              <li>⚡ Locked in at $9/mo — never pays more</li>
               <li>⚡ Community access September 8th</li>
-              <li>⚡ Monthly tee & merch drops</li>
-              <li>⚡ Members-only founder podcast</li>
-              <li>⚡ Annual Summit early access</li>
-              <li>⚡ AI agents — first access</li>
+              <li>⚡ Everything in FoundHers Club</li>
+              <li>⚡ First access to AI agents</li>
               <li>⚡ Your seat before anyone else</li>
             </ul>
             <button
@@ -390,38 +448,8 @@ function FoundHersClubTiers() {
               }}
               style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
-              I'm a Founding Member — $38 + $29/mo
+              I'm a Founding Member — $38 + $9/mo
             </button>
-          </div>
-
-          {/* CLUB MEMBER */}
-          <div style={{ background: C.cream, border: `1.5px solid ${C.sand}`, borderRadius: 0, padding: "40px 36px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
-              CLUB MEMBER
-            </div>
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.taupe, marginBottom: 16 }}>CLUB MEMBER</p>
-            <p style={{ marginBottom: 0 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$29</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>/mo</span>
-            </p>
-            <div style={{ height: 1, background: C.sand, margin: "20px 0" }} />
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
-              Full access to the FoundHers Club community, co-working rooms, and members-only podcast. Join after launch.
-            </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
-              <li>⚡ Full community access</li>
-              <li>⚡ Monthly tee & merch drops</li>
-              <li>⚡ Members-only founder podcast</li>
-              <li>⚡ Virtual co-working rooms</li>
-              <li>⚡ Annual Summit early access & discounts</li>
-              <li>⚡ AI tools built for founders</li>
-            </ul>
-            <a
-              href="#foundhers-club"
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer", textDecoration: "none", boxSizing: "border-box" }}
-            >
-              Join the Club — $29/mo
-            </a>
           </div>
         </div>
       </div>
