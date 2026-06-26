@@ -149,6 +149,7 @@ function Hero() {
           <img src="/images/mills-hero.jpg" alt="Mills Gardner, Founder of FoundHer AI" style={{ width: "100%", height: 400, objectFit: "cover", objectPosition: "center top", display: "block" }} />
         </div>
         <div style={{ padding: "48px 24px 64px" }}>
+          <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 80, height: 80, display: "block", marginBottom: 20 }} />
           <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, lineHeight: 1.05, letterSpacing: "-0.02em", marginBottom: 8, color: C.espresso }}>
             <span style={{ color: C.espresso, display: "block" }}>Build.</span>
             <span style={{ color: C.espresso, display: "block" }}>Launch.</span>
@@ -177,6 +178,7 @@ function Hero() {
       </div>
       <div style={{ flex: 1, background: C.cream, display: "flex", alignItems: "center", padding: "80px 56px" }}>
         <div>
+          <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 80, height: 80, display: "block", marginBottom: 20 }} />
           <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 58, lineHeight: 1.05, letterSpacing: "-0.02em", marginBottom: 8, color: C.espresso }}>
             <span style={{ color: C.espresso, display: "block" }}>Build.</span>
             <span style={{ color: C.espresso, display: "block" }}>Launch.</span>
@@ -251,11 +253,52 @@ function Purpose() {
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
         <div style={{ width: 48, height: 1, background: C.sand, margin: "0 auto 40px" }} />
         <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(26px,3.5vw,40px)", color: C.espresso, lineHeight: 1.4, textAlign: "center", margin: 0 }}>
-          FoundHer AI is the home base for women building businesses in the age of AI — the tools, the community, and the voice that says: she was always going to win.
+          FoundHers Club is the home base for women building businesses in the age of AI — the tools, the community, and the voice that says: she was always going to win.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "24px auto 0", textAlign: "center" }}>
           Most women today are going it alone in their businesses. And going solo — though rewarding and powerful — is often a lonely place to be. The FoundHers Club changes that. Here, you stay connected, supported, and empowered by a community of women who are building right alongside you.
         </p>
+      </div>
+    </section>
+  );
+}
+
+// ─── MEMBERSHIP BENEFITS ─────────────────────────────────────────────────────
+
+function MembershipBenefits() {
+  return (
+    <section style={{ background: C.cream, padding: "80px 24px", fontFamily: font.body }}>
+      <div style={{ maxWidth: 900, margin: "0 auto" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 48, flexWrap: "wrap" }}>
+          <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 80, height: 80, flexShrink: 0 }} />
+          <div>
+            <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 8 }}>WHAT YOU GET</p>
+            <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.1, margin: 0 }}>Membership Benefits</h2>
+          </div>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 32 }}>
+          {[
+            { title: "Online Community", body: "A private community of women building businesses with AI. Show up, get support, move forward — together." },
+            { title: "Monthly Merch Drops", body: "A new tee or merch piece shipped to you every month. Wear the brand. Own the identity." },
+            { title: "Members-Only Podcast", body: "Founder stories, AI tools, real talk — a weekly podcast exclusively for FoundHers Club members." },
+            { title: "Virtual Co-Working Rooms", body: "Drop in, get focused, get things done. Alongside other women who are building right now." },
+            { title: "AI Agents & Tools", body: "Exclusive access to AI agents built for women-owned businesses. Run your business without a team." },
+            { title: "Annual FoundHers Summit", body: "Early access and discounts to our annual gathering of women founders. The room you want to be in." },
+          ].map((benefit) => (
+            <div key={benefit.title} style={{ borderTop: `2px solid ${C.gold}`, paddingTop: 24 }}>
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.espresso, marginBottom: 10 }}>{benefit.title}</h3>
+              <p style={{ fontSize: 15, color: C.taupe, lineHeight: 1.7, margin: 0 }}>{benefit.body}</p>
+            </div>
+          ))}
+        </div>
+        <div style={{ textAlign: "center", marginTop: 56 }}>
+          <button
+            onClick={() => document.getElementById("foundhers-club")?.scrollIntoView({ behavior: "smooth" })}
+            style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "16px 40px", fontSize: 16, fontWeight: 600, cursor: "pointer", fontFamily: font.body }}
+          >
+            See Membership Options →
+          </button>
+        </div>
       </div>
     </section>
   );
@@ -272,7 +315,7 @@ function FoundHersClub() {
       <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 40, marginBottom: 40, flexWrap: "wrap" }}>
           <img
-            src="/foundhers-club-badge.png"
+            src="/images/fh-seal.png"
             alt="FoundHers Club Badge"
             style={{ width: 160, height: "auto", flexShrink: 0 }}
           />
@@ -315,6 +358,7 @@ function FoundHersClubTiers() {
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               FOUNDING MEMBER — ORIGINAL CLASS
             </div>
+            <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 48, height: 48, display: "block", marginBottom: 12 }} />
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>FOUNDING MEMBER</p>
             <p style={{ marginBottom: 0 }}>
               <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$38</span>
@@ -489,6 +533,7 @@ function MillsAbout() {
     <section style={{ background: C.cream, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", alignItems: "center", gap: 72, flexWrap: "wrap" }}>
         <div style={{ flex: "0 0 380px", maxWidth: "100%" }}>
+          <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 64, height: 64, display: "block", marginBottom: 16 }} />
           <img
             src="/images/mills-boat.jpg"
             alt="Mills Gardner, Founder of FoundHer AI"
@@ -549,6 +594,7 @@ function LifestyleImage() {
           />
         </div>
         <div style={{ flex: 1, minWidth: 260 }}>
+          <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 56, height: 56, display: "block", marginBottom: 16 }} />
           <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: font.body }}>
             THE COMMUNITY
           </p>
@@ -617,6 +663,8 @@ export default function HomePage() {
         <ThreePillars />
         <Divider />
         <Purpose />
+        <Divider />
+        <MembershipBenefits />
         <Divider />
         <LizSpotlight />
         <Divider />
