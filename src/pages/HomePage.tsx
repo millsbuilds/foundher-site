@@ -586,7 +586,7 @@ function Footer() {
           <span style={{ color: C.sand }}> AI™</span>
         </div>
         <p style={{ fontFamily: font.body, fontSize: 15, color: "rgba(255,255,255,0.45)", marginBottom: 28, lineHeight: 1.6 }}>
-          Building AI ventures for the people everyone else is building past.
+          Build. Launch. Grow. Together.
         </p>
         <div style={{ display: "flex", justifyContent: "center", gap: 24, marginBottom: 32, flexWrap: "wrap" }}>
           <a href="https://adaptz.ai" target="_blank" rel="noopener noreferrer" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.45)", fontSize: 14, textDecoration: "none" }}>Adaptz.ai</a>
