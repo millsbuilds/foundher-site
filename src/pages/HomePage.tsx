@@ -160,7 +160,7 @@ function Hero() {
           <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 180, height: 180, display: "block", margin: "16px 0 0 0" }} />
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
-            The FoundHers Club is where women who build businesses with AI come to find their people, their tools, and their edge.
+            The FoundHers Club is where women who build with AI come together as colleagues, not competitors — to find their people, their tools, and their edge.
           </p>
           <button onClick={() => scrollTo("foundhers-club")} style={{ width: "100%", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}>
             Join the FoundHers Club →
@@ -191,7 +191,7 @@ function Hero() {
           <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 180, height: 180, display: "block", margin: "16px 0 0 0" }} />
           <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.taupe, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
-            The FoundHers Club is where women who build businesses with AI come to find their people, their tools, and their edge.
+            The FoundHers Club is where women who build with AI come together as colleagues, not competitors — to find their people, their tools, and their edge.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <button onClick={() => scrollTo("foundhers-club")} style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}>
