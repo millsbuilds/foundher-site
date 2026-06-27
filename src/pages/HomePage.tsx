@@ -562,60 +562,38 @@ function LizSpotlight() {
 
 function MillsAbout() {
   return (
-    <section style={{ background: C.cream, padding: "96px 24px", fontFamily: font.body }}>
-      <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", alignItems: "center", gap: 72, flexWrap: "wrap" }}>
-        <div style={{ flex: "0 0 380px", maxWidth: "100%" }}>
-          <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 140, height: 140, display: "block", marginBottom: 16 }} />
-          <img
-            src="/images/mills-boat.jpg"
-            alt="Mills Gardner, Founder of FoundHer AI"
-            style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
-          />
+    <section style={{ background: C.cream, padding: "80px 24px", fontFamily: font.body }}>
+      <div style={{ maxWidth: 900, margin: "0 auto" }}>
+
+        <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
+          You have the dream.<br />We've got the roadmap.
+        </h2>
+
+        <div style={{ overflow: "hidden" }}>
+          <div style={{ float: "left", marginRight: 40, marginBottom: 24, width: 340 }}>
+            <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 80, height: 80, display: "block", marginBottom: 16 }} />
+            <img
+              src="/images/mills-boat.jpg"
+              alt="Mills Gardner, Founder of FoundHer AI"
+              style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
+            />
+          </div>
+
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>At 58, I didn't choose to retire. My last pitch ended with a VC group telling me I was too old to be a founder. No funding meant no team, no engineers, no way forward. So I walked away.</p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>For 12 years, I was done.</p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>Then AI arrived — and everything changed. Suddenly a founder didn't need a team of engineers, office space, or equipment. They just needed to master the tools. No VC gatekeepers deciding who was too old, too young, or too anything. No proof of concept runway. Just a laptop, a vision, and the willingness to learn.</p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>Hello, unretirement.</p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>I've won big. I've lost even bigger. That's the founder story nobody tells you about. At 71, I can tell you this: every barrier that stood in the way of generations of female founders is gone. The playing field is level. The rules have finally changed.</p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>In the past month, I built a business from scratch using AI. It's already scaling. No team. No office. No permission. Just a laptop and everything I've learned across five decades of building.</p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>I'm not here to run the show. I'm here to open the door. This is for the next generation of women who are ready to step through it — and I'll be right there with you, building alongside you.</p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>There is room in this world for every one of us to succeed in our dreams. Here, you are among women helping women. No competition. Just momentum.</p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20, borderTop: `1px solid ${C.sand}`, paddingTop: 24 }}>FoundHer AI, PBC is a Public Benefit Corporation — which means we're legally structured to put mission before profit. The membership fees keep the lights on and the tools running. Everything else goes back into building more resources for the next generation of women founders. This isn't a business built to make me rich. It's built to make you unstoppable.</p>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.espresso, lineHeight: 1.6, marginBottom: 8 }}>"It's about time women were rewarded for being the natural builders we've always been."</p>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.gold, lineHeight: 1.6, marginBottom: 8 }}>"Dream big. Dream bigger than you ever thought possible."</p>
+          <p style={{ fontSize: 14, color: C.gold, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder, FoundHer AI, PBC</p>
         </div>
-        <div style={{ flex: 1, minWidth: 280 }}>
-          <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
-            FROM THE FOUNDER
-          </p>
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.2, marginBottom: 24, letterSpacing: "-0.02em" }}>
-            You have the dream.<br />We've got the roadmap.
-          </h2>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            At 58, I didn't choose to retire. My last pitch ended with a VC group telling me I was too old to be a founder. No funding meant no team, no engineers, no way forward. So I walked away.
-          </p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            For 12 years, I was done.
-          </p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            Then AI arrived — and everything changed. Suddenly a founder didn't need a team of engineers, office space, or equipment. They just needed to master the tools. No VC gatekeepers deciding who was too old, too young, or too anything. No proof of concept runway. Just a laptop, a vision, and the willingness to learn.
-          </p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            Hello, unretirement.
-          </p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            I've won big. I've lost even bigger. That's the founder story nobody tells you about. At 71, I can tell you this: every barrier that stood in the way of generations of female founders is gone. The playing field is level. The rules have finally changed.
-          </p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            In the past month, I built a business from scratch using AI. It's already scaling. No team. No office. No permission. Just a laptop and everything I've learned across five decades of building.
-          </p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            I'm not here to run the show. I'm here to open the door. This is for the next generation of women who are ready to step through it — and I'll be right there with you, building alongside you.
-          </p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            There is room in this world for every one of us to succeed in our dreams. Here, you are among women helping women. No competition. Just momentum.
-          </p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20, borderTop: `1px solid ${C.sand}`, paddingTop: 24, marginTop: 8 }}>
-            FoundHer AI, PBC is a Public Benefit Corporation — which means we're legally structured to put mission before profit. The membership fees keep the lights on and the tools running. Everything else goes back into building more resources for the next generation of women founders. This isn't a business built to make me rich. It's built to make you unstoppable.
-          </p>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.espresso, lineHeight: 1.6, marginBottom: 8 }}>
-            "It's about time women were rewarded for being the natural builders we've always been."
-          </p>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.gold, lineHeight: 1.6, marginTop: 16, marginBottom: 8 }}>
-            "Dream big. Dream bigger than you ever thought possible."
-          </p>
-          <p style={{ fontSize: 14, color: C.gold, fontWeight: 600, letterSpacing: "0.05em" }}>
-            — Mills Gardner, Founder, FoundHer AI, PBC
-          </p>
-        </div>
+
       </div>
     </section>
   );
