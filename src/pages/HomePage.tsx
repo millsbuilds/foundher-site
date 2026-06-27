@@ -601,7 +601,7 @@ function MillsAbout() {
             I'm not here to run the show. I'm here to open the door. This is for the next generation of women who are ready to step through it — and I'll be right there with you, building alongside you.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            There is room in this world for every one of you to succeed in your dreams. Here, you are among women helping women. No competition. Just momentum.
+            There is room in this world for every one of us to succeed in our dreams. Here, you are among women helping women. No competition. Just momentum.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20, borderTop: `1px solid ${C.sand}`, paddingTop: 24, marginTop: 8 }}>
             FoundHer AI, PBC is a Public Benefit Corporation — which means we're legally structured to put mission before profit. The membership fees keep the lights on and the tools running. Everything else goes back into building more resources for the next generation of women founders. This isn't a business built to make me rich. It's built to make you unstoppable.
