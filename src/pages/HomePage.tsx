@@ -149,7 +149,7 @@ function Hero() {
           <img src="/images/mills-hero.jpg" alt="Mills Gardner, Founder of FoundHer AI" style={{ width: "100%", height: 400, objectFit: "cover", objectPosition: "center top", display: "block" }} />
           <div style={{ background: C.espresso, padding: "12px 20px", textAlign: "center" }}>
             <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.gold, letterSpacing: "0.12em", textTransform: "uppercase", margin: 0 }}>Mills Gardner</p>
-            <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.6)", letterSpacing: "0.1em", textTransform: "uppercase", margin: "4px 0 0" }}>Serial Founder</p>
+            <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.6)", letterSpacing: "0.1em", textTransform: "uppercase", margin: "4px 0 0" }}>Founder</p>
           </div>
         </div>
         <div style={{ padding: "48px 24px 64px" }}>
@@ -179,7 +179,7 @@ function Hero() {
         <img src="/images/mills-hero.jpg" alt="Mills Gardner, Founder of FoundHer AI" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", maxHeight: 700 }} />
         <div style={{ background: C.espresso, padding: "12px 20px", textAlign: "center" }}>
           <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.gold, letterSpacing: "0.12em", textTransform: "uppercase", margin: 0 }}>Mills Gardner</p>
-          <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.6)", letterSpacing: "0.1em", textTransform: "uppercase", margin: "4px 0 0" }}>Serial Founder</p>
+          <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.6)", letterSpacing: "0.1em", textTransform: "uppercase", margin: "4px 0 0" }}>Founder</p>
         </div>
       </div>
       <div style={{ flex: 1, background: C.cream, display: "flex", alignItems: "center", padding: "80px 56px" }}>
