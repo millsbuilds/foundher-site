@@ -289,7 +289,7 @@ function MembershipBenefits() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 32 }}>
           {[
             { title: "Online Community", body: "A private community of women building businesses with AI. Show up, get support, move forward — together." },
-            { title: "Monthly Tee Drops", body: "A new FoundHer AI tee shipped to your door every month — part of the Merch Club. Wear the brand. Own the identity." },
+            { title: "Monthly Tee Drops", body: "A new tee shipped to your door every month — each one printed with a saying for women who build. Wear who you are. Own the title." },
             { title: "Members-Only Podcast", body: "Founder stories, AI tools, real talk — a weekly podcast exclusively for FoundHers Club members." },
             { title: "Virtual Co-Working Rooms", body: "Drop in, get focused, get things done. Alongside other women who are building right now." },
             { title: "AI Agents & Tools", body: "Exclusive access to AI agents built for women-owned businesses. Run your business without a team." },
