@@ -289,7 +289,7 @@ function MembershipBenefits() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 32 }}>
           {[
             { title: "Online Community", body: "A private community of women building businesses with AI. Show up, get support, move forward — together." },
-            { title: "Monthly Tee Drops", body: "A new tee shipped to your door every month — each one printed with a saying for women who build. Wear who you are. Own the title." },
+            { title: "Monthly T-Shirt Drops", body: "A new tee shipped to your door every month — each one printed with a saying for women who build. Wear who you are. Own the title." },
             { title: "Members-Only Podcast", body: "Founder stories, AI tools, real talk — a weekly podcast exclusively for FoundHers Club members." },
             { title: "Virtual Co-Working Rooms", body: "Drop in, get focused, get things done. Alongside other women who are building right now." },
             { title: "AI Agents & Tools", body: "Exclusive access to AI agents built for women-owned businesses. Run your business without a team." },
@@ -342,7 +342,7 @@ function FoundHersClub() {
           <li>⚡ Private online community of women AI founders</li>
           <li>⚡ Members-only founder podcast — weekly</li>
           <li>⚡ Virtual co-working rooms — show up and build</li>
-          <li>⚡ Monthly tee drops — with Merch Club membership</li>
+          <li>⚡ Monthly T-shirt drops — with Merch Club membership</li>
           <li>⚡ Annual FoundHers Summit — early access & discounts</li>
           <li>⚡ AI tools & agents — built for members</li>
         </ul>
@@ -411,7 +411,7 @@ function FoundHersClubTiers() {
             </p>
             <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
               <li>⚡ Everything in FoundHers Club</li>
-              <li>⚡ Monthly tee drop — new design every month</li>
+              <li>⚡ Monthly T-shirt drop — new design every month</li>
               <li>⚡ Shipped via our Fourthwall store</li>
               <li>⚡ You pay shipping — we handle everything else</li>
               <li>⚡ First access to limited drops & collab designs</li>
@@ -485,7 +485,7 @@ function FoundHersClubTiers() {
               <li>⚡ FoundHers Club hat — wear it like the badge it is</li>
               <li>⚡ Founding Member status — locked in forever</li>
               <li>⚡ Everything in Merch Club</li>
-              <li>⚡ Monthly tee drop included</li>
+              <li>⚡ Monthly T-shirt drop included</li>
               <li>⚡ Community access September 8th</li>
               <li>⚡ First access to AI agents</li>
               <li>⚡ Your seat before anyone else</li>
