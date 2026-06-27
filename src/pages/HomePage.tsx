@@ -424,12 +424,12 @@ function FoundHersClubTiers() {
           {/* POWER CIRCLE + CLUB */}
           <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
-              FOUNDING MEMBER — ORIGINAL CLASS
+              POWER CIRCLE
             </div>
             <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", marginBottom: 12 }} />
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>POWER CIRCLE + CLUB</p>
             <p style={{ marginBottom: 4 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$38</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$49</span>
               <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>one-time</span>
             </p>
             <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, marginBottom: 0 }}>+ $9/mo</p>
@@ -454,19 +454,19 @@ function FoundHersClubTiers() {
               }}
               style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
-              I'm a Founding Member — $38 + $9/mo
+              Join the Power Circle — $49 + $9/mo
             </button>
           </div>
 
           {/* POWER CIRCLE + MERCH */}
           <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
-              FOUNDING MEMBER — ORIGINAL CLASS
+              POWER CIRCLE
             </div>
             <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", marginBottom: 12 }} />
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>POWER CIRCLE + MERCH</p>
             <p style={{ marginBottom: 4 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$38</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$49</span>
               <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>one-time</span>
             </p>
             <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, marginBottom: 0 }}>+ $29/mo</p>
@@ -491,7 +491,7 @@ function FoundHersClubTiers() {
               }}
               style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
-              I'm a Founding Member — $38 + $29/mo
+              Join the Power Circle — $49 + $29/mo
             </button>
           </div>
         </div>
