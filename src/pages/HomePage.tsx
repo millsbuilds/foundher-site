@@ -18,7 +18,7 @@ const font = {
   body: "'Plus Jakarta Sans', sans-serif",
 };
 
-const Divider = () => <hr style={{ border: "none", borderTop: `1px solid ${C.sand}`, margin: 0 }} />;
+const Divider = () => <div style={{ height: 4, background: C.espresso, width: "100%" }} />;
 
 // ─── NAV ──────────────────────────────────────────────────────────────────────
 
