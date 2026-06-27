@@ -667,7 +667,7 @@ function LifestyleImage() {
             THE COMMUNITY
           </p>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.2, marginBottom: 20, letterSpacing: "-0.02em" }}>
-            FoundHers are everywhere. Be one of us.
+            FoundHers are everywhere. Join the club.
           </h2>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.75, marginBottom: 24 }}>
             From the home office to the coffee shop to the kitchen table at midnight — women who build are showing up. In the hats. In the tees. In the community. In the work. Join the women who stopped waiting and started building.
@@ -676,7 +676,7 @@ function LifestyleImage() {
             onClick={() => document.getElementById("foundhers-club")?.scrollIntoView({ behavior: "smooth" })}
             style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontFamily: font.body, fontWeight: 600, fontSize: 15, cursor: "pointer" }}
           >
-            Join the FoundHers Club →
+            Join Us →
           </button>
         </div>
       </div>
