@@ -259,8 +259,14 @@ function Purpose() {
         <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(26px,3.5vw,40px)", color: C.espresso, lineHeight: 1.4, textAlign: "center", margin: 0 }}>
           FoundHers Club is the home base for women building businesses in the age of AI — the tools, the community, and the voice that says: she was always going to win.
         </h2>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "24px auto 0", textAlign: "center" }}>
-          Most women today are going it alone in their businesses. And going solo — though rewarding and powerful — is often a lonely place to be. The FoundHers Club changes that. Here, you stay connected, supported, and empowered by a community of women who are building right alongside you.
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
+          AI gave women founders something extraordinary — the freedom to build alone. No team required. No office lease. No permission. Just a laptop and a dream.
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
+          But freedom and isolation can look a lot alike. And women? We're wired for connection. We think out loud. We collaborate. We lift each other up.
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
+          The FoundHers Club closes that gap. Here, you get the best of both worlds — the independence AI makes possible, and the community that makes it sustainable. Connected, supported, and building alongside women who actually get it.
         </p>
       </div>
     </section>
