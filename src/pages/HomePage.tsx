@@ -338,15 +338,6 @@ function FoundHersClub() {
           The FoundHers Club is where women who build businesses come to stay in the game. Monthly merch drops. A members-only podcast. Virtual co-working rooms. Our annual FoundHers Summit. And a community of women who actually get it.
         </p>
 
-        <ul style={{ listStyle: "none", padding: 0, margin: "0 auto 48px", maxWidth: 500, fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 2.2, textAlign: "left", display: "inline-block" }}>
-          <li>⚡ Private online community of women AI founders</li>
-          <li>⚡ Members-only founder podcast — weekly</li>
-          <li>⚡ Virtual co-working rooms — show up and build</li>
-          <li>⚡ Monthly T-shirt drops — with Merch Club membership</li>
-          <li>⚡ Annual FoundHers Summit — early access & discounts</li>
-          <li>⚡ AI tools & agents — built for members</li>
-        </ul>
-
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.gold, textAlign: "center", marginBottom: 0 }}>
           Opens September 8th
         </p>
