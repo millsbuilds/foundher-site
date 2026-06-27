@@ -580,10 +580,16 @@ function MillsAbout() {
             You have the dream.<br />We've got the roadmap.
           </h2>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            I retired at 58. For 12 years, I was done.
+            At 58, I didn't choose to retire. My last pitch ended with a VC group telling me I was too old to be a founder. No funding meant no team, no engineers, no way forward. So I walked away.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
-            Then AI arrived — and I couldn't stay on the sidelines.
+            For 12 years, I was done.
+          </p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
+            Then AI arrived — and everything changed. Suddenly a founder didn't need a team of engineers, office space, or equipment. They just needed to master the tools. No VC gatekeepers deciding who was too old, too young, or too anything. No proof of concept runway. Just a laptop, a vision, and the willingness to learn.
+          </p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
+            Hello, unretirement.
           </p>
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
             I've won big. I've lost even bigger. That's the founder story nobody tells you about. At 71, I can tell you this: every barrier that stood in the way of generations of female founders is gone. The playing field is level. The rules have finally changed.
