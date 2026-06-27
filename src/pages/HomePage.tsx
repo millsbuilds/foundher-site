@@ -603,6 +603,9 @@ function MillsAbout() {
           <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>
             There is room in this world for every one of you to succeed in your dreams. Here, you are among women helping women. No competition. Just momentum.
           </p>
+          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20, borderTop: `1px solid ${C.sand}`, paddingTop: 24, marginTop: 8 }}>
+            FoundHer AI, PBC is a Public Benefit Corporation — which means we're legally structured to put mission before profit. The membership fees keep the lights on and the tools running. Everything else goes back into building more resources for the next generation of women founders. This isn't a business built to make me rich. It's built to make you unstoppable.
+          </p>
           <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.espresso, lineHeight: 1.6, marginBottom: 8 }}>
             "It's about time women were rewarded for being the natural builders we've always been."
           </p>
