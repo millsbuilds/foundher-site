@@ -2,14 +2,13 @@ import { useState, useEffect } from "react";
 import { createCheckoutSession } from '../api/checkout';
 
 const C = {
-  bg: "#FFFCF7",
-  cream: "#FDF4E9",
-  blush: "#FEF0EC",
-  espresso: "#1A110A",
-  taupe: "#786860",
+  white: "#FFFFFF",
+  offwhite: "#F7F7F7",
+  black: "#0D0D0D",
+  coral: "#E8553E",
+  gray: "#6B6B6B",
+  lightgray: "#F0F0F0",
   gold: "#C08B2A",
-  coral: "#E05C3A",
-
   sand: "#EDE4D8",
 };
 
@@ -18,7 +17,7 @@ const font = {
   body: "'Plus Jakarta Sans', sans-serif",
 };
 
-const Divider = () => <div style={{ height: 4, background: C.espresso, width: "100%" }} />;
+const Divider = () => <div style={{ height: 4, background: C.coral, width: "100%" }} />;
 
 // ─── NAV ──────────────────────────────────────────────────────────────────────
 
@@ -48,8 +47,8 @@ function Nav() {
         left: 0,
         right: 0,
         zIndex: 100,
-        background: C.bg,
-        borderBottom: `1px solid ${C.sand}`,
+        background: C.white,
+        borderBottom: `1px solid ${C.lightgray}`,
         fontFamily: font.body,
       }}
     >
@@ -65,9 +64,9 @@ function Nav() {
         }}
       >
         <div style={{ fontSize: 20, fontWeight: 700, fontFamily: font.display, letterSpacing: "-0.02em", cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <span style={{ color: C.espresso }}>Found</span>
-          <span style={{ color: C.gold }}>Her</span>
-          <span style={{ color: C.espresso }}> AI™</span>
+          <span style={{ color: C.black }}>Found</span>
+          <span style={{ color: C.coral }}>Her</span>
+          <span style={{ color: C.black }}> AI™</span>
         </div>
 
         {isMobile ? (
@@ -78,24 +77,24 @@ function Nav() {
           >
             {menuOpen ? (
               <>
-                <span style={{ display: "block", width: 22, height: 2, background: C.espresso, transform: "translateY(7px) rotate(45deg)", transition: "all 0.2s" }} />
+                <span style={{ display: "block", width: 22, height: 2, background: C.black, transform: "translateY(7px) rotate(45deg)", transition: "all 0.2s" }} />
                 <span style={{ display: "block", width: 22, height: 2, background: "transparent" }} />
-                <span style={{ display: "block", width: 22, height: 2, background: C.espresso, transform: "translateY(-7px) rotate(-45deg)", transition: "all 0.2s" }} />
+                <span style={{ display: "block", width: 22, height: 2, background: C.black, transform: "translateY(-7px) rotate(-45deg)", transition: "all 0.2s" }} />
               </>
             ) : (
               <>
-                <span style={{ display: "block", width: 22, height: 2, background: C.espresso }} />
-                <span style={{ display: "block", width: 22, height: 2, background: C.espresso }} />
-                <span style={{ display: "block", width: 22, height: 2, background: C.espresso }} />
+                <span style={{ display: "block", width: 22, height: 2, background: C.black }} />
+                <span style={{ display: "block", width: 22, height: 2, background: C.black }} />
+                <span style={{ display: "block", width: 22, height: 2, background: C.black }} />
               </>
             )}
           </button>
         ) : (
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
-            <a href="mailto:hello@foundherai.ai" style={{ color: C.espresso, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
+            <a href="mailto:hello@foundherai.ai" style={{ color: C.black, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <button
               onClick={() => scrollTo("foundhers-club")}
-              style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "10px 24px", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: font.body }}
+              style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "10px 24px", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: font.body }}
             >
               Join Now
             </button>
@@ -106,18 +105,18 @@ function Nav() {
       {isMobile && menuOpen && (
         <div
           style={{
-            background: C.bg,
-            borderTop: `1px solid ${C.sand}`,
+            background: C.white,
+            borderTop: `1px solid ${C.lightgray}`,
             padding: "16px 24px 24px",
             display: "flex",
             flexDirection: "column",
             gap: 16,
           }}
         >
-          <a href="mailto:hello@foundherai.ai" style={{ color: C.espresso, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
+          <a href="mailto:hello@foundherai.ai" style={{ color: C.black, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <button
             onClick={() => scrollTo("foundhers-club")}
-            style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, textAlign: "center", marginTop: 8 }}
+            style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, textAlign: "center", marginTop: 8 }}
           >
             Join Now
           </button>
@@ -144,28 +143,28 @@ function Hero() {
 
   if (isMobile) {
     return (
-      <section style={{ background: C.cream, fontFamily: font.body }}>
+      <section style={{ background: C.white, fontFamily: font.body }}>
         <div style={{ overflow: "hidden" }}>
           <img src="/images/mills-hero.jpg" alt="Mills Gardner, Founder of FoundHer AI" style={{ width: "100%", height: 400, objectFit: "cover", objectPosition: "center top", display: "block" }} />
-          <div style={{ background: C.espresso, padding: "12px 20px", textAlign: "center" }}>
-            <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.gold, letterSpacing: "0.12em", textTransform: "uppercase", margin: 0 }}>Mills Gardner</p>
+          <div style={{ background: C.black, padding: "12px 20px", textAlign: "center" }}>
+            <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.coral, letterSpacing: "0.12em", textTransform: "uppercase", margin: 0 }}>Mills Gardner</p>
             <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.6)", letterSpacing: "0.1em", textTransform: "uppercase", margin: "4px 0 0" }}>Founder</p>
           </div>
         </div>
         <div style={{ padding: "48px 24px 64px" }}>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Build.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Launch.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Scale.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.gold, display: "block" }}>Together.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Build.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Launch.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Scale.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block" }}>Together.</span>
           <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 180, height: 180, display: "block", margin: "16px 0 0 0" }} />
-          <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
+          <div style={{ width: 48, height: 2, background: C.coral, margin: "20px 0" }} />
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
             The FoundHers Club is where women who build with AI come together as colleagues, not competitors — to find their people, their tools, and their edge.
           </p>
-          <button onClick={() => scrollTo("foundhers-club")} style={{ width: "100%", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}>
+          <button onClick={() => scrollTo("foundhers-club")} style={{ width: "100%", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}>
             Join the FoundHers Club →
           </button>
-          <p style={{ fontFamily: font.body, fontSize: 12, color: C.taupe, letterSpacing: "0.03em", marginTop: 20 }}>
+          <p style={{ fontFamily: font.body, fontSize: 12, color: C.gray, letterSpacing: "0.03em", marginTop: 20 }}>
             ⚡ The membership site goes live September 8th · Founding Member spots are limited
           </p>
         </div>
@@ -177,31 +176,31 @@ function Hero() {
     <section style={{ display: "flex", minHeight: "80vh", fontFamily: font.body }}>
       <div style={{ flex: 1, minWidth: 0, overflow: "hidden" }}>
         <img src="/images/mills-hero.jpg" alt="Mills Gardner, Founder of FoundHer AI" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", maxHeight: 700 }} />
-        <div style={{ background: C.espresso, padding: "12px 20px", textAlign: "center" }}>
-          <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.gold, letterSpacing: "0.12em", textTransform: "uppercase", margin: 0 }}>Mills Gardner</p>
+        <div style={{ background: C.black, padding: "12px 20px", textAlign: "center" }}>
+          <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.coral, letterSpacing: "0.12em", textTransform: "uppercase", margin: 0 }}>Mills Gardner</p>
           <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.6)", letterSpacing: "0.1em", textTransform: "uppercase", margin: "4px 0 0" }}>Founder</p>
         </div>
       </div>
-      <div style={{ flex: 1, background: C.cream, display: "flex", alignItems: "center", padding: "80px 56px" }}>
+      <div style={{ flex: 1, background: C.white, display: "flex", alignItems: "center", padding: "80px 56px" }}>
         <div>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Build.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Launch.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.espresso, display: "block" }}>Scale.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.gold, display: "block" }}>Together.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Build.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Launch.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Scale.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(42px,5vw,64px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block" }}>Together.</span>
           <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 180, height: 180, display: "block", margin: "16px 0 0 0" }} />
-          <div style={{ width: 48, height: 2, background: C.gold, margin: "20px 0" }} />
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.taupe, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
+          <div style={{ width: 48, height: 2, background: C.coral, margin: "20px 0" }} />
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 32, maxWidth: 380 }}>
             The FoundHers Club is where women who build with AI come together as colleagues, not competitors — to find their people, their tools, and their edge.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <button onClick={() => scrollTo("foundhers-club")} style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}>
+            <button onClick={() => scrollTo("foundhers-club")} style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}>
               Join the FoundHers Club →
             </button>
-            <button onClick={() => scrollTo("foundhers-club")} style={{ background: "transparent", color: C.espresso, border: `1.5px solid ${C.espresso}`, borderRadius: 0, padding: "14px 24px", fontSize: 15, fontWeight: 500, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}>
+            <button onClick={() => scrollTo("foundhers-club")} style={{ background: "transparent", color: C.black, border: `1.5px solid ${C.black}`, borderRadius: 0, padding: "14px 24px", fontSize: 15, fontWeight: 500, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}>
               How It Works
             </button>
           </div>
-          <p style={{ fontFamily: font.body, fontSize: 12, color: C.taupe, marginTop: 20, letterSpacing: "0.03em" }}>
+          <p style={{ fontFamily: font.body, fontSize: 12, color: C.gray, marginTop: 20, letterSpacing: "0.03em" }}>
             ⚡ The membership site goes live September 8th · Founding Member spots are limited
           </p>
         </div>
@@ -230,17 +229,17 @@ function ThreePillars() {
   ];
 
   return (
-    <section id="pillars" style={{ background: C.cream, padding: "80px 24px", fontFamily: font.body }}>
+    <section id="pillars" style={{ background: C.offwhite, padding: "80px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 860, margin: "0 auto" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.gold, textAlign: "center", marginBottom: 56 }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 56 }}>
           WHAT WE'RE BUILDING TOGETHER
         </p>
         <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 48 }}>
           {pillars.map((p) => (
             <div key={p.title}>
-              <div style={{ fontFamily: font.display, fontSize: 48, color: C.coral, marginBottom: 16 }}>{p.icon}</div>
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.espresso, marginBottom: 12 }}>{p.title}</h3>
-              <p style={{ fontFamily: font.body, fontSize: 15, color: C.taupe, lineHeight: 1.7 }}>{p.body}</p>
+              <div style={{ fontFamily: font.display, fontSize: 48, color: C.gold, marginBottom: 16 }}>{p.icon}</div>
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.black, marginBottom: 12 }}>{p.title}</h3>
+              <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7 }}>{p.body}</p>
             </div>
           ))}
         </div>
@@ -253,19 +252,19 @@ function ThreePillars() {
 
 function Purpose() {
   return (
-    <section style={{ background: C.bg, padding: "80px 24px", fontFamily: font.body, textAlign: "center" }}>
+    <section style={{ background: C.white, padding: "80px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
-        <div style={{ width: 48, height: 1, background: C.sand, margin: "0 auto 40px" }} />
-        <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(26px,3.5vw,40px)", color: C.espresso, lineHeight: 1.4, textAlign: "center", margin: 0 }}>
+        <div style={{ width: 60, height: 3, background: C.coral, margin: "0 auto 32px" }} />
+        <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(26px,3.5vw,40px)", color: C.black, lineHeight: 1.4, textAlign: "center", margin: 0 }}>
           FoundHers Club is the home base for women building businesses in the age of AI — the tools, the community, and the voice that says: she was always going to win.
         </h2>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
           AI gave women founders something extraordinary — the freedom to build alone. No team required. No office lease. No permission. Just a laptop and a dream.
         </p>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
           But freedom and isolation can look a lot alike. And women? We're wired for connection. We think out loud. We collaborate. We lift each other up.
         </p>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
           The FoundHers Club closes that gap. Here, you get the best of both worlds — the independence AI makes possible, and the community that makes it sustainable. Connected, supported, and building alongside women who actually get it.
         </p>
       </div>
@@ -277,13 +276,13 @@ function Purpose() {
 
 function MembershipBenefits() {
   return (
-    <section style={{ background: C.cream, padding: "80px 24px", fontFamily: font.body }}>
+    <section style={{ background: C.offwhite, padding: "80px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 48, flexWrap: "wrap" }}>
           <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 140, height: 140, flexShrink: 0 }} />
           <div>
-            <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 8 }}>WHAT YOU GET</p>
-            <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.1, margin: 0 }}>Membership Benefits</h2>
+            <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 8 }}>WHAT YOU GET</p>
+            <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.1, margin: 0 }}>Membership Benefits</h2>
           </div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 32 }}>
@@ -295,16 +294,16 @@ function MembershipBenefits() {
             { title: "AI Agents & Tools", body: "Exclusive access to AI agents built for women-owned businesses. Run your business without a team." },
             { title: "Annual FoundHers Summit", body: "Early access and discounts to our annual gathering of women founders. The room you want to be in." },
           ].map((benefit) => (
-            <div key={benefit.title} style={{ borderTop: `2px solid ${C.gold}`, paddingTop: 24 }}>
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.espresso, marginBottom: 10 }}>{benefit.title}</h3>
-              <p style={{ fontSize: 15, color: C.taupe, lineHeight: 1.7, margin: 0 }}>{benefit.body}</p>
+            <div key={benefit.title} style={{ borderTop: `2px solid ${C.coral}`, paddingTop: 24 }}>
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.black, marginBottom: 10 }}>{benefit.title}</h3>
+              <p style={{ fontSize: 15, color: C.gray, lineHeight: 1.7, margin: 0 }}>{benefit.body}</p>
             </div>
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 56 }}>
           <button
             onClick={() => document.getElementById("foundhers-club")?.scrollIntoView({ behavior: "smooth" })}
-            style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "16px 40px", fontSize: 16, fontWeight: 600, cursor: "pointer", fontFamily: font.body }}
+            style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "16px 40px", fontSize: 16, fontWeight: 600, cursor: "pointer", fontFamily: font.body }}
           >
             See Membership Options →
           </button>
@@ -321,7 +320,7 @@ function MembershipBenefits() {
 
 function FoundHersClub() {
   return (
-    <section id="foundhers-club" style={{ background: C.bg, padding: "64px 24px", fontFamily: font.body }}>
+    <section id="foundhers-club" style={{ background: C.white, padding: "64px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 40, marginBottom: 40, flexWrap: "wrap" }}>
           <img
@@ -330,15 +329,15 @@ function FoundHersClub() {
             style={{ width: 220, height: "auto", flexShrink: 0 }}
           />
           <div style={{ textAlign: "left" }}>
-            <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 12, fontFamily: font.body }}>THE FOUNDHERS CLUB</p>
-            <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.espresso, lineHeight: 1.1, margin: 0 }}>Your people are assembling.</h2>
+            <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 12, fontFamily: font.body }}>THE FOUNDHERS CLUB</p>
+            <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, lineHeight: 1.1, margin: 0 }}>Your people are assembling.</h2>
           </div>
         </div>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.taupe, textAlign: "center", maxWidth: 620, margin: "0 auto 48px", lineHeight: 1.7 }}>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, textAlign: "center", maxWidth: 620, margin: "0 auto 48px", lineHeight: 1.7 }}>
           The FoundHers Club is where women who build businesses come to stay in the game. Monthly merch drops. A members-only podcast. Virtual co-working rooms. Our annual FoundHers Summit. And a community of women who actually get it.
         </p>
 
-        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.gold, textAlign: "center", marginBottom: 0 }}>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.coral, textAlign: "center", marginBottom: 0 }}>
           Opens September 8th
         </p>
       </div>
@@ -350,25 +349,25 @@ function FoundHersClub() {
 
 function FoundHersClubTiers() {
   return (
-    <section style={{ background: C.bg, padding: "64px 24px", fontFamily: font.body }}>
+    <section style={{ background: C.white, padding: "64px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 960, margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 }}>
 
           {/* FOUNDHERS CLUB */}
-          <div style={{ background: C.cream, border: `1.5px solid ${C.sand}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
+          <div style={{ background: C.white, border: `1.5px solid ${C.lightgray}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               CLUB MEMBER
             </div>
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.taupe, marginBottom: 16 }}>FOUNDHERS CLUB</p>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gray, marginBottom: 16 }}>FOUNDHERS CLUB</p>
             <p style={{ marginBottom: 0 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$9</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>/mo</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$9</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>/mo</span>
             </p>
-            <div style={{ height: 1, background: C.sand, margin: "20px 0" }} />
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
+            <div style={{ height: 1, background: C.lightgray, margin: "20px 0" }} />
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
               Your home base. Community, co-working rooms, founder podcast, and AI tools — all for less than a coffee a week.
             </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2 }}>
               <li>⚡ Private online community</li>
               <li>⚡ Virtual co-working rooms</li>
               <li>⚡ Members-only founder podcast — weekly</li>
@@ -380,27 +379,27 @@ function FoundHersClubTiers() {
                 const { url } = await createCheckoutSession('price_1TmeqtCps5fpuWPnvPKjRaEc');
                 if (url) window.location.href = url;
               }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
               Join the Club — $9/mo
             </button>
           </div>
 
           {/* MERCH CLUB */}
-          <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+          <div style={{ background: C.white, border: `1.5px solid ${C.lightgray}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               MOST POPULAR
             </div>
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>MERCH CLUB</p>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gray, marginBottom: 16 }}>MERCH CLUB</p>
             <p style={{ marginBottom: 0 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$29</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>/mo</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$29</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>/mo</span>
             </p>
-            <div style={{ height: 1, background: C.sand, margin: "20px 0" }} />
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
+            <div style={{ height: 1, background: C.lightgray, margin: "20px 0" }} />
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
               Everything in the FoundHers Club plus a brand new FoundHer AI tee shipped to your door every month. Wear the movement.
             </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2 }}>
               <li>⚡ Everything in FoundHers Club</li>
               <li>⚡ Monthly T-shirt drop — new design every month</li>
               <li>⚡ Shipped via our Fourthwall store</li>
@@ -412,30 +411,30 @@ function FoundHersClubTiers() {
                 const { url } = await createCheckoutSession('price_1TmeuaCps5fpuWPnBxvpfliN');
                 if (url) window.location.href = url;
               }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
               Join the Merch Club — $29/mo
             </button>
           </div>
 
           {/* POWER CIRCLE + CLUB */}
-          <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
+          <div style={{ background: C.white, border: `2px solid ${C.coral}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               POWER CIRCLE
             </div>
             <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", marginBottom: 12 }} />
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>POWER CIRCLE + CLUB</p>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>POWER CIRCLE + CLUB</p>
             <p style={{ marginBottom: 4 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$49</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>one-time</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$49</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>one-time</span>
             </p>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, marginBottom: 0 }}>+ $9/mo</p>
-            <div style={{ height: 2, background: C.gold, margin: "20px 0" }} />
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.espresso, marginBottom: 8 }}>For the woman who builds anyway.</h3>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, marginBottom: 0 }}>+ $9/mo</p>
+            <div style={{ height: 2, background: C.coral, margin: "20px 0" }} />
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.black, marginBottom: 8 }}>For the woman who builds anyway.</h3>
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
               You've shown up through the fear, the debt, and the 3am doubt. The $38 is your founding badge — and the hat that says you were here first. Then just $9/mo to stay in the club.
             </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2 }}>
               <li>⚡ FoundHers Club hat — wear it like the badge it is</li>
               <li>⚡ Founding Member status — locked in forever</li>
               <li>⚡ Locked in at $9/mo — never pays more</li>
@@ -449,30 +448,30 @@ function FoundHersClubTiers() {
                 const { url } = await createCheckoutSession(['price_1TmhCgCps5fpuWPn09VGDReE', 'price_1TmhBMCps5fpuWPn6ZkVgsdO']);
                 if (url) window.location.href = url;
               }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
               Join the Power Circle — $49 + $9/mo
             </button>
           </div>
 
           {/* POWER CIRCLE + MERCH */}
-          <div style={{ background: "#FFFFFF", border: `2px solid ${C.gold}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
+          <div style={{ background: C.white, border: `2px solid ${C.coral}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               POWER CIRCLE
             </div>
             <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", marginBottom: 12 }} />
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, marginBottom: 16 }}>POWER CIRCLE + MERCH</p>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>POWER CIRCLE + MERCH</p>
             <p style={{ marginBottom: 4 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.espresso }}>$49</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, marginLeft: 8 }}>one-time</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$49</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>one-time</span>
             </p>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, marginBottom: 0 }}>+ $29/mo</p>
-            <div style={{ height: 2, background: C.gold, margin: "20px 0" }} />
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.espresso, marginBottom: 8 }}>For the woman who builds anyway.</h3>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.taupe, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, marginBottom: 0 }}>+ $29/mo</p>
+            <div style={{ height: 2, background: C.coral, margin: "20px 0" }} />
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.black, marginBottom: 8 }}>For the woman who builds anyway.</h3>
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
               Everything in the Merch Club — plus Founding Member status, the hat, and first access to everything we build. The full package.
             </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.taupe, lineHeight: 2 }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2 }}>
               <li>⚡ FoundHers Club hat — wear it like the badge it is</li>
               <li>⚡ Founding Member status — locked in forever</li>
               <li>⚡ Everything in Merch Club</li>
@@ -486,7 +485,7 @@ function FoundHersClubTiers() {
                 const { url } = await createCheckoutSession(['price_1TmhSvCps5fpuWPnADdNnYfZ', 'price_1TmhSvCps5fpuWPndBVhyvBd']);
                 if (url) window.location.href = url;
               }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.espresso, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
+              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
               Join the Power Circle — $49 + $29/mo
             </button>
@@ -501,16 +500,16 @@ function FoundHersClubTiers() {
 
 function AIAgents() {
   return (
-    <section style={{ background: C.espresso, padding: "96px 24px", fontFamily: font.body }}>
+    <section style={{ background: C.black, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
-          <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
+          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
             MEMBER TOOLS
           </p>
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 52px)", color: "#FFFCF7", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 52px)", color: "#FFFFFF", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
             Run a million-dollar business.<br />Without a single employee.
           </h2>
-          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: 580, margin: "0 auto" }}>
+          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, maxWidth: 580, margin: "0 auto" }}>
             FoundHers Club members get exclusive access to AI agents built specifically for women-owned businesses. These aren't generic tools — they're built for the way we actually work.
           </p>
         </div>
@@ -524,15 +523,15 @@ function AIAgents() {
             { icon: "📊", title: "The Analytics Agent", body: "Turns your numbers into decisions. Know what's working, what's not, and exactly what to do next." },
             { icon: "🎙", title: "The Content Agent", body: "Podcasts, blogs, newsletters — a full content engine that sounds like you and never runs out of ideas." },
           ].map((agent) => (
-            <div key={agent.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", padding: "32px 28px" }}>
+            <div key={agent.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(232,85,62,0.25)", padding: "32px 28px" }}>
               <div style={{ fontSize: 32, marginBottom: 16 }}>{agent.icon}</div>
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: "#FFFCF7", marginBottom: 12 }}>{agent.title}</h3>
-              <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", lineHeight: 1.7 }}>{agent.body}</p>
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: "#FFFFFF", marginBottom: 12 }}>{agent.title}</h3>
+              <p style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>{agent.body}</p>
             </div>
           ))}
         </div>
 
-        <p style={{ textAlign: "center", marginTop: 48, fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.gold }}>
+        <p style={{ textAlign: "center", marginTop: 48, fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.coral }}>
           Available exclusively to FoundHers Club members. First access to Founding Members.
         </p>
       </div>
@@ -554,7 +553,7 @@ function LizSpotlight() {
   }, []);
 
   return (
-    <section style={{ background: C.cream, padding: "96px 24px", fontFamily: font.body }}>
+    <section style={{ background: C.black, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 860, margin: "0 auto", display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: 56, flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
 
         {/* LEFT: Video */}
@@ -562,7 +561,7 @@ function LizSpotlight() {
           <video
             controls
             playsInline
-            style={{ width: "100%", display: "block", borderRadius: 0, border: `1px solid ${C.sand}` }}
+            style={{ width: "100%", display: "block", borderRadius: 0, border: "1px solid rgba(232,85,62,0.4)" }}
           >
             <source src="/liz-bryant.mp4" type="video/mp4" />
           </video>
@@ -570,24 +569,24 @@ function LizSpotlight() {
 
         {/* RIGHT: Byline + copy */}
         <div style={{ flex: 1, minWidth: 260 }}>
-          <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
+          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
             FOUNDER SPOTLIGHT
           </p>
-          <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(22px, 2.5vw, 32px)", color: C.espresso, lineHeight: 1.3, marginBottom: 24 }}>
+          <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(22px, 2.5vw, 32px)", color: "#FFFFFF", lineHeight: 1.3, marginBottom: 24 }}>
             Follow the founders building right now.
           </h2>
-          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: C.espresso, marginBottom: 4 }}>Liz Bryant</h3>
-          <p style={{ fontFamily: font.body, fontSize: 12, fontWeight: 600, letterSpacing: "0.12em", color: C.gold, textTransform: "uppercase", marginBottom: 16 }}>
+          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#FFFFFF", marginBottom: 4 }}>Liz Bryant</h3>
+          <p style={{ fontFamily: font.body, fontSize: 12, fontWeight: 600, letterSpacing: "0.12em", color: C.coral, textTransform: "uppercase", marginBottom: 16 }}>
             Founder, Locals Mark
           </p>
-          <p style={{ fontFamily: font.body, fontSize: 15, color: C.taupe, lineHeight: 1.75, marginBottom: 24 }}>
+          <p style={{ fontFamily: font.body, fontSize: 15, color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: 24 }}>
             Women building businesses in the age of AI — their journeys, their breakthroughs, their real talk. A front row seat to what it actually looks like.
           </p>
           <a
             href="https://www.instagram.com/localsmarkco"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ fontFamily: font.body, fontSize: 14, color: C.gold, textDecoration: "none", fontWeight: 600, letterSpacing: "0.05em" }}
+            style={{ fontFamily: font.body, fontSize: 14, color: C.coral, textDecoration: "none", fontWeight: 600, letterSpacing: "0.05em" }}
           >
             Follow her journey → @localsmarkco
           </a>
@@ -602,11 +601,11 @@ function LizSpotlight() {
 
 function MillsAbout() {
   return (
-    <section style={{ background: C.cream, padding: "80px 24px", fontFamily: font.body }}>
+    <section style={{ background: C.offwhite, padding: "80px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
 
-        <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
+        <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
           You have the dream.<br />We've got the roadmap.
         </h2>
 
@@ -620,17 +619,17 @@ function MillsAbout() {
             />
           </div>
 
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>I've been a founder my entire adult life. My first job out of college was as the first employee and VP of Marketing at a video "technology" startup — back when movies on video and the machines to play them were the latest thing. We grew so fast we made the Inc. 500 three years in a row, making me, quite accidentally, "a corporate executive of an Inc. 500 firm."</p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>For the next 30 years I pitched and built ventures across industries — backed by VC funding along the way. Then came my last pitch — where a VC group told me I was too old to be a founder. So I walked away.</p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20, fontStyle: "italic" }}>Hello, unretirement.</p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>I've won big. I've lost even bigger. That's the founder story nobody tells you about. At 71, I can tell you this: every barrier that stood in the way of generations of female founders is gone. The playing field is level. The rules have finally changed.</p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>In the past month, I built a business from scratch using AI. It's already scaling. No team. No office. No permission. Just a laptop and everything I've learned across five decades of building.</p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>I'm not here to run the show. I'm here to open the door. This is for the next generation of women who are ready to step through it — and I'll be right there with you, building alongside you.</p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20 }}>There is room in this world for every one of us to succeed in our dreams. Here, you are among women helping women. No competition. Just momentum.</p>
-          <p style={{ fontSize: 16, color: C.taupe, lineHeight: 1.8, marginBottom: 20, borderTop: `1px solid ${C.sand}`, paddingTop: 24 }}>FoundHer AI, PBC is a Public Benefit Corporation — which means we're legally structured to put mission before profit. The membership fees keep the lights on and the tools running. Everything else goes back into building more resources for the next generation of women founders. This isn't a business built to make me rich. It's built to make you unstoppable.</p>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.espresso, lineHeight: 1.6, marginBottom: 8 }}>"It's about time women were rewarded for being the natural builders we've always been."</p>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.gold, lineHeight: 1.6, marginBottom: 8 }}>"Dream big. Dream bigger than you ever thought possible."</p>
-          <p style={{ fontSize: 14, color: C.gold, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder, FoundHer AI, PBC</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>I've been a founder my entire adult life. My first job out of college was as the first employee and VP of Marketing at a video "technology" startup — back when movies on video and the machines to play them were the latest thing. We grew so fast we made the Inc. 500 three years in a row, making me, quite accidentally, "a corporate executive of an Inc. 500 firm."</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>For the next 30 years I pitched and built ventures across industries — backed by VC funding along the way. Then came my last pitch — where a VC group told me I was too old to be a founder. So I walked away.</p>
+          <p style={{ fontSize: 16, color: C.black, lineHeight: 1.8, marginBottom: 20, fontStyle: "italic", fontFamily: font.display }}>Hello, unretirement.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>I've won big. I've lost even bigger. That's the founder story nobody tells you about. At 71, I can tell you this: every barrier that stood in the way of generations of female founders is gone. The playing field is level. The rules have finally changed.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>In the past month, I built a business from scratch using AI. It's already scaling. No team. No office. No permission. Just a laptop and everything I've learned across five decades of building.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>I'm not here to run the show. I'm here to open the door. This is for the next generation of women who are ready to step through it — and I'll be right there with you, building alongside you.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>There is room in this world for every one of us to succeed in our dreams. Here, you are among women helping women. No competition. Just momentum.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20, borderTop: `1px solid ${C.lightgray}`, paddingTop: 24 }}>FoundHer AI, PBC is a Public Benefit Corporation — which means we're legally structured to put mission before profit. The membership fees keep the lights on and the tools running. Everything else goes back into building more resources for the next generation of women founders. This isn't a business built to make me rich. It's built to make you unstoppable.</p>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.black, lineHeight: 1.6, marginBottom: 8 }}>"It's about time women were rewarded for being the natural builders we've always been."</p>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.coral, lineHeight: 1.6, marginBottom: 8 }}>"Dream big. Dream bigger than you ever thought possible."</p>
+          <p style={{ fontSize: 14, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder, FoundHer AI, PBC</p>
         </div>
 
       </div>
@@ -642,7 +641,7 @@ function MillsAbout() {
 
 function LifestyleImage() {
   return (
-    <section style={{ background: C.bg, padding: "80px 24px" }}>
+    <section style={{ background: C.white, padding: "80px 24px" }}>
       <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", alignItems: "center", gap: 56, flexWrap: "wrap" }}>
         <div style={{ flex: "0 0 420px", maxWidth: "100%" }}>
           <img
@@ -653,18 +652,18 @@ function LifestyleImage() {
         </div>
         <div style={{ flex: 1, minWidth: 260 }}>
           <img src="/images/fh-seal.png" alt="FoundHers Club" style={{ width: 140, height: 140, display: "block", marginBottom: 16 }} />
-          <p style={{ color: C.gold, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: font.body }}>
+          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: font.body }}>
             THE COMMUNITY
           </p>
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.espresso, lineHeight: 1.2, marginBottom: 20, letterSpacing: "-0.02em" }}>
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.2, marginBottom: 20, letterSpacing: "-0.02em" }}>
             FoundHers are everywhere. Join the club.
           </h2>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.taupe, lineHeight: 1.75, marginBottom: 24 }}>
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 24 }}>
             From the home office to the coffee shop to the kitchen table at midnight — women who build are showing up. In the hats. In the tees. In the community. In the work. Join the women who stopped waiting and started building.
           </p>
           <button
             onClick={() => document.getElementById("foundhers-club")?.scrollIntoView({ behavior: "smooth" })}
-            style={{ background: C.espresso, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontFamily: font.body, fontWeight: 600, fontSize: 15, cursor: "pointer" }}
+            style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontFamily: font.body, fontWeight: 600, fontSize: 15, cursor: "pointer" }}
           >
             Join Us →
           </button>
@@ -681,7 +680,7 @@ function Footer() {
   return (
     <footer
       style={{
-        background: C.espresso,
+        background: C.black,
         borderTop: "1px solid rgba(255,255,255,0.08)",
         padding: "48px 24px",
         fontFamily: font.body,
@@ -690,16 +689,16 @@ function Footer() {
     >
       <div style={{ maxWidth: 800, margin: "0 auto" }}>
         <div style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, marginBottom: 12 }}>
-          <span style={{ color: C.sand }}>Found</span>
-          <span style={{ color: C.gold }}>Her</span>
-          <span style={{ color: C.sand }}> AI™</span>
+          <span style={{ color: "#FFFFFF" }}>Found</span>
+          <span style={{ color: C.coral }}>Her</span>
+          <span style={{ color: "#FFFFFF" }}> AI™</span>
         </div>
-        <p style={{ fontFamily: font.body, fontSize: 15, color: "rgba(255,255,255,0.45)", marginBottom: 28, lineHeight: 1.6 }}>
+        <p style={{ fontFamily: font.body, fontSize: 15, color: "rgba(255,255,255,0.5)", marginBottom: 28, lineHeight: 1.6 }}>
           Build. Launch. Scale. Together.
         </p>
         <div style={{ display: "flex", justifyContent: "center", gap: 24, marginBottom: 32, flexWrap: "wrap" }}>
-          <a href="https://foundherai.ai" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.45)", fontSize: 14, textDecoration: "none" }}>FoundHer AI</a>
-          <a href="mailto:hello@foundherai.ai" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.45)", fontSize: 14, textDecoration: "none" }}>Contact</a>
+          <a href="https://foundherai.ai" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.5)", fontSize: 14, textDecoration: "none" }}>FoundHer AI</a>
+          <a href="mailto:hello@foundherai.ai" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.5)", fontSize: 14, textDecoration: "none" }}>Contact</a>
         </div>
         <p style={{ fontFamily: font.body, fontSize: 13, color: "rgba(255,255,255,0.3)" }}>
           © 2026 FoundHer AI, PBC · foundherai.ai · All rights reserved.
@@ -713,7 +712,7 @@ function Footer() {
 
 export default function HomePage() {
   return (
-    <div style={{ fontFamily: font.body, background: C.bg }}>
+    <div style={{ fontFamily: font.body, background: C.white }}>
       <Nav />
       <main>
         <Hero />
