@@ -211,9 +211,9 @@ function ThreePillars() {
   }, []);
 
   const pillars = [
-    { icon: "⚡", iconColor: C.coral, title: "Online Community", body: "Virtual co-working rooms, live sessions, and a private community of women who are building right now. Share tips, tools, and apps that actually work. Show up, stay accountable, move forward." },
-    { icon: "🎙", iconColor: C.gold, title: "Founder Stories", body: "Real stories from women in the middle of it — the pivots, the breakthroughs, the 3am moments. Our members-only podcast drops every week." },
-    { icon: "🛠", iconColor: C.gold, title: "AI Tools & Roadmaps", body: "Built-for-founders AI tools, early access to new launches, and a roadmap that evolves with you. No fluff. Just what works." },
+    { title: "Online Community", body: "Virtual co-working rooms, live sessions, and a private community of women who are building right now. Share tips, tools, and apps that actually work. Show up, stay accountable, move forward." },
+    { title: "Founder Stories", body: "Real stories from women in the middle of it — the pivots, the breakthroughs, the 3am moments. Our members-only podcast drops every week." },
+    { title: "AI Tools & Roadmaps", body: "Built-for-founders AI tools, early access to new launches, and a roadmap that evolves with you. No fluff. Just what works." },
   ];
 
   return (
@@ -225,7 +225,7 @@ function ThreePillars() {
         <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 48 }}>
           {pillars.map((p) => (
             <div key={p.title}>
-              <div style={{ fontFamily: font.display, fontSize: 48, color: p.iconColor, marginBottom: 16 }}>{p.icon}</div>
+              <img src="/images/checkmark-icon.png" alt="" style={{ width: 48, height: 48, display: "block", marginBottom: 16 }} />
               <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.black, marginBottom: 12 }}>{p.title}</h3>
               <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7 }}>{p.body}</p>
             </div>
@@ -427,15 +427,15 @@ function AIAgents() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 2 }}>
           {[
-            { icon: "⚡", title: "The Launch Agent", body: "Takes your idea from concept to live product. Competitor research, pricing strategy, launch copy — done." },
-            { icon: "📣", title: "The Marketing Agent", body: "Writes your emails, social posts, and ad copy. Knows your brand voice. Runs while you sleep." },
-            { icon: "💰", title: "The Revenue Agent", body: "Identifies your highest-leverage revenue moves. Upsell strategies, pricing optimization, retention plays." },
-            { icon: "🛠", title: "The Operations Agent", body: "Your virtual COO. Manages workflows, vendor comms, and the 100 things that eat your day." },
-            { icon: "📊", title: "The Analytics Agent", body: "Turns your numbers into decisions. Know what's working, what's not, and exactly what to do next." },
-            { icon: "🎙", title: "The Content Agent", body: "Podcasts, blogs, newsletters — a full content engine that sounds like you and never runs out of ideas." },
+            { title: "The Launch Agent", body: "Takes your idea from concept to live product. Competitor research, pricing strategy, launch copy — done." },
+            { title: "The Marketing Agent", body: "Writes your emails, social posts, and ad copy. Knows your brand voice. Runs while you sleep." },
+            { title: "The Revenue Agent", body: "Identifies your highest-leverage revenue moves. Upsell strategies, pricing optimization, retention plays." },
+            { title: "The Operations Agent", body: "Your virtual COO. Manages workflows, vendor comms, and the 100 things that eat your day." },
+            { title: "The Analytics Agent", body: "Turns your numbers into decisions. Know what's working, what's not, and exactly what to do next." },
+            { title: "The Content Agent", body: "Podcasts, blogs, newsletters — a full content engine that sounds like you and never runs out of ideas." },
           ].map((agent) => (
             <div key={agent.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(232,85,62,0.25)", padding: "32px 28px" }}>
-              <div style={{ fontSize: 32, marginBottom: 16, color: C.coral }}>{agent.icon}</div>
+              <img src="/images/tools-icon.png" alt="" style={{ width: 40, height: 40, display: "block", marginBottom: 16 }} />
               <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: "#FFFFFF", marginBottom: 12 }}>{agent.title}</h3>
               <p style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>{agent.body}</p>
             </div>
