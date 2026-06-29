@@ -267,7 +267,7 @@ function MembershipBenefits() {
     <section style={{ background: C.offwhite, padding: "80px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 48, flexWrap: "wrap" }}>
-          <div style={{ width: 140, height: 140, flexShrink: 0 }} />
+          <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 140, height: 140, display: "block", objectFit: "contain", flexShrink: 0 }} />
           <div>
             <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 8 }}>WHAT YOU GET</p>
             <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.1, margin: 0 }}>Membership Benefits</h2>
@@ -311,7 +311,7 @@ function FoundHersClub() {
     <section id="foundhers-club" style={{ background: C.white, padding: "64px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 40, marginBottom: 40, flexWrap: "wrap" }}>
-          <div style={{ width: 220, height: 220, flexShrink: 0 }} />
+          <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 220, height: 220, display: "block", objectFit: "contain", flexShrink: 0 }} />
           <div style={{ textAlign: "left" }}>
             <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 12, fontFamily: font.body }}>THE FOUNDHERS CLUB</p>
             <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, lineHeight: 1.1, margin: 0 }}>Your people are assembling.</h2>
@@ -406,7 +406,7 @@ function FoundHersClubTiers() {
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               POWER CIRCLE
             </div>
-            <div style={{ width: 60, height: 60, display: "block", marginBottom: 12 }} />
+            <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", objectFit: "contain", marginBottom: 12 }} />
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>POWER CIRCLE + CLUB</p>
             <p style={{ marginBottom: 4 }}>
               <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$49</span>
@@ -443,7 +443,7 @@ function FoundHersClubTiers() {
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               POWER CIRCLE
             </div>
-            <div style={{ width: 60, height: 60, display: "block", marginBottom: 12 }} />
+            <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", objectFit: "contain", marginBottom: 12 }} />
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>POWER CIRCLE + MERCH</p>
             <p style={{ marginBottom: 4 }}>
               <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$49</span>
@@ -595,7 +595,7 @@ function MillsAbout() {
 
         <div style={{ overflow: "hidden" }}>
           <div style={{ float: "left", marginRight: 40, marginBottom: 24, width: 340 }}>
-            <div style={{ width: 80, height: 80, display: "block", marginBottom: 16 }} />
+            <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 80, height: 80, display: "block", objectFit: "contain", marginBottom: 16 }} />
             <img
               src="/images/mills-boat.jpg"
               alt="Mills Gardner, Founder of FoundHer AI"
@@ -635,7 +635,7 @@ function LifestyleImage() {
           />
         </div>
         <div style={{ flex: 1, minWidth: 260 }}>
-          <div style={{ width: 140, height: 140, display: "block", marginBottom: 16 }} />
+          <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 140, height: 140, display: "block", objectFit: "contain", marginBottom: 16 }} />
           <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: font.body }}>
             THE COMMUNITY
           </p>
