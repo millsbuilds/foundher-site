@@ -411,7 +411,7 @@ function FoundHersClubTiers() {
 
 function AIAgents() {
   return (
-    <section style={{ background: C.black, padding: "96px 24px", fontFamily: font.body }}>
+    <section style={{ background: "#957258", padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
           <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
@@ -464,7 +464,7 @@ function LizSpotlight() {
   }, []);
 
   return (
-    <section style={{ background: C.black, padding: "96px 24px", fontFamily: font.body }}>
+    <section style={{ background: "#957258", padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 860, margin: "0 auto", display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: 56, flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
 
         {/* LEFT: Video */}
