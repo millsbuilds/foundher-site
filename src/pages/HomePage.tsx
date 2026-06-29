@@ -243,17 +243,11 @@ function Purpose() {
     <section style={{ background: C.white, padding: "80px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
         <div style={{ width: 60, height: 3, background: C.coral, margin: "0 auto 32px" }} />
-        <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(26px,3.5vw,40px)", color: C.black, lineHeight: 1.4, textAlign: "center", margin: 0 }}>
-          FoundHers Club is the home base for women building businesses in the age of AI — the tools, the community, and the voice that says: she was always going to win.
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
+          Stop building alone.
         </h2>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
-          AI gave women founders something extraordinary — the freedom to build alone. No team required. No office lease. No permission. Just a laptop and a dream.
-        </p>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
-          But freedom and isolation can look a lot alike. And women? We're wired for connection. We think out loud. We collaborate. We lift each other up.
-        </p>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.8, maxWidth: 660, margin: "16px auto 0", textAlign: "center" }}>
-          The FoundHers Club closes that gap. Here, you get the best of both worlds — the independence AI makes possible, and the community that makes it sustainable. Connected, supported, and building alongside women who actually get it.
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "16px auto 0", textAlign: "center" }}>
+          AI gave you the tools. We give you the tribe.
         </p>
       </div>
     </section>
