@@ -156,7 +156,7 @@ function Hero() {
           <button onClick={() => scrollTo("foundhers-club")} style={{ width: "100%", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}>
             Join the FoundHers Club →
           </button>
-          <p style={{ fontFamily: font.body, fontSize: 12, color: C.gray, letterSpacing: "0.03em", marginTop: 20 }}>
+          <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.03em", marginTop: 20 }}>
             ⚡ The membership site goes live September 8th · Founding Member spots are limited
           </p>
         </div>
