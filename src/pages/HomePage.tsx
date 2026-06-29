@@ -414,7 +414,7 @@ function AIAgents() {
     <section style={{ background: "#957258", padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
-          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
+          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, background: "white", display: "inline-block", padding: "4px 12px" }}>
             MEMBER TOOLS
           </p>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 52px)", color: "#FFFFFF", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
@@ -442,9 +442,13 @@ function AIAgents() {
           ))}
         </div>
 
-        <p style={{ textAlign: "center", marginTop: 48, fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.coral }}>
-          Available exclusively to FoundHers Club members. First access to Founding Members.
-        </p>
+        <div style={{ textAlign: "center", marginTop: 48 }}>
+          <div style={{ background: "white", padding: "12px 24px", display: "inline-block" }}>
+            <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.coral, margin: 0 }}>
+              Available exclusively to FoundHers Club members. First access to Founding Members.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -480,7 +484,7 @@ function LizSpotlight() {
 
         {/* RIGHT: Byline + copy */}
         <div style={{ flex: 1, minWidth: 260 }}>
-          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>
+          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, background: "white", display: "inline-block", padding: "4px 12px" }}>
             FOUNDER SPOTLIGHT
           </p>
           <h2 style={{ fontFamily: font.display, fontWeight: 400, fontStyle: "italic", fontSize: "clamp(22px, 2.5vw, 32px)", color: "#FFFFFF", lineHeight: 1.3, marginBottom: 24 }}>
@@ -488,7 +492,7 @@ function LizSpotlight() {
           </h2>
           <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#FFFFFF", marginBottom: 4 }}>Liz Bryant</h3>
           <p style={{ fontFamily: font.body, fontSize: 12, fontWeight: 600, letterSpacing: "0.12em", color: C.coral, textTransform: "uppercase", marginBottom: 16 }}>
-            Founder, Locals Mark
+            <span style={{ background: "white", padding: "2px 8px", display: "inline-block" }}>Founder, Locals Mark</span>
           </p>
           <p style={{ fontFamily: font.body, fontSize: 15, color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: 24 }}>
             Women building businesses in the age of AI — their journeys, their breakthroughs, their real talk. A front row seat to what it actually looks like.
@@ -497,7 +501,7 @@ function LizSpotlight() {
             href="https://www.instagram.com/localsmarkco"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ fontFamily: font.body, fontSize: 14, color: C.coral, textDecoration: "none", fontWeight: 600, letterSpacing: "0.05em" }}
+            style={{ fontFamily: font.body, fontSize: 14, color: C.coral, textDecoration: "none", fontWeight: 600, letterSpacing: "0.05em", background: "white", padding: "2px 8px", display: "inline-block" }}
           >
             Follow her journey → @localsmarkco
           </a>
