@@ -144,7 +144,7 @@ function Hero() {
   if (isMobile) {
     return (
       <section style={{ fontFamily: font.body }}>
-        <img src="/images/mills-hero.jpg" alt="FoundHer AI" style={{ width: "100%", height: "50vh", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+        <img src="/images/mills-hero.jpg" alt="FoundHer AI" style={{ width: "100%", height: "65vh", objectFit: "cover", objectPosition: "0% 15%", display: "block" }} />
         <div style={{ background: C.white, padding: "40px 24px 64px" }}>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Build.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Launch.</span>
