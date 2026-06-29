@@ -276,7 +276,7 @@ function MembershipBenefits() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 32 }}>
           {[
             { title: "Online Community", body: "A private community of women building businesses with AI. Show up, get support, move forward — together." },
-            { title: "Monthly T-Shirt Drops", body: "A new tee shipped to your door every month — each one printed with a saying for women who build. Wear who you are. Own the title." },
+            { title: "Merch Store Access", body: "Members get access to our exclusive merch store — tees, hats, and gear printed with sayings for women who build. Wear who you are." },
             { title: "Members-Only Podcast", body: "Founder stories, AI tools, real talk — a weekly podcast exclusively for FoundHers Club members." },
             { title: "Virtual Co-Working Rooms", body: "Drop in, get focused, get things done. Alongside other women who are building right now." },
             { title: "AI Agents & Tools", body: "Exclusive access to AI agents built for women-owned businesses. Run your business without a team." },
@@ -318,7 +318,7 @@ function FoundHersClub() {
           </div>
         </div>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, textAlign: "center", maxWidth: 620, margin: "0 auto 48px", lineHeight: 1.7 }}>
-          The FoundHers Club is where women who build businesses come to stay in the game. Monthly merch drops. A members-only podcast. Virtual co-working rooms. Our annual FoundHers Summit. And a community of women who actually get it.
+          The FoundHers Club is where women who build businesses come to stay in the game. A members-only podcast. Virtual co-working rooms. AI tools. Our annual FoundHers Summit. And a community of women who actually get it.
         </p>
 
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.coral, textAlign: "center", marginBottom: 0 }}>
@@ -335,28 +335,30 @@ function FoundHersClubTiers() {
   return (
     <section style={{ background: C.white, padding: "64px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 960, margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24 }}>
 
           {/* FOUNDHERS CLUB */}
           <div style={{ background: C.white, border: `1.5px solid ${C.lightgray}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
-              CLUB MEMBER
+              FOUNDHERS CLUB
             </div>
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gray, marginBottom: 16 }}>FOUNDHERS CLUB</p>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>FOUNDHERS CLUB</p>
             <p style={{ marginBottom: 0 }}>
               <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$9</span>
               <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>/mo</span>
             </p>
             <div style={{ height: 1, background: C.lightgray, margin: "20px 0" }} />
             <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
-              Your home base. Community, co-working rooms, founder podcast, and AI tools — all for less than a coffee a week.
+              Your home base. Everything you need to build, connect, and grow — for less than a coffee a week.
             </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2 }}>
-              <li>⚡ Private online community</li>
-              <li>⚡ Virtual co-working rooms</li>
-              <li>⚡ Members-only founder podcast — weekly</li>
-              <li>⚡ AI tools & agents built for founders</li>
-              <li>⚡ Share tips, apps & what's working</li>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2.2 }}>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Private online community</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Members-only founder podcast — weekly</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Drop-in co-working rooms</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>AI tools & agents built for founders</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Annual FoundHers Summit discounts</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Merch store access</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Share tips, apps & what's working</li>
             </ul>
             <button
               onClick={async () => {
@@ -365,113 +367,38 @@ function FoundHersClubTiers() {
               }}
               style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
-              Join the Club — $9/mo
+              Join the FoundHers Club — $9/mo
             </button>
           </div>
 
-          {/* MERCH CLUB */}
-          <div style={{ background: C.white, border: `1.5px solid ${C.lightgray}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+          {/* POWER CIRCLE */}
+          <div style={{ background: C.black, border: `2px solid ${C.coral}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
-              MOST POPULAR
+              THE POWER CIRCLE
             </div>
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gray, marginBottom: 16 }}>MERCH CLUB</p>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>POWER CIRCLE</p>
             <p style={{ marginBottom: 0 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$29</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>/mo</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: "#FFFFFF" }}>$49</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: "rgba(255,255,255,0.6)", marginLeft: 8 }}>one-time</span>
             </p>
-            <div style={{ height: 1, background: C.lightgray, margin: "20px 0" }} />
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
-              Everything in the FoundHers Club plus a brand new FoundHer AI tee shipped to your door every month. Wear the movement.
+            <div style={{ height: 1, background: "rgba(255,255,255,0.15)", margin: "20px 0" }} />
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: "#FFFFFF", marginBottom: 12 }}>Powerful enough to impact others.</h3>
+            <p style={{ fontFamily: font.body, fontSize: 14, color: "rgba(255,255,255,0.7)", fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
+              Some women don't just build. They lift others up while they do it. The Power Circle is for women who believe in this mission enough to invest in it. One time. $49. We'll send you the Power Circle hat — oatmeal, coral logo — as our thank you.
             </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2 }}>
-              <li>⚡ Everything in FoundHers Club</li>
-              <li>⚡ Monthly T-shirt drop — new design every month</li>
-              <li>⚡ Shipped via our Fourthwall store</li>
-              <li>⚡ You pay shipping — we handle everything else</li>
-              <li>⚡ First access to limited drops & collab designs</li>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: "rgba(255,255,255,0.7)", lineHeight: 2.2 }}>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>The Power Circle hat — oatmeal with coral logo, shipped to you</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Power Circle status — permanent</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Everything in FoundHers Club — included</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>First access to AI agents</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Your name in our founding member wall</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Wear it knowing you helped make this possible</li>
             </ul>
             <button
-              onClick={async () => {
-                const { url } = await createCheckoutSession('price_1TmeuaCps5fpuWPnBxvpfliN');
-                if (url) window.location.href = url;
-              }}
+              onClick={() => alert('Coming soon — check back shortly!')}
               style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
-              Join the Merch Club — $29/mo
-            </button>
-          </div>
-
-          {/* POWER CIRCLE + CLUB */}
-          <div style={{ background: C.white, border: `2px solid ${C.coral}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
-              POWER CIRCLE
-            </div>
-            <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", objectFit: "contain", marginBottom: 12 }} />
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>POWER CIRCLE + CLUB</p>
-            <p style={{ marginBottom: 4 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$49</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>one-time</span>
-            </p>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, marginBottom: 0 }}>+ $9/mo</p>
-            <div style={{ height: 2, background: C.coral, margin: "20px 0" }} />
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.black, marginBottom: 8 }}>For the woman who builds anyway.</h3>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
-              You've shown up through the fear, the debt, and the 3am doubt. The $38 is your founding badge — and the hat that says you were here first. Then just $9/mo to stay in the club.
-            </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2 }}>
-              <li>⚡ FoundHers Club hat — wear it like the badge it is</li>
-              <li>⚡ Founding Member status — locked in forever</li>
-              <li>⚡ Locked in at $9/mo — never pays more</li>
-              <li>⚡ Community access September 8th</li>
-              <li>⚡ Everything in FoundHers Club</li>
-              <li>⚡ First access to AI agents</li>
-              <li>⚡ Your seat before anyone else</li>
-            </ul>
-            <button
-              onClick={async () => {
-                const { url } = await createCheckoutSession(['price_1TmhCgCps5fpuWPn09VGDReE', 'price_1TmhBMCps5fpuWPn6ZkVgsdO']);
-                if (url) window.location.href = url;
-              }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
-            >
-              Join the Power Circle — $49 + $9/mo
-            </button>
-          </div>
-
-          {/* POWER CIRCLE + MERCH */}
-          <div style={{ background: C.white, border: `2px solid ${C.coral}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
-            <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
-              POWER CIRCLE
-            </div>
-            <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 60, height: 60, display: "block", objectFit: "contain", marginBottom: 12 }} />
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>POWER CIRCLE + MERCH</p>
-            <p style={{ marginBottom: 4 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$49</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>one-time</span>
-            </p>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, marginBottom: 0 }}>+ $29/mo</p>
-            <div style={{ height: 2, background: C.coral, margin: "20px 0" }} />
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.black, marginBottom: 8 }}>For the woman who builds anyway.</h3>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
-              Everything in the Merch Club — plus Founding Member status, the hat, and first access to everything we build. The full package.
-            </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2 }}>
-              <li>⚡ FoundHers Club hat — wear it like the badge it is</li>
-              <li>⚡ Founding Member status — locked in forever</li>
-              <li>⚡ Everything in Merch Club</li>
-              <li>⚡ Monthly T-shirt drop included</li>
-              <li>⚡ Community access September 8th</li>
-              <li>⚡ First access to AI agents</li>
-              <li>⚡ Your seat before anyone else</li>
-            </ul>
-            <button
-              onClick={async () => {
-                const { url } = await createCheckoutSession(['price_1TmhSvCps5fpuWPnADdNnYfZ', 'price_1TmhSvCps5fpuWPndBVhyvBd']);
-                if (url) window.location.href = url;
-              }}
-              style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
-            >
-              Join the Power Circle — $49 + $29/mo
+              Join the Power Circle — $49
             </button>
           </div>
         </div>
