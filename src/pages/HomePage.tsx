@@ -295,39 +295,12 @@ function MembershipBenefits() {
   );
 }
 
-// ─── FOUNDHERS CLUB ────────────────────────────────────────────────────────────
-// NOTE: Run in Supabase SQL editor:
-// alter table foundher_club_waitlist enable row level security;
-// create policy "Allow public inserts" on foundher_club_waitlist for insert with check (true);
-
-function FoundHersClub() {
-  return (
-    <section id="foundhers-club" style={{ background: C.white, padding: "64px 24px", fontFamily: font.body }}>
-      <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 40, marginBottom: 40, flexWrap: "wrap" }}>
-          <img src="/images/fh-logo-new.png" alt="FoundHers Club" style={{ width: 220, height: 220, display: "block", objectFit: "contain", flexShrink: 0 }} />
-          <div style={{ textAlign: "left" }}>
-            <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 12, fontFamily: font.body }}>THE FOUNDHERS CLUB</p>
-            <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, lineHeight: 1.1, margin: 0 }}>Your people are assembling.</h2>
-          </div>
-        </div>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, textAlign: "center", maxWidth: 620, margin: "0 auto 48px", lineHeight: 1.7 }}>
-          The FoundHers Club is where women who build businesses come to stay in the game. A members-only podcast. Virtual co-working rooms. AI tools. Our annual FoundHers Summit. And a community of women who actually get it.
-        </p>
-
-        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.coral, textAlign: "center", marginBottom: 0 }}>
-          Opens September 17th
-        </p>
-      </div>
-    </section>
-  );
-}
 
 // ─── FOUNDHERS CLUB TIERS ────────────────────────────────────────────────────
 
 function FoundHersClubTiers() {
   return (
-    <section style={{ background: C.white, padding: "64px 24px", fontFamily: font.body }}>
+    <section id="foundhers-club" style={{ background: C.white, padding: "64px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 960, margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24 }}>
 
@@ -634,8 +607,6 @@ export default function HomePage() {
         <LizSpotlight />
         <Divider />
         <AIAgents />
-        <Divider />
-        <FoundHersClub />
         <Divider />
         <MillsAbout />
         <Divider />
