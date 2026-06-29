@@ -211,9 +211,9 @@ function ThreePillars() {
   }, []);
 
   const pillars = [
-    { icon: "⚡", title: "Online Community", body: "Virtual co-working rooms, live sessions, and a private community of women who are building right now. Share tips, tools, and apps that actually work. Show up, stay accountable, move forward." },
-    { icon: "🎙", title: "Founder Stories", body: "Real stories from women in the middle of it — the pivots, the breakthroughs, the 3am moments. Our members-only podcast drops every week." },
-    { icon: "🛠", title: "AI Tools & Roadmaps", body: "Built-for-founders AI tools, early access to new launches, and a roadmap that evolves with you. No fluff. Just what works." },
+    { icon: "⚡", iconColor: C.coral, title: "Online Community", body: "Virtual co-working rooms, live sessions, and a private community of women who are building right now. Share tips, tools, and apps that actually work. Show up, stay accountable, move forward." },
+    { icon: "🎙", iconColor: C.gold, title: "Founder Stories", body: "Real stories from women in the middle of it — the pivots, the breakthroughs, the 3am moments. Our members-only podcast drops every week." },
+    { icon: "🛠", iconColor: C.gold, title: "AI Tools & Roadmaps", body: "Built-for-founders AI tools, early access to new launches, and a roadmap that evolves with you. No fluff. Just what works." },
   ];
 
   return (
@@ -225,7 +225,7 @@ function ThreePillars() {
         <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 48 }}>
           {pillars.map((p) => (
             <div key={p.title}>
-              <div style={{ fontFamily: font.display, fontSize: 48, color: C.gold, marginBottom: 16 }}>{p.icon}</div>
+              <div style={{ fontFamily: font.display, fontSize: 48, color: p.iconColor, marginBottom: 16 }}>{p.icon}</div>
               <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.black, marginBottom: 12 }}>{p.title}</h3>
               <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7 }}>{p.body}</p>
             </div>
