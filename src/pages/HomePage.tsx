@@ -508,7 +508,7 @@ function AIAgents() {
             { icon: "🎙", title: "The Content Agent", body: "Podcasts, blogs, newsletters — a full content engine that sounds like you and never runs out of ideas." },
           ].map((agent) => (
             <div key={agent.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(232,85,62,0.25)", padding: "32px 28px" }}>
-              <div style={{ fontSize: 32, marginBottom: 16 }}>{agent.icon}</div>
+              <div style={{ fontSize: 32, marginBottom: 16, color: C.coral }}>{agent.icon}</div>
               <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: "#FFFFFF", marginBottom: 12 }}>{agent.title}</h3>
               <p style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>{agent.body}</p>
             </div>
