@@ -157,7 +157,7 @@ function Hero() {
             Join the FoundHers Club →
           </button>
           <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.03em", marginTop: 20 }}>
-            ⚡ The membership site goes live September 8th · Founding Member spots are limited
+            <img src="/images/checkmark-icon.png" alt="" style={{ width: 16, height: 16, display: "inline-block", verticalAlign: "middle", marginRight: 6 }} />The membership site goes live September 17th · Founding Member spots are limited
           </p>
         </div>
       </section>
@@ -190,7 +190,7 @@ function Hero() {
           </button>
         </div>
         <p style={{ fontFamily: font.body, fontSize: 12, color: C.gray, marginTop: 20, letterSpacing: "0.03em" }}>
-          ⚡ The membership site goes live September 8th · Founding Member spots are limited
+          ⚡ The membership site goes live September 17th · Founding Member spots are limited
         </p>
       </div>
     </section>
@@ -322,7 +322,7 @@ function FoundHersClub() {
         </p>
 
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.coral, textAlign: "center", marginBottom: 0 }}>
-          Opens September 8th
+          Opens September 17th
         </p>
       </div>
     </section>
@@ -338,7 +338,7 @@ function FoundHersClubTiers() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24 }}>
 
           {/* FOUNDHERS CLUB */}
-          <div style={{ background: C.white, border: `1.5px solid ${C.lightgray}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+          <div style={{ background: "#F5EFE8", border: `1.5px solid ${C.lightgray}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               FOUNDHERS CLUB
             </div>
@@ -372,33 +372,34 @@ function FoundHersClubTiers() {
           </div>
 
           {/* POWER CIRCLE */}
-          <div style={{ background: C.black, border: `2px solid ${C.coral}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
+          <div style={{ background: "#F5EFE8", border: `2px solid ${C.coral}`, borderRadius: 0, padding: "40px 32px", textAlign: "left", position: "relative" }}>
             <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.1em", padding: "5px 20px", borderRadius: 0, whiteSpace: "nowrap" }}>
               THE POWER CIRCLE
             </div>
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: C.coral, marginBottom: 16 }}>POWER CIRCLE</p>
             <p style={{ marginBottom: 0 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: "#FFFFFF" }}>$49</span>
-              <span style={{ fontFamily: font.body, fontSize: 16, color: "rgba(255,255,255,0.6)", marginLeft: 8 }}>one-time</span>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 40, color: C.black }}>$54</span>
+              <span style={{ fontFamily: font.body, fontSize: 16, color: C.gray, marginLeft: 8 }}>one-time</span>
             </p>
-            <div style={{ height: 1, background: "rgba(255,255,255,0.15)", margin: "20px 0" }} />
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: "#FFFFFF", marginBottom: 12 }}>Powerful enough to impact others.</h3>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: "rgba(255,255,255,0.7)", fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
-              Some women don't just build. They lift others up while they do it. The Power Circle is for women who believe in this mission enough to invest in it. One time. $49. We'll send you the Power Circle hat — oatmeal, coral logo — as our thank you.
+            <div style={{ height: 1, background: C.lightgray, margin: "20px 0" }} />
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.black, marginBottom: 12 }}>Powerful enough to impact others.</h3>
+            <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, fontStyle: "italic", lineHeight: 1.6, marginBottom: 24 }}>
+              Your $54 sponsors a new woman founder for 6 months in the FoundHers Club — giving her the community, tools, and support she needs to build. We'll send you the Power Circle hat as our thank you. You pay shipping.
             </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: "rgba(255,255,255,0.7)", lineHeight: 2.2 }}>
-              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>The Power Circle hat — oatmeal with coral logo, shipped to you</li>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 2.2 }}>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>You sponsor a new founder for 6 months</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>She gets full FoundHers Club access</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>You receive the Power Circle oatmeal hat</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Coral FoundHer AI logo — shipped to you</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>You pay shipping</li>
               <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Power Circle status — permanent</li>
-              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Everything in FoundHers Club — included</li>
-              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>First access to AI agents</li>
-              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Your name in our founding member wall</li>
-              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>Wear it knowing you helped make this possible</li>
+              <li><span style={{ color: C.coral, fontWeight: 700, marginRight: 8 }}>—</span>First access to AI agents when they launch</li>
             </ul>
             <button
               onClick={() => alert('Coming soon — check back shortly!')}
               style={{ display: "block", width: "100%", textAlign: "center", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 24px", border: "none", borderRadius: 0, cursor: "pointer" }}
             >
-              Join the Power Circle — $49
+              Join the Power Circle — $54
             </button>
           </div>
         </div>
@@ -593,8 +594,8 @@ function Footer() {
   return (
     <footer
       style={{
-        background: C.black,
-        borderTop: "1px solid rgba(255,255,255,0.08)",
+        background: "#957258",
+        borderTop: "1px solid rgba(255,255,255,0.15)",
         padding: "48px 24px",
         fontFamily: font.body,
         textAlign: "center",

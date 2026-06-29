@@ -7,7 +7,7 @@ export default function SuccessPage() {
           You're in. Welcome to the FoundHers Club.
         </h1>
         <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#6B6B6B", lineHeight: 1.7, marginBottom: 32 }}>
-          Your membership is confirmed. We open the doors on September 8th — and you'll be among the first women through them. Watch your inbox for your welcome email and everything you need to get started.
+          Your membership is confirmed. We open the doors on September 17th — and you'll be among the first women through them. Watch your inbox for your welcome email and everything you need to get started.
         </p>
         <div style={{ width: 48, height: 2, background: "#E8553E", margin: "32px auto" }} />
         <p style={{ fontFamily: "'Fraunces', serif", fontStyle: "italic", fontSize: 20, color: "#0D0D0D", lineHeight: 1.6, marginBottom: 8 }}>
