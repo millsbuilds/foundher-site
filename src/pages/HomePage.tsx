@@ -307,9 +307,9 @@ function Collection() {
   );
 }
 
-// ─── LATEST DROP ─────────────────────────────────────────────────────────────
+// ─── FIRST COLLECTION ────────────────────────────────────────────────────────
 
-function LatestDrop() {
+function FirstCollection() {
   const [isMobile, setIsMobile] = useState(
     () => typeof window !== "undefined" ? window.innerWidth < 768 : false
   );
@@ -320,32 +320,66 @@ function LatestDrop() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  const products = [
-    { name: "Bracelet", label: "Coming Soon" },
-    { name: "Phone Case", label: "Coming Soon" },
-    { name: "MacBook Sleeve", label: "Coming Soon" },
-    { name: "AI Tool", label: "Coming Soon" },
-  ];
-
   return (
-    <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body }}>
-      <div style={{ maxWidth: 900, margin: "0 auto" }}>
+    <section style={{ background: C.white, padding: "96px 0", fontFamily: font.body }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
         <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
-          LATEST DROP
+          FIRST COLLECTION
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: C.black, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
-          First collection.
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: C.black, textAlign: "center", marginBottom: 64, letterSpacing: "-0.02em" }}>
+          Designed to Live.
         </h2>
-        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(4, 1fr)", gap: 24 }}>
-          {products.map((p) => (
-            <div key={p.name} style={{ textAlign: "center" }}>
-              <div style={{ background: C.offwhite, width: "100%", aspectRatio: "1", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
-                <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 16, color: C.gray }}>{p.name}</p>
-              </div>
-              <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 13, color: C.black, marginBottom: 4 }}>{p.name}</p>
-              <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.08em", textTransform: "uppercase" }}>{p.label}</p>
-            </div>
-          ))}
+      </div>
+
+      {/* Bracelet — full bleed left */}
+      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: "center", marginBottom: 4 }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <img src="/images/bracelet-editorial.jpg" alt="FoundHer Bracelet" style={{ width: "100%", height: isMobile ? 400 : 560, objectFit: "cover", display: "block" }} />
+        </div>
+        <div style={{ flex: "0 0 360px", padding: isMobile ? "40px 24px" : "0 64px", maxWidth: "100%" }}>
+          <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: C.coral, marginBottom: 12 }}>01</p>
+          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, color: C.black, marginBottom: 12 }}>FoundHer Bracelet</h3>
+          <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7, marginBottom: 16 }}>A quiet reminder on your wrist that you chose this life — and you're building it beautifully.</p>
+          <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.08em", textTransform: "uppercase" }}>Coming Soon</p>
+        </div>
+      </div>
+
+      {/* MacBook Sleeve — full bleed right */}
+      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row-reverse", alignItems: "center", marginBottom: 4 }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <img src="/images/macbook-sleeve-editorial.jpg" alt="FoundHer MacBook Sleeve" style={{ width: "100%", height: isMobile ? 400 : 560, objectFit: "cover", display: "block" }} />
+        </div>
+        <div style={{ flex: "0 0 360px", padding: isMobile ? "40px 24px" : "0 64px", maxWidth: "100%" }}>
+          <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: C.coral, marginBottom: 12 }}>02</p>
+          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, color: C.black, marginBottom: 12 }}>FoundHer MacBook Sleeve</h3>
+          <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7, marginBottom: 16 }}>Her laptop built the business. This protects the instrument.</p>
+          <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.08em", textTransform: "uppercase" }}>Coming Soon</p>
+        </div>
+      </div>
+
+      {/* Phone Case — full bleed left */}
+      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: "center", marginBottom: 4 }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <img src="/images/phone-case-editorial.jpg" alt="FoundHer Phone Case" style={{ width: "100%", height: isMobile ? 400 : 560, objectFit: "cover", display: "block" }} />
+        </div>
+        <div style={{ flex: "0 0 360px", padding: isMobile ? "40px 24px" : "0 64px", maxWidth: "100%" }}>
+          <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: C.coral, marginBottom: 12 }}>03</p>
+          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, color: C.black, marginBottom: 12 }}>FoundHer Phone Case</h3>
+          <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7, marginBottom: 16 }}>The device that runs the empire deserves better than a generic case.</p>
+          <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.08em", textTransform: "uppercase" }}>Coming Soon</p>
+        </div>
+      </div>
+
+      {/* Beach Towel — full bleed right */}
+      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row-reverse", alignItems: "center" }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <img src="/images/beach-towel-editorial.jpg" alt="FoundHer Beach Towel" style={{ width: "100%", height: isMobile ? 400 : 560, objectFit: "cover", display: "block" }} />
+        </div>
+        <div style={{ flex: "0 0 360px", padding: isMobile ? "40px 24px" : "0 64px", maxWidth: "100%" }}>
+          <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: C.coral, marginBottom: 12 }}>04</p>
+          <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, color: C.black, marginBottom: 12 }}>FoundHer Beach Towel</h3>
+          <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7, marginBottom: 16 }}>She built the business so she could be here. This is the proof.</p>
+          <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.08em", textTransform: "uppercase" }}>Coming Soon</p>
         </div>
       </div>
     </section>
@@ -523,7 +557,7 @@ export default function HomePage() {
         <Divider />
         <Collection />
         <Divider />
-        <LatestDrop />
+        <FirstCollection />
         <Divider />
         <AISection />
         <Divider />
