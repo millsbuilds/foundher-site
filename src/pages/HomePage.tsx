@@ -340,19 +340,21 @@ function FirstCollection() {
         </h2>
       </div>
 
-      {objects.map((obj, i) => (
-        <div key={obj.title} style={{ display: "flex", flexDirection: isMobile ? "column" : (i % 2 === 0 ? "row" : "row-reverse"), alignItems: "center", marginBottom: i < objects.length - 1 ? 4 : 0 }}>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <img src={obj.image} alt={obj.title} style={{ width: "100%", height: isMobile ? 400 : 560, objectFit: "cover", display: "block" }} />
+      <div style={{ maxWidth: 860, margin: "0 auto", padding: "0 24px" }}>
+        {objects.map((obj, i) => (
+          <div key={obj.title} style={{ display: "flex", flexDirection: isMobile ? "column" : (i % 2 === 0 ? "row" : "row-reverse"), alignItems: "center", justifyContent: "center", gap: isMobile ? 0 : 80, marginBottom: i < objects.length - 1 ? 80 : 0 }}>
+            <div style={{ flexShrink: 0, width: isMobile ? "60%" : 220, margin: isMobile ? "0 auto" : undefined }}>
+              <img src={obj.image} alt={obj.title} style={{ width: "100%", height: "auto", aspectRatio: "1", objectFit: "cover", display: "block" }} />
+            </div>
+            <div style={{ flex: 1, padding: isMobile ? "32px 0 0" : 0, textAlign: isMobile ? "center" : (i % 2 === 0 ? "left" : "right") }}>
+              <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: C.coral, marginBottom: 8 }}>{obj.number}</p>
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.black, marginBottom: 10 }}>{obj.title}</h3>
+              <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7, marginBottom: 12, maxWidth: 340, margin: isMobile ? "0 auto 12px" : undefined, marginLeft: i % 2 !== 0 && !isMobile ? "auto" : undefined }}>{obj.body}</p>
+              <p style={{ fontFamily: font.body, fontSize: 11, color: C.coral, letterSpacing: "0.1em", textTransform: "uppercase" }}>Coming Soon</p>
+            </div>
           </div>
-          <div style={{ flex: "0 0 360px", padding: isMobile ? "40px 24px" : "0 64px", maxWidth: "100%" }}>
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: C.coral, marginBottom: 12 }}>{obj.number}</p>
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, color: C.black, marginBottom: 12 }}>{obj.title}</h3>
-            <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7, marginBottom: 16 }}>{obj.body}</p>
-            <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.08em", textTransform: "uppercase" }}>Coming Soon</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }
