@@ -419,25 +419,31 @@ function Founder() {
 
         <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
-          I want you to have the best life.
+          I want you to build a life you love.
         </h2>
 
         <div style={{ overflow: "hidden" }}>
           <div style={{ float: "left", marginRight: 40, marginBottom: 24, width: 340 }}>
             <img
               src="/images/mills-boat.jpg"
-              alt="Mills Gardner, Founder of FoundHer AI"
+              alt="Mills Gardner, Founder"
               style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
             />
           </div>
 
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>I built businesses for 30 years. Then at 58, a VC told me I was too old to be a founder. So I walked away.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For 12 years, I was done.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For more than 30 years, I built companies. Like many founders, I spent years chasing validation — pitching investors, winning customers, growing teams, and trying to prove I belonged. Then, at 58, a venture capitalist told me I was too old to be a founder. I believed him, and for the next twelve years, I stopped building.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived.</p>
-          <p style={{ fontSize: 16, color: C.black, lineHeight: 1.8, marginBottom: 28, fontStyle: "italic", fontFamily: font.display }}>Hello, unretirement.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>At 71, I've learned one thing clearly: the point was never the business. It was always the life. The freedom to wake up and choose how you spend your time.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 40 }}>FoundHer exists for solo women founders building income through businesses they create — and for senior FoundHers who want to inspire, empower, and prove what's possible at every stage of life.</p>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.black, lineHeight: 1.5, marginBottom: 8 }}>"The goal was never the business. The goal was the life."</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not as just another technology, but as permission to begin again. For the first time, a woman with an idea and a laptop could build something extraordinary without waiting for someone else to say yes.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>But I've learned something even more important.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Building is still a lonely journey. Nobody hands you a promotion. Nobody tells you you're doing a good job. Nobody reminds you that what you're creating matters. As founders, we're often expected to provide the belief for everyone else while quietly wondering if we're on the right path ourselves.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>That's why I created FoundHer.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not to tell women what to build, but to remind them that choosing to build is already an extraordinary act. Whether you're selling on Amazon or Etsy, launching a Shopify store, writing a Substack, creating on YouTube, building AI automations, serving clients, or growing a business one customer at a time — you are building something that didn't exist before.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Every time you see The Mark, I hope it reminds you of one simple truth:</p>
+          <p style={{ fontSize: 16, color: C.black, lineHeight: 1.8, marginBottom: 28, fontWeight: 600 }}>You are a founder.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>You don't need permission. You don't need validation. You don't need to have arrived.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>You simply need to keep building.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 40 }}>Because after everything I've learned, one truth has never changed:</p>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.black, lineHeight: 1.5, marginBottom: 8 }}>"The goal was never the business. The goal was always the life."</p>
           <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
         </div>
 
