@@ -227,10 +227,10 @@ function Collection() {
           THE COLLECTION
         </p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, textAlign: "center", marginBottom: 16 }}>
-          Designed to live.
+          Designed to Live.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, textAlign: "center", maxWidth: 540, margin: "0 auto 56px", lineHeight: 1.7 }}>
-          Every object we create belongs to a life built with intention. Not merchandise. Artifacts.
+          Every object we create belongs to a life built with intention.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 48 }}>
           {categories.map((c) => (
@@ -243,6 +243,51 @@ function Collection() {
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 16, color: C.gray, textAlign: "center", marginTop: 56 }}>
           First collection arriving soon.
         </p>
+      </div>
+    </section>
+  );
+}
+
+// ─── LATEST DROP ─────────────────────────────────────────────────────────────
+
+function LatestDrop() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const products = [
+    { name: "Bracelet", label: "Coming Soon" },
+    { name: "Phone Case", label: "Coming Soon" },
+    { name: "MacBook Sleeve", label: "Coming Soon" },
+    { name: "AI Tool", label: "Coming Soon" },
+  ];
+
+  return (
+    <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body }}>
+      <div style={{ maxWidth: 900, margin: "0 auto" }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
+          LATEST DROP
+        </p>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: C.black, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
+          First collection.
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(4, 1fr)", gap: 24 }}>
+          {products.map((p) => (
+            <div key={p.name} style={{ textAlign: "center" }}>
+              <div style={{ background: C.offwhite, width: "100%", aspectRatio: "1", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
+                <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 16, color: C.gray }}>{p.name}</p>
+              </div>
+              <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 13, color: C.black, marginBottom: 4 }}>{p.name}</p>
+              <p style={{ fontFamily: font.body, fontSize: 12, color: C.coral, letterSpacing: "0.08em", textTransform: "uppercase" }}>{p.label}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -275,10 +320,10 @@ function AISection() {
             INTELLIGENT TOOLS
           </p>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 48px)", color: "#FFFFFF", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
-            More freedom. Less friction.
+            Technology that gives you your time back.
           </h2>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: 520, margin: "0 auto" }}>
-            AI shouldn't feel like work. It should feel like having the best team in the world — one that never sleeps, never forgets, and never asks for equity.
+            The best AI doesn't add to your workload. It quietly removes it — so you can spend your hours on the life you're actually building.
           </p>
         </div>
 
@@ -320,15 +365,14 @@ function Founder() {
             />
           </div>
 
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>I spent 30 years building businesses. I pitched VCs. I scaled teams. I made the Inc. 500. And then, at 58, I was told I was too old to be a founder. So I walked away.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>For 12 years, I was done.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>Then AI arrived — and everything changed. For the first time, a woman with a vision and a laptop could build something extraordinary. No team. No office. No permission.</p>
-          <p style={{ fontSize: 16, color: C.black, lineHeight: 1.8, marginBottom: 20, fontStyle: "italic", fontFamily: font.display }}>Hello, unretirement.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>But here's what I've learned at 71: the point was never the business. The point was always the life. The freedom. The ability to wake up and choose how you spend your time.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>That's what FoundHer AI is. Beautiful objects. Intelligent tools. A brand for women who are done asking permission and ready to live on their own terms.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20, borderTop: `1px solid ${C.lightgray}`, paddingTop: 24 }}>FoundHer AI, PBC is a Public Benefit Corporation — mission before profit, always.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>I built businesses for 30 years. Then at 58, a VC told me I was too old to be a founder. So I walked away.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For 12 years, I was done.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived.</p>
+          <p style={{ fontSize: 16, color: C.black, lineHeight: 1.8, marginBottom: 28, fontStyle: "italic", fontFamily: font.display }}>Hello, unretirement.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>At 71, I've learned one thing clearly: the point was never the business. It was always the life. The freedom to wake up and choose how you spend your time.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 40 }}>FoundHer AI exists for women who understand that. Beautiful objects. Intelligent tools. A life built on your own terms.</p>
           <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.black, lineHeight: 1.5, marginBottom: 8 }}>"The goal was never the business. The goal was the life."</p>
-          <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder, FoundHer AI, PBC</p>
+          <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
         </div>
 
       </div>
@@ -417,6 +461,8 @@ export default function HomePage() {
         <Philosophy />
         <Divider />
         <Collection />
+        <Divider />
+        <LatestDrop />
         <Divider />
         <AISection />
         <Divider />
