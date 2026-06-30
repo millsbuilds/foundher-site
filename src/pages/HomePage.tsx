@@ -147,8 +147,11 @@ function Hero() {
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Launch.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Scale.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block", marginBottom: 24 }}>Live.</span>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 32 }}>
-            Beautiful objects. Intelligent tools. Designed for women building lives on their own terms.
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+            Beautiful objects. Intelligent tools. Designed for solo women founders building income through businesses they create.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 1.7, marginBottom: 32 }}>
+            Content creators. Sellers. Visionaries. Solo founders building life on their own terms.
           </p>
           <button onClick={() => scrollTo("collection")} style={{ width: "100%", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}>
             Explore
@@ -172,8 +175,11 @@ function Hero() {
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 80, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Live.</span>
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 420, background: "rgba(255,255,255,0.92)", padding: "48px 40px", zIndex: 2 }}>
-        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 32 }}>
-          Beautiful objects. Intelligent tools. Designed for women building lives on their own terms.
+        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+          Beautiful objects. Intelligent tools. Designed for solo women founders building income through businesses they create.
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 1.7, marginBottom: 32 }}>
+          Content creators. Sellers. Visionaries. Solo founders building life on their own terms.
         </p>
         <button onClick={() => scrollTo("collection")} style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}>
           Explore
@@ -201,6 +207,59 @@ function Philosophy() {
   );
 }
 
+// ─── WE SEE YOU ─────────────────────────────────────────────────────────────
+
+function WeSeeYou() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const lines = [
+    "She's selling on Amazon.",
+    "She's building an Etsy shop.",
+    "She has a Substack.",
+    "She has a YouTube channel.",
+    "She's an OnlyFans creator.",
+    "She's building a Shopify store.",
+    "She's selling digital products.",
+    "She's a real estate agent building a personal brand.",
+    "She's creating AI automations for clients.",
+    "She has a blog that makes $500 a month.",
+    "She has an Instagram with 4,000 followers.",
+    "She has 2 million followers.",
+    "She's just getting started.",
+    "She's scaling.",
+    "She's doing it her way.",
+  ];
+
+  return (
+    <section style={{ background: C.offwhite, padding: "96px 24px", fontFamily: font.body }}>
+      <div style={{ maxWidth: 860, margin: "0 auto" }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
+          WE SEE YOU
+        </p>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
+          Every FoundHer is building something.
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: "8px 48px", marginBottom: 48 }}>
+          {lines.map((line) => (
+            <p key={line} style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 17, color: C.gray, lineHeight: 2, margin: 0 }}>{line}</p>
+          ))}
+        </div>
+        <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", color: C.black, textAlign: "center" }}>
+          She is a Found<span style={{ color: C.coral }}>Her</span>.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 // ─── COLLECTION ──────────────────────────────────────────────────────────────
 
 function Collection() {
@@ -217,7 +276,7 @@ function Collection() {
   const categories = [
     { title: "Accessories & Jewelry", body: "Pieces designed for women who build — from the desk to the world. Limited releases. Intentional design." },
     { title: "AI Agents & Tools", body: "Elegant automation built for the way you actually work. More time. More freedom. More life." },
-    { title: "Creator Essentials", body: "Phone cases. MacBook accessories. Objects that reflect the life you're building." },
+    { title: "Everyday Carry", body: "Phone cases. MacBook accessories. Objects she uses every day while building." },
   ];
 
   return (
@@ -337,7 +396,7 @@ function AISection() {
         </div>
 
         <p style={{ textAlign: "center", marginTop: 48, fontFamily: font.display, fontStyle: "italic", fontSize: 17, color: "rgba(255,255,255,0.4)" }}>
-          Available exclusively through FoundHer AI.
+          Available exclusively through FoundHer.
         </p>
       </div>
     </section>
@@ -353,7 +412,7 @@ function Founder() {
 
         <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
-          I didn't build FoundHer because I wanted another business.<br />I built it because I wanted a better life.
+          I want you to have the best life.
         </h2>
 
         <div style={{ overflow: "hidden" }}>
@@ -370,7 +429,7 @@ function Founder() {
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived.</p>
           <p style={{ fontSize: 16, color: C.black, lineHeight: 1.8, marginBottom: 28, fontStyle: "italic", fontFamily: font.display }}>Hello, unretirement.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>At 71, I've learned one thing clearly: the point was never the business. It was always the life. The freedom to wake up and choose how you spend your time.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 40 }}>FoundHer AI exists for women who understand that. Beautiful objects. Intelligent tools. A life built on your own terms.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 40 }}>FoundHer exists for solo women founders building income through businesses they create — and for senior FoundHers who want to inspire, empower, and prove what's possible at every stage of life.</p>
           <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.black, lineHeight: 1.5, marginBottom: 8 }}>"The goal was never the business. The goal was the life."</p>
           <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
         </div>
@@ -388,8 +447,8 @@ function Lifestyle() {
       <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", alignItems: "center", gap: 56, flexWrap: "wrap" }}>
         <div style={{ flex: "0 0 420px", maxWidth: "100%" }}>
           <img
-            src="/foundher-lifestyle.jpg"
-            alt="Women wearing FoundHer AI"
+            src="/images/lifestyle-horse-helmet-foundher.jpg"
+            alt="Woman in a beige riding helmet cover with the FoundHer mark kissing the nose of a fawn thoroughbred horse"
             style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
           />
         </div>
@@ -401,7 +460,7 @@ function Lifestyle() {
             Designed for women who build beautiful lives.
           </h2>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 24 }}>
-            Every piece we create reflects the woman who wears it — confident, intentional, building something real. From the coffee shop to the coastline.
+            Every piece we create reflects the woman who wears it — confident, intentional, and building something real. From the coffee shop to the coastline, from the stable to the studio.
           </p>
           <button
             onClick={() => document.getElementById("collection")?.scrollIntoView({ behavior: "smooth" })}
@@ -459,6 +518,8 @@ export default function HomePage() {
         <Hero />
         <Divider />
         <Philosophy />
+        <Divider />
+        <WeSeeYou />
         <Divider />
         <Collection />
         <Divider />
