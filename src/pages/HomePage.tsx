@@ -4,7 +4,7 @@ const C = {
   white: "#FFFFFF",
   offwhite: "#F7F7F7",
   black: "#0D0D0D",
-  coral: "#E8553E",
+  coral: "#C16044",
   gray: "#6B6B6B",
   lightgray: "#F0F0F0",
 };
@@ -60,11 +60,7 @@ function Nav() {
           justifyContent: "space-between",
         }}
       >
-        <div style={{ fontSize: 20, fontWeight: 700, fontFamily: font.display, letterSpacing: "-0.02em", cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <span style={{ color: C.black }}>Found</span>
-          <span style={{ color: C.coral }}>Her</span>
-          <span style={{ color: C.black }}> AI™</span>
-        </div>
+        <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer AI" style={{ height: 40, cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
 
         {isMobile ? (
           <button
