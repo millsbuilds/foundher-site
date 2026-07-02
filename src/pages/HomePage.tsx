@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const C = {
   white: "#FFFFFF",
@@ -200,20 +200,19 @@ function LifestyleBreak() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
+  const imgStyle = (pos: string): React.CSSProperties => ({
+    width: isMobile ? "100%" : "33.333%",
+    height: isMobile ? "50vh" : "80vh",
+    objectFit: "cover",
+    objectPosition: pos,
+    display: "block",
+  });
+
   return (
-    <section style={{ position: "relative", margin: 0, padding: 0, lineHeight: 0 }}>
-      <img
-        src="/images/FH_beach-shower.png"
-        alt="Beach shower lifestyle"
-        style={{ width: "100%", height: isMobile ? "60vh" : "85vh", objectFit: "cover", objectPosition: "center center", display: "block" }}
-      />
-      {!isMobile && (
-        <img
-          src="/images/FH_Beach-towel-scene.png"
-          alt="Beach towel with FoundHer mark"
-          style={{ position: "absolute", right: "4%", bottom: 0, height: "80%", width: "auto", objectFit: "contain", display: "block" }}
-        />
-      )}
+    <section style={{ margin: 0, padding: 0, display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden", lineHeight: 0 }}>
+      <img src="/images/FH_beach-shower.png" alt="Beach shower lifestyle" style={imgStyle("center center")} />
+      <img src="/images/FH_yacht.png" alt="FoundHer yacht" style={imgStyle("center center")} />
+      <img src="/images/FH_Beach-towel-scene.png" alt="Beach towel with FoundHer mark" style={imgStyle("center center")} />
     </section>
   );
 }
