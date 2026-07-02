@@ -146,7 +146,10 @@ function Hero() {
             Until now, there was no official title for who you are.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            The FoundHer Mark is the universal symbol for the woman who builds. Businesses. A living. Life on her terms. The woman building enough to quit her job.
+            The FoundHer Mark is the universal symbol for the woman who builds. Businesses. A living. Life on her terms.
+          </p>
+          <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+            Even the woman building enough to quit her job.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
             Now there is an official title: You're a FoundHer.
@@ -164,7 +167,7 @@ function Hero() {
         alt="FoundHer AI"
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", display: "block", zIndex: 0 }}
       />
-      <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start", minHeight: "100vh", padding: "120px 0 0 7%" }}>
+      <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start", minHeight: "100vh", padding: "200px 0 0 7%" }}>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 80, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Live</span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 80, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Proudly.</span>
       </div>
@@ -176,7 +179,10 @@ function Hero() {
           Until now, there was no official title for who you are.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          The FoundHer Mark is the universal symbol for the woman who builds. Businesses. A living. Life on her terms. The woman building enough to quit her job.
+          The FoundHer Mark is the universal symbol for the woman who builds. Businesses. A living. Life on her terms.
+        </p>
+        <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+          Even the woman building enough to quit her job.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
           Now there is an official title: You're a FoundHer.
