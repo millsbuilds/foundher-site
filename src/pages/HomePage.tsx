@@ -233,7 +233,7 @@ function WeSeeYou() {
           {[
             "She's selling on Amazon.",
             "She's building an Etsy shop.",
-            "She has a Substack.",
+            "She's building a media company.",
             "She has a YouTube channel.",
             "She's building a Shopify store.",
             "She's selling digital products.",
