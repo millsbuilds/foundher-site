@@ -237,8 +237,8 @@ function WeSeeYou() {
             "She has a YouTube channel.",
             "She's building a Shopify store.",
             "She's selling digital products.",
-            "She's a real estate agent building a personal brand.",
             "She's creating AI automations for clients.",
+            "She's creating a product line.",
             "She has a blog that makes $500 a month.",
             "She has an Instagram with 4,000 followers.",
             "She has 2 million followers.",
@@ -251,7 +251,7 @@ function WeSeeYou() {
           ))}
         </div>
         <p style={{ fontFamily: font.display, fontWeight: 400, fontSize: 18, color: C.gray, textAlign: "center", maxWidth: 640, margin: "48px auto", lineHeight: 1.7 }}>
-          A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
+          A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician who has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
         </p>
         <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", color: C.black, textAlign: "center" }}>
           She is a Found<span style={{ color: C.coral }}>Her</span>.
