@@ -177,10 +177,10 @@ function Philosophy() {
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
         <div style={{ width: 60, height: 3, background: C.coral, margin: "0 auto 40px" }} />
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.coral, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
-          The goal was never the business.<br />The goal was the life.
+          The goal is never the business.<br />The goal is the life.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
-          AI is the leverage. Freedom is the destination.
+          Build the business. Live the lifestyle. AI makes both possible.
         </p>
       </div>
     </section>
