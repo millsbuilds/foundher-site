@@ -137,21 +137,25 @@ function Hero() {
   if (isMobile) {
     return (
       <section style={{ fontFamily: font.body }}>
-        <img src="/images/hero-founder.jpg" alt="FoundHer AI" style={{ width: "100%", height: "65vh", objectFit: "cover", objectPosition: "center 20%", display: "block" }} />
+        <img src="/images/FH_hero-image-final.png" alt="FoundHer AI" style={{ width: "100%", height: "65vh", objectFit: "cover", objectPosition: "center 20%", display: "block" }} />
         <div style={{ background: C.white, padding: "40px 24px 64px" }}>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Build.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Launch.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Scale.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block", marginBottom: 24 }}>Live.</span>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Beautiful objects. Intelligent tools. Designed for solo women founders building income through businesses they create.
+            Maybe you build businesses. Maybe you're launching a brand, selling online, creating content, or building an audience. Maybe you have a million fans.
           </p>
-          <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 1.7, marginBottom: 32 }}>
-            Content creators. Sellers. Visionaries. Solo founders building life on their own terms.
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+            Until now, there was no official title for who you are.
           </p>
-          <button onClick={() => scrollTo("collection")} style={{ width: "100%", background: C.coral, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "14px 28px", border: "none", borderRadius: 0, cursor: "pointer" }}>
-            Explore
-          </button>
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+            The FoundHer Mark is the universal symbol for the woman who builds. Businesses. A living. Life on her terms. The woman building enough to quit her job.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
+            Now there is an official title: You're a FoundHer.
+          </p>
+          <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
         </div>
       </section>
     );
@@ -160,11 +164,11 @@ function Hero() {
   return (
     <section style={{ position: "relative", width: "100%", minHeight: "100vh", fontFamily: font.body }}>
       <img
-        src="/images/hero-founder.jpg"
+        src="/images/FH_hero-image-final.png"
         alt="FoundHer AI"
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", display: "block", zIndex: 0 }}
       />
-      <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "center", minHeight: "100vh", padding: "0 0 0 7%" }}>
+      <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start", minHeight: "100vh", padding: "120px 0 0 7%" }}>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 80, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Build.</span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 80, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Launch.</span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 80, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Scale.</span>
@@ -172,14 +176,18 @@ function Hero() {
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 420, background: "rgba(255,255,255,0.92)", padding: "48px 40px", zIndex: 2 }}>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Beautiful objects. Intelligent tools. Designed for solo women founders building income through businesses they create.
+          Maybe you build businesses. Maybe you're launching a brand, selling online, creating content, or building an audience. Maybe you have a million fans.
         </p>
-        <p style={{ fontFamily: font.body, fontSize: 14, color: C.gray, lineHeight: 1.7, marginBottom: 32 }}>
-          Content creators. Sellers. Visionaries. Solo founders building life on their own terms.
+        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+          Until now, there was no official title for who you are.
         </p>
-        <button onClick={() => scrollTo("collection")} style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, whiteSpace: "nowrap" }}>
-          Explore
-        </button>
+        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+          The FoundHer Mark is the universal symbol for the woman who builds. Businesses. A living. Life on her terms. The woman building enough to quit her job.
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
+          Now there is an official title: You're a FoundHer.
+        </p>
+        <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
       </div>
     </section>
   );
