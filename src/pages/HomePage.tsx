@@ -149,7 +149,7 @@ function Hero() {
             Finally, a brand that understands and speaks your language.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Welcome to FoundHer.
+            Welcome to FoundHer AI.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
             This brand is your brand, and you belong here.
@@ -182,7 +182,7 @@ function Hero() {
           Finally, a brand that understands and speaks your language.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Welcome to FoundHer.
+          Welcome to FoundHer AI.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
           This brand is your brand, and you belong here.
