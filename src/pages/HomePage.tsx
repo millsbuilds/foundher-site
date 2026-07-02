@@ -139,20 +139,8 @@ function Hero() {
         <div style={{ background: C.white, padding: "40px 24px 64px" }}>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Live</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block", marginBottom: 24 }}>Proudly.</span>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Maybe you build businesses. Maybe you're launching a brand, selling online, creating content, or building an audience. Maybe you have a million fans, or you're building so you can quit your job.
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Until now, there was no official title for who you are.
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Finally, a brand that understands and speaks the language of the founder.
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Welcome to FoundHer AI.
-          </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
-            This brand is your brand, and you belong here.
+            This is the brand for women founders — the women brave enough to build...through the fears, through the pivots, to the triumphs.
           </p>
           <img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
         </div>
@@ -172,20 +160,8 @@ function Hero() {
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 80, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Proudly.</span>
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 420, background: "rgba(255,255,255,0.92)", padding: "48px 40px", zIndex: 2 }}>
-        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Maybe you build businesses. Maybe you're launching a brand, selling online, creating content, or building an audience. Maybe you have a million fans, or you're building so you can quit your job.
-        </p>
-        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Until now, there was no official title for who you are.
-        </p>
-        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Finally, a brand that understands and speaks the language of the founder.
-        </p>
-        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Welcome to FoundHer AI.
-        </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
-          This brand is your brand, and you belong here.
+          This is the brand for women founders — the women brave enough to build...through the fears, through the pivots, to the triumphs.
         </p>
         <img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
       </div>
