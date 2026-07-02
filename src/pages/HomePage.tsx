@@ -201,17 +201,19 @@ function LifestyleBreak() {
   }, []);
 
   return (
-    <section style={{ margin: 0, padding: 0, background: "#F4F1EA", display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: "flex-end" }}>
+    <section style={{ position: "relative", margin: 0, padding: 0, lineHeight: 0 }}>
       <img
         src="/images/FH_beach-shower.png"
         alt="Beach shower lifestyle"
-        style={{ width: isMobile ? "100%" : "50%", height: "auto", objectFit: "contain", display: "block" }}
+        style={{ width: "100%", height: isMobile ? "60vh" : "85vh", objectFit: "cover", objectPosition: "center center", display: "block" }}
       />
-      <img
-        src="/images/FH_Beach-towel-scene.png"
-        alt="Beach towel with FoundHer mark"
-        style={{ width: isMobile ? "100%" : "50%", height: "auto", objectFit: "contain", display: "block" }}
-      />
+      {!isMobile && (
+        <img
+          src="/images/FH_Beach-towel-scene.png"
+          alt="Beach towel with FoundHer mark"
+          style={{ position: "absolute", right: "4%", bottom: 0, height: "80%", width: "auto", objectFit: "contain", display: "block" }}
+        />
+      )}
     </section>
   );
 }
