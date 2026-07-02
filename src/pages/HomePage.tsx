@@ -60,7 +60,7 @@ function Nav() {
           justifyContent: "space-between",
         }}
       >
-        <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer AI" style={{ height: 40, cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
+        <img src="/images/FH_mark_official.png" alt="FoundHer AI" style={{ height: 40, cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
 
         {isMobile ? (
           <button
@@ -154,7 +154,7 @@ function Hero() {
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
             This brand is your brand, and you belong here.
           </p>
-          <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
+          <img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
         </div>
       </section>
     );
@@ -187,7 +187,7 @@ function Hero() {
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
           This brand is your brand, and you belong here.
         </p>
-        <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
+        <img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
       </div>
     </section>
   );
