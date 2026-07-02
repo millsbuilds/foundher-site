@@ -146,13 +146,13 @@ function Hero() {
             Until now, there was no official title for who you are.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Welcome to FoundHer.
+            Finally, a brand that understands and speaks your language.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            This brand is for you.
+            Welcome to FoundHer.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
-            You belong here.
+            This brand is your brand, and you belong here.
           </p>
           <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
         </div>
@@ -179,13 +179,13 @@ function Hero() {
           Until now, there was no official title for who you are.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Welcome to FoundHer.
+          Finally, a brand that understands and speaks your language.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          This brand is for you.
+          Welcome to FoundHer.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
-          You belong here.
+          This brand is your brand, and you belong here.
         </p>
         <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
       </div>
