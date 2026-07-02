@@ -423,32 +423,25 @@ function Founder() {
 
         <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
-          I want you to build a life you love.
+          I didn't build FoundHer AI to sell you something. I built it to give you something back.
         </h2>
 
         <div style={{ overflow: "hidden" }}>
           <div style={{ float: "left", marginRight: 40, marginBottom: 24, width: 340 }}>
             <img
-              src="/images/mills-boat.jpg"
+              src="/images/FH_Founder.png"
               alt="Mills Gardner, Founder"
               style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
             />
           </div>
 
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For more than 30 years, I built companies. Like many founders, I spent years chasing validation — pitching investors, winning customers, growing teams, and trying to prove I belonged. Then, at 58, a venture capitalist told me I was too old to be a founder. I believed him, and for the next twelve years, I stopped building.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not as just another technology, but as permission to begin again. For the first time, a woman with an idea and a laptop could build something extraordinary without waiting for someone else to say yes.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>But I've learned something even more important.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Building is still a lonely journey. Nobody hands you a promotion. Nobody tells you you're doing a good job. Nobody reminds you that what you're creating matters. As founders, we're often expected to provide the belief for everyone else while quietly wondering if we're on the right path ourselves.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>That's why I created FoundHer.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not to tell women what to build, but to remind them that choosing to build is already an extraordinary act. Whether you're selling on Amazon or Etsy, launching a Shopify store, writing a Substack, creating on YouTube, building AI automations, serving clients, or growing a business one customer at a time — you are building something that didn't exist before.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Every time you see The Mark, I hope it reminds you of one simple truth:</p>
-          <p style={{ fontSize: 16, color: C.black, lineHeight: 1.8, marginBottom: 28, fontWeight: 600 }}>You are a founder.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>You don't need permission. You don't need validation. You don't need to have arrived.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>You simply need to keep building.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 40 }}>Because after everything I've learned, one truth has never changed:</p>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.black, lineHeight: 1.5, marginBottom: 8 }}>"The goal was never the business. The goal was always the life."</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For 30 years I built companies — real ones, hard ones, ones that required me to fight for every inch. A handful of wins. A bucket of fails. Each time, I got up and got back at it, day in and day out. But, at 58, after a pitch, the venture capitalists in that group told me I was too old to be a founder. I believed them. I stopped.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived. And I started again. At 71.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not because I needed to. Because I was born to build. Born to build — that's in every founder's blood. Best part, with AI, I finally had a partner that never doubted me.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>FoundHer AI exists for every woman who has ever built something from nothing — and never had a name for what she was doing.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Now she does. You're a founder. Now you can proudly name who you are.</p>
           <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
+          <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em", marginTop: 4 }}>FoundHer AI, PBC</p>
         </div>
 
       </div>
