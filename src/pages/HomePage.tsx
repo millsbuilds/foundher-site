@@ -220,34 +220,6 @@ function LifestyleBreak() {
 // ─── WE SEE YOU ─────────────────────────────────────────────────────────────
 
 function WeSeeYou() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  const lines = [
-    "She's selling on Amazon.",
-    "She's building an Etsy shop.",
-    "She has a Substack.",
-    "She has a YouTube channel.",
-    "She's an OnlyFans creator.",
-    "She's building a Shopify store.",
-    "She's selling digital products.",
-    "She's a real estate agent building a personal brand.",
-    "She's creating AI automations for clients.",
-    "She has a blog that makes $500 a month.",
-    "She has an Instagram with 4,000 followers.",
-    "She has 2 million followers.",
-    "She's just getting started.",
-    "She's scaling.",
-    "She's doing it her way.",
-  ];
-
   return (
     <section style={{ background: C.offwhite, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 860, margin: "0 auto" }}>
@@ -257,11 +229,29 @@ function WeSeeYou() {
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.coral, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
           Every FoundHer is building something.
         </h2>
-        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: "8px 48px", marginBottom: 48 }}>
-          {lines.map((line) => (
-            <p key={line} style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 17, color: C.gray, lineHeight: 2, margin: 0 }}>{line}</p>
+        <div style={{ marginBottom: 48 }}>
+          {[
+            "She's selling on Amazon.",
+            "She's building an Etsy shop.",
+            "She has a Substack.",
+            "She has a YouTube channel.",
+            "She's building a Shopify store.",
+            "She's selling digital products.",
+            "She's a real estate agent building a personal brand.",
+            "She's creating AI automations for clients.",
+            "She has a blog that makes $500 a month.",
+            "She has an Instagram with 4,000 followers.",
+            "She has 2 million followers.",
+            "She's just getting started.",
+            "She's scaling.",
+            "She's doing it her way.",
+          ].map((line) => (
+            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 24px)", color: C.black, lineHeight: 1.4, margin: 0, padding: "16px 0", borderBottom: `1px solid ${C.coral}` }}>{line}</p>
           ))}
         </div>
+        <p style={{ fontFamily: font.display, fontWeight: 400, fontSize: 18, color: C.gray, textAlign: "center", maxWidth: 640, margin: "48px auto", lineHeight: 1.7 }}>
+          A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
+        </p>
         <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", color: C.black, textAlign: "center" }}>
           She is a Found<span style={{ color: C.coral }}>Her</span>.
         </p>
