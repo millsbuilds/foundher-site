@@ -435,11 +435,13 @@ function Founder() {
             />
           </div>
 
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For 30 years I built companies — real ones, hard ones, ones that required me to fight for every inch. A handful of wins. A bucket of fails. Each time, I got up and got back at it, day in and day out. But, at 58, after a pitch, the venture capitalists in that group told me I was too old to be a founder. I believed them. I stopped.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For 30 years I built companies — real ones, hard ones, ones that required me to fight for every inch. A handful of wins. A bucketful of fails. Each time, I got up and got back at it. That's the founder's story.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>But at 58, after a pitch, the venture capitalists in that room told me I was too old to be a founder. I believed them. I stopped. And sadly, I retired.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived. And I started again. At 71.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not because I needed to. Because I was born to build. Born to build — that's in every founder's blood. Best part, with AI, I finally had a partner that never doubted me.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not because I needed to. Because I was born to build — and if you're reading this, you probably were too. That's what lives in a founder's blood. AI is the partner that finally lets us build real businesses without VC, without office leases, without an engineering team.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>FoundHer AI exists for every woman who has ever built something from nothing — and never had a name for what she was doing.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Now she does. You're a founder. Now you can proudly name who you are.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Now she does. You're a founder. Now you can proudly name and own who you are.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>We have arrived. And now the world is finally going to see what we women can do.</p>
           <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
           <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em", marginTop: 4 }}>FoundHer AI, PBC</p>
         </div>
