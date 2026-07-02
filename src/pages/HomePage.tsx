@@ -200,7 +200,7 @@ function Philosophy() {
     <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
         <div style={{ width: 60, height: 3, background: C.coral, margin: "0 auto 40px" }} />
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.coral, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
           The goal was never the business.<br />The goal was the life.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
@@ -248,7 +248,7 @@ function WeSeeYou() {
         <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
           WE SEE YOU
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.coral, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
           Every FoundHer is building something.
         </h2>
         <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: "8px 48px", marginBottom: 48 }}>
@@ -289,7 +289,7 @@ function Collection() {
         <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
           THE COLLECTION
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.black, textAlign: "center", marginBottom: 16 }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.coral, textAlign: "center", marginBottom: 16 }}>
           Designed to Live.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, textAlign: "center", maxWidth: 540, margin: "0 auto 56px", lineHeight: 1.7 }}>
@@ -339,7 +339,7 @@ function FirstCollection() {
         <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
           THE FOUNDHER OBJECTS
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: C.black, textAlign: "center", marginBottom: 64, letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: C.coral, textAlign: "center", marginBottom: 64, letterSpacing: "-0.02em" }}>
           Designed to Live.
         </h2>
       </div>
@@ -422,19 +422,19 @@ function Founder() {
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
 
         <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.coral, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
           I didn't build FoundHer AI to sell you something. I built it to give you something back.
         </h2>
 
-        <div style={{ overflow: "hidden" }}>
-          <div style={{ float: "left", marginRight: 40, marginBottom: 24, width: 340 }}>
-            <img
-              src="/images/FH_Founder.png"
-              alt="Mills Gardner, Founder"
-              style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center 60%", display: "block" }}
-            />
-          </div>
+        <div style={{ width: "85%", margin: "0 auto 40px" }}>
+          <img
+            src="/images/FH_Founder.png"
+            alt="Mills Gardner, Founder"
+            style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "center center", display: "block" }}
+          />
+        </div>
 
+        <div>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For 30 years I built companies — real ones, hard ones, ones that required me to fight for every inch. A handful of wins. A bucketful of fails. Each time, I got up and got back at it. That's the founder's story.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>But at 58, after a pitch, the venture capitalists in that room told me I was too old to be a founder. I believed them. I stopped. And sadly, I retired.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived. And I started again. At 71.</p>
@@ -444,6 +444,7 @@ function Founder() {
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>We have arrived. And now the world is finally going to see what we women can do.</p>
           <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
           <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em", marginTop: 4 }}>FoundHer AI, PBC</p>
+          <img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60, display: "block", marginTop: 16 }} />
         </div>
 
       </div>
@@ -468,7 +469,7 @@ function Lifestyle() {
           <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: font.body }}>
             THE LIFESTYLE
           </p>
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.black, lineHeight: 1.2, marginBottom: 20, letterSpacing: "-0.02em" }}>
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.coral, lineHeight: 1.2, marginBottom: 20, letterSpacing: "-0.02em" }}>
             Designed for women who build beautiful lives.
           </h2>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 24 }}>
