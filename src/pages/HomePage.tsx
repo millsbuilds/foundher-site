@@ -140,7 +140,7 @@ function Hero() {
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Live</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block", marginBottom: 24 }}>Proudly.</span>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Maybe you build businesses. Maybe you're launching a brand, selling online, creating content, or building an audience. Maybe you have a million fans.
+            Maybe you build businesses. Maybe you're launching a brand, selling online, creating content, or building an audience. Maybe you have a million fans, or you're building until you can quit your job.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
             Until now, there was no official title for who you are.
@@ -148,11 +148,11 @@ function Hero() {
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
             Welcome to FoundHer.
           </p>
-          <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            Even the woman building enough to quit her job.
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+            This brand is for you.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
-            Now there is an official title: You're a FoundHer.
+            You belong here.
           </p>
           <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
         </div>
@@ -173,7 +173,7 @@ function Hero() {
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 420, background: "rgba(255,255,255,0.92)", padding: "48px 40px", zIndex: 2 }}>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Maybe you build businesses. Maybe you're launching a brand, selling online, creating content, or building an audience. Maybe you have a million fans.
+          Maybe you build businesses. Maybe you're launching a brand, selling online, creating content, or building an audience. Maybe you have a million fans, or you're building until you can quit your job.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
           Until now, there was no official title for who you are.
@@ -181,11 +181,11 @@ function Hero() {
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
           Welcome to FoundHer.
         </p>
-        <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          Even the woman building enough to quit her job.
+        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
+          This brand is for you.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
-          Now there is an official title: You're a FoundHer.
+          You belong here.
         </p>
         <img src="/images/FH_final_logo_terra_cotta-2.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
       </div>
