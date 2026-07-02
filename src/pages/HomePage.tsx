@@ -146,7 +146,7 @@ function Hero() {
             Until now, there was no official title for who you are.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-            The FoundHer Mark is the universal symbol for the woman who builds. Businesses. A living. Life on her terms.
+            Welcome to FoundHer.
           </p>
           <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
             Even the woman building enough to quit her job.
@@ -179,7 +179,7 @@ function Hero() {
           Until now, there was no official title for who you are.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
-          The FoundHer Mark is the universal symbol for the woman who builds. Businesses. A living. Life on her terms.
+          Welcome to FoundHer.
         </p>
         <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 12 }}>
           Even the woman building enough to quit her job.
