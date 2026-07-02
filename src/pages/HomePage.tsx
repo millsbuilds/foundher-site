@@ -242,6 +242,7 @@ function WeSeeYou() {
             "She has a blog that makes $500 a month.",
             "She has an Instagram with 4,000 followers.",
             "She has 2 million followers.",
+            "She's still on her parents' payroll — and building anyway.",
             "She's just getting started.",
             "She's scaling.",
             "She's doing it her way.",
