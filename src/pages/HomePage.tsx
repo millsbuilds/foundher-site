@@ -187,6 +187,25 @@ function Philosophy() {
   );
 }
 
+// ─── LIFESTYLE BREAK ────────────────────────────────────────────────────────
+
+function LifestyleBreak() {
+  return (
+    <section style={{ margin: 0, padding: 0, lineHeight: 0 }}>
+      <img
+        src="/images/FH_beach-shower.png"
+        alt="Beach shower lifestyle"
+        style={{ width: "100vw", height: "60vh", objectFit: "cover", objectPosition: "center top", display: "block" }}
+      />
+      <img
+        src="/images/FH_Beach-towel-scene.png"
+        alt="Beach towel with FoundHer mark"
+        style={{ width: "100vw", height: "70vh", objectFit: "cover", objectPosition: "center center", display: "block" }}
+      />
+    </section>
+  );
+}
+
 // ─── WE SEE YOU ─────────────────────────────────────────────────────────────
 
 function WeSeeYou() {
@@ -507,6 +526,8 @@ export default function HomePage() {
         <Hero />
         <Divider />
         <Philosophy />
+        <Divider />
+        <LifestyleBreak />
         <Divider />
         <WeSeeYou />
         <Divider />
