@@ -132,8 +132,6 @@ function Hero() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
   if (isMobile) {
     return (
       <section style={{ fontFamily: font.body }}>
