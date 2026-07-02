@@ -431,7 +431,7 @@ function Founder() {
             <img
               src="/images/FH_Founder.png"
               alt="Mills Gardner, Founder"
-              style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
+              style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center 60%", display: "block" }}
             />
           </div>
 
