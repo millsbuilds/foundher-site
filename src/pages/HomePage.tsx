@@ -190,17 +190,27 @@ function Philosophy() {
 // ─── LIFESTYLE BREAK ────────────────────────────────────────────────────────
 
 function LifestyleBreak() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   return (
-    <section style={{ margin: 0, padding: 0, lineHeight: 0 }}>
+    <section style={{ margin: 0, padding: 0, background: "#F4F1EA", display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: "flex-end" }}>
       <img
         src="/images/FH_beach-shower.png"
         alt="Beach shower lifestyle"
-        style={{ width: "100vw", height: "60vh", objectFit: "cover", objectPosition: "center top", display: "block" }}
+        style={{ width: isMobile ? "100%" : "50%", height: "auto", objectFit: "contain", display: "block" }}
       />
       <img
         src="/images/FH_Beach-towel-scene.png"
         alt="Beach towel with FoundHer mark"
-        style={{ width: "100vw", height: "70vh", objectFit: "cover", objectPosition: "center center", display: "block" }}
+        style={{ width: isMobile ? "100%" : "50%", height: "auto", objectFit: "contain", display: "block" }}
       />
     </section>
   );
