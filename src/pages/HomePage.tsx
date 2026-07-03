@@ -352,7 +352,7 @@ function DesignedForLife() {
       headline: "The Stack.",
       body: "Three pieces. One identity. Worn by women who build.",
       image: "/images/FH_arm_stack.png",
-      imagePosition: "center center",
+      imagePosition: "center top",
       reverse: false,
     },
     {
@@ -393,7 +393,7 @@ function DesignedForLife() {
           style={{
             display: "flex",
             flexDirection: isMobile ? "column" : g.reverse ? "row-reverse" : "row",
-            minHeight: isMobile ? "auto" : 500,
+            minHeight: isMobile ? "auto" : 400,
           }}
         >
           <div style={{ width: isMobile ? "100%" : "55%", height: isMobile ? "50vh" : "auto" }}>
