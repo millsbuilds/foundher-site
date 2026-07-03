@@ -261,6 +261,38 @@ function WeSeeYou() {
   );
 }
 
+// ─── RUNNER BREAK ───────────────────────────────────────────────────────────
+
+function RunnerBreak() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  return (
+    <>
+      <img
+        src="/images/FH_runner.png"
+        alt="FoundHer runner"
+        style={{ width: "100vw", height: isMobile ? "70vh" : "90vh", objectFit: "cover", objectPosition: "center top", display: "block", margin: 0, padding: 0 }}
+      />
+      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
+        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400, fontSize: "clamp(22px, 3vw, 32px)", color: "#C16044", display: "block", marginBottom: 16 }}>
+          Own your place.
+        </span>
+        <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1C1A17", display: "block" }}>
+          Wear the brand of FoundHers.
+        </span>
+      </div>
+    </>
+  );
+}
+
 // ─── COLLECTION ──────────────────────────────────────────────────────────────
 
 function Collection() {
@@ -532,6 +564,8 @@ export default function HomePage() {
         <LifestyleBreak />
         <Divider />
         <WeSeeYou />
+        <Divider />
+        <RunnerBreak />
         <Divider />
         <Collection />
         <Divider />
