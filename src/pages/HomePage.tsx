@@ -335,6 +335,7 @@ function TheCuff() {
 
 // ─── DESIGNED FOR LIFE ──────────────────────────────────────────────────────
 
+// @ts-ignore — temporarily hidden from render
 function DesignedForLife() {
   const [isMobile, setIsMobile] = useState(
     () => typeof window !== "undefined" ? window.innerWidth < 768 : false
