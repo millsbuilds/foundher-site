@@ -307,7 +307,7 @@ function TheCuff() {
   }, []);
 
   return (
-    <section style={{ display: "flex", flexDirection: isMobile ? "column" : "row", minHeight: isMobile ? "auto" : 600 }}>
+    <section style={{ display: "flex", flexDirection: isMobile ? "column" : "row-reverse", minHeight: isMobile ? "auto" : 600 }}>
       <div style={{ width: isMobile ? "100%" : "55%", height: isMobile ? "50vh" : "auto" }}>
         <img
           src="/images/FH_boxed-logo-cuff.png"
