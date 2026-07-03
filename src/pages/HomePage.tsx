@@ -293,6 +293,46 @@ function RunnerBreak() {
   );
 }
 
+// ─── THE CUFF ───────────────────────────────────────────────────────────────
+
+function TheCuff() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  return (
+    <section style={{ display: "flex", flexDirection: isMobile ? "column" : "row", minHeight: isMobile ? "auto" : 600 }}>
+      <div style={{ width: isMobile ? "100%" : "55%", height: isMobile ? "50vh" : "auto" }}>
+        <img
+          src="/images/FH_boxed-logo-cuff.png"
+          alt="The FoundHer Cuff"
+          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center center", display: "block" }}
+        />
+      </div>
+      <div style={{ width: isMobile ? "100%" : "45%", background: "#F4F1EA", padding: isMobile ? "48px 24px" : "64px 56px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C16044", margin: 0 }}>
+          THE FOUNDHERS STACK
+        </p>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1C1A17", marginTop: 16, marginBottom: 0 }}>
+          The Cuff.
+        </h2>
+        <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#7A7569", lineHeight: 1.8, marginTop: 24 }}>
+          Terracotta enamel. The Mark at the clasp. This is the piece you wear when you mean it.
+        </p>
+        <p style={{ fontFamily: font.body, fontWeight: 400, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", color: "#C16044", marginTop: 40 }}>
+          Coming Soon.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 // ─── COLLECTION ──────────────────────────────────────────────────────────────
 
 function Collection() {
@@ -566,6 +606,8 @@ export default function HomePage() {
         <WeSeeYou />
         <Divider />
         <RunnerBreak />
+        <Divider />
+        <TheCuff />
         <Divider />
         <Collection />
         <Divider />
