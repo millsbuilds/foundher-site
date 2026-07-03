@@ -16,7 +16,7 @@ export default function SuccessPage() {
           onClick={() => { window.location.href = 'https://foundherai.ai'; }}
           style={{ background: "#C16044", color: "#FFFFFF", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600, fontSize: 15, padding: "14px 32px", borderRadius: 0, border: "none", cursor: "pointer" }}
         >
-          Back to FoundHer AI →
+          Back to FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> →
         </button>
       </div>
     </div>

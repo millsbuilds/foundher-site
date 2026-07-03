@@ -60,7 +60,7 @@ function Nav() {
           justifyContent: "space-between",
         }}
       >
-        <img src="/images/FH_mark_official.png" alt="FoundHer AI" style={{ height: 40, cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
+        <span style={{ position: "relative", display: "inline-flex", alignItems: "center", cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><img src="/images/FH_mark_official.png" alt="FoundHer AI" style={{ height: 40 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
 
         {isMobile ? (
           <button
@@ -142,7 +142,7 @@ function Hero() {
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
             This is the brand for women founders — the women brave enough to build...through the fears, through the pivots, to the triumphs.
           </p>
-          <img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
+          <span style={{ position: "relative", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "100%", marginTop: 16 }}><img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
         </div>
       </section>
     );
@@ -163,7 +163,7 @@ function Hero() {
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
           This is the brand for women founders — the women brave enough to build...through the fears, through the pivots, to the triumphs.
         </p>
-        <img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60, display: "block", margin: "16px auto 0" }} />
+        <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 16 }}><img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
       </div>
     </section>
   );
@@ -492,7 +492,7 @@ function Founder() {
 
         <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.coral, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
-          I didn't build FoundHer AI to sell you something. I built it to give you something back.
+          I didn't build FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> to sell you something. I built it to give you something back.
         </h2>
 
         <div style={{ width: "85%", margin: "0 auto 40px" }}>
@@ -508,12 +508,12 @@ function Founder() {
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>But at 58, after a pitch, the venture capitalists in that room told me I was too old to be a founder. I believed them. I stopped. And sadly, I retired.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived. And I started again. At 71.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not because I needed to. Because I was born to build — and if you're reading this, you probably were too. That's what lives in a founder's blood. AI is the partner that finally lets us build real businesses without VC, without office leases, without an engineering team.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>FoundHer AI exists for every woman who has ever built something from nothing — and never had a name for what she was doing.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> exists for every woman who has ever built something from nothing — and never had a name for what she was doing.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Now she does. You're a founder. Now you can proudly name and own who you are.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>We have arrived. And now the world is finally going to see what we women can do.</p>
           <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
-          <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em", marginTop: 4 }}>FoundHer AI, PBC</p>
-          <img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60, display: "block", marginTop: 16 }} />
+          <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em", marginTop: 4 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup>, PBC</p>
+          <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 16 }}><img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
         </div>
 
       </div>
@@ -579,11 +579,11 @@ function Footer() {
           Build. Launch. Scale. Live.
         </p>
         <div style={{ display: "flex", justifyContent: "center", gap: 24, marginBottom: 32, flexWrap: "wrap" }}>
-          <a href="https://foundherai.ai" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.5)", fontSize: 14, textDecoration: "none" }}>FoundHer AI</a>
+          <a href="https://foundherai.ai" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.5)", fontSize: 14, textDecoration: "none" }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup></a>
           <a href="mailto:hello@foundherai.ai" style={{ fontFamily: font.body, color: "rgba(255,255,255,0.5)", fontSize: 14, textDecoration: "none" }}>Contact</a>
         </div>
         <p style={{ fontFamily: font.body, fontSize: 13, color: "rgba(255,255,255,0.3)" }}>
-          © 2026 FoundHer AI, PBC · foundherai.ai · All rights reserved.
+          © 2026 FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup>, PBC · foundherai.ai · All rights reserved.
         </p>
       </div>
     </footer>
