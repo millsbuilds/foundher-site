@@ -554,9 +554,9 @@ export default function HomePage() {
         <RunnerBreak />
         <Divider />
         <TheCuff />
-        <Divider />
-        <DesignedForLife />
-        <Divider />
+        {/* <Divider /> */}
+        {/* <DesignedForLife /> */}
+        {/* <Divider /> */}
         <Founder />
         <Divider />
         <HorseSection />
