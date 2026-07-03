@@ -333,9 +333,9 @@ function TheCuff() {
   );
 }
 
-// ─── COLLECTION ──────────────────────────────────────────────────────────────
+// ─── DESIGNED FOR LIFE ──────────────────────────────────────────────────────
 
-function Collection() {
+function DesignedForLife() {
   const [isMobile, setIsMobile] = useState(
     () => typeof window !== "undefined" ? window.innerWidth < 768 : false
   );
@@ -346,88 +346,88 @@ function Collection() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  const categories = [
-    { title: "Accessories & Jewelry", body: "Pieces designed for women who build — from the desk to the world. Limited releases. Intentional design." },
-    { title: "AI Agents & Tools", body: "Elegant automation built for the way you actually work. More time. More freedom. More life." },
-    { title: "Everyday Carry", body: "Phone cases. MacBook accessories. Objects she uses every day while building." },
+  const groups = [
+    {
+      eyebrow: "ACCESSORIES & JEWELRY",
+      headline: "The Stack.",
+      body: "Three pieces. One identity. Worn by women who build.",
+      image: "/images/FH_arm_stack.png",
+      imagePosition: "center center",
+      reverse: false,
+    },
+    {
+      eyebrow: "EVERYDAY CARRY",
+      headline: "The Sleeve. The Case.",
+      body: "For the MacBook she builds on. For the phone she runs on.",
+      image: "/images/FH_hero-image-final.png",
+      imagePosition: "center top",
+      reverse: true,
+    },
+    {
+      eyebrow: "THE FOUNDHERS LIFE",
+      headline: "Live it out loud.",
+      body: "The towel. The Tesla. The life that comes after the build.",
+      image: "/images/FH_beach-towel.png",
+      imagePosition: "center center",
+      reverse: false,
+    },
   ];
 
   return (
-    <section id="collection" style={{ background: C.offwhite, padding: "96px 24px", fontFamily: font.body }}>
-      <div style={{ maxWidth: 860, margin: "0 auto" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
+    <section id="collection" style={{ fontFamily: font.body }}>
+      <div style={{ padding: "96px 24px 64px", textAlign: "center" }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C16044", marginBottom: 16 }}>
           THE COLLECTION
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.coral, textAlign: "center", marginBottom: 16 }}>
-          Designed to Live.
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 52px)", color: "#C16044", marginBottom: 16 }}>
+          Designed for Life.
         </h2>
-        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, textAlign: "center", maxWidth: 540, margin: "0 auto 56px", lineHeight: 1.7 }}>
+        <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#7A7569", maxWidth: 540, margin: "0 auto", lineHeight: 1.7 }}>
           Every object we create belongs to a life built with intention.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 48 }}>
-          {categories.map((c) => (
-            <div key={c.title} style={{ borderTop: `2px solid ${C.coral}`, paddingTop: 24 }}>
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: C.black, marginBottom: 12 }}>{c.title}</h3>
-              <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7 }}>{c.body}</p>
-            </div>
-          ))}
-        </div>
-        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 16, color: C.gray, textAlign: "center", marginTop: 56 }}>
-          First collection arriving soon.
-        </p>
-      </div>
-    </section>
-  );
-}
-
-// ─── FIRST COLLECTION ────────────────────────────────────────────────────────
-
-function FirstCollection() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  const objects = [
-    { number: "01", title: "The FoundHer Bracelet", body: "A quiet reminder that she chose to bet on herself.", image: "/images/bracelet-editorial.jpg" },
-    { number: "02", title: "The FoundHer MacBook Sleeve", body: "The instrument she uses to build her future.", image: "/images/macbook-sleeve-editorial.jpg" },
-    { number: "03", title: "The FoundHer Phone Case", body: "Because her business is always with her.", image: "/images/phone-case-editorial.jpg" },
-    { number: "04", title: "The FoundHer Beach Towel", body: "She built the business so she could be here.", image: "/images/beach-towel-editorial.jpg" },
-    { number: "05", title: "The FoundHer Helmet Cover", body: "For founders whose freedom is found outside the office. Elegant beige equestrian helmet cover with the FoundHer Mark.", image: "/images/helmet-cover-editorial.jpg" },
-    { number: "06", title: "The FoundHer Vehicle Mark", body: "A premium matte decal featuring only the FoundHer Mark. Not a bumper sticker. A quiet declaration that she is building something of her own.", image: "/images/vehicle-mark-editorial.jpg" },
-  ];
-
-  return (
-    <section style={{ background: C.white, padding: "96px 0", fontFamily: font.body }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
-          THE FOUNDHER OBJECTS
-        </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: C.coral, textAlign: "center", marginBottom: 64, letterSpacing: "-0.02em" }}>
-          Designed to Live.
-        </h2>
       </div>
 
-      <div style={{ maxWidth: 860, margin: "0 auto", padding: "0 24px" }}>
-        {objects.map((obj, i) => (
-          <div key={obj.title} style={{ display: "flex", flexDirection: isMobile ? "column" : (i % 2 === 0 ? "row" : "row-reverse"), alignItems: "center", justifyContent: "center", gap: isMobile ? 0 : 80, marginBottom: i < objects.length - 1 ? 80 : 0 }}>
-            <div style={{ flexShrink: 0, width: isMobile ? "60%" : 220, margin: isMobile ? "0 auto" : undefined }}>
-              <img src={obj.image} alt={obj.title} style={{ width: "100%", height: "auto", aspectRatio: "1", objectFit: "cover", display: "block" }} />
-            </div>
-            <div style={{ flex: 1, padding: isMobile ? "32px 0 0" : 0, textAlign: isMobile ? "center" : (i % 2 === 0 ? "left" : "right") }}>
-              <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: C.coral, marginBottom: 8 }}>{obj.number}</p>
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.black, marginBottom: 10 }}>{obj.title}</h3>
-              <p style={{ fontFamily: font.body, fontSize: 15, color: C.gray, lineHeight: 1.7, marginBottom: 12, maxWidth: 340, margin: isMobile ? "0 auto 12px" : undefined, marginLeft: i % 2 !== 0 && !isMobile ? "auto" : undefined }}>{obj.body}</p>
-              <p style={{ fontFamily: font.body, fontSize: 11, color: C.coral, letterSpacing: "0.1em", textTransform: "uppercase" }}>Coming Soon</p>
-            </div>
+      {groups.map((g) => (
+        <div
+          key={g.headline}
+          style={{
+            display: "flex",
+            flexDirection: isMobile ? "column" : g.reverse ? "row-reverse" : "row",
+            minHeight: isMobile ? "auto" : 500,
+          }}
+        >
+          <div style={{ width: isMobile ? "100%" : "55%", height: isMobile ? "50vh" : "auto" }}>
+            <img
+              src={g.image}
+              alt={g.headline}
+              style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: g.imagePosition, display: "block" }}
+            />
           </div>
-        ))}
-      </div>
+          <div
+            style={{
+              width: isMobile ? "100%" : "45%",
+              background: "#F4F1EA",
+              padding: isMobile ? "48px 24px" : "64px 56px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C16044", margin: 0 }}>
+              {g.eyebrow}
+            </p>
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1C1A17", marginTop: 16, marginBottom: 0 }}>
+              {g.headline}
+            </h3>
+            <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#7A7569", lineHeight: 1.8, marginTop: 24 }}>
+              {g.body}
+            </p>
+            <p style={{ fontFamily: font.body, fontWeight: 400, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", color: "#C16044", marginTop: 40 }}>
+              Coming Soon.
+            </p>
+          </div>
+        </div>
+      ))}
     </section>
   );
 }
@@ -609,9 +609,7 @@ export default function HomePage() {
         <Divider />
         <TheCuff />
         <Divider />
-        <Collection />
-        <Divider />
-        <FirstCollection />
+        <DesignedForLife />
         <Divider />
         <AISection />
         <Divider />
