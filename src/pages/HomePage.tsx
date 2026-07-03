@@ -323,7 +323,7 @@ function TheCuff() {
           The Cuff.
         </h2>
         <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#7A7569", lineHeight: 1.8, marginTop: 24 }}>
-          Terracotta enamel. The Mark at the clasp. This is the piece you wear when you mean it.
+          Get the gift of ownership. In you.
         </p>
         <p style={{ fontFamily: font.body, fontWeight: 400, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", color: "#C16044", marginTop: 40 }}>
           Coming Soon.
