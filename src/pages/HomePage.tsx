@@ -169,6 +169,21 @@ function Hero() {
   );
 }
 
+// ─── IDENTITY STATEMENT ─────────────────────────────────────────────────────
+
+function IdentityStatement() {
+  return (
+    <div style={{ background: "#F4F1EA", padding: "64px 24px", textAlign: "center" }}>
+      <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#7A7569", display: "block", marginBottom: 16 }}>
+        You've been building something.
+      </span>
+      <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1C1A17", display: "block" }}>
+        Now you have a title for it.
+      </span>
+    </div>
+  );
+}
+
 // ─── PHILOSOPHY ──────────────────────────────────────────────────────────────
 
 function Philosophy() {
@@ -239,6 +254,7 @@ function WeSeeYou() {
             "She's selling digital products.",
             "She's creating AI automations for clients.",
             "She's creating a product line.",
+            "She's building roadways and bridges.",
             "She has a blog that makes $500 a month.",
             "She has an Instagram with 4,000 followers.",
             "She has 2 million followers.",
@@ -329,6 +345,7 @@ function TheCuff() {
           Coming Soon.
         </p>
       </div>
+      <hr style={{ border: "none", borderTop: "1px solid #C16044", margin: 0 }} />
     </section>
   );
 }
@@ -442,7 +459,7 @@ function Founder() {
 
         <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.coral, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
-          I didn't build FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> to sell you something. I built it to give you something back.
+          I didn't build FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> to sell you something. I built it to give you back to yourself.
         </h2>
 
         <div style={{ width: "85%", margin: "0 auto 40px" }}>
@@ -491,6 +508,7 @@ function HorseSection() {
         alt="Woman kissing horse wearing FoundHer helmet cover"
         style={{ width: "100%", height: isMobile ? "65vh" : "85vh", objectFit: "cover", objectPosition: "center center", display: "block", margin: 0, padding: 0 }}
       />
+      <hr style={{ border: "none", borderTop: "1px solid #C16044", margin: 0 }} />
       <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
         <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#7A7569", display: "block", marginBottom: 24 }}>
           Whatever your passions, wherever you go, and everywhere in between, let people know:
@@ -545,6 +563,8 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
+        <Divider />
+        <IdentityStatement />
         <Divider />
         <Philosophy />
         <Divider />
