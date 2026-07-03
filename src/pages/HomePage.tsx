@@ -432,57 +432,6 @@ function DesignedForLife() {
   );
 }
 
-// ─── AI ──────────────────────────────────────────────────────────────────────
-
-function AISection() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  const tools = [
-    { title: "Launch", body: "From idea to live product. Research, strategy, copy — handled." },
-    { title: "Create", body: "Content, campaigns, social — a creative engine that sounds like you." },
-    { title: "Operate", body: "Workflows, decisions, operations — your business runs while you live." },
-  ];
-
-  return (
-    <section style={{ background: C.black, padding: "96px 24px", fontFamily: font.body }}>
-      <div style={{ maxWidth: 860, margin: "0 auto" }}>
-        <div style={{ textAlign: "center", marginBottom: 64 }}>
-          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: 16 }}>
-            INTELLIGENT TOOLS
-          </p>
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 48px)", color: "#FFFFFF", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: 20 }}>
-            Technology that gives you your time back.
-          </h2>
-          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: 520, margin: "0 auto" }}>
-            The best AI doesn't add to your workload. It quietly removes it — so you can spend your hours on the life you're actually building.
-          </p>
-        </div>
-
-        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 2 }}>
-          {tools.map((t) => (
-            <div key={t.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", padding: "40px 32px" }}>
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#FFFFFF", marginBottom: 12 }}>{t.title}</h3>
-              <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>{t.body}</p>
-            </div>
-          ))}
-        </div>
-
-        <p style={{ textAlign: "center", marginTop: 48, fontFamily: font.display, fontStyle: "italic", fontSize: 17, color: "rgba(255,255,255,0.4)" }}>
-          Available exclusively through FoundHer.
-        </p>
-      </div>
-    </section>
-  );
-}
-
 // ─── FOUNDER ─────────────────────────────────────────────────────────────────
 
 function Founder() {
@@ -607,8 +556,6 @@ export default function HomePage() {
         <TheCuff />
         <Divider />
         <DesignedForLife />
-        <Divider />
-        <AISection />
         <Divider />
         <Founder />
         <Divider />
