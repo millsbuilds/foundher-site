@@ -521,38 +521,35 @@ function Founder() {
   );
 }
 
-// ─── LIFESTYLE ───────────────────────────────────────────────────────────────
+// ─── HORSE SECTION ──────────────────────────────────────────────────────────
 
-function Lifestyle() {
+function HorseSection() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   return (
-    <section style={{ background: C.white, padding: "96px 24px" }}>
-      <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", alignItems: "center", gap: 56, flexWrap: "wrap" }}>
-        <div style={{ flex: "0 0 420px", maxWidth: "100%" }}>
-          <img
-            src="/images/lifestyle-horse-helmet-foundher.jpg"
-            alt="Woman in a beige riding helmet cover with the FoundHer mark kissing the nose of a fawn thoroughbred horse"
-            style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
-          />
-        </div>
-        <div style={{ flex: 1, minWidth: 260 }}>
-          <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: font.body }}>
-            THE LIFESTYLE
-          </p>
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.coral, lineHeight: 1.2, marginBottom: 20, letterSpacing: "-0.02em" }}>
-            Designed for women who build beautiful lives.
-          </h2>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 24 }}>
-            Every piece we create reflects the woman who wears it — confident, intentional, and building something real. From the coffee shop to the coastline, from the stable to the studio.
-          </p>
-          <button
-            onClick={() => document.getElementById("collection")?.scrollIntoView({ behavior: "smooth" })}
-            style={{ background: C.coral, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "14px 28px", fontFamily: font.body, fontWeight: 600, fontSize: 15, cursor: "pointer" }}
-          >
-            Explore
-          </button>
-        </div>
+    <>
+      <img
+        src="/images/FH_Official_horse_portrait.png"
+        alt="Woman kissing horse wearing FoundHer helmet cover"
+        style={{ width: "100%", height: isMobile ? "65vh" : "85vh", objectFit: "cover", objectPosition: "center center", display: "block", margin: 0, padding: 0 }}
+      />
+      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
+        <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#7A7569", display: "block", marginBottom: 24 }}>
+          Whatever your passions, wherever you go, and everywhere in between, let people know:
+        </span>
+        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 64px)", color: "#C16044", display: "block" }}>
+          You Mean Business.
+        </span>
       </div>
-    </section>
+    </>
   );
 }
 
@@ -615,7 +612,7 @@ export default function HomePage() {
         <Divider />
         <Founder />
         <Divider />
-        <Lifestyle />
+        <HorseSection />
       </main>
       <Footer />
     </div>
