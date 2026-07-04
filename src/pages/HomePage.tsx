@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 const C = {
   white: "#FFFFFF",
   offwhite: "#F7F7F7",
-  black: "#0D0D0D",
+  black: "#1B3A6B",
   coral: "#C16044",
   navy: "#1B3A6B",
-  gray: "#6B6B6B",
+  gray: "#1B3A6B",
   lightgray: "#F0F0F0",
 };
 
@@ -175,10 +175,10 @@ function Hero() {
 function IdentityStatement() {
   return (
     <div style={{ background: "#F4F1EA", padding: "64px 24px", textAlign: "center" }}>
-      <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#7A7569", display: "block", marginBottom: 16 }}>
+      <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#1B3A6B", display: "block", marginBottom: 16 }}>
         You've been building something.
       </span>
-      <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1C1A17", display: "block" }}>
+      <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block" }}>
         Now you have a title for it.
       </span>
     </div>
@@ -302,7 +302,7 @@ function RunnerBreak() {
         <span style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400, fontSize: "clamp(22px, 3vw, 32px)", color: "#C16044", display: "block", marginBottom: 16 }}>
           Own your place.
         </span>
-        <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1C1A17", display: "block" }}>
+        <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block" }}>
           Wear the brand of FoundHers.
         </span>
       </div>
@@ -336,10 +336,10 @@ function TheCuff() {
         <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#1B3A6B", margin: 0 }}>
           THE FOUNDHERS STACK
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1C1A17", marginTop: 16, marginBottom: 0 }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1B3A6B", marginTop: 16, marginBottom: 0 }}>
           The Cuff.
         </h2>
-        <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#7A7569", lineHeight: 1.8, marginTop: 24 }}>
+        <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#1B3A6B", lineHeight: 1.8, marginTop: 24 }}>
           Get the gift of ownership. In you.
         </p>
         <p style={{ fontFamily: font.body, fontWeight: 400, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", color: "#C16044", marginTop: 40 }}>
@@ -401,7 +401,7 @@ function DesignedForLife() {
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 52px)", color: "#1B3A6B", marginBottom: 16 }}>
           Designed for Life.
         </h2>
-        <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#7A7569", maxWidth: 540, margin: "0 auto", lineHeight: 1.7 }}>
+        <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#1B3A6B", maxWidth: 540, margin: "0 auto", lineHeight: 1.7 }}>
           Every object we create belongs to a life built with intention.
         </p>
       </div>
@@ -435,10 +435,10 @@ function DesignedForLife() {
             <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#1B3A6B", margin: 0 }}>
               {g.eyebrow}
             </p>
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1C1A17", marginTop: 16, marginBottom: 0 }}>
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1B3A6B", marginTop: 16, marginBottom: 0 }}>
               {g.headline}
             </h3>
-            <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#7A7569", lineHeight: 1.8, marginTop: 24 }}>
+            <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#1B3A6B", lineHeight: 1.8, marginTop: 24 }}>
               {g.body}
             </p>
             <p style={{ fontFamily: font.body, fontWeight: 400, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", color: "#C16044", marginTop: 40 }}>
@@ -511,7 +511,7 @@ function HorseSection() {
       />
       <hr style={{ border: "none", borderTop: "1px solid #1B3A6B", margin: 0 }} />
       <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
-        <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#7A7569", display: "block", marginBottom: 24 }}>
+        <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#1B3A6B", display: "block", marginBottom: 24 }}>
           Whatever your passions, wherever you go, and everywhere in between, let people know:
         </span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 64px)", color: "#C16044", display: "block" }}>
