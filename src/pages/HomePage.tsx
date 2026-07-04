@@ -172,20 +172,6 @@ function Hero() {
   );
 }
 
-// ─── IDENTITY STATEMENT ─────────────────────────────────────────────────────
-
-function IdentityStatement() {
-  return (
-    <div style={{ background: "#F4F1EA", padding: "64px 24px", textAlign: "center" }}>
-      <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(14px, 1.5vw, 18px)", color: "#1B3A6B", display: "block", marginBottom: 12 }}>
-        Remember, the goal isn't the business.
-      </span>
-      <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block" }}>
-        The goal is living a rich life.
-      </span>
-    </div>
-  );
-}
 
 // ─── PHILOSOPHY ──────────────────────────────────────────────────────────────
 
@@ -201,7 +187,7 @@ function Philosophy() {
           The goal is living a rich life.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
-          Build the business that gets you there. Live the lifestyle all the way up.
+          Build the business that gets you there. Live the lifestyle on the way up.
         </p>
       </div>
     </section>
@@ -574,8 +560,6 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
-        <Divider />
-        <IdentityStatement />
         <Divider />
         <Philosophy />
         <Divider />
