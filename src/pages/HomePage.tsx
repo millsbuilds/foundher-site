@@ -472,13 +472,18 @@ function Founder() {
         </div>
 
         <div>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For 30 years I built companies — real ones, hard ones, ones that required me to fight for every inch. A handful of wins. A bucketful of fails. Each time, I got up and got back at it. That's the founder's story.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>But at 58, after a pitch, the venture capitalists in that room told me I was too old to be a founder. I believed them. I stopped. And sadly, I retired.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI arrived. And I started again. At 71.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not because I needed to. Because I was born to build — and if you're reading this, you probably were too. That's what lives in a founder's blood. AI is the partner that finally lets us build real businesses without VC, without office leases, without an engineering team.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> exists for every woman who has ever built something from nothing — and never had a name for what she was doing.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Now she does. You're a founder. Now you can proudly name and own who you are.</p>
-          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>We have arrived. And now the world is finally going to see what we women can do.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>For a long time, the game was rigged.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Not loudly. Not with signs on the door. Just quietly, consistently — in the rooms where funding decisions got made, in the doubt that greeted a woman's pitch, in the math that said women-led companies received less than 2% of venture capital while delivering better returns.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>The venture capital gatekeepers had all the leverage.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Then AI happened.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Suddenly the woman with the vision didn't need a room full of believers. She didn't need permission, a co-founder with the right pedigree, or a pre-seed check from someone who couldn't see what she saw. There is no need for pre-seed funding anymore. She needs the AI tools, the will to learn them, and the audacity to start anyway.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>The playing field didn't just level. It opened.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> exists for the women who walked through that opening. Who are building right now with a laptop, a vision, and AI tools that replaced what used to cost a quarter million dollars to assemble.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>No $400,000 engineering team. No office lease. No agency retainer. No photographer. No marketing department. No CFO, no COO, no gatekeeper in a title. No waiting for someone else to believe in you before you could begin.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>AI replaced all of it.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>One woman. One vision. Iterate until it works. Scale when it's ready. Live the life while you're building it — because you're not waiting anymore.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>This is the brand for those women.</p>
+          <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>The lifestyle is the proof.</p>
           <p style={{ fontSize: 13, color: C.navy, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
           <p style={{ fontSize: 13, color: C.navy, fontWeight: 600, letterSpacing: "0.05em", marginTop: 4 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup>, PBC</p>
           <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 16 }}><img src="/images/FH_mark_navy_terra_v2.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
