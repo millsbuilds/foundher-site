@@ -175,11 +175,11 @@ function Hero() {
 function IdentityStatement() {
   return (
     <div style={{ background: "#F4F1EA", padding: "64px 24px", textAlign: "center" }}>
-      <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#1B3A6B", display: "block", marginBottom: 16 }}>
-        You've been building something.
+      <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(14px, 1.5vw, 18px)", color: "#1B3A6B", display: "block", marginBottom: 12 }}>
+        Remember, the goal isn't the business.
       </span>
       <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block" }}>
-        Now you have a title for it.
+        The goal is living your life richly.
       </span>
     </div>
   );
@@ -196,7 +196,7 @@ function Philosophy() {
           The goal is never the business.<br />The goal is the life.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
-          Build the business. Live the lifestyle. AI makes both possible.
+          Build the business. Live the lifestyle on your way up.
         </p>
       </div>
     </section>
