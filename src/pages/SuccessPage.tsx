@@ -8,7 +8,7 @@ export default function SuccessPage() {
         <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#6B6B6B", lineHeight: 1.7, marginBottom: 32 }}>
           Your order is confirmed. Watch your inbox for everything you need.
         </p>
-        <div style={{ width: 48, height: 2, background: "#C16044", margin: "32px auto" }} />
+        <div style={{ width: 48, height: 2, background: "#1B3A6B", margin: "32px auto" }} />
         <p style={{ fontFamily: "'Fraunces', serif", fontStyle: "italic", fontSize: 20, color: "#0D0D0D", lineHeight: 1.6, marginBottom: 40 }}>
           "The goal was never the business. The goal was the life."
         </p>

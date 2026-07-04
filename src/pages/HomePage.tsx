@@ -5,6 +5,7 @@ const C = {
   offwhite: "#F7F7F7",
   black: "#0D0D0D",
   coral: "#C16044",
+  navy: "#1B3A6B",
   gray: "#6B6B6B",
   lightgray: "#F0F0F0",
 };
@@ -14,7 +15,7 @@ const font = {
   body: "'Plus Jakarta Sans', sans-serif",
 };
 
-const Divider = () => <div style={{ height: 4, background: C.coral, width: "100%" }} />;
+const Divider = () => <div style={{ height: 4, background: C.navy, width: "100%" }} />;
 
 // ─── NAV ──────────────────────────────────────────────────────────────────────
 
@@ -60,7 +61,7 @@ function Nav() {
           justifyContent: "space-between",
         }}
       >
-        <span style={{ position: "relative", display: "inline-flex", alignItems: "center", cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><img src="/images/FH_mark_official.png" alt="FoundHer AI" style={{ height: 40 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
+        <span style={{ position: "relative", display: "inline-flex", alignItems: "center", cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><img src="/images/FH_mark_navy_terra_v2.png" alt="FoundHer AI" style={{ height: 40 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
 
         {isMobile ? (
           <button
@@ -142,7 +143,7 @@ function Hero() {
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
             This is the brand for women founders — the women brave enough to build...through the fears, through the pivots, to the triumphs.
           </p>
-          <span style={{ position: "relative", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "100%", marginTop: 16 }}><img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
+          <span style={{ position: "relative", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "100%", marginTop: 16 }}><img src="/images/FH_mark_navy_terra_v2.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
         </div>
       </section>
     );
@@ -163,7 +164,7 @@ function Hero() {
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
           This is the brand for women founders — the women brave enough to build...through the fears, through the pivots, to the triumphs.
         </p>
-        <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 16 }}><img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
+        <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 16 }}><img src="/images/FH_mark_navy_terra_v2.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
       </div>
     </section>
   );
@@ -190,8 +191,8 @@ function Philosophy() {
   return (
     <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
-        <div style={{ width: 60, height: 3, background: C.coral, margin: "0 auto 40px" }} />
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.coral, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
+        <div style={{ width: 60, height: 3, background: C.navy, margin: "0 auto 40px" }} />
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
           The goal is never the business.<br />The goal is the life.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
@@ -238,10 +239,10 @@ function WeSeeYou() {
   return (
     <section style={{ background: C.offwhite, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 860, margin: "0 auto" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.coral, textAlign: "center", marginBottom: 16 }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.navy, textAlign: "center", marginBottom: 16 }}>
           WE SEE YOU
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.coral, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
           Every FoundHer is building something.
         </h2>
         <div style={{ marginBottom: 48 }}>
@@ -263,7 +264,7 @@ function WeSeeYou() {
             "She's scaling.",
             "She's doing it her way.",
           ].map((line) => (
-            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 24px)", color: C.black, lineHeight: 1.4, margin: 0, padding: "16px 0", borderBottom: `1px solid ${C.coral}` }}>{line}</p>
+            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 24px)", color: C.black, lineHeight: 1.4, margin: 0, padding: "16px 0", borderBottom: `1px solid ${C.navy}` }}>{line}</p>
           ))}
         </div>
         <p style={{ fontFamily: font.display, fontWeight: 400, fontSize: 18, color: C.gray, textAlign: "center", maxWidth: 640, margin: "48px auto", lineHeight: 1.7 }}>
@@ -332,7 +333,7 @@ function TheCuff() {
         />
       </div>
       <div style={{ width: isMobile ? "100%" : "45%", background: "#F4F1EA", padding: isMobile ? "48px 24px" : "64px 56px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C16044", margin: 0 }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#1B3A6B", margin: 0 }}>
           THE FOUNDHERS STACK
         </p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1C1A17", marginTop: 16, marginBottom: 0 }}>
@@ -345,7 +346,7 @@ function TheCuff() {
           Coming Soon.
         </p>
       </div>
-      <hr style={{ border: "none", borderTop: "1px solid #C16044", margin: 0 }} />
+      <hr style={{ border: "none", borderTop: "1px solid #1B3A6B", margin: 0 }} />
     </section>
   );
 }
@@ -394,10 +395,10 @@ function DesignedForLife() {
   return (
     <section id="collection" style={{ fontFamily: font.body }}>
       <div style={{ padding: "96px 24px 64px", textAlign: "center" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C16044", marginBottom: 16 }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#1B3A6B", marginBottom: 16 }}>
           THE COLLECTION
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 52px)", color: "#C16044", marginBottom: 16 }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 52px)", color: "#1B3A6B", marginBottom: 16 }}>
           Designed for Life.
         </h2>
         <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#7A7569", maxWidth: 540, margin: "0 auto", lineHeight: 1.7 }}>
@@ -431,7 +432,7 @@ function DesignedForLife() {
               justifyContent: "center",
             }}
           >
-            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C16044", margin: 0 }}>
+            <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#1B3A6B", margin: 0 }}>
               {g.eyebrow}
             </p>
             <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1C1A17", marginTop: 16, marginBottom: 0 }}>
@@ -457,8 +458,8 @@ function Founder() {
     <section style={{ background: C.offwhite, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
 
-        <p style={{ color: C.coral, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.coral, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
+        <p style={{ color: C.navy, fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>FROM THE FOUNDER</p>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 42px)", color: C.navy, lineHeight: 1.2, marginBottom: 32, letterSpacing: "-0.02em" }}>
           I didn't build FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> to sell you something. I built it to give you back to yourself.
         </h2>
 
@@ -478,9 +479,9 @@ function Founder() {
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup> exists for every woman who has ever built something from nothing — and never had a name for what she was doing.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>Now she does. You're a founder. Now you can proudly name and own who you are.</p>
           <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 28 }}>We have arrived. And now the world is finally going to see what we women can do.</p>
-          <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
-          <p style={{ fontSize: 13, color: C.coral, fontWeight: 600, letterSpacing: "0.05em", marginTop: 4 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup>, PBC</p>
-          <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 16 }}><img src="/images/FH_mark_official.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
+          <p style={{ fontSize: 13, color: C.navy, fontWeight: 600, letterSpacing: "0.05em" }}>— Mills Gardner, Founder</p>
+          <p style={{ fontSize: 13, color: C.navy, fontWeight: 600, letterSpacing: "0.05em", marginTop: 4 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup>, PBC</p>
+          <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 16 }}><img src="/images/FH_mark_navy_terra_v2.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
         </div>
 
       </div>
@@ -508,7 +509,7 @@ function HorseSection() {
         alt="Woman kissing horse wearing FoundHer helmet cover"
         style={{ width: "100%", height: isMobile ? "65vh" : "85vh", objectFit: "cover", objectPosition: "center center", display: "block", margin: 0, padding: 0 }}
       />
-      <hr style={{ border: "none", borderTop: "1px solid #C16044", margin: 0 }} />
+      <hr style={{ border: "none", borderTop: "1px solid #1B3A6B", margin: 0 }} />
       <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
         <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#7A7569", display: "block", marginBottom: 24 }}>
           Whatever your passions, wherever you go, and everywhere in between, let people know:
