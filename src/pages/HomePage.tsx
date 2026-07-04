@@ -187,7 +187,7 @@ function Philosophy() {
           The goal is living a rich life.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
-          Build the business that gets you there. Live the lifestyle on the way up.
+          Build the business that gets you there. Live the lifestyle on your way up.
         </p>
       </div>
     </section>
