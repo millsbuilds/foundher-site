@@ -181,7 +181,7 @@ function IdentityStatement() {
         Remember, the goal isn't the business.
       </span>
       <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block" }}>
-        The goal is living your life richly.
+        The goal is living a rich life.
       </span>
     </div>
   );
@@ -194,11 +194,14 @@ function Philosophy() {
     <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
         <div style={{ width: 60, height: 3, background: C.navy, margin: "0 auto 40px" }} />
+        <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: C.navy, marginBottom: 12 }}>
+          Remember, the goal isn't the business.
+        </p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
-          The goal is never the business.<br />The goal is the life.
+          The goal is living a rich life.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
-          Build the business. Live the lifestyle on your way up.
+          Build the business that gets you there. Live the lifestyle all the way up.
         </p>
       </div>
     </section>
