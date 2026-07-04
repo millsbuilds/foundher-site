@@ -218,7 +218,7 @@ function LifestyleBreak() {
   return (
     <section style={{ margin: 0, padding: 0, display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden", lineHeight: 0 }}>
       <img src="/images/FH_beach-shower.png" alt="Beach shower lifestyle" style={imgStyle("center center")} />
-      <img src="/images/FH_yacht.png" alt="FoundHer yacht" style={imgStyle("center center")} />
+      <img src="/images/FH_orange-cuff-lifestyle.png" alt="FoundHer cuff" style={imgStyle("center center")} />
       <img src="/images/FH_Beach-towel-scene.png" alt="Beach towel with FoundHer mark" style={imgStyle("center center")} />
     </section>
   );
