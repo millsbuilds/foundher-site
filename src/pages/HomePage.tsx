@@ -228,41 +228,30 @@ function LifestyleBreak() {
 
 function WeSeeYou() {
   return (
-    <section style={{ background: C.offwhite, padding: "96px 24px", fontFamily: font.body }}>
-      <div style={{ maxWidth: 860, margin: "0 auto" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.navy, textAlign: "center", marginBottom: 16 }}>
+    <section style={{ fontFamily: font.body }}>
+      {/* Collage image */}
+      <img src="/images/FH_founders-collage.jpg" alt="FoundHer founders collage" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+
+      {/* WE SEE YOU text */}
+      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.navy, marginBottom: 16 }}>
           WE SEE YOU
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, textAlign: "center", marginBottom: 56, letterSpacing: "-0.02em" }}>
-          Every FoundHer is building something.
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", margin: 0 }}>
+          What do they all have in common?
         </h2>
-        <div style={{ marginBottom: 48 }}>
-          {[
-            "She's selling on Amazon.",
-            "She's building an Etsy shop.",
-            "She's building a media company.",
-            "She has a YouTube channel.",
-            "She's building a Shopify store.",
-            "She's selling digital products.",
-            "She's creating AI automations for clients.",
-            "She's creating a product line.",
-            "She's building roadways and bridges.",
-            "She has a blog that makes $500 a month.",
-            "She has an Instagram with 4,000 followers.",
-            "She has 2 million followers.",
-            "She's still on her parents' payroll — and building anyway.",
-            "She's just getting started.",
-            "She's scaling.",
-            "She's doing it her way.",
-          ].map((line) => (
-            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 24px)", color: C.black, lineHeight: 1.4, margin: 0, padding: "16px 0", borderBottom: `1px solid ${C.navy}` }}>{line}</p>
-          ))}
-        </div>
-        <p style={{ fontFamily: font.display, fontWeight: 400, fontSize: 18, color: C.gray, textAlign: "center", maxWidth: 640, margin: "48px auto", lineHeight: 1.7 }}>
-          A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician who has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
-        </p>
-        <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", color: C.black, textAlign: "center" }}>
-          She is a Found<span style={{ color: C.coral }}>Her</span>.
+      </div>
+
+      {/* Cuff image */}
+      <img src="/images/FH_orange-cuff-lifestyle.png" alt="The FoundHer Cuff" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+
+      {/* The Cuff text */}
+      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,5vw,64px)", color: C.coral, margin: 0, marginBottom: 16 }}>
+          The Cuff.
+        </h2>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, margin: 0 }}>
+          She is a FoundHer.
         </p>
       </div>
     </section>
