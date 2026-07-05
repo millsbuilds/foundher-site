@@ -329,47 +329,48 @@ function RunnerBreak() {
 function TheCuff() {
   return (
     <section style={{ fontFamily: font.body }}>
-      {/* Two-box image — 50% width, centered */}
-      <div style={{ textAlign: "center", background: C.white }}>
-        <img src="/images/FH_boxed-cuffs-official.png" alt="The FoundHer Cuff — Terracotta and Navy" style={{ width: "50%", display: "inline-block", objectFit: "cover" }} />
-      </div>
+      {/* Full-width lifestyle image */}
+      <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer wearing The Cuff at a business gathering" style={{ width: "100%", display: "block", objectFit: "cover" }} />
 
       {/* Copy block on cream */}
-      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
-        <div style={{ maxWidth: 700, margin: "0 auto" }}>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: "clamp(20px, 2.5vw, 26px)", color: C.navy, lineHeight: 1.6, marginBottom: 48 }}>
+      <div style={{ background: "#F4F1EA", padding: "96px 24px", textAlign: "center" }}>
+        <div style={{ maxWidth: 680, margin: "0 auto" }}>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: "clamp(18px, 2vw, 22px)", color: C.coral, letterSpacing: "0.05em", textTransform: "uppercase", lineHeight: 1.6, marginBottom: 48 }}>
             Not every woman is a FoundHer. But every FoundHer wears The Mark.
           </p>
 
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 32 }}>
-            A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
-          </p>
-
-          <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 44px)", color: C.navy, lineHeight: 1.3, marginBottom: 32 }}>
-            A doctor wears a white coat. A FoundHer wears The Cuff.
+          <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(32px, 4.5vw, 52px)", color: C.navy, lineHeight: 1.2, marginBottom: 40 }}>
+            A doctor wears a white coat.<br />A FoundHer wears The Cuff.
           </h2>
 
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
-            When you get The Cuff, you're in — and people know it. The Cuff is the membership. The merch is the confidence.
-          </p>
-
-          <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 8 }}>
-            Two colorways. One credential.
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 40 }}>
-            Terracotta. Navy. Both gold-plated hardware.
-          </p>
-
-          <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.coral, marginBottom: 8 }}>
-            The Cuff.
-          </h3>
-          <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.navy, marginBottom: 16 }}>
-            $297
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 14, color: C.coral, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase" }}>
-            Pre-order yours. Ships Q4 2026.
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 0 }}>
+            A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
           </p>
         </div>
+      </div>
+
+      {/* Two-box image — 50% width, centered */}
+      <div style={{ textAlign: "center", background: "#F4F1EA", paddingBottom: 0 }}>
+        <img src="/images/FH_boxed-cuffs-official.png" alt="The FoundHer Cuff — Terracotta and Navy" style={{ width: "50%", display: "inline-block", objectFit: "cover" }} />
+      </div>
+
+      {/* Price block on cream */}
+      <div style={{ background: "#F4F1EA", padding: "48px 24px 96px", textAlign: "center" }}>
+        <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 8 }}>
+          Two colorways. One credential.
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 40 }}>
+          Terracotta. Navy. Both gold-plated hardware.
+        </p>
+        <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.coral, marginBottom: 8 }}>
+          The Cuff.
+        </h3>
+        <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.navy, marginBottom: 16 }}>
+          $297
+        </p>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 16, color: C.navy, fontWeight: 400 }}>
+          Pre-order yours. Ships Q4 2026.
+        </p>
       </div>
     </section>
   );
