@@ -329,8 +329,10 @@ function RunnerBreak() {
 function TheCuff() {
   return (
     <section style={{ fontFamily: font.body }}>
-      {/* Full-width two-box image */}
-      <img src="/images/FH_boxed-cuffs-official.png" alt="The FoundHer Cuff — Terracotta and Navy" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+      {/* Two-box image — 50% width, centered */}
+      <div style={{ textAlign: "center", background: C.white }}>
+        <img src="/images/FH_boxed-cuffs-official.png" alt="The FoundHer Cuff — Terracotta and Navy" style={{ width: "50%", display: "inline-block", objectFit: "cover" }} />
+      </div>
 
       {/* Copy block on cream */}
       <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
@@ -339,30 +341,28 @@ function TheCuff() {
             Not every woman is a FoundHer. But every FoundHer wears The Mark.
           </p>
 
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.navy, marginBottom: 32 }}>
-            The Cuff.
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 32 }}>
+            A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
+          </p>
+
+          <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 44px)", color: C.navy, lineHeight: 1.3, marginBottom: 32 }}>
+            A doctor wears a white coat. A FoundHer wears The Cuff.
           </h2>
 
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
-            A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
-            A doctor wears a white coat. A FoundHer wears The Cuff.
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
-            When you get The Cuff, you're in. When you wear The Cuff, people know.
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 500, marginBottom: 24 }}>
-            The Cuff is the membership. The merch is the confidence.
+            When you get The Cuff, you're in — and people know it. The Cuff is the membership. The merch is the confidence.
           </p>
 
           <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 8 }}>
             Two colorways. One credential.
           </p>
-          <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 32 }}>
-            Terracotta. Navy. Both gold hardware.
+          <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 40 }}>
+            Terracotta. Navy. Both gold-plated hardware.
           </p>
 
+          <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.coral, marginBottom: 8 }}>
+            The Cuff.
+          </h3>
           <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.navy, marginBottom: 16 }}>
             $297
           </p>
