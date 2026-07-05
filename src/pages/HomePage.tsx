@@ -224,6 +224,23 @@ function LifestyleBreak() {
   );
 }
 
+// ─── SHE COULD BE ANYONE ────────────────────────────────────────────────────
+
+function SheCouldBeAnyone() {
+  return (
+    <section style={{ background: "#F4F1EA", padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
+      <div style={{ maxWidth: 740, margin: "0 auto" }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", marginBottom: 32 }}>
+          She could be anyone.
+        </h2>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300 }}>
+          She's building a Shopify store. She's filming content. She's building a media company. She's pitching investors. She's running a construction site. She's automating her way to financial freedom. She's building a software company. She's creating a product line. She's doing it with AI and a laptop.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 // ─── WE SEE YOU ─────────────────────────────────────────────────────────────
 
 function WeSeeYou() {
@@ -558,6 +575,8 @@ export default function HomePage() {
         <Philosophy />
         <Divider />
         <LifestyleBreak />
+        <Divider />
+        <SheCouldBeAnyone />
         <Divider />
         <WeSeeYou />
         <Divider />
