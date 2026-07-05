@@ -327,40 +327,50 @@ function RunnerBreak() {
 // ─── THE CUFF ───────────────────────────────────────────────────────────────
 
 function TheCuff() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
   return (
-    <section style={{ display: "flex", flexDirection: isMobile ? "column" : "row-reverse", minHeight: isMobile ? "auto" : 600 }}>
-      <div style={{ width: isMobile ? "100%" : "55%", height: isMobile ? "50vh" : "auto" }}>
-        <img
-          src="/images/FH_boxed-logo-cuff.png"
-          alt="The FoundHer Cuff"
-          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center center", display: "block" }}
-        />
+    <section style={{ fontFamily: font.body }}>
+      {/* Full-width two-box image */}
+      <img src="/images/FH_boxed-cuffs-official.png" alt="The FoundHer Cuff — Terracotta and Navy" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+
+      {/* Copy block on cream */}
+      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
+        <div style={{ maxWidth: 700, margin: "0 auto" }}>
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: "clamp(20px, 2.5vw, 26px)", color: C.navy, lineHeight: 1.6, marginBottom: 48 }}>
+            Not every woman is a FoundHer. But every FoundHer wears The Mark.
+          </p>
+
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.navy, marginBottom: 32 }}>
+            The Cuff.
+          </h2>
+
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
+            A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
+            A doctor wears a white coat. A FoundHer wears The Cuff.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
+            When you get The Cuff, you're in. When you wear The Cuff, people know.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 500, marginBottom: 24 }}>
+            The Cuff is the membership. The merch is the confidence.
+          </p>
+
+          <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 8 }}>
+            Two colorways. One credential.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 32 }}>
+            Terracotta. Navy. Both gold hardware.
+          </p>
+
+          <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.navy, marginBottom: 16 }}>
+            $297
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 14, color: C.coral, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase" }}>
+            Pre-order yours. Ships Q4 2026.
+          </p>
+        </div>
       </div>
-      <div style={{ width: isMobile ? "100%" : "45%", background: "#F4F1EA", padding: isMobile ? "48px 24px" : "64px 56px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#1B3A6B", margin: 0 }}>
-          THE FOUNDHERS STACK
-        </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 4vw, 56px)", color: "#1B3A6B", marginTop: 16, marginBottom: 0 }}>
-          The Cuff.
-        </h2>
-        <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: "#1B3A6B", lineHeight: 1.8, marginTop: 24 }}>
-          Get the gift of ownership. In you.
-        </p>
-        <p style={{ fontFamily: font.body, fontWeight: 400, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", color: "#C16044", marginTop: 40 }}>
-          Coming Soon.
-        </p>
-      </div>
-      <hr style={{ border: "none", borderTop: "1px solid #1B3A6B", margin: 0 }} />
     </section>
   );
 }
