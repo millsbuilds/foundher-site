@@ -234,7 +234,7 @@ function SheCouldBeAnyone() {
           She could be anyone.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300 }}>
-          She's building a Shopify store. She's filming content. She's building a media company. She's pitching investors. She's running a construction site. She's automating her way to financial freedom. She's building a software company. She's creating a product line. She's doing it with AI and a laptop.
+          She's building a Shopify store. She's filming content. She's building a media company. She's running a construction site. She's building roadways and bridges. She's automating her way to financial freedom. She's building a software company. She's creating a product line. She's doing it with AI and a laptop.
         </p>
       </div>
     </section>
