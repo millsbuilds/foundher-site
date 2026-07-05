@@ -85,12 +85,7 @@ function Nav() {
           </button>
         ) : (
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
-            <button
-              onClick={() => alert("FoundHers access only. Purchase The Cuff to unlock.")}
-              style={{ background: "none", border: "none", color: C.black, fontSize: 15, fontWeight: 500, cursor: "pointer", fontFamily: font.body, padding: 0 }}
-            >
-              The Shop
-            </button>
+            <a href="/members" style={{ color: C.black, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>The Shop</a>
             <a href="mailto:hello@foundherai.ai" style={{ color: C.black, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <button
               onClick={() => scrollTo("collection")}
@@ -113,12 +108,7 @@ function Nav() {
             gap: 16,
           }}
         >
-          <button
-            onClick={() => { setMenuOpen(false); alert("FoundHers access only. Purchase The Cuff to unlock."); }}
-            style={{ background: "none", border: "none", color: C.black, fontSize: 16, fontWeight: 500, cursor: "pointer", fontFamily: font.body, padding: "4px 0", textAlign: "left" }}
-          >
-            The Shop
-          </button>
+          <a href="/members" style={{ color: C.black, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>The Shop</a>
           <a href="mailto:hello@foundherai.ai" style={{ color: C.black, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <button
             onClick={() => scrollTo("collection")}

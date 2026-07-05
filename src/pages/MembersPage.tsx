@@ -46,7 +46,7 @@ export default function MembersPage() {
               <div style={{ padding: "28px 28px 32px" }}>
                 <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>{p.name}</h3>
                 <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.6, marginBottom: 20, fontWeight: 300 }}>{p.copy}</p>
-                <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 14, color: C.coral, margin: 0 }}>Available to FoundHers.</p>
+                <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 14, color: C.coral, margin: 0 }}>Purchase The Cuff to unlock.</p>
               </div>
             </div>
           ))}
