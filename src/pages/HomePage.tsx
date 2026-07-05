@@ -237,21 +237,26 @@ function WeSeeYou() {
         <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.navy, marginBottom: 16 }}>
           WE SEE YOU
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", margin: 0 }}>
-          What do they all have in common?
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", margin: "0 0 40px" }}>
+          Every one of them is a FoundHer.
         </h2>
-      </div>
 
-      {/* Cuff image */}
-      <img src="/images/FH_orange-cuff-lifestyle.png" alt="The FoundHer Cuff" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+        <div style={{ maxWidth: 520, margin: "0 auto 48px", textAlign: "left" }}>
+          {[
+            "She builds from vision, not permission.",
+            "She uses AI as her team, her budget, and her advantage.",
+            "She lives the life on her way up.",
+            "She doesn't wait for permission to begin.",
+          ].map((line) => (
+            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 22px)", color: C.navy, lineHeight: 1.5, margin: 0, padding: "12px 0", borderBottom: `1px solid ${C.navy}` }}>{line}</p>
+          ))}
+        </div>
 
-      {/* The Cuff text */}
-      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px,5vw,64px)", color: C.coral, margin: 0, marginBottom: 16 }}>
-          The Cuff.
-        </h2>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, margin: 0 }}>
+        <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: C.navy, margin: "0 0 12px" }}>
           She is a FoundHer.
+        </h3>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: 16, color: C.coral, margin: 0 }}>
+          Yes, the H is silent. No, she is not.
         </p>
       </div>
     </section>
