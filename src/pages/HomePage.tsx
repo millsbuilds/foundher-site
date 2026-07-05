@@ -233,7 +233,7 @@ function SheCouldBeAnyone() {
     <section style={{ background: "#F4F1EA", padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 740, margin: "0 auto" }}>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", marginBottom: 32 }}>
-          She could be anyone.
+          Everywhere you look there's a FoundHer. You just don't know it.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300 }}>
           She's building a Shopify store. She's filming content. She's building a media company. She's running a construction site. She's building roadways and bridges. She's automating her way to financial freedom. She's building a software company. She's creating a product line. She's doing it with AI and a laptop.
@@ -250,6 +250,13 @@ function WeSeeYou() {
     <section style={{ fontFamily: font.body }}>
       {/* Collage image */}
       <img src="/images/FH_founders-collage.jpg" alt="FoundHer founders collage" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+
+      {/* Until now */}
+      <div style={{ background: "#F4F1EA", padding: "56px 24px", textAlign: "center" }}>
+        <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, margin: 0 }}>
+          Until now.
+        </h2>
+      </div>
 
       {/* WE SEE YOU text */}
       <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
