@@ -39,7 +39,7 @@ export default function MembersPage() {
       <section style={{ background: C.cream, padding: "80px 24px 120px" }}>
         <div style={{ maxWidth: 1060, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: 48 }}>
           {PRODUCTS.map((p) => (
-            <div key={p.name} style={{ background: C.white, overflow: "hidden" }}>
+            <div key={p.name} style={{ background: C.white, overflow: "hidden", ...(p.name === "The Beach Towel" ? { gridColumn: "1 / -1" } : {}) }}>
               {p.image2 ? (
                 <div style={{ display: "flex", width: "100%", height: p.imageHeight ?? 400, gap: 8 }}>
                   <img src={p.image} alt={`${p.name} product`} style={{ flex: `1 1 ${p.imageWidths?.[0] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: "center", display: "block", backgroundColor: p.imageBg }} />
