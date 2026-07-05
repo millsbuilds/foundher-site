@@ -11,10 +11,10 @@ const font = {
 };
 
 const PRODUCTS = [
-  { name: "The Stack", image: "/images/FH_arm_stack.png", copy: "The complete bracelet set. Every piece you need." },
-  { name: "The Tote", image: "/images/bracelet-editorial.jpg", copy: "Natural canvas. Navy panels. Built to carry it all." },
-  { name: "The Beach Towel", image: "/images/FH_Beach-towel-scene.png", copy: "The brand at the beach." },
-  { name: "The MacBook Sleeve", image: "/images/macbook-sleeve-editorial.jpg", copy: "Four colorways. One mark." },
+  { name: "The Stack", image: "/images/FH_navy-stack.png", image2: "/images/FH_terracotta-stack.png", copy: "The complete bracelet set. Every piece you need." },
+  { name: "The Tote", image: "/images/FH_everyday-tote-product-shot.png", image2: "/images/FH_everyday-tote-lifestyle.png", copy: "Natural canvas. Navy panels. Built to carry it all." },
+  { name: "The Beach Towel", image: "/images/FH_beach-towel-medley-terracotta.png", image2: "/images/FH_navy-towel-medley.png", imageWidths: ["65%", "35%"] as const, copy: "The brand at the beach." },
+  { name: "The MacBook Sleeve", image: "/images/FH_macbook-sleeve-terracotta.png", image2: "/images/FH_macbook-sleeves-shoot.png", copy: "Four colorways. One mark." },
   { name: "The Canvas Pouch", image: "/images/phone-case-editorial.jpg", copy: "Comes with The Stack. Available separately." },
   { name: "The Dog Bandana", image: "/images/helmet-cover-editorial.jpg", copy: "Even your dog is a FoundHer." },
 ];
@@ -40,7 +40,14 @@ export default function MembersPage() {
         <div style={{ maxWidth: 1060, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: 48 }}>
           {PRODUCTS.map((p) => (
             <div key={p.name} style={{ background: C.white, overflow: "hidden" }}>
-              <img src={p.image} alt={p.name} style={{ width: "100%", height: 400, objectFit: "cover", display: "block" }} />
+              {p.image2 ? (
+                <div style={{ display: "flex", width: "100%", height: 400, gap: 8 }}>
+                  <img src={p.image} alt={`${p.name} product`} style={{ flex: `1 1 ${p.imageWidths?.[0] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }} />
+                  <img src={p.image2} alt={`${p.name} lifestyle`} style={{ flex: `1 1 ${p.imageWidths?.[1] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }} />
+                </div>
+              ) : (
+                <img src={p.image} alt={p.name} style={{ width: "100%", height: 400, objectFit: "cover", display: "block" }} />
+              )}
               <div style={{ padding: "32px 32px 36px" }}>
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 28, color: C.navy, marginBottom: 10 }}>{p.name}</h3>
                 <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, marginBottom: 24, fontWeight: 300 }}>{p.copy}</p>
