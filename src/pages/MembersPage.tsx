@@ -14,7 +14,7 @@ const PRODUCTS = [
   { name: "The Stack", image: "/images/FH_navy-stack.png", image2: "/images/FH_terracotta-stack.png", copy: "The complete bracelet set. Every piece you need." },
   { name: "The Tote", image: "/images/FH_everyday-tote-product-shot.png", image2: "/images/FH_everyday-tote-lifestyle.png", copy: "Natural canvas. Navy panels. Built to carry it all." },
   { name: "The Beach Towel", image: "/images/FH_beach-towel-medley-terracotta.png", image2: "/images/FH_navy-towel-medley.png", imageWidths: ["65%", "35%"] as const, imageHeight: 500, imageFit: "contain" as const, imageBg: "#F4F1EA", copy: "The brand at the beach." },
-  { name: "The MacBook Sleeve", image: "/images/FH_macbook-sleeve-terracotta.png", image2: "/images/FH_macbook-sleeves-shoot.png", imagePosition: "top left", copy: "Four colorways. One mark." },
+  { name: "The MacBook Sleeve", image: "/images/FH_macbook-sleeves-shoot.png", image2: "/images/FH_macbook-sleeves-shoot.png", imagePosition: "left center", imagePosition2: "right center", copy: "Four colorways. One mark." },
   { name: "The Dog Bandana", image: "/images/FH_dog-bandana.png", image2: "/images/FH_bandana-lifestyle.png", imageHeight: 500, copy: "Even your dog is a FoundHer." },
 ];
 
@@ -49,7 +49,7 @@ export default function MembersPage() {
                       <img src={p.image2} alt={`${p.name} lifestyle`} style={{ flex: 2, minHeight: 0, width: "100%", objectFit: "contain", objectPosition: "center", display: "block", backgroundColor: "#F4F1EA" }} />
                     </div>
                   ) : (
-                    <img src={p.image2} alt={`${p.name} lifestyle`} style={{ flex: `1 1 ${p.imageWidths?.[1] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: "center", display: "block", backgroundColor: p.imageBg }} />
+                    <img src={p.image2} alt={`${p.name} lifestyle`} style={{ flex: `1 1 ${p.imageWidths?.[1] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: p.imagePosition2 ?? "center", display: "block", backgroundColor: p.imageBg }} />
                   )}
                 </div>
               ) : (
