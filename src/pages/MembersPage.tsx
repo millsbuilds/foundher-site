@@ -16,7 +16,7 @@ const PRODUCTS = [
   { name: "The Beach Towel", image: "/images/FH_beach-towel-medley-terracotta.png", image2: "/images/FH_navy-towel-medley.png", imageWidths: ["65%", "35%"] as const, imageHeight: 500, imageFit: "contain" as const, imageBg: "#F4F1EA", copy: "The brand at the beach." },
   { name: "The MacBook Sleeve", image: "/images/FH_macbook-sleeve-terracotta.png", image2: "/images/FH_macbook-sleeves-shoot.png", imagePosition: "top left", copy: "Four colorways. One mark." },
   { name: "The Canvas Pouch", image: "/images/phone-case-editorial.jpg", copy: "Comes with The Stack. Available separately." },
-  { name: "The Dog Bandana", image: "/images/helmet-cover-editorial.jpg", copy: "Even your dog is a FoundHer." },
+  { name: "The Dog Bandana", image: "/images/FH_dog-bandana.png", image2: "/images/FH_bandana-lifestyle.png", imageHeight: 500, copy: "Even your dog is a FoundHer." },
 ];
 
 export default function MembersPage() {
