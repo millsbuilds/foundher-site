@@ -14,7 +14,7 @@ const PRODUCTS = [
   { name: "The Stack", image: "/images/FH_navy-stack.png", image2: "/images/FH_terracotta-stack.png", copy: "The complete bracelet set. Every piece you need." },
   { name: "The Tote", image: "/images/FH_everyday-tote-product-shot.png", image2: "/images/FH_everyday-tote-lifestyle.png", copy: "Natural canvas. Navy panels. Built to carry it all." },
   { name: "The Beach Towel", image: "/images/FH_beach-towel-medley-terracotta.png", image2: "/images/FH_navy-towel-medley.png", imageWidths: ["65%", "35%"] as const, imageHeight: 500, imageFit: "contain" as const, imageBg: "#F4F1EA", copy: "The brand at the beach." },
-  { name: "The MacBook Sleeve", image: "/images/FH_macbook-sleeve-terracotta.png", image2: "/images/FH_macbook-sleeves-shoot.png", copy: "Four colorways. One mark." },
+  { name: "The MacBook Sleeve", image: "/images/FH_macbook-sleeve-terracotta.png", image2: "/images/FH_macbook-sleeves-shoot.png", imagePosition: "top left", copy: "Four colorways. One mark." },
   { name: "The Canvas Pouch", image: "/images/phone-case-editorial.jpg", copy: "Comes with The Stack. Available separately." },
   { name: "The Dog Bandana", image: "/images/helmet-cover-editorial.jpg", copy: "Even your dog is a FoundHer." },
 ];
@@ -42,7 +42,7 @@ export default function MembersPage() {
             <div key={p.name} style={{ background: C.white, overflow: "hidden", ...(p.name === "The Beach Towel" ? { gridColumn: "1 / -1" } : {}) }}>
               {p.image2 ? (
                 <div style={{ display: "flex", width: "100%", height: p.imageHeight ?? 400, gap: 8 }}>
-                  <img src={p.image} alt={`${p.name} product`} style={{ flex: `1 1 ${p.imageWidths?.[0] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: "center", display: "block", backgroundColor: p.imageBg }} />
+                  <img src={p.image} alt={`${p.name} product`} style={{ flex: `1 1 ${p.imageWidths?.[0] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: p.imagePosition ?? "center", display: "block", backgroundColor: p.imageBg }} />
                   {p.name === "The Beach Towel" ? (
                     <div style={{ flex: `1 1 ${p.imageWidths?.[1] ?? "50%"}`, minWidth: 0, display: "flex", flexDirection: "column" }}>
                       <div style={{ flex: 1, backgroundColor: C.coral }} />
