@@ -41,7 +41,7 @@ export default function MembersPage() {
             <div key={p.name} style={{ background: C.white, overflow: "hidden", ...(p.name === "The Beach Towel" ? { gridColumn: "1 / -1" } : {}) }}>
               {p.image2 ? (
                 <div style={{ display: "flex", width: "100%", height: p.imageHeight ?? 400, gap: 8 }}>
-                  <img src={p.image} alt={`${p.name} product`} style={{ flex: `1 1 ${p.imageWidths?.[0] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: p.imagePosition ?? "center", display: "block", backgroundColor: p.imageBg }} />
+                  <img src={p.image} alt={`${p.name} product`} style={{ flex: `1 1 ${p.imageWidths?.[0] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: "center", display: "block", backgroundColor: p.imageBg }} />
                   {p.name === "The Beach Towel" ? (
                     <div style={{ flex: `1 1 ${p.imageWidths?.[1] ?? "50%"}`, minWidth: 0, height: "100%", overflow: "hidden", display: "flex", flexDirection: "column" }}>
                       <div style={{ flex: 1, backgroundColor: C.coral }} />
@@ -49,7 +49,7 @@ export default function MembersPage() {
                       <img src={p.image2} alt={`${p.name} lifestyle`} style={{ flex: 2, minHeight: 0, width: "100%", objectFit: "contain", objectPosition: "center", display: "block", backgroundColor: "#F4F1EA" }} />
                     </div>
                   ) : (
-                    <img src={p.image2} alt={`${p.name} lifestyle`} style={{ flex: `1 1 ${p.imageWidths?.[1] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: p.imagePosition2 ?? "center", display: "block", backgroundColor: p.imageBg }} />
+                    <img src={p.image2} alt={`${p.name} lifestyle`} style={{ flex: `1 1 ${p.imageWidths?.[1] ?? "50%"}`, minWidth: 0, height: "100%", objectFit: p.imageFit ?? "cover", objectPosition: "center", display: "block", backgroundColor: p.imageBg }} />
                   )}
                 </div>
               ) : (
