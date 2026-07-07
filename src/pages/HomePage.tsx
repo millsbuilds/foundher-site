@@ -259,7 +259,7 @@ function WeSeeYou() {
 
       {/* Until now */}
       <div style={{ background: "#F4F1EA", padding: "56px 24px", textAlign: "center" }}>
-        <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, margin: 0 }}>
+        <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, margin: 0 }}>
           Until now.
         </h2>
       </div>
@@ -319,7 +319,7 @@ function RunnerBreak() {
         <span style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400, fontSize: "clamp(22px, 3vw, 32px)", color: "#C16044", display: "block", marginBottom: 16 }}>
           Own your place.
         </span>
-        <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block" }}>
+        <span style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block" }}>
           Wear the brand of FoundHers.
         </span>
       </div>
@@ -342,7 +342,7 @@ function TheCuff() {
             Not every woman is a FoundHer. But every FoundHer wears The Mark.
           </p>
 
-          <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(32px, 4.5vw, 52px)", color: C.navy, lineHeight: 1.2, marginBottom: 40 }}>
+          <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(32px, 4.5vw, 52px)", color: C.navy, lineHeight: 1.2, marginBottom: 40 }}>
             A doctor wears a white coat.<br />A FoundHer wears The Cuff.
           </h2>
 
@@ -365,7 +365,7 @@ function TheCuff() {
         <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 40 }}>
           Terracotta. Navy. Both gold-plated hardware.
         </p>
-        <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.coral, marginBottom: 8 }}>
+        <h3 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.coral, marginBottom: 8 }}>
           The Cuff.
         </h3>
         <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.navy, marginBottom: 16 }}>

@@ -56,7 +56,7 @@ export default function MembersPage() {
                 <img src={p.image} alt={p.name} style={{ width: "100%", height: 400, objectFit: "cover", display: "block" }} />
               )}
               <div style={{ padding: "32px 32px 36px" }}>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 28, color: C.navy, marginBottom: 10 }}>{p.name}</h3>
+                <h3 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: 28, color: C.navy, marginBottom: 10 }}>{p.name}</h3>
                 <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, marginBottom: 24, fontWeight: 300 }}>{p.copy}</p>
                 <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 15, color: C.coral, margin: 0 }}>Purchase The Cuff to unlock.</p>
               </div>
