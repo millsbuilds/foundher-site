@@ -294,9 +294,6 @@ function SheCouldBeAnyone() {
 function WeSeeYou() {
   return (
     <section style={{ fontFamily: font.body }}>
-      {/* Collage image */}
-      <img src="/images/FH_founders-collage.jpg" alt="FoundHer founders collage" style={{ width: "100%", display: "block", objectFit: "cover" }} />
-
       {/* Until now */}
       <div style={{ background: "#F4F1EA", padding: "56px 24px", textAlign: "center" }}>
         <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, margin: 0 }}>
@@ -637,9 +634,9 @@ export default function HomePage() {
         <Divider />
         <Collage />
         <Divider />
-        <LifestyleBreak />
-        <Divider />
         <SheCouldBeAnyone />
+        <Divider />
+        <LifestyleBreak />
         <Divider />
         <WeSeeYou />
         <Divider />
