@@ -194,6 +194,40 @@ function Philosophy() {
     <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
         <div style={{ width: 60, height: 3, background: C.navy, margin: "0 auto 40px" }} />
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, lineHeight: 1.2, textAlign: "center", margin: "0 0 40px" }}>
+          It takes guts to be a founder.
+        </h2>
+        {[
+          "Moving from a job and flying without wings.",
+          "Starting with no guarantee.",
+          "Walking through the fear to take the first step.",
+          "Spending money that may never come back.",
+          "Failing quietly and iterating.",
+          "Keeping the faith and doing it knowing it could fail.",
+        ].map((line) => (
+          <p key={line} style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.6, margin: "0 auto", padding: "10px 0", maxWidth: 540 }}>
+            {line}
+          </p>
+        ))}
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "40px auto 0", textAlign: "center" }}>
+          These are the founders among us. Are you one of them?
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function Collage() {
+  return (
+    <img src="/images/FH_founders-collage.jpg" alt="FoundHer founders collage" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+  );
+}
+
+function RichLife() {
+  return (
+    <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
+      <div style={{ maxWidth: 700, margin: "0 auto" }}>
+        <div style={{ width: 60, height: 3, background: C.navy, margin: "0 auto 40px" }} />
         <p style={{ fontFamily: font.body, fontWeight: 300, fontSize: 18, color: C.navy, marginBottom: 12 }}>
           Remember, the goal isn't the business.
         </p>
@@ -601,6 +635,8 @@ export default function HomePage() {
         <Divider />
         <Philosophy />
         <Divider />
+        <Collage />
+        <Divider />
         <LifestyleBreak />
         <Divider />
         <SheCouldBeAnyone />
@@ -616,6 +652,8 @@ export default function HomePage() {
         <Founder />
         <Divider />
         <HorseSection />
+        <Divider />
+        <RichLife />
       </main>
       <Footer />
     </div>
