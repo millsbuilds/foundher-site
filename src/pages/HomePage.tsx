@@ -144,7 +144,10 @@ function Hero() {
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>who build businesses.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.coral, display: "block", marginBottom: 24 }}>Powered by AI.</span>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 16 }}>
-            Women have always been risk-takers. The builders of businesses. Enterprising. This is the brand that celebrates the women founders among us. The badge of honor.
+            Women have always been risk-takers. The builders of businesses. Enterprising.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 16 }}>
+            This is the brand that celebrates women founders. The badge of honor.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
             Wear it. Flaunt it.
@@ -169,7 +172,10 @@ function Hero() {
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 260, background: "rgba(255,255,255,0.92)", padding: "48px 40px", zIndex: 2 }}>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 16 }}>
-          Women have always been risk-takers. The builders of businesses. Enterprising. This is the brand that celebrates the women founders among us. The badge of honor.
+          Women have always been risk-takers. The builders of businesses. Enterprising.
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 16 }}>
+          This is the brand that celebrates women founders. The badge of honor.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
           Wear it. Flaunt it.
