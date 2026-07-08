@@ -6,8 +6,8 @@ const C = {
 };
 
 const font = {
-  display: "'Fraunces', serif",
-  body: "'Plus Jakarta Sans', sans-serif",
+  display: "'Libre Baskerville', serif",
+  body: "'DM Sans', sans-serif",
 };
 
 const PRODUCTS = [

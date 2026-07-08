@@ -11,8 +11,8 @@ const C = {
 };
 
 const font = {
-  display: "'Fraunces', serif",
-  body: "'Plus Jakarta Sans', sans-serif",
+  display: "'Libre Baskerville', serif",
+  body: "'DM Sans', sans-serif",
 };
 
 const Divider = () => <div style={{ height: 4, background: C.navy, width: "100%" }} />;
