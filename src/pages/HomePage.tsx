@@ -324,6 +324,165 @@ function WeSeeYou() {
   );
 }
 
+// ─── AI BIZ OPS ────────────────────────────────────────────────────────────
+
+function AIBizOps() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  return (
+    <section style={{ background: "#1B2A4A", padding: "80px 7%", textAlign: "center", fontFamily: font.body }}>
+      <p style={{ fontFamily: font.body, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#B8973E", marginBottom: 24 }}>
+        AI BIZ OPS
+      </p>
+      <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
+        You don't need investors. You don't need a team. You don't need permission. You have AI.
+      </h2>
+      <p style={{ fontFamily: font.body, fontSize: 20, fontStyle: "italic", color: "#B8973E", marginBottom: 16 }}>
+        The human layer that makes the agents work for real businesses.
+      </p>
+    </section>
+  );
+}
+
+// ─── PRICING TIERS ─────────────────────────────────────────────────────────
+
+function PricingTiers() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const tiers = [
+    {
+      name: "The FoundHer",
+      price: "$27",
+      descriptor: "The tools. The roadmap. You drive.",
+      features: [
+        "AI Biz Ops platform access",
+        "Curated AI tool stack for founders",
+        "Incorporation + EIN filing guides",
+        "Legal document library",
+        "Wholesale account setup guides",
+        "Member pricing on The Cuff",
+      ],
+      cta: "Join The FoundHer",
+      bg: "#FFFFFF",
+      border: "1px solid #E8E3D8",
+      textColor: "#1B2A4A",
+      priceColor: "#1B2A4A",
+      perMonthColor: "#7A7569",
+      descriptorColor: "#7A7569",
+      dividerColor: "#E8E3D8",
+      btnBg: "#1B2A4A",
+      btnColor: "#F4F1EA",
+      featured: false,
+    },
+    {
+      name: "The Builder",
+      price: "$97",
+      descriptor: "AI agents running your business. Your team runs on AI.",
+      features: [
+        "Everything in The FoundHer",
+        "AI agents replace employees",
+        "Inbox Intelligence agent",
+        "Inbox Cleanup agent",
+        "Content creation agents",
+        "Financial tracking agents",
+        "New agents added monthly",
+      ],
+      cta: "Join The Builder",
+      bg: "#1B2A4A",
+      border: "none",
+      textColor: "#F4F1EA",
+      priceColor: "#F4F1EA",
+      perMonthColor: "#B8973E",
+      descriptorColor: "#B8973E",
+      dividerColor: "rgba(244,241,234,0.2)",
+      btnBg: "#B8973E",
+      btnColor: "#F4F1EA",
+      featured: true,
+    },
+    {
+      name: "The Concierge",
+      price: "$497",
+      descriptor: "Not sure where to start? We build it with you.",
+      features: [
+        "Everything in The Builder",
+        "Done-with-you onboarding",
+        "1:1 strategy sessions",
+        "Custom agent configuration",
+        "Priority access to new tools",
+        "Quarterly business review",
+      ],
+      cta: "Join The Concierge",
+      bg: "#FFFFFF",
+      border: "1px solid #E8E3D8",
+      textColor: "#1B2A4A",
+      priceColor: "#1B2A4A",
+      perMonthColor: "#7A7569",
+      descriptorColor: "#7A7569",
+      dividerColor: "#E8E3D8",
+      btnBg: "#1B2A4A",
+      btnColor: "#F4F1EA",
+      featured: false,
+    },
+  ];
+
+  return (
+    <section style={{ background: "#F4F1EA", padding: "80px 7%", fontFamily: font.body }}>
+      <p style={{ fontFamily: font.body, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#B8973E", textAlign: "center", marginBottom: 16 }}>
+        MEMBERSHIP
+      </p>
+      <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, color: "#1B2A4A", textAlign: "center", marginBottom: 8 }}>
+        Choose your level.
+      </h2>
+      <p style={{ fontFamily: font.body, fontSize: 16, color: "#1B2A4A", textAlign: "center", marginBottom: 48, opacity: 0.7 }}>
+        Every tier includes full access to the AI Biz Ops platform.
+      </p>
+
+      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 24, maxWidth: 1100, margin: "0 auto" }}>
+        {tiers.map((t) => (
+          <div key={t.name} style={{ flex: 1, background: t.bg, border: t.border, borderRadius: 4, padding: "40px 32px", display: "flex", flexDirection: "column" }}>
+            {t.featured && (
+              <p style={{ fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#B8973E", textAlign: "center", marginBottom: 12, marginTop: 0 }}>
+                MOST POPULAR
+              </p>
+            )}
+            <div style={{ marginBottom: 8 }}>
+              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, color: t.priceColor }}>{t.price}</span>
+              <span style={{ fontSize: 18, color: t.perMonthColor }}>/mo</span>
+            </div>
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: t.textColor, marginBottom: 8, marginTop: 0 }}>{t.name}</h3>
+            <p style={{ fontFamily: font.body, fontSize: 14, color: t.descriptorColor, marginBottom: 24, marginTop: 0 }}>{t.descriptor}</p>
+            <div style={{ height: 1, background: t.dividerColor, marginBottom: 24 }} />
+            <div style={{ flex: 1 }}>
+              {t.features.map((f) => (
+                <p key={f} style={{ fontFamily: font.body, fontSize: 14, color: t.textColor, lineHeight: 1.8, margin: 0 }}>{f}</p>
+              ))}
+            </div>
+            <button style={{ background: t.btnBg, color: t.btnColor, padding: "14px 28px", fontSize: 14, letterSpacing: "0.1em", border: "none", cursor: "pointer", width: "100%", marginTop: 32, borderRadius: 4, fontFamily: font.body, fontWeight: 600 }}>
+              {t.cta}
+            </button>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 // ─── RUNNER BREAK ───────────────────────────────────────────────────────────
 
 function RunnerBreak() {
@@ -631,6 +790,9 @@ export default function HomePage() {
         <LifestyleBreak />
         <Divider />
         <WeSeeYou />
+        <Divider />
+        <AIBizOps />
+        <PricingTiers />
         <Divider />
         <RunnerBreak />
         <Divider />
