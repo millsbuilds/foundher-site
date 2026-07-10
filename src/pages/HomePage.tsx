@@ -165,7 +165,7 @@ function Hero() {
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 10%", display: "block", zIndex: 0 }}
       />
       <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 0 300px 7%" }}>
-        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#5A1F28", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Women have always built businesses.</span>
+        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Women have always built businesses.</span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Now they build empires.</span>
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 260, background: "rgba(255,255,255,0.92)", padding: "48px 40px", zIndex: 2 }}>
