@@ -140,8 +140,8 @@ function Hero() {
       <section style={{ fontFamily: font.body }}>
         <img src="/images/FH_hero-image-final.png" alt="FoundHer AI" style={{ width: "100%", height: "90vh", objectFit: "cover", objectPosition: "center 20%", display: "block" }} />
         <div style={{ background: C.white, padding: "40px 24px 64px" }}>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Women have always built businesses.</span>
-          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block", marginBottom: 24 }}>Now they build empires.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Women have always built businesses.</span>
+          <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block", marginBottom: 24 }}>Now they build empires.</span>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 16 }}>
             Women have always been risk-takers. The builders of businesses. Enterprising.
           </p>
@@ -165,8 +165,8 @@ function Hero() {
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 10%", display: "block", zIndex: 0 }}
       />
       <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 0 135px 7%" }}>
-        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Women have always built businesses.</span>
-        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Now they build empires.</span>
+        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Women have always built businesses.</span>
+        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Now they build empires.</span>
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 260, background: "rgba(255,255,255,0.92)", padding: "48px 40px", zIndex: 2 }}>
         <p style={{ fontFamily: font.body, fontSize: 17, color: C.gray, lineHeight: 1.75, marginBottom: 16 }}>
