@@ -439,7 +439,10 @@ function BuildLaunchScale() {
           </div>
         ))}
       </div>
-      <div style={{ textAlign: "center", marginTop: 48 }}>
+      <p style={{ fontFamily: font.body, fontSize: 20, color: "#F4F1EA", fontStyle: "italic", textAlign: "center", marginTop: 48, marginBottom: 32, maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
+        You're the CEO, the accountant, the marketer, the admin, and the janitor. Until now.
+      </p>
+      <div style={{ textAlign: "center" }}>
         <button style={{ background: "transparent", border: "1px solid #B8973E", color: "#B8973E", padding: "14px 36px", fontSize: 14, letterSpacing: "0.1em", cursor: "pointer", fontFamily: font.body, borderRadius: 0 }}>
           See Everything Inside →
         </button>
