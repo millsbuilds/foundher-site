@@ -17,6 +17,31 @@ const font = {
 
 const Divider = () => <div style={{ height: 4, background: C.navy, width: "100%" }} />;
 
+const BRAND_SEGMENTS = [
+  { color: "#C1603A" },
+  { color: "#1B2A4A" },
+  { color: "#F4EFE4", ivory: true },
+  { color: "#5A1F28" },
+  { color: "#3F2A3F" },
+  { color: "#3B2A22" },
+];
+
+const ColorBar = () => (
+  <div style={{ width: "100%", height: 20, display: "flex", borderTop: "1px solid #F4EFE4", borderBottom: "1px solid #F4EFE4" }}>
+    {BRAND_SEGMENTS.map((seg, i) => (
+      <div
+        key={seg.color}
+        style={{
+          flex: 1,
+          background: seg.color,
+          borderRight: i < BRAND_SEGMENTS.length - 1 ? "1px solid #F4EFE4" : "none",
+          ...(seg.ivory ? { borderTop: "1px solid #E8E3D8", borderBottom: "1px solid #E8E3D8" } : {}),
+        }}
+      />
+    ))}
+  </div>
+);
+
 // ─── NAV ──────────────────────────────────────────────────────────────────────
 
 function Nav() {
@@ -853,6 +878,7 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
+        <ColorBar />
         <Divider />
         <Philosophy />
         <Divider />
@@ -865,6 +891,7 @@ export default function HomePage() {
         <WeSeeYou />
         <Divider />
         <AIBizOps />
+        <ColorBar />
         <BuildLaunchScale />
         <PricingTiers />
         <Divider />
@@ -880,6 +907,7 @@ export default function HomePage() {
         <Divider />
         <RichLife />
       </main>
+      <ColorBar />
       <Footer />
     </div>
   );
