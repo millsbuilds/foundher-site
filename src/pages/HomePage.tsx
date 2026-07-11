@@ -896,10 +896,10 @@ export default function HomePage() {
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#1B2A4A", marginBottom: 8, marginTop: 0 }}>Wear the brand.</h2>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#C1603A", marginBottom: 32, marginTop: 0 }}>Build the empire.</h2>
           <p style={{ fontFamily: font.body, fontSize: 18, color: "#7A7569", lineHeight: 1.75, maxWidth: 700, margin: "0 auto" }}>
-            FoundHer AI is the brand that gives her a public face — and the operating system that builds her empire behind the scenes.
+            FoundHer AI is the brand that gives you a public face — and the operating system that builds your empire behind the scenes.
           </p>
         </section>
-        <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 500, objectFit: "cover", objectPosition: "center top", display: "block" }} />
+        <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 700, objectFit: "cover", objectPosition: "center center", display: "block" }} />
         <ColorBar />
         <Philosophy />
         <ColorBar />
