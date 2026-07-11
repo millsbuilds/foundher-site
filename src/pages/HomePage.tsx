@@ -879,32 +879,30 @@ export default function HomePage() {
       <main>
         <Hero />
         <ColorBar />
-        <Divider />
         <Philosophy />
-        <Divider />
+        <ColorBar />
         <Collage />
-        <Divider />
+        <ColorBar />
         <SheCouldBeAnyone />
-        <Divider />
+        <ColorBar />
         <LifestyleBreak />
-        <Divider />
+        <ColorBar />
         <WeSeeYou />
-        <Divider />
+        <ColorBar />
         <AIBizOps />
         <ColorBar />
         <BuildLaunchScale />
+        <ColorBar />
         <PricingTiers />
-        <Divider />
+        <ColorBar />
         <RunnerBreak />
-        <Divider />
+        <ColorBar />
         <TheCuff />
-        {/* <Divider /> */}
-        {/* <DesignedForLife /> */}
-        {/* <Divider /> */}
+        <ColorBar />
         <Founder />
-        <Divider />
+        <ColorBar />
         <HorseSection />
-        <Divider />
+        <ColorBar />
         <RichLife />
       </main>
       <ColorBar />
