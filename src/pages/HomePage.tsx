@@ -185,11 +185,11 @@ function Hero() {
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", display: "block", zIndex: 0 }}
       />
       <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "linear-gradient(to right, rgba(27,42,74,0.65) 0%, rgba(27,42,74,0.4) 50%, rgba(0,0,0,0) 75%)", pointerEvents: "none" }} />
-      <div style={{ position: "absolute", top: 24, left: "7%", zIndex: 3 }}>
+      <div style={{ position: "absolute", top: 24, left: "12%", zIndex: 3 }}>
         <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 18, color: "#F4F1EA", letterSpacing: "0.02em", margin: 0 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup></p>
         <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: "#F4F1EA", marginTop: 4, marginBottom: 0 }}>The H is silent. She is not.</p>
       </div>
-      <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 0 200px 7%" }}>
+      <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 0 200px 12%" }}>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#F4F1EA", display: "block", textShadow: "none" }}>Women have always built businesses.</span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#F4F1EA", display: "block", textShadow: "none" }}>Now they build empires.</span>
       </div>
