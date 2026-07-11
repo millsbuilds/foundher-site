@@ -899,7 +899,7 @@ export default function HomePage() {
             FoundHer AI is the brand that gives you a public face — and the operating system that builds your empire behind the scenes.
           </p>
         </section>
-        <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 700, objectFit: "cover", objectPosition: "center center", display: "block" }} />
+        <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 700, objectFit: "cover", objectPosition: "center 20%", display: "block" }} />
         <ColorBar />
         <Philosophy />
         <ColorBar />
