@@ -365,8 +365,11 @@ function AIBizOps() {
       <p style={{ fontFamily: font.body, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#B8973E", marginBottom: 24 }}>
         AI BIZ OPS
       </p>
-      <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
-        You don't need investors. You don't need a team. You don't need permission. You have AI.
+      <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 8, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
+        You don't need investors. You don't need a team. You don't need permission.
+      </h2>
+      <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#B8973E", marginBottom: 24, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
+        You have AI.
       </h2>
       <p style={{ fontFamily: font.body, fontSize: 20, fontStyle: "italic", color: "#B8973E", marginBottom: 16 }}>
         The human layer that makes the agents work for real businesses.
