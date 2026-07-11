@@ -836,6 +836,11 @@ export default function HomePage() {
     <div style={{ fontFamily: font.body, background: C.white }}>
       <Nav />
       <main>
+        <section style={{ background: "#F4F1EA", padding: "20px 7%", textAlign: "center" }}>
+          <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, color: "#1B2A4A", fontStyle: "italic", letterSpacing: "-0.01em", margin: 0 }}>
+            I build from vision, not permission.
+          </p>
+        </section>
         <ColorBar />
         <Hero />
         <ColorBar />
