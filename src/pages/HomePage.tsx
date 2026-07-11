@@ -227,7 +227,7 @@ function Philosophy() {
           </p>
         ))}
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "40px auto 0", textAlign: "center" }}>
-          These are the founders among us. Are you one of them?
+          These are the founders among us. These are the FoundHers.
         </p>
       </div>
     </section>
@@ -877,6 +877,7 @@ export default function HomePage() {
     <div style={{ fontFamily: font.body, background: C.white }}>
       <Nav />
       <main>
+        <ColorBar />
         <Hero />
         <ColorBar />
         <Philosophy />
