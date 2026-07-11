@@ -321,7 +321,7 @@ function WeSeeYou() {
       </div>
 
       {/* WE SEE YOU text */}
-      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
+      <div style={{ background: "#5A1F28", padding: "80px 24px", textAlign: "center" }}>
         <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.navy, marginBottom: 16 }}>
           WE SEE YOU
         </p>
@@ -411,7 +411,7 @@ function BizOpsPillars() {
   ];
 
   return (
-    <section style={{ background: "#1B2A4A", padding: "60px 7%", fontFamily: font.body }}>
+    <section style={{ background: "#5A1F28", padding: "60px 7%", fontFamily: font.body }}>
       <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 48, maxWidth: 1100, margin: "0 auto" }}>
         {pillars.map((p) => (
           <div key={p.heading} style={{ flex: 1 }}>
@@ -438,7 +438,7 @@ function BuildLaunchScale() {
   }, []);
 
   return (
-    <section style={{ background: "#1B2A4A", padding: "80px 7%", fontFamily: font.body }}>
+    <section style={{ background: "#3B2A22", padding: "80px 7%", fontFamily: font.body }}>
       <p style={{ fontFamily: font.body, fontSize: 20, color: "#F4F1EA", fontStyle: "italic", textAlign: "center", marginTop: 0, marginBottom: 48, maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
         You're the CEO, the accountant, the marketer, the admin, and the janitor. Until now.
       </p>
@@ -903,7 +903,7 @@ export default function HomePage() {
           <div style={{ width: "55%" }}>
             <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center 30%", display: "block" }} />
           </div>
-          <div style={{ width: "45%", background: "#1B2A4A", display: "flex", flexDirection: "column", justifyContent: "center", padding: "80px 48px" }}>
+          <div style={{ width: "45%", background: "#3F2A3F", display: "flex", flexDirection: "column", justifyContent: "center", padding: "80px 48px" }}>
             <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, marginTop: 0 }}>The FoundHer in the room.</h3>
             <p style={{ fontFamily: font.body, fontSize: 16, color: "#B8973E", lineHeight: 1.8, marginBottom: 32, marginTop: 0 }}>Every woman who wears The Cuff carries a credential that can't be faked. She built something. And everyone who knows, knows.</p>
             <div>
