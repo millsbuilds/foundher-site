@@ -206,35 +206,6 @@ function Hero() {
 }
 
 
-// ─── PHILOSOPHY ──────────────────────────────────────────────────────────────
-
-function Philosophy() {
-  return (
-    <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
-      <div style={{ maxWidth: 700, margin: "0 auto" }}>
-        <div style={{ width: 60, height: 3, background: C.navy, margin: "0 auto 40px" }} />
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, lineHeight: 1.2, textAlign: "center", margin: "0 0 40px" }}>
-          It takes guts to be a founder.
-        </h2>
-        {[
-          "Moving from a job and flying without wings.",
-          "Starting with no guarantee.",
-          "Walking through the fear to take the first step.",
-          "Spending money that may never come back.",
-          "Failing quietly and iterating.",
-          "Keeping the faith and doing it knowing it could fail.",
-        ].map((line) => (
-          <p key={line} style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.6, margin: "0 auto", padding: "10px 0", maxWidth: 540 }}>
-            {line}
-          </p>
-        ))}
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "40px auto 0", textAlign: "center" }}>
-          These are the founders among us. These are the FoundHers.
-        </p>
-      </div>
-    </section>
-  );
-}
 
 function Collage() {
   return (
@@ -251,10 +222,13 @@ function RichLife() {
           Remember, the goal isn't the business.
         </p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
-          The goal is living a rich life.
+          The goal is building the business that lets you live a rich life.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
-          Build the business that gets you there. Live the lifestyle on your way up.
+          Not someday. Now. FoundHer AI organizes your foundation, streamlines your operations, and saves you the money on overhead expenses — so you can start living your life.
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
+          Build the business that gets you there. Live the lifestyle as you go.
         </p>
       </div>
     </section>
@@ -298,10 +272,10 @@ function SheCouldBeAnyone() {
     <section style={{ background: "#F4F1EA", padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 740, margin: "0 auto" }}>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", marginBottom: 32 }}>
-          Everywhere you look there's a FoundHer. You just don't know it.
+          Everywhere you look, there's a FoundHer. We just didn't know it. Until now.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300 }}>
-          She's building a Shopify store. She's filming content. She's building a media company. She's running a construction site. She's building roadways and bridges. She's automating her way to financial freedom. She's building a software company. She's creating a product line. She's doing it with AI and a laptop.
+          She's designing a product line. She's building a Shopify store. She's filming content. She's building a media company. She's running a construction company. She's running a salon. She's building roadways and bridges. She's building a software company. She's automating her way to financial freedom. She's upgrading and building with AI and a laptop.
         </p>
       </div>
     </section>
@@ -313,19 +287,12 @@ function SheCouldBeAnyone() {
 function WeSeeYou() {
   return (
     <section style={{ fontFamily: font.body }}>
-      {/* Until now */}
-      <div style={{ background: "#F4F1EA", padding: "56px 24px", textAlign: "center" }}>
-        <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, margin: 0 }}>
-          Until now.
-        </h2>
-      </div>
-
       {/* WE SEE YOU text */}
       <div style={{ background: "#5A1F28", padding: "80px 24px", textAlign: "center" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: C.navy, marginBottom: 16 }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#F4F1EA", marginBottom: 16 }}>
           WE SEE YOU
         </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", margin: "0 0 40px" }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: "#F4F1EA", letterSpacing: "-0.02em", margin: "0 0 40px" }}>
           Every one of them is a FoundHer.
         </h2>
 
@@ -336,14 +303,14 @@ function WeSeeYou() {
             "She lives the life on her way up.",
             "She doesn't wait for permission to begin.",
           ].map((line) => (
-            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 22px)", color: C.navy, lineHeight: 1.5, margin: 0, padding: "12px 0", borderBottom: `1px solid ${C.navy}` }}>{line}</p>
+            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 22px)", color: "#F4F1EA", lineHeight: 1.5, margin: 0, padding: "12px 0", borderBottom: "1px solid #F4F1EA" }}>{line}</p>
           ))}
         </div>
 
-        <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: C.navy, margin: "0 0 12px" }}>
+        <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: "#F4F1EA", margin: "0 0 12px" }}>
           She is a FoundHer.
         </h3>
-        <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: 16, color: C.coral, margin: 0 }}>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: 16, color: "#F4F1EA", margin: 0 }}>
           Yes, the H is silent. No, she is not.
         </p>
       </div>
@@ -372,7 +339,7 @@ function AIBizOps() {
       <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 8, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
         You don't need investors. You don't need a team. You don't need permission.
       </h2>
-      <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#B8973E", marginBottom: 24, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
+      <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
         You have AI.
       </h2>
       <p style={{ fontFamily: font.body, fontSize: 20, fontStyle: "italic", color: "#B8973E", marginBottom: 16 }}>
@@ -415,8 +382,8 @@ function BizOpsPillars() {
       <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 48, maxWidth: 1100, margin: "0 auto" }}>
         {pillars.map((p) => (
           <div key={p.heading} style={{ flex: 1 }}>
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#F4F1EA", marginBottom: 16, marginTop: 0 }}>{p.heading}</h3>
-            <p style={{ fontFamily: font.body, fontSize: 15, color: "#B8973E", lineHeight: 1.8, margin: 0 }}>{p.body}</p>
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#F4F1EA", marginBottom: 16, marginTop: 0, textAlign: "center" }}>{p.heading}</h3>
+            <p style={{ fontFamily: font.body, fontSize: 15, color: "#B8973E", lineHeight: 1.8, margin: 0, textAlign: "center" }}>{p.body}</p>
           </div>
         ))}
       </div>
@@ -458,137 +425,6 @@ function BuildLaunchScale() {
   );
 }
 
-// ─── PRICING TIERS ─────────────────────────────────────────────────────────
-
-function PricingTiers() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  const tiers = [
-    {
-      name: "The FoundHer",
-      price: "$27",
-      descriptor: "The tools. The roadmap. You drive.",
-      features: [
-        "AI Biz Ops platform access",
-        "Curated AI tool stack for founders",
-        "Incorporation + EIN filing guides",
-        "Legal document library",
-        "Wholesale account setup guides",
-        "Member pricing on The Cuff",
-      ],
-      cta: "Join The FoundHer",
-      bg: "#FFFFFF",
-      border: "1px solid #E8E3D8",
-      textColor: "#1B2A4A",
-      priceColor: "#1B2A4A",
-      perMonthColor: "#7A7569",
-      descriptorColor: "#7A7569",
-      dividerColor: "#E8E3D8",
-      btnBg: "#1B2A4A",
-      btnColor: "#F4F1EA",
-      featured: false,
-    },
-    {
-      name: "The Builder",
-      price: "$97",
-      descriptor: "AI agents running your business. Your team runs on AI.",
-      features: [
-        "Everything in The FoundHer",
-        "AI agents replace employees",
-        "Inbox Intelligence agent",
-        "Inbox Cleanup agent",
-        "Content creation agents",
-        "Financial tracking agents",
-        "New agents added monthly",
-      ],
-      cta: "Join The Builder",
-      bg: "#1B2A4A",
-      border: "none",
-      textColor: "#F4F1EA",
-      priceColor: "#F4F1EA",
-      perMonthColor: "#B8973E",
-      descriptorColor: "#B8973E",
-      dividerColor: "rgba(244,241,234,0.2)",
-      btnBg: "#B8973E",
-      btnColor: "#F4F1EA",
-      featured: true,
-    },
-    {
-      name: "The Concierge",
-      price: "$497",
-      descriptor: "Not sure where to start? We build it with you.",
-      features: [
-        "Everything in The Builder",
-        "Done-with-you onboarding",
-        "1:1 strategy sessions",
-        "Custom agent configuration",
-        "Priority access to new tools",
-        "Quarterly business review",
-      ],
-      cta: "Join The Concierge",
-      bg: "#FFFFFF",
-      border: "1px solid #E8E3D8",
-      textColor: "#1B2A4A",
-      priceColor: "#1B2A4A",
-      perMonthColor: "#7A7569",
-      descriptorColor: "#7A7569",
-      dividerColor: "#E8E3D8",
-      btnBg: "#1B2A4A",
-      btnColor: "#F4F1EA",
-      featured: false,
-    },
-  ];
-
-  return (
-    <section style={{ background: "#F4F1EA", padding: "80px 7%", fontFamily: font.body }}>
-      <p style={{ fontFamily: font.body, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#B8973E", textAlign: "center", marginBottom: 16 }}>
-        MEMBERSHIP
-      </p>
-      <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 42, color: "#1B2A4A", textAlign: "center", marginBottom: 8 }}>
-        Choose your level.
-      </h2>
-      <p style={{ fontFamily: font.body, fontSize: 16, color: "#1B2A4A", textAlign: "center", marginBottom: 48, opacity: 0.7 }}>
-        Every tier includes full access to the AI Biz Ops platform.
-      </p>
-
-      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 24, maxWidth: 1100, margin: "0 auto" }}>
-        {tiers.map((t) => (
-          <div key={t.name} style={{ flex: 1, background: t.bg, border: t.border, borderRadius: 4, padding: "40px 32px", display: "flex", flexDirection: "column" }}>
-            {t.featured && (
-              <p style={{ fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#B8973E", textAlign: "center", marginBottom: 12, marginTop: 0 }}>
-                MOST POPULAR
-              </p>
-            )}
-            <div style={{ marginBottom: 8 }}>
-              <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 48, color: t.priceColor }}>{t.price}</span>
-              <span style={{ fontSize: 18, color: t.perMonthColor }}>/mo</span>
-            </div>
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: t.textColor, marginBottom: 8, marginTop: 0 }}>{t.name}</h3>
-            <p style={{ fontFamily: font.body, fontSize: 14, color: t.descriptorColor, marginBottom: 24, marginTop: 0 }}>{t.descriptor}</p>
-            <div style={{ height: 1, background: t.dividerColor, marginBottom: 24 }} />
-            <div style={{ flex: 1 }}>
-              {t.features.map((f) => (
-                <p key={f} style={{ fontFamily: font.body, fontSize: 14, color: t.textColor, lineHeight: 1.8, margin: 0 }}>{f}</p>
-              ))}
-            </div>
-            <button style={{ background: t.btnBg, color: t.btnColor, padding: "14px 28px", fontSize: 14, letterSpacing: "0.1em", border: "none", cursor: "pointer", width: "100%", marginTop: 32, borderRadius: 4, fontFamily: font.body, fontWeight: 600 }}>
-              {t.cta}
-            </button>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 // ─── RUNNER BREAK ───────────────────────────────────────────────────────────
 
 function RunnerBreak() {
@@ -610,11 +446,14 @@ function RunnerBreak() {
         style={{ width: "100vw", height: isMobile ? "70vh" : "90vh", objectFit: "cover", objectPosition: "center top", display: "block", margin: 0, padding: 0 }}
       />
       <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
-        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400, fontSize: "clamp(22px, 3vw, 32px)", color: "#C16044", display: "block", marginBottom: 16 }}>
-          Own your place.
+        <span style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block", marginBottom: 16 }}>
+          Stake your claim.
         </span>
-        <span style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block" }}>
+        <span style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(22px, 3vw, 32px)", color: "#1B3A6B", display: "block", marginBottom: 16 }}>
           Wear the brand of FoundHers.
+        </span>
+        <span style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: "clamp(16px, 2vw, 20px)", color: "#C16044", display: "block" }}>
+          The H is silent. She is not.
         </span>
       </div>
     </>
@@ -626,9 +465,6 @@ function RunnerBreak() {
 function TheCuff() {
   return (
     <section style={{ fontFamily: font.body }}>
-      {/* Full-width lifestyle image */}
-      <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer wearing The Cuff at a business gathering" style={{ width: "100%", display: "block", objectFit: "cover" }} />
-
       {/* Copy block on cream */}
       <div style={{ background: "#F4F1EA", padding: "96px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
@@ -641,7 +477,7 @@ function TheCuff() {
           </h2>
 
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 0 }}>
-            A FoundHer isn't someone who hangs a shingle. A dentist, chiropractor, attorney, financial advisor, or physician has a license to lean on. A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin anyway.
+            A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin. The Cuff is her credential.
           </p>
         </div>
       </div>
@@ -905,18 +741,16 @@ export default function HomePage() {
           </div>
           <div style={{ width: "45%", background: "#3F2A3F", display: "flex", flexDirection: "column", justifyContent: "center", padding: "80px 48px" }}>
             <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, marginTop: 0 }}>The FoundHer in the room.</h3>
-            <p style={{ fontFamily: font.body, fontSize: 16, color: "#B8973E", lineHeight: 1.8, marginBottom: 32, marginTop: 0 }}>Every woman who wears The Cuff carries a credential that can't be faked. She built something. And everyone who knows, knows.</p>
+            <p style={{ fontFamily: font.body, fontSize: 16, color: "#B8973E", lineHeight: 1.8, marginBottom: 32, marginTop: 0 }}>Every woman who wears The Cuff carries the credential of a founder. She's building something. And everyone who knows, knows.</p>
             <div>
               <button style={{ background: "transparent", border: "1px solid #B8973E", color: "#B8973E", padding: "14px 32px", fontSize: 13, letterSpacing: "0.1em", cursor: "pointer", fontFamily: font.body, borderRadius: 0 }}>Shop The Cuff</button>
             </div>
           </div>
         </div>
         <ColorBar />
-        <Philosophy />
+        <SheCouldBeAnyone />
         <ColorBar />
         <Collage />
-        <ColorBar />
-        <SheCouldBeAnyone />
         <ColorBar />
         <LifestyleBreak />
         <ColorBar />
@@ -926,8 +760,6 @@ export default function HomePage() {
         <BizOpsPillars />
         <ColorBar />
         <BuildLaunchScale />
-        <ColorBar />
-        <PricingTiers />
         <ColorBar />
         <RunnerBreak />
         <ColorBar />
