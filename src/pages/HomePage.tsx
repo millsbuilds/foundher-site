@@ -15,8 +15,6 @@ const font = {
   body: "'DM Sans', sans-serif",
 };
 
-const Divider = () => <div style={{ height: 4, background: C.navy, width: "100%" }} />;
-
 const BRAND_SEGMENTS = [
   { color: "#C1603A" },
   { color: "#1B2A4A" },
