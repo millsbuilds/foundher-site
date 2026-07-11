@@ -388,61 +388,19 @@ function BuildLaunchScale() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  const columns = [
-    {
-      heading: "Build.",
-      items: [
-        "Entity formation",
-        "EIN registration",
-        "Operating agreement",
-        "Business bank account",
-        "Bookkeeping setup",
-        "Contracts + legal docs",
-        "Vendor + wholesale access",
-      ],
-    },
-    {
-      heading: "Launch.",
-      items: [
-        "Domain + professional email",
-        "Website foundation",
-        "Brand assets locked",
-        "Payment processing",
-        "First offer or product",
-        "Email list setup",
-        "Launch content plan",
-      ],
-    },
-    {
-      heading: "Scale.",
-      items: [
-        "AI agents replace overhead",
-        "Inbox managed automatically",
-        "Content running on autopilot",
-        "Finances tracked by AI",
-        "Customer follow-up automated",
-        "Marketing while you sleep",
-        "Grow without hiring",
-      ],
-    },
-  ];
-
   return (
     <section style={{ background: "#1B2A4A", padding: "80px 7%", fontFamily: font.body }}>
+      <p style={{ fontFamily: font.body, fontSize: 20, color: "#F4F1EA", fontStyle: "italic", textAlign: "center", marginTop: 0, marginBottom: 48, maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
+        You're the CEO, the accountant, the marketer, the admin, and the janitor. Until now.
+      </p>
       <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 48, maxWidth: 1100, margin: "0 auto" }}>
-        {columns.map((col) => (
-          <div key={col.heading} style={{ flex: 1 }}>
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 32, color: "#F4F1EA", marginBottom: 20, marginTop: 0 }}>{col.heading}</h3>
-            {col.items.map((item) => (
-              <p key={item} style={{ fontFamily: font.body, fontSize: 15, color: "#B8973E", lineHeight: 2, margin: 0 }}>{item}</p>
-            ))}
+        {["Build.", "Launch.", "Scale."].map((heading) => (
+          <div key={heading} style={{ flex: 1 }}>
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 32, color: "#F4F1EA", marginBottom: 0, marginTop: 0 }}>{heading}</h3>
           </div>
         ))}
       </div>
-      <p style={{ fontFamily: font.body, fontSize: 20, color: "#F4F1EA", fontStyle: "italic", textAlign: "center", marginTop: 48, marginBottom: 32, maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
-        You're the CEO, the accountant, the marketer, the admin, and the janitor. Until now.
-      </p>
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center", marginTop: 48 }}>
         <button style={{ background: "transparent", border: "1px solid #B8973E", color: "#B8973E", padding: "14px 36px", fontSize: 14, letterSpacing: "0.1em", cursor: "pointer", fontFamily: font.body, borderRadius: 0 }}>
           See Everything Inside →
         </button>
