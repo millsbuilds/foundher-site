@@ -253,42 +253,6 @@ function SheCouldBeAnyone() {
   );
 }
 
-// ─── WE SEE YOU ─────────────────────────────────────────────────────────────
-
-function WeSeeYou() {
-  return (
-    <section style={{ fontFamily: font.body }}>
-      {/* WE SEE YOU text */}
-      <div style={{ background: "#5A1F28", padding: "80px 24px", textAlign: "center" }}>
-        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#F4F1EA", marginBottom: 16 }}>
-          WE SEE YOU
-        </p>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: "#F4F1EA", letterSpacing: "-0.02em", margin: "0 0 40px" }}>
-          Every one of them is a FoundHer.
-        </h2>
-
-        <div style={{ maxWidth: 520, margin: "0 auto 48px", textAlign: "left" }}>
-          {[
-            "She builds from vision, not permission.",
-            "She uses AI as her team, her budget, and her advantage.",
-            "She lives the life on her way up.",
-            "She doesn't wait for permission to begin.",
-          ].map((line) => (
-            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 22px)", color: "#F4F1EA", lineHeight: 1.5, margin: 0, padding: "12px 0", borderBottom: "1px solid #F4F1EA" }}>{line}</p>
-          ))}
-        </div>
-
-        <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: "#F4F1EA", margin: "0 0 12px" }}>
-          She is a FoundHer.
-        </h3>
-        <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: 16, color: "#F4F1EA", margin: 0 }}>
-          Yes, the H is silent. No, she is not.
-        </p>
-      </div>
-    </section>
-  );
-}
-
 // ─── AI BIZ OPS ────────────────────────────────────────────────────────────
 
 function AIBizOps() {
@@ -723,8 +687,6 @@ export default function HomePage() {
         <ColorBar />
         <Collage />
         <ColorBar />
-        <WeSeeYou />
-        <ColorBar />
         <AIBizOps />
         <BizOpsPillars />
         <ColorBar />
@@ -745,3 +707,36 @@ export default function HomePage() {
     </div>
   );
 }
+
+/* SAVED ASSET: FoundHer Identity Section - removed from homepage 2026-07-11
+
+    <section style={{ fontFamily: font.body }}>
+      <div style={{ background: "#5A1F28", padding: "80px 24px", textAlign: "center" }}>
+        <p style={{ fontFamily: font.body, fontWeight: 600, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#F4F1EA", marginBottom: 16 }}>
+          WE SEE YOU
+        </p>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: "#F4F1EA", letterSpacing: "-0.02em", margin: "0 0 40px" }}>
+          Every one of them is a FoundHer.
+        </h2>
+
+        <div style={{ maxWidth: 520, margin: "0 auto 48px", textAlign: "left" }}>
+          {[
+            "She builds from vision, not permission.",
+            "She uses AI as her team, her budget, and her advantage.",
+            "She lives the life on her way up.",
+            "She doesn't wait for permission to begin.",
+          ].map((line) => (
+            <p key={line} style={{ fontFamily: font.display, fontWeight: 500, fontSize: "clamp(18px, 2.5vw, 22px)", color: "#F4F1EA", lineHeight: 1.5, margin: 0, padding: "12px 0", borderBottom: "1px solid #F4F1EA" }}>{line}</p>
+          ))}
+        </div>
+
+        <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px,3.5vw,42px)", color: "#F4F1EA", margin: "0 0 12px" }}>
+          She is a FoundHer.
+        </h3>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: 16, color: "#F4F1EA", margin: 0 }}>
+          Yes, the H is silent. No, she is not.
+        </p>
+      </div>
+    </section>
+
+*/
