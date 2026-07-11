@@ -376,8 +376,50 @@ function AIBizOps() {
         You have AI.
       </h2>
       <p style={{ fontFamily: font.body, fontSize: 20, fontStyle: "italic", color: "#B8973E", marginBottom: 16 }}>
-        The human layer that makes the agents work for real businesses.
+        FoundHer AI adds the human layer that makes AI work for real businesses.
       </p>
+    </section>
+  );
+}
+
+// ─── BIZ OPS PILLARS ───────────────────────────────────────────────────────
+
+function BizOpsPillars() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const pillars = [
+    {
+      heading: "The Intelligence",
+      body: "FoundHer AI assesses your business and identifies exactly where AI can replace cost, time, and overhead.",
+    },
+    {
+      heading: "The ROI",
+      body: "The right AI upgrade costs pennies and saves thousands. We find them for you.",
+    },
+    {
+      heading: "The Guidance",
+      body: "Not sure where to start? Our Biz Ops team guides the entire process — from assessment to implementation.",
+    },
+  ];
+
+  return (
+    <section style={{ background: "#1B2A4A", padding: "60px 7%", fontFamily: font.body }}>
+      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 48, maxWidth: 1100, margin: "0 auto" }}>
+        {pillars.map((p) => (
+          <div key={p.heading} style={{ flex: 1 }}>
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: "#F4F1EA", marginBottom: 16, marginTop: 0 }}>{p.heading}</h3>
+            <p style={{ fontFamily: font.body, fontSize: 15, color: "#B8973E", lineHeight: 1.8, margin: 0 }}>{p.body}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
@@ -862,6 +904,7 @@ export default function HomePage() {
         <WeSeeYou />
         <ColorBar />
         <AIBizOps />
+        <BizOpsPillars />
         <ColorBar />
         <BuildLaunchScale />
         <ColorBar />
