@@ -899,7 +899,18 @@ export default function HomePage() {
             FoundHer AI is the brand that gives you a public face — and the operating system that builds your empire behind the scenes.
           </p>
         </section>
-        <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 700, objectFit: "cover", objectPosition: "center 20%", display: "block" }} />
+        <div style={{ display: "flex", width: "100%" }}>
+          <div style={{ width: "55%" }}>
+            <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center 30%", display: "block" }} />
+          </div>
+          <div style={{ width: "45%", background: "#1B2A4A", display: "flex", flexDirection: "column", justifyContent: "center", padding: "80px 48px" }}>
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, marginTop: 0 }}>The FoundHer in the room.</h3>
+            <p style={{ fontFamily: font.body, fontSize: 16, color: "#B8973E", lineHeight: 1.8, marginBottom: 32, marginTop: 0 }}>Every woman who wears The Cuff carries a credential that can't be faked. She built something. And everyone who knows, knows.</p>
+            <div>
+              <button style={{ background: "transparent", border: "1px solid #B8973E", color: "#B8973E", padding: "14px 32px", fontSize: 13, letterSpacing: "0.1em", cursor: "pointer", fontFamily: font.body, borderRadius: 0 }}>Shop The Cuff</button>
+            </div>
+          </div>
+        </div>
         <ColorBar />
         <Philosophy />
         <ColorBar />
