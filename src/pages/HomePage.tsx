@@ -185,12 +185,12 @@ function Hero() {
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", display: "block", zIndex: 0 }}
       />
       <div style={{ position: "absolute", top: 24, left: "12%", zIndex: 3 }}>
-        <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 18, color: "#F4F1EA", letterSpacing: "0.02em", margin: 0 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup></p>
-        <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: "#F4F1EA", marginTop: 4, marginBottom: 0 }}>The H is silent. She is not.</p>
+        <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 18, color: "#3B2A22", letterSpacing: "0.02em", margin: 0 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup></p>
+        <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: "#3B2A22", marginTop: 4, marginBottom: 0 }}>The H is silent. She is not.</p>
       </div>
       <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 0 200px 12%" }}>
-        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#F4F1EA", display: "block", textShadow: "none" }}>Women have always built businesses.</span>
-        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#F4F1EA", display: "block", textShadow: "none" }}>Now they build empires.</span>
+        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#3B2A22", display: "block", textShadow: "none" }}>Women have always built businesses.</span>
+        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#C1603A", display: "block", textShadow: "none" }}>Now they build empires.</span>
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 260, background: "#3B2A22", padding: "48px 40px", zIndex: 2 }}>
         <p style={{ fontFamily: font.body, fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 16 }}>
