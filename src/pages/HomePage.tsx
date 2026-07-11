@@ -184,6 +184,10 @@ function Hero() {
         alt="FoundHer AI"
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", display: "block", zIndex: 0 }}
       />
+      <div style={{ position: "absolute", top: 24, left: "7%", zIndex: 3 }}>
+        <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 18, color: "#F4F1EA", letterSpacing: "0.02em", margin: 0 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup></p>
+        <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: "#B8973E", marginTop: 4, marginBottom: 0 }}>The H is silent. She is not.</p>
+      </div>
       <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 0 300px 7%" }}>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Women have always built businesses.</span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#FFFFFF", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Now they build empires.</span>
