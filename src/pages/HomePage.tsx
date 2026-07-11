@@ -188,7 +188,7 @@ function Hero() {
         <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 18, color: "#3B2A22", letterSpacing: "0.02em", margin: 0 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup></p>
         <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: "#5A1F28", marginTop: 4, marginBottom: 0 }}>The H is silent. She is not.</p>
       </div>
-      <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 0 300px 45%" }}>
+      <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 320px 280px 32%" }}>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#3B2A22", display: "block", textShadow: "2px 2px 8px rgba(0,0,0,0.4)" }}>Women have always built businesses.</span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#C1603A", display: "block", textShadow: "2px 2px 10px rgba(255,255,255,0.3)" }}>Now they build empires.</span>
       </div>
