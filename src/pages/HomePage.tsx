@@ -442,10 +442,10 @@ function BuildLaunchScale() {
       <p style={{ fontFamily: font.body, fontSize: 20, color: "#F4F1EA", fontStyle: "italic", textAlign: "center", marginTop: 0, marginBottom: 48, maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
         You're the CEO, the accountant, the marketer, the admin, and the janitor. Until now.
       </p>
-      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 48, maxWidth: 1100, margin: "0 auto" }}>
+      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 48, maxWidth: 1100, margin: "0 auto", textAlign: "center" }}>
         {["Build.", "Launch.", "Scale."].map((heading) => (
           <div key={heading} style={{ flex: 1 }}>
-            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 32, color: "#F4F1EA", marginBottom: 0, marginTop: 0 }}>{heading}</h3>
+            <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 32, color: "#F4F1EA", marginBottom: 0, marginTop: 0, textAlign: "center" }}>{heading}</h3>
           </div>
         ))}
       </div>
