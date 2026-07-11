@@ -166,7 +166,7 @@ function Hero() {
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Women have always built businesses.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.05, letterSpacing: "-0.02em", color: C.black, display: "block", marginBottom: 24 }}>Now they build empires.</span>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 16 }}>
-            This is her platform. Her credential. Her edge.
+            This is your platform. Your credential. Your edge.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
             Wear it. Flaunt it. Build with it.
@@ -194,7 +194,7 @@ function Hero() {
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 260, background: "#3B2A22", padding: "48px 40px", zIndex: 2 }}>
         <p style={{ fontFamily: font.body, fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 16 }}>
-          This is her platform. Her credential. Her edge.
+          This is your platform. Your credential. Your edge.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 0 }}>
           Wear it. Flaunt it. Build with it.
