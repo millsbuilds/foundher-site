@@ -195,7 +195,7 @@ function Hero() {
         <p style={{ fontFamily: font.body, fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 0 }}>
           Wear it. Flaunt it. Build with it.
         </p>
-        <img src="/images/FH_mark_cream.png" alt="FoundHer Mark" style={{ width: 48, display: "block", marginTop: 24 }} />
+        <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 24 }}><img src="/images/FH_mark_cream.png" alt="FoundHer Mark" style={{ width: 48, display: "block" }} /><sup style={{ fontSize: 10, color: "#F4F1EA", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
       </div>
     </section>
   );
