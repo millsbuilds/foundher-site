@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const C = {
   white: "#FFFFFF",
@@ -235,35 +235,6 @@ function RichLife() {
   );
 }
 
-// ─── LIFESTYLE BREAK ────────────────────────────────────────────────────────
-
-function LifestyleBreak() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  const imgStyle = (pos: string): React.CSSProperties => ({
-    width: isMobile ? "100%" : "33.333%",
-    height: isMobile ? "50vh" : "80vh",
-    objectFit: "cover",
-    objectPosition: pos,
-    display: "block",
-  });
-
-  return (
-    <section style={{ margin: 0, padding: 0, display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden", lineHeight: 0 }}>
-      <img src="/images/FH_beach-shower.png" alt="Beach shower lifestyle" style={imgStyle("center center")} />
-      <img src="/images/FH_official-cuff.png" alt="FoundHer cuff" style={imgStyle("center center")} />
-      <img src="/images/FH_Beach-towel-scene.png" alt="Beach towel with FoundHer mark" style={imgStyle("center center")} />
-    </section>
-  );
-}
 
 // ─── SHE COULD BE ANYONE ────────────────────────────────────────────────────
 
@@ -751,8 +722,6 @@ export default function HomePage() {
         <SheCouldBeAnyone />
         <ColorBar />
         <Collage />
-        <ColorBar />
-        <LifestyleBreak />
         <ColorBar />
         <WeSeeYou />
         <ColorBar />
