@@ -706,9 +706,11 @@ export default function HomePage() {
         <ColorBar />
         <RunnerBreak />
         <ColorBar />
-        <BuildLaunchScale />
+        <img src="/images/FH_cuff-selection.png" alt="The FoundHer Cuff collection" style={{ width: "100%", display: "block" }} />
         <ColorBar />
         <TheCuff />
+        <ColorBar />
+        <BuildLaunchScale />
         <ColorBar />
         <Founder />
         <ColorBar />
