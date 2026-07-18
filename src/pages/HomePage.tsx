@@ -429,33 +429,15 @@ function TheCuff() {
             A doctor wears a white coat.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 0 }}>
-            Now she wears The Cuff.
+            Now women founders have The Cuff.
           </p>
         </div>
       </div>
 
-      {/* Two-box image — 50% width, centered */}
-      <div style={{ textAlign: "center", background: "#F4F1EA", paddingBottom: 0 }}>
-        <img src="/images/FH_boxed-cuffs-official.png" alt="The FoundHer Cuff — Terracotta and Navy" style={{ width: "50%", display: "inline-block", objectFit: "cover" }} />
-      </div>
-
-      {/* Price block on cream */}
       <div style={{ background: "#F4F1EA", padding: "48px 24px 96px", textAlign: "center" }}>
-        <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 8 }}>
-          Two colorways. One credential.
-        </p>
-        <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.8, fontWeight: 400, marginBottom: 40 }}>
-          Terracotta. Navy. Both gold-plated hardware.
-        </p>
-        <h3 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.coral, marginBottom: 8 }}>
-          The Cuff.
-        </h3>
-        <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.navy, marginBottom: 16 }}>
-          $297
-        </p>
-        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 16, color: C.navy, fontWeight: 400 }}>
-          Pre-order yours. Ships Q4 2026.
-        </p>
+        <a href="/the-cuff" style={{ display: "inline-block", background: "#C1603A", color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 48px", textDecoration: "none", letterSpacing: "0.04em" }}>
+          Shop the Line
+        </a>
       </div>
     </section>
   );
