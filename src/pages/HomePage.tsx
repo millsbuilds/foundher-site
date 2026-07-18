@@ -253,8 +253,11 @@ function SheCouldBeAnyone() {
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", marginBottom: 32 }}>
           Everywhere you look, there's a FoundHer. We just didn't know it. Until now.
         </h2>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
+          For the first time in history, every woman has access to the same tools that once required a team, a budget, and a boardroom. AI changed everything. A gig. A side income. A full empire. It's all on the table — with nothing but an idea and a laptop.
+        </p>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300 }}>
-          She's designing a product line. She's building a Shopify store. She's filming content. She's building a media company. She's running a construction company. She's running a salon. She's building roadways and bridges. She's building a software company. She's automating her way to financial freedom. She's upgrading and building with AI and a laptop.
+          The window didn't just open. It swung wide.
         </p>
       </div>
     </section>
