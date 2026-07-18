@@ -695,9 +695,9 @@ export default function HomePage() {
 
         <section style={{ background: "#F4F1EA", padding: "80px 7%", textAlign: "center" }}>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#1B2A4A", marginBottom: 8, marginTop: 0 }}>Wear the brand.</h2>
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#C1603A", marginBottom: 32, marginTop: 0 }}>Build the empire.</h2>
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#C1603A", marginBottom: 32, marginTop: 0 }}>Own the identity.</h2>
           <p style={{ fontFamily: font.body, fontSize: 18, color: "#7A7569", lineHeight: 1.75, maxWidth: 700, margin: "0 auto" }}>
-            FoundHer AI is the brand that gives you a public face — and the operating system that builds your empire behind the scenes.
+            You've discovered your FoundHer DNA. Now you can proudly wear it. FoundHer AI is the brand that tells the world who you are — a Founder — and the FoundHer Executive Suite gives you the operating tools that help build your empire behind the scenes.
           </p>
         </section>
         <div style={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
