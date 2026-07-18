@@ -178,7 +178,7 @@ function Hero() {
   }
 
   return (
-    <section style={{ position: "relative", width: "100%", minHeight: "90vh", fontFamily: font.body }}>
+    <section style={{ position: "relative", width: "100%", minHeight: "90vh", fontFamily: font.body, overflow: "hidden" }}>
       <img
         src="/images/FH_hero-image-final.png"
         alt="FoundHer AI"
@@ -188,9 +188,9 @@ function Hero() {
         <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 18, color: "#3B2A22", letterSpacing: "0.02em", margin: 0 }}>FoundHer AI<sup style={{ fontSize: 10, verticalAlign: "super" }}>™</sup></p>
         <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: "#3B2A22", marginTop: 4, marginBottom: 0 }}>The H is silent. She is not.</p>
       </div>
-      <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 0 200px 12%" }}>
-        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 28, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#3B2A22", display: "block", textShadow: "none" }}>Women have always built businesses.</span>
-        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#C1603A", display: "block", textShadow: "none" }}>Now they build empires.</span>
+      <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", minHeight: "90vh", padding: "0 24px 200px", paddingLeft: "clamp(24px, 12%, 12%)" }}>
+        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(20px, 4vw, 28px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: "#3B2A22", display: "block", textShadow: "none" }}>Women have always built businesses.</span>
+        <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 6vw, 52px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: "#C1603A", display: "block", textShadow: "none" }}>Now they build empires.</span>
       </div>
       <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 260, background: "#3B2A22", padding: "48px 40px", zIndex: 2 }}>
         <p style={{ fontFamily: font.body, fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 16 }}>
@@ -653,7 +653,7 @@ function Footer() {
 
 export default function HomePage() {
   return (
-    <div style={{ fontFamily: font.body, background: C.white }}>
+    <div style={{ fontFamily: font.body, background: C.white, overflowX: "hidden" }}>
       <Nav />
       <main>
         <section style={{ background: "#F4F1EA", padding: "20px 7%", textAlign: "center" }}>
@@ -670,11 +670,11 @@ export default function HomePage() {
             FoundHer AI is the brand that gives you a public face — and the operating system that builds your empire behind the scenes.
           </p>
         </section>
-        <div style={{ display: "flex", width: "100%" }}>
-          <div style={{ width: "55%" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
+          <div style={{ width: "100%", minWidth: 0, flex: "1 1 55%" }}>
             <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center 30%", display: "block" }} />
           </div>
-          <div style={{ width: "45%", background: "#3F2A3F", display: "flex", flexDirection: "column", justifyContent: "center", padding: "80px 48px" }}>
+          <div style={{ flex: "1 1 45%", minWidth: 280, background: "#3F2A3F", display: "flex", flexDirection: "column", justifyContent: "center", padding: "48px 24px" }}>
             <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, marginTop: 0 }}>The FoundHer in the room.</h3>
             <p style={{ fontFamily: font.body, fontSize: 16, color: "#B8973E", lineHeight: 1.8, marginBottom: 32, marginTop: 0 }}>Every woman who wears The Cuff carries the credential of a founder. She's building something. And everyone who knows, knows.</p>
             <div>
