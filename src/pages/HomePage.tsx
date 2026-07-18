@@ -192,14 +192,22 @@ function Hero() {
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(20px, 4vw, 28px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: "#3B2A22", display: "block", textShadow: "none" }}>Women have always built businesses.</span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 6vw, 52px)", lineHeight: 1.05, letterSpacing: "-0.02em", color: "#C1603A", display: "block", textShadow: "none" }}>Now they build empires.</span>
       </div>
-      <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 260, background: "#3B2A22", padding: "48px 40px", zIndex: 2 }}>
-        <p style={{ fontFamily: font.body, fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 16 }}>
-          This is your platform. Your credential. Your edge.
+      <div style={{ position: "absolute", right: "7%", top: "50%", transform: "translateY(-50%)", maxWidth: 280, background: "#3B2A22", padding: "48px 40px", zIndex: 2 }}>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 4, marginTop: 0 }}>
+          There's something very powerful about the way your business brain works.
         </p>
-        <p style={{ fontFamily: font.body, fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 0 }}>
-          Wear it. Flaunt it. Build with it.
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 17, color: "#F4F1EA", lineHeight: 1.75, marginBottom: 20, marginTop: 0 }}>
+          And that's your edge.
         </p>
-        <span style={{ position: "relative", display: "inline-flex", alignItems: "center", marginTop: 24 }}><img src="/images/FH_mark_cream.png" alt="FoundHer Mark" style={{ width: 48, display: "block" }} /><sup style={{ fontSize: 10, color: "#F4F1EA", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
+        <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: "#F4F1EA", lineHeight: 1.3, marginBottom: 8, marginTop: 0 }}>
+          Discover your FoundHer DNA.
+        </p>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 14, color: "rgba(244,241,234,0.7)", lineHeight: 1.6, marginBottom: 24, marginTop: 0 }}>
+          Free. 5 minutes. Yours forever.
+        </p>
+        <a href="https://foundherdna.com" style={{ display: "inline-block", background: "#C1603A", color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 14, padding: "14px 28px", textDecoration: "none", letterSpacing: "0.04em" }}>
+          Take the Quiz →
+        </a>
       </div>
     </section>
   );
@@ -663,6 +671,28 @@ export default function HomePage() {
         </section>
         <ColorBar />
         <Hero />
+
+        {/* ─── DNA QUIZ CTA ──────────────────────────────────────────────────── */}
+        <section style={{ background: "#F4F1EA", padding: "96px 24px", textAlign: "center" }}>
+          <div style={{ maxWidth: 600, margin: "0 auto" }}>
+            <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(18px, 2.5vw, 22px)", color: "#1B2A4A", lineHeight: 1.75, marginBottom: 4, marginTop: 0 }}>
+              There's something very powerful about the way your business brain works.
+            </p>
+            <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(18px, 2.5vw, 22px)", color: "#1B2A4A", lineHeight: 1.75, marginBottom: 28, marginTop: 0 }}>
+              And that's your edge.
+            </p>
+            <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 40px)", color: "#1B2A4A", lineHeight: 1.2, marginBottom: 12, marginTop: 0 }}>
+              Discover your FoundHer DNA.
+            </p>
+            <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 16, color: "#7A7569", lineHeight: 1.6, marginBottom: 36, marginTop: 0 }}>
+              Free. 5 minutes. Yours forever.
+            </p>
+            <a href="https://foundherdna.com" style={{ display: "inline-block", background: "#C1603A", color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 40px", textDecoration: "none", letterSpacing: "0.04em" }}>
+              Take the Quiz →
+            </a>
+          </div>
+        </section>
+
         <section style={{ background: "#F4F1EA", padding: "80px 7%", textAlign: "center" }}>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#1B2A4A", marginBottom: 8, marginTop: 0 }}>Wear the brand.</h2>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#C1603A", marginBottom: 32, marginTop: 0 }}>Build the empire.</h2>
