@@ -704,9 +704,9 @@ export default function HomePage() {
         <AIBizOps />
         <BizOpsPillars />
         <ColorBar />
-        <BuildLaunchScale />
-        <ColorBar />
         <RunnerBreak />
+        <ColorBar />
+        <BuildLaunchScale />
         <ColorBar />
         <TheCuff />
         <ColorBar />
