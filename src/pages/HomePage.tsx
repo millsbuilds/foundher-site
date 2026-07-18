@@ -422,11 +422,14 @@ function TheCuff() {
           </p>
 
           <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(32px, 4.5vw, 52px)", color: C.navy, lineHeight: 1.2, marginBottom: 40 }}>
-            A doctor wears a white coat.<br />A FoundHer wears The Cuff.
+            A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin. The Cuff is her credential.
           </h2>
 
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 8 }}>
+            A doctor wears a white coat.
+          </p>
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 0 }}>
-            A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin. The Cuff is her credential.
+            Now she wears The Cuff.
           </p>
         </div>
       </div>
