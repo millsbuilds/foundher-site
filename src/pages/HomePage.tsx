@@ -674,28 +674,6 @@ export default function HomePage() {
         </section>
         <ColorBar />
         <Hero />
-
-        {/* ─── DNA QUIZ CTA ──────────────────────────────────────────────────── */}
-        <section style={{ background: "#F4F1EA", padding: "96px 24px", textAlign: "center" }}>
-          <div style={{ maxWidth: 600, margin: "0 auto" }}>
-            <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(18px, 2.5vw, 22px)", color: "#1B2A4A", lineHeight: 1.75, marginBottom: 4, marginTop: 0 }}>
-              There's something very powerful about the way your business brain works.
-            </p>
-            <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(18px, 2.5vw, 22px)", color: "#1B2A4A", lineHeight: 1.75, marginBottom: 28, marginTop: 0 }}>
-              And that's your edge.
-            </p>
-            <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 40px)", color: "#1B2A4A", lineHeight: 1.2, marginBottom: 12, marginTop: 0 }}>
-              Discover your FoundHer DNA.
-            </p>
-            <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 16, color: "#7A7569", lineHeight: 1.6, marginBottom: 36, marginTop: 0 }}>
-              Free. 5 minutes. Yours forever.
-            </p>
-            <a href="https://foundherdna.com" style={{ display: "inline-block", background: "#C1603A", color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 40px", textDecoration: "none", letterSpacing: "0.04em" }}>
-              Take the Quiz →
-            </a>
-          </div>
-        </section>
-
         <section style={{ background: "#F4F1EA", padding: "80px 7%", textAlign: "center" }}>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#1B2A4A", marginBottom: 8, marginTop: 0 }}>Wear the brand.</h2>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#C1603A", marginBottom: 32, marginTop: 0 }}>Own the identity.</h2>
