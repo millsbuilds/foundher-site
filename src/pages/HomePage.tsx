@@ -313,16 +313,16 @@ function BizOpsPillars() {
 
   const pillars = [
     {
-      heading: "The Intelligence",
-      body: "FoundHer AI assesses your business and identifies exactly where AI can replace cost, time, and overhead.",
+      heading: "The DNA",
+      body: "Your FoundHer DNA reveals exactly how you\u2019re wired to build. Not how someone else did it. How you do it.",
     },
     {
-      heading: "The ROI",
-      body: "The right AI upgrade costs pennies and saves thousands. We find them for you.",
+      heading: "The Identity",
+      body: "The brand. The Cuff. The products. The mark of a FoundHer. Every woman who carries the mark carries the credential of a founder \u2014 and everyone who knows, knows.",
     },
     {
-      heading: "The Guidance",
-      body: "Not sure where to start? Our Biz Ops team guides the entire process — from assessment to implementation.",
+      heading: "The Infrastructure",
+      body: "The FoundHer Executive Suite gives you the agents, templates, and tools matched to your venture type \u2014 and everything you need to build, run, and scale.",
     },
   ];
 
