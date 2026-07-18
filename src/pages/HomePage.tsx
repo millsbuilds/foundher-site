@@ -277,7 +277,7 @@ function AIBizOps() {
   return (
     <section style={{ background: "#1B2A4A", padding: "80px 7%", textAlign: "center", fontFamily: font.body }}>
       <p style={{ fontFamily: font.body, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#B8973E", marginBottom: 24 }}>
-        AI BIZ OPS
+        FOUNDHER EXECUTIVE SUITE
       </p>
       <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 8, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
         You don't need investors. You don't need a team. You don't need permission.
@@ -285,9 +285,12 @@ function AIBizOps() {
       <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: isMobile ? 36 : 52, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}>
         You have AI.
       </h2>
-      <p style={{ fontFamily: font.body, fontSize: 20, fontStyle: "italic", color: "#B8973E", marginBottom: 16 }}>
-        FoundHer AI adds the human layer that makes AI work for real businesses.
+      <p style={{ fontFamily: font.body, fontSize: 20, fontStyle: "italic", color: "#B8973E", marginBottom: 32 }}>
+        The FoundHer Executive Suite gives you every operating tool you need to build, run, and scale — without the overhead.
       </p>
+      <a href="https://bizopssuite.ai" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "transparent", border: "1px solid #B8973E", color: "#B8973E", fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.1em", padding: "14px 36px", textDecoration: "none" }}>
+        Explore the Suite →
+      </a>
     </section>
   );
 }
