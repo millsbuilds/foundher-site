@@ -109,6 +109,7 @@ function Nav() {
         ) : (
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
             <a href="/members" style={{ color: C.black, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>The Shop</a>
+            <a href="/about" style={{ color: C.black, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>About</a>
             <a href="mailto:hello@foundherai.ai" style={{ color: C.black, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <button
               onClick={() => scrollTo("collection")}
@@ -132,6 +133,7 @@ function Nav() {
           }}
         >
           <a href="/members" style={{ color: C.black, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>The Shop</a>
+          <a href="/about" style={{ color: C.black, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>About</a>
           <a href="mailto:hello@foundherai.ai" style={{ color: C.black, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <button
             onClick={() => scrollTo("collection")}
