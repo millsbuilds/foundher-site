@@ -271,8 +271,20 @@ export default function AboutPage() {
             Founder, FoundHer Executive Suite
           </p>
 
+          <p style={{ fontFamily: font.body, fontSize: 16, color: "rgba(244,241,234,0.85)", lineHeight: 1.85, marginBottom: 20 }}>
+            Shelby knows what it takes to build a real business. She's done it — the office lease, the staff, the clients, the bankers, the marketing managers, the website. A 7-figure operation built from the ground up.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 16, color: "rgba(244,241,234,0.85)", lineHeight: 1.85, marginBottom: 20 }}>
+            After COVID left most of her clients' businesses struggling, Shelby saw it as the perfect time to pivot. She and her husband turned their focus to family — and soon after, baby Koa arrived. Now, with Koa nearly a year old, mom's business brain was on fire again.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 16, color: "rgba(244,241,234,0.85)", lineHeight: 1.85, marginBottom: 20 }}>
+            When AI arrived, Shelby saw something others missed — thousands of solopreneurs finally had the chance to build real businesses. But the path was overwhelming. Legal structure. Formation documents. AI tools. Operations. And 53,000+ platforms to choose from, with hundreds more added every day.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 16, color: "rgba(244,241,234,0.85)", lineHeight: 1.85, marginBottom: 20 }}>
+            So she built the answer. The FoundHer Executive Suite is the operating system for the solo founder — every tool, every template, every agent, already vetted, already organized, already matched to how you're built to build.
+          </p>
           <p style={{ fontFamily: font.body, fontSize: 16, color: "rgba(244,241,234,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
-            Shelby knows what it takes to build a real business. She's done it — the office lease, the staff, the clients, the bankers, the marketing managers, the website. A 7-figure operation built from the ground up. After COVID, with businesses struggling everywhere, a pivot was in order. She fell in love, got married, and had a baby. When AI arrived, Shelby saw something others missed — thousands of solopreneurs finally had the chance to build real businesses. But the path was overwhelming. Legal structure. Formation documents. AI tools. Operations. And 53,000+ platforms to choose from, with hundreds more added every day. So she built the answer. The FoundHer Executive Suite is the operating system for the solo founder — every tool, every template, every agent, already vetted, already organized, already matched to how you're built to build. Trust Shelby. Her team has done the heavy lifting for you.
+            Trust Shelby. Her team has done the heavy lifting for you.
           </p>
 
           <div>
