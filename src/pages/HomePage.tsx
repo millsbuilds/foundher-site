@@ -223,7 +223,8 @@ function Collage() {
   );
 }
 
-function RichLife() {
+// @ts-ignore — removed from render
+function _RichLife() {
   return (
     <section style={{ background: C.white, padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 700, margin: "0 auto" }}>
@@ -547,7 +548,8 @@ function DesignedForLife() {
 
 // ─── FOUNDER ─────────────────────────────────────────────────────────────────
 
-function Founder() {
+// @ts-ignore — moved to About page
+function _Founder() {
   return (
     <section style={{ background: C.offwhite, padding: "96px 24px", fontFamily: font.body }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
@@ -699,11 +701,7 @@ export default function HomePage() {
         <ColorBar />
         <BuildLaunchScale />
         <ColorBar />
-        <Founder />
-        <ColorBar />
         <HorseSection />
-        <ColorBar />
-        <RichLife />
       </main>
       <ColorBar />
       <Footer />
