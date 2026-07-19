@@ -194,7 +194,7 @@ export default function AboutPage() {
           </p>
 
           <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 44px)", color: C.navy, lineHeight: 1.25, marginBottom: 48 }}>
-            We didn't build FoundHer AI to sell you something. We built it so we could finally own who we are.
+            We didn't build FoundHer AI to sell you something. We built it so we could finally own who we are: women founders.
           </h1>
 
           <img
