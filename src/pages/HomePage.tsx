@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { supabase } from "../lib/supabase";
 
 const C = {
   white: "#FFFFFF",
@@ -252,6 +253,24 @@ function _RichLife() {
 function SheCouldBeAnyone() {
   const [joinEmail, setJoinEmail] = useState("");
   const [joinSubmitted, setJoinSubmitted] = useState(false);
+  const [joinError, setJoinError] = useState(false);
+  const [joinLoading, setJoinLoading] = useState(false);
+
+  const handleJoinSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!joinEmail.trim() || !joinEmail.includes("@")) return;
+    setJoinLoading(true);
+    setJoinError(false);
+    try {
+      const { error } = await supabase.from("circle_waitlist").insert({ email: joinEmail.trim() });
+      if (error) throw error;
+      setJoinSubmitted(true);
+    } catch {
+      setJoinError(true);
+    } finally {
+      setJoinLoading(false);
+    }
+  };
 
   return (
     <section style={{ background: "#F4F1EA", padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
@@ -274,25 +293,33 @@ function SheCouldBeAnyone() {
               You're one of us. Welcome, FoundHer.
             </p>
           ) : (
-            <form
-              onSubmit={(e) => { e.preventDefault(); if (joinEmail.includes("@")) setJoinSubmitted(true); }}
-              style={{ display: "flex", gap: 0, maxWidth: 520 }}
-            >
-              <input
-                type="email"
-                value={joinEmail}
-                onChange={(e) => setJoinEmail(e.target.value)}
-                placeholder="Your email address"
-                required
-                style={{ width: 360, padding: "14px 16px", fontSize: 15, fontFamily: font.body, border: "1px solid #B8973E", borderRight: "none", borderRadius: 0, background: "#FFFFFF", color: "#3B2A22", outline: "none", boxSizing: "border-box" }}
-              />
-              <button
-                type="submit"
-                style={{ background: "#C1603A", color: "#F4F1EA", fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", padding: "14px 32px", border: "none", borderRadius: 0, cursor: "pointer", whiteSpace: "nowrap" }}
+            <>
+              <form
+                onSubmit={handleJoinSubmit}
+                style={{ display: "flex", gap: 0, maxWidth: 520 }}
               >
-                Count Me In →
-              </button>
-            </form>
+                <input
+                  type="email"
+                  value={joinEmail}
+                  onChange={(e) => { setJoinEmail(e.target.value); setJoinError(false); }}
+                  placeholder="Your email address"
+                  required
+                  style={{ width: 360, padding: "14px 16px", fontSize: 15, fontFamily: font.body, border: "1px solid #B8973E", borderRight: "none", borderRadius: 0, background: "#FFFFFF", color: "#3B2A22", outline: "none", boxSizing: "border-box" }}
+                />
+                <button
+                  type="submit"
+                  disabled={joinLoading}
+                  style={{ background: "#C1603A", color: "#F4F1EA", fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", padding: "14px 32px", border: "none", borderRadius: 0, cursor: joinLoading ? "not-allowed" : "pointer", whiteSpace: "nowrap", opacity: joinLoading ? 0.6 : 1 }}
+                >
+                  {joinLoading ? "Sending…" : "Count Me In →"}
+                </button>
+              </form>
+              {joinError && (
+                <p style={{ fontFamily: font.body, fontSize: 14, color: "#C1603A", marginTop: 12 }}>
+                  Something went wrong. Please try again.
+                </p>
+              )}
+            </>
           )}
         </div>
       </div>
