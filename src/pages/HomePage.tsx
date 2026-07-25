@@ -429,7 +429,7 @@ function TheCuff() {
           </h2>
 
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 8 }}>
-            A doctor wears a white coat.
+            The physician has the white coat.
           </p>
           <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 0 }}>
             Now women founders have The Cuff.
@@ -705,6 +705,9 @@ export default function HomePage() {
         <RunnerBreak />
         <ColorBar />
         <img src="/images/FH_cuff-selection.png" alt="The FoundHer Cuff collection" style={{ width: "100%", display: "block" }} />
+        <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 14, color: "#B8973E", textAlign: "center", padding: "20px 24px 0", margin: 0 }}>
+          Seven color choices. One collection. Wear one, wear all — The Cuff is yours to collect.
+        </p>
         <ColorBar />
         <TheCuff />
         <ColorBar />
