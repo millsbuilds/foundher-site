@@ -250,6 +250,9 @@ function _RichLife() {
 // ─── SHE COULD BE ANYONE ────────────────────────────────────────────────────
 
 function SheCouldBeAnyone() {
+  const [joinEmail, setJoinEmail] = useState("");
+  const [joinSubmitted, setJoinSubmitted] = useState(false);
+
   return (
     <section style={{ background: "#F4F1EA", padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 740, margin: "0 auto" }}>
@@ -257,11 +260,41 @@ function SheCouldBeAnyone() {
           Everywhere you look, there's a FoundHer. We just didn't know it. Until now.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
-          For the first time in history, every woman has access to the same tools that once required a team, a budget, and a boardroom. AI changed everything. A gig. A side income. A full empire. It's all on the table — with nothing but an idea and a laptop.
+          For the first time in history, every woman has access to the same tools that once required a team, a budget, and a boardroom. AI changed everything. A gig. A side income. A full empire. It's all on the table — with nothing but an idea and a laptop required.
         </p>
-        <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300 }}>
-          The window didn't just open. It swung wide.
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 24 }}>
+          With the power of AI, millions of women are building. The ones who do it with intention, with identity, with the right tools — those are the FoundHers. Join us.
         </p>
+        <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 0 }}>
+          Thousands of women founders have already taken the FoundHer DNA test and counted themselves among us. Be one of them.
+        </p>
+        <div style={{ marginTop: "2rem", display: "flex", justifyContent: "center" }}>
+          {joinSubmitted ? (
+            <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 16, color: "#B8973E" }}>
+              You're one of us. Welcome, FoundHer.
+            </p>
+          ) : (
+            <form
+              onSubmit={(e) => { e.preventDefault(); if (joinEmail.includes("@")) setJoinSubmitted(true); }}
+              style={{ display: "flex", gap: 0, maxWidth: 520 }}
+            >
+              <input
+                type="email"
+                value={joinEmail}
+                onChange={(e) => setJoinEmail(e.target.value)}
+                placeholder="Your email address"
+                required
+                style={{ width: 360, padding: "14px 16px", fontSize: 15, fontFamily: font.body, border: "1px solid #B8973E", borderRight: "none", borderRadius: 0, background: "#FFFFFF", color: "#3B2A22", outline: "none", boxSizing: "border-box" }}
+              />
+              <button
+                type="submit"
+                style={{ background: "#C1603A", color: "#F4F1EA", fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", padding: "14px 32px", border: "none", borderRadius: 0, cursor: "pointer", whiteSpace: "nowrap" }}
+              >
+                Count Me In →
+              </button>
+            </form>
+          )}
+        </div>
       </div>
     </section>
   );
