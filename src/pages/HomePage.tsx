@@ -669,9 +669,18 @@ export default function HomePage() {
         <section style={{ background: "#F4F1EA", padding: "80px 7%", textAlign: "center" }}>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#1B2A4A", marginBottom: 8, marginTop: 0 }}>Wear the brand.</h2>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 52, lineHeight: 1.1, color: "#C1603A", marginBottom: 32, marginTop: 0 }}>Own the identity.</h2>
-          <p style={{ fontFamily: font.body, fontSize: 18, color: "#7A7569", lineHeight: 1.75, maxWidth: 700, margin: "0 auto" }}>
-            You've discovered your FoundHer DNA. Now you can proudly wear it. FoundHer AI is the brand that tells the world who you are — a Founder — and the FoundHer Executive Suite gives you the operating tools that help build your empire behind the scenes.
+          <p style={{ fontFamily: font.body, fontSize: 18, color: "#7A7569", lineHeight: 1.75, maxWidth: 700, margin: "0 auto 0" }}>
+            Not everyone is a founder.<br />
+            Are you one of us?
           </p>
+          <p style={{ fontFamily: font.body, fontSize: 18, color: "#7A7569", lineHeight: 1.75, maxWidth: 700, margin: "24px auto 0" }}>
+            FoundHer AI is the brand built exclusively for women who build. Before you go any further — find out where you stand.
+          </p>
+          <div style={{ marginTop: "2rem", textAlign: "center" }}>
+            <a href="https://foundherdna.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#1B2A4A", color: "#F4F1EA", fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", padding: "16px 40px", textDecoration: "none", borderRadius: 0 }}>
+              Discover Your FoundHer DNA →
+            </a>
+          </div>
         </section>
         <div style={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
           <div style={{ width: "100%", minWidth: 0, flex: "1 1 55%" }}>
