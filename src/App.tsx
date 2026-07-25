@@ -4,6 +4,7 @@ import SuccessPage from "./pages/SuccessPage";
 import MembersPage from "./pages/MembersPage";
 import TheCuffPage from "./pages/TheCuffPage";
 import AboutPage from "./pages/AboutPage";
+import ExecutiveSuitePage from "./pages/ExecutiveSuitePage";
 import PasswordGate from "./components/PasswordGate";
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/members" element={<MembersPage />} />
           <Route path="/the-cuff" element={<TheCuffPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/executive-suite" element={<ExecutiveSuitePage />} />
         </Routes>
       </BrowserRouter>
     </PasswordGate>
