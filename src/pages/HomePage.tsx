@@ -207,7 +207,7 @@ function Hero() {
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 14, color: "rgba(244,241,234,0.7)", lineHeight: 1.6, marginBottom: 24, marginTop: 0 }}>
           Free. 5 minutes. Yours forever.
         </p>
-        <a href="https://foundherdna.com" style={{ display: "inline-block", background: "#C1603A", color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 14, padding: "14px 28px", textDecoration: "none", letterSpacing: "0.04em" }}>
+        <a href="https://foundherdna.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#C1603A", color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 14, padding: "14px 28px", textDecoration: "none", letterSpacing: "0.04em" }}>
           Take the Quiz →
         </a>
       </div>
