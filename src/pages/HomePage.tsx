@@ -292,7 +292,7 @@ function AIBizOps() {
         You have AI.
       </h2>
       <p style={{ fontFamily: font.body, fontSize: 20, fontStyle: "italic", color: "#B8973E", marginBottom: 32 }}>
-        The FoundHer Executive Suite puts every tool, agent, template, and integration you need in one place — the way your DNA says you actually run a business.
+        The FoundHer Executive Suite puts every tool, agent, template, and integration you need in one place — curated specifically to your DNA type, so nothing in your toolkit was built for someone else.
       </p>
       <a href="https://bizopssuite.ai" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "transparent", border: "1px solid #B8973E", color: "#B8973E", fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.1em", padding: "14px 36px", textDecoration: "none" }}>
         Explore the Suite →
