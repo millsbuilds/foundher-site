@@ -155,15 +155,6 @@ function Footer() {
 
 // ─── PRODUCTS ─────────────────────────────────────────────────────────────────
 
-const COLORWAYS = [
-  { image: "/images/FH_cuff-terracotta-navy.png", label: "Terracotta & Navy" },
-  { image: "/images/FH_cuff-ivory.png", label: "Ivory" },
-  { image: "/images/FH_cuff-espresso.png", label: "Espresso" },
-  { image: "/images/FH_cuff-oxblood.png", label: "Oxblood" },
-  { image: "/images/FH_cuff-emerald.png", label: "Emerald" },
-  { image: "/images/FH_cuff-black.png", label: "Black" },
-];
-
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 
 export default function MembersPage() {
@@ -244,17 +235,12 @@ export default function MembersPage() {
             Every FoundHer piece comes in all seven color choices — because the only thing that matters is that it's yours.
           </p>
 
-          {/* 5d. Color row */}
-          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(3, 1fr)" : "repeat(6, 1fr)", gap: 24, maxWidth: 900, margin: "0 auto" }}>
-            {COLORWAYS.map((c) => (
-              <div key={c.label} style={{ textAlign: "center" }}>
-                <img src={c.image} alt={c.label} style={{ width: "100%", height: 120, objectFit: "contain", display: "block", marginBottom: 8 }} />
-                <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: C.navy, margin: 0 }}>
-                  {c.label}
-                </p>
-              </div>
-            ))}
-          </div>
+          {/* 5d. Cuff selection image */}
+          <img
+            src="/images/FH_cuff-selection.png"
+            alt="The Cuff — all seven color choices"
+            style={{ width: "100%", maxWidth: 900, height: "auto", display: "block", margin: "0 auto 48px", objectFit: "contain" }}
+          />
         </div>
       </section>
 
