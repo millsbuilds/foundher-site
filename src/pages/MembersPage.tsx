@@ -106,8 +106,8 @@ function Nav() {
           </button>
         ) : (
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
-            <a href="/the-cuff" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>The Cuff</a>
             <a href="/members" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>The Lifestyle</a>
+            <a href="/the-cuff" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>The Cuff</a>
             <a href="/about" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>About</a>
             <a href="mailto:hello@foundherai.ai" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
             <a href="https://foundherdna.com" target="_blank" rel="noopener noreferrer" style={{ background: C.terracotta, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "10px 24px", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: font.body, textDecoration: "none" }}>Take the DNA Test</a>
@@ -117,8 +117,8 @@ function Nav() {
 
       {isMobile && menuOpen && (
         <div style={{ background: C.white, borderTop: `1px solid ${C.lightgray}`, padding: "16px 24px 24px", display: "flex", flexDirection: "column", gap: 16 }}>
-          <a href="/the-cuff" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>The Cuff</a>
           <a href="/members" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>The Lifestyle</a>
+          <a href="/the-cuff" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>The Cuff</a>
           <a href="/about" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>About</a>
           <a href="mailto:hello@foundherai.ai" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
           <a href="https://foundherdna.com" target="_blank" rel="noopener noreferrer" style={{ background: C.terracotta, color: "#FFFFFF", border: "none", borderRadius: 0, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font.body, textAlign: "center", marginTop: 8, textDecoration: "none", display: "block" }}>Take the DNA Test</a>
