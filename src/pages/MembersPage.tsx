@@ -268,8 +268,14 @@ export default function MembersPage() {
           <img
             src="/images/FH_samples.png"
             alt="Product samples"
-            style={{ width: "100%", maxWidth: 800, height: "auto", display: "block", margin: "0 auto 64px", objectFit: "contain" }}
+            style={{ width: "100%", maxWidth: 800, height: "auto", display: "block", margin: "0 auto 32px", objectFit: "contain" }}
           />
+          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 26px)", color: C.navy, lineHeight: 1.5, maxWidth: 700, margin: "0 auto 16px", textAlign: "center" }}>
+            Your FoundHer DNA is as much a part of who you are as your signature. Wear it like you love it.
+          </p>
+          <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, maxWidth: 700, margin: "0 auto 48px", textAlign: "center" }}>
+            Every FoundHer piece comes in all seven color choices — because the only thing that matters is that it's yours.
+          </p>
 
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 48 }}>
             {PRODUCTS.map((p) => (
