@@ -167,7 +167,7 @@ export default function MembersPage() {
       {/* ─── Section 1: Hero ─── */}
       <section style={{ background: C.navy, padding: "140px 24px 96px", textAlign: "center" }}>
         <p style={{ fontFamily: font.body, fontWeight: 700, fontSize: 11, letterSpacing: "0.22em", textTransform: "uppercase", color: C.gold, marginBottom: 24 }}>
-          THE SHOP
+          THE LIFESTYLE
         </p>
         <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.cream, letterSpacing: "-0.02em", lineHeight: 1.15, marginBottom: 16 }}>
           The uniform of the unstoppable.
@@ -288,7 +288,7 @@ export default function MembersPage() {
       <img
         src="/images/FH_social-cuff.png"
         alt="FoundHer in the world"
-        style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center top", display: "block" }}
+        style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center 30%", display: "block" }}
       />
 
       <ColorBar />
