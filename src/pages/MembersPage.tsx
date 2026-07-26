@@ -218,6 +218,17 @@ export default function MembersPage() {
 
       <ColorBar />
 
+      {/* ─── Section 5b: Bracelet Stack ─── */}
+      <section style={{ background: "#F4F1EA", padding: "64px 24px", textAlign: "center" }}>
+        <img
+          src="/images/FH_bracelet-stack.png"
+          alt="The FoundHer Collection"
+          style={{ width: "100%", maxWidth: 900, height: "auto", display: "block", margin: "0 auto", objectFit: "contain" }}
+        />
+      </section>
+
+      <ColorBar />
+
       {/* ─── Section 6: The Stack ─── */}
       <div style={{ display: "flex", width: "100%" }}>
         <img
