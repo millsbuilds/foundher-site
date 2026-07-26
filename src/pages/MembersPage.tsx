@@ -155,29 +155,6 @@ function Footer() {
 
 // ─── PRODUCTS ─────────────────────────────────────────────────────────────────
 
-const PRODUCTS = [
-  {
-    image: "/images/FH_terracotta-band.png",
-    title: "The Cuff \u2014 Terracotta",
-    description: "Gold-plated hardware. Enamel finish. The original founder credential.",
-  },
-  {
-    image: "/images/FH_navy-logoes-band.png",
-    title: "The Cuff \u2014 Navy",
-    description: "Gold-plated hardware. Enamel finish. For the founder who leads in navy.",
-  },
-  {
-    image: "/images/FH_gold-logo-band.png",
-    title: "The Cuff \u2014 Gold",
-    description: "Pure gold finish. No color. Just the mark.",
-  },
-  {
-    image: "/images/FH_navy-rope-bracelet.png",
-    title: "The Rope Bracelet",
-    description: "Navy cord. Gold charm. Worn alone or stacked.",
-  },
-];
-
 const COLORWAYS = [
   { image: "/images/FH_cuff-terracotta-navy.png", label: "Terracotta & Navy" },
   { image: "/images/FH_cuff-ivory.png", label: "Ivory" },
@@ -296,31 +273,63 @@ export default function MembersPage() {
       <section style={{ background: C.cream, padding: "64px 24px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 48 }}>
-            {PRODUCTS.map((p) => (
-              <div key={p.title} style={{ textAlign: "center" }}>
-                <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, margin: "0 0 12px" }}>
-                  Choose your color — every Cuff is yours to make your own.
-                </p>
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }}
-                />
-                <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>
-                  {p.title}
-                </h3>
-                <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>
-                  {p.description}
-                </p>
-              </div>
-            ))}
+
+            {/* Product 1 */}
+            <div style={{ textAlign: "center" }}>
+              <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, margin: "0 0 12px" }}>
+                Choose your color — every Cuff is yours to make your own.
+              </p>
+              <img src="/images/FH_terracotta-band.png" alt="The Cuff — Terracotta" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Cuff — Terracotta</h3>
+              <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>Gold-plated hardware. Enamel finish. The original founder credential.</p>
+            </div>
+
+            {/* Product 2 */}
+            <div style={{ textAlign: "center" }}>
+              <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, margin: "0 0 12px" }}>
+                Choose your color — every Cuff is yours to make your own.
+              </p>
+              <img src="/images/FH_navy-logoes-band.png" alt="The Cuff — Navy" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Cuff — Navy</h3>
+              <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>Gold-plated hardware. Enamel finish. For the founder who leads in navy.</p>
+            </div>
+
+            {/* Product 3 */}
+            <div style={{ textAlign: "center" }}>
+              <img src="/images/FH_gold-logo-band.png" alt="The Cuff — Gold" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Cuff — Gold</h3>
+              <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>Pure gold finish. No color. Just the mark.</p>
+            </div>
+
+            {/* Product 4 */}
+            <div style={{ textAlign: "center" }}>
+              <img src="/images/FH_navy-rope-bracelet.png" alt="The Rope Bracelet" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
+              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Rope Bracelet</h3>
+              <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, marginBottom: 8 }}>Navy cord. Gold charm. Worn alone or stacked.</p>
+              <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.terracotta, margin: 0 }}>Coming Soon</p>
+            </div>
+
           </div>
         </div>
       </section>
 
       <ColorBar />
 
-      {/* ─── Section 8: Rich Life ─── */}
+      {/* ─── Section 8: Beach Girl Portrait ─── */}
+      <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
+        <img
+          src="/images/FH_bandana-lifestyle.png"
+          alt="The mark goes everywhere she goes"
+          style={{ maxWidth: 400, width: "100%", height: "auto", display: "block", margin: "0 auto", objectFit: "contain" }}
+        />
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.navy, marginTop: 32 }}>
+          The mark goes everywhere she goes.
+        </p>
+      </section>
+
+      <ColorBar />
+
+      {/* ─── Section 9: Rich Life ─── */}
       <section style={{ background: C.espresso, padding: "96px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <p style={{ fontFamily: font.body, fontWeight: 700, fontSize: 11, letterSpacing: "0.22em", textTransform: "uppercase", color: C.gold, marginBottom: 32 }}>
