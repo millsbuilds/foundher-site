@@ -228,6 +228,13 @@ export default function MembersPage() {
         style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
       />
 
+      {/* ─── Quote between Bronco and Couch ─── */}
+      <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
+        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: C.navy, lineHeight: 1.3, maxWidth: 700, margin: "0 auto" }}>
+          Be. Do. &amp; Love yourself and who you are — proudly.
+        </h2>
+      </section>
+
       <ColorBar />
 
       {/* ─── Section 3: Couch Lifestyle ─── */}
@@ -237,18 +244,32 @@ export default function MembersPage() {
         style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
       />
 
-      {/* ─── Section 4: Samples ─── */}
+      {/* ─── Terracotta Stack ─── */}
       <img
-        src="/images/FH_samples.png"
-        alt="Product samples"
-        style={{ width: "100%", height: "auto", display: "block" }}
+        src="/images/FH_terracotta-stack.png"
+        alt="The Cuff — Terracotta Stack"
+        style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
       />
 
       <ColorBar />
 
-      {/* ─── Section 5: Product Grid ─── */}
+      {/* ─── Bandana Lifestyle ─── */}
+      <img
+        src="/images/FH_bandana-lifestyle.png"
+        alt="Lifestyle — Dog Bandana"
+        style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
+      />
+
+      <ColorBar />
+
+      {/* ─── Samples + Product Grid ─── */}
       <section style={{ background: C.cream, padding: "96px 24px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
+          <img
+            src="/images/FH_samples.png"
+            alt="Product samples"
+            style={{ width: "100%", maxWidth: 800, height: "auto", display: "block", margin: "0 auto 64px", objectFit: "contain" }}
+          />
 
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 48 }}>
             {PRODUCTS.map((p) => (
