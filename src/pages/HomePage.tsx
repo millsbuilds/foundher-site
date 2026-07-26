@@ -253,20 +253,27 @@ function _RichLife() {
 function SheCouldBeAnyone() {
   const [joinEmail, setJoinEmail] = useState("");
   const [joinSubmitted, setJoinSubmitted] = useState(false);
-  const [joinError, setJoinError] = useState(false);
+  const [joinError, setJoinError] = useState<string | null>(null);
   const [joinLoading, setJoinLoading] = useState(false);
 
   const handleJoinSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!joinEmail.trim() || !joinEmail.includes("@")) return;
     setJoinLoading(true);
-    setJoinError(false);
+    setJoinError(null);
     try {
       const { error } = await supabase.from("circle_waitlist").insert({ email: joinEmail.trim() });
-      if (error) throw error;
+      if (error) {
+        if (error.code === "23505") {
+          setJoinError("duplicate");
+        } else {
+          throw error;
+        }
+        return;
+      }
       setJoinSubmitted(true);
     } catch {
-      setJoinError(true);
+      setJoinError("generic");
     } finally {
       setJoinLoading(false);
     }
@@ -301,7 +308,7 @@ function SheCouldBeAnyone() {
                 <input
                   type="email"
                   value={joinEmail}
-                  onChange={(e) => { setJoinEmail(e.target.value); setJoinError(false); }}
+                  onChange={(e) => { setJoinEmail(e.target.value); setJoinError(null); }}
                   placeholder="Your email address"
                   required
                   style={{ width: 360, padding: "14px 16px", fontSize: 15, fontFamily: font.body, border: "1px solid #B8973E", borderRight: "none", borderRadius: 0, background: "#FFFFFF", color: "#3B2A22", outline: "none", boxSizing: "border-box" }}
@@ -314,7 +321,12 @@ function SheCouldBeAnyone() {
                   {joinLoading ? "Sending…" : "Count Me In →"}
                 </button>
               </form>
-              {joinError && (
+              {joinError === "duplicate" && (
+                <p style={{ fontFamily: font.body, fontSize: 14, color: "#B8973E", marginTop: 12 }}>
+                  You're already on the list — we've got you.
+                </p>
+              )}
+              {joinError === "generic" && (
                 <p style={{ fontFamily: font.body, fontSize: 14, color: "#C1603A", marginTop: 12 }}>
                   Something went wrong. Please try again.
                 </p>
