@@ -285,7 +285,7 @@ export default function MembersPage() {
       <img
         src="/images/FH_social-cuff.png"
         alt="FoundHer in the world"
-        style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center 60%", display: "block" }}
+        style={{ width: "100%", height: 750, objectFit: "cover", objectPosition: "center 45%", display: "block" }}
       />
 
       <ColorBar />
