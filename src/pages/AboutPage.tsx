@@ -205,7 +205,7 @@ export default function AboutPage() {
 
           <div style={{ textAlign: "left", maxWidth: 740, margin: "0 auto" }}>
             <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.85, marginBottom: 24 }}>
-              For fifty years, I was a founder without the word for it.
+              For forty years, I was a founder without the word for it.
             </p>
             <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.85, marginBottom: 24 }}>
               At every dinner party, every school pickup, every social gathering — the question: "So, what do you do?" And the explanation that followed. The justification. The pitch nobody asked for.
