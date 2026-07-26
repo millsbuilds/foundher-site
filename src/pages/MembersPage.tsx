@@ -155,6 +155,37 @@ function Footer() {
 
 // ─── PRODUCTS ─────────────────────────────────────────────────────────────────
 
+const PRODUCTS = [
+  {
+    image: "/images/FH_terracotta-band.png",
+    title: "The Cuff \u2014 Terracotta",
+    description: "Gold-plated hardware. Enamel finish. The original founder credential.",
+    linkText: "Shop The Cuff \u2192",
+    linkHref: "/the-cuff",
+  },
+  {
+    image: "/images/FH_navy-logoes-band.png",
+    title: "The Cuff \u2014 Navy",
+    description: "Gold-plated hardware. Enamel finish. For the founder who leads in navy.",
+    linkText: "Shop The Cuff \u2192",
+    linkHref: "/the-cuff",
+  },
+  {
+    image: "/images/FH_gold-logo-band.png",
+    title: "The Cuff \u2014 Gold",
+    description: "Pure gold finish. No color. Just the mark.",
+    linkText: "Shop The Cuff \u2192",
+    linkHref: "/the-cuff",
+  },
+  {
+    image: "/images/FH_navy-rope-bracelet.png",
+    title: "The Rope Bracelet",
+    description: "Navy cord. Gold charm. Worn alone or stacked.",
+    linkText: "Coming Soon",
+    linkHref: null,
+  },
+];
+
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 
 export default function MembersPage() {
@@ -183,7 +214,7 @@ export default function MembersPage() {
           The Shop
         </p>
         <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.cream, letterSpacing: "-0.02em", lineHeight: 1.15, marginBottom: 16 }}>
-          The uniform of the unstoppable.
+          Pride never looked so good.
         </h1>
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.cream, fontWeight: 400, opacity: 0.8 }}>
           For women who mean business — everywhere they go.
@@ -197,119 +228,64 @@ export default function MembersPage() {
         style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
       />
 
-      {/* ─── Section 3: Quote ─── */}
-      <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
-        <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: C.navy, lineHeight: 1.3, maxWidth: 700, margin: "0 auto" }}>
-          Be, Do, &amp; Love yourself and who you are — proudly.
-        </h2>
-      </section>
-
-      <ColorBar />
-
-      {/* ─── Section 4: Couch Lifestyle ─── */}
+      {/* ─── Section 3: Couch Lifestyle ─── */}
       <img
         src="/images/FH_couch-lifeestyle.png"
         alt="Lifestyle — Couch"
         style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
       />
 
-      <ColorBar />
-
-      {/* ─── Section 5: Samples + DNA text + Color row ─── */}
-      <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
-        <div style={{ maxWidth: 900, margin: "0 auto" }}>
-          {/* 5a. Samples image */}
-          <img
-            src="/images/FH_samples.png"
-            alt="Product samples"
-            style={{ width: "100%", maxWidth: 800, height: "auto", display: "block", margin: "0 auto 32px", objectFit: "contain" }}
-          />
-
-          {/* 5b. DNA tagline */}
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 26px)", color: C.navy, lineHeight: 1.5, maxWidth: 700, margin: "0 auto 16px", textAlign: "center" }}>
-            Your FoundHer DNA is as much a part of who you are as your signature. Wear it like you love it.
-          </p>
-
-          {/* 5c. Color choices line */}
-          <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, maxWidth: 700, margin: "0 auto 48px", textAlign: "center" }}>
-            Every FoundHer piece comes in all seven color choices — because the only thing that matters is that it's yours.
-          </p>
-
-          {/* 5d. Cuff selection image */}
-          <img
-            src="/images/FH_cuff-selection.png"
-            alt="The Cuff — all seven color choices"
-            style={{ width: "100%", maxWidth: 900, height: "auto", display: "block", margin: "0 auto 48px", objectFit: "contain" }}
-          />
-        </div>
-      </section>
-
-      <ColorBar />
-
-      {/* ─── Section 6: Wrist Stack ─── */}
+      {/* ─── Section 4: Samples ─── */}
       <img
-        src="/images/FH_terracotta-stack.png"
-        alt="The Cuff — Terracotta Stack"
-        style={{ width: "100%", height: 450, objectFit: "cover", objectPosition: "center", display: "block" }}
+        src="/images/FH_samples.png"
+        alt="Product samples"
+        style={{ width: "100%", height: "auto", display: "block" }}
       />
 
       <ColorBar />
 
-      {/* ─── Section 7: Product Grid ─── */}
-      <section style={{ background: C.cream, padding: "64px 24px" }}>
-        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+      {/* ─── Section 5: Product Grid ─── */}
+      <section style={{ background: C.cream, padding: "96px 24px" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
+          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 48px)", color: C.navy, lineHeight: 1.2, marginBottom: 12 }}>
+            The Collection.
+          </h2>
+          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.7, marginBottom: 56, fontWeight: 300 }}>
+            Each piece carries the mark. Each piece tells the world who you are.
+          </p>
+
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 48 }}>
-
-            {/* Product 1 */}
-            <div style={{ textAlign: "center" }}>
-              <img src="/images/FH_terracotta-band.png" alt="The Cuff — Terracotta" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Cuff — Terracotta</h3>
-              <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>Gold-plated hardware. Enamel finish. The original founder credential.</p>
-            </div>
-
-            {/* Product 2 */}
-            <div style={{ textAlign: "center" }}>
-              <img src="/images/FH_navy-logoes-band.png" alt="The Cuff — Navy" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Cuff — Navy</h3>
-              <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>Gold-plated hardware. Enamel finish. For the founder who leads in navy.</p>
-            </div>
-
-            {/* Product 3 */}
-            <div style={{ textAlign: "center" }}>
-              <img src="/images/FH_gold-logo-band.png" alt="The Cuff — Gold" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Cuff — Gold</h3>
-              <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>Pure gold finish. No color. Just the mark.</p>
-            </div>
-
-            {/* Product 4 */}
-            <div style={{ textAlign: "center" }}>
-              <img src="/images/FH_navy-rope-bracelet.png" alt="The Rope Bracelet" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
-              <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Rope Bracelet</h3>
-              <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, marginBottom: 8 }}>Navy cord. Gold charm. Worn alone or stacked.</p>
-              <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.terracotta, margin: 0 }}>Coming Soon</p>
-            </div>
-
+            {PRODUCTS.map((p) => (
+              <div key={p.title} style={{ textAlign: "center" }}>
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  style={{ width: "100%", height: "auto", display: "block", marginBottom: 20 }}
+                />
+                <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: C.navy, marginBottom: 8 }}>
+                  {p.title}
+                </h3>
+                <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.6, fontWeight: 300, marginBottom: 12 }}>
+                  {p.description}
+                </p>
+                {p.linkHref ? (
+                  <a href={p.linkHref} style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 15, color: C.terracotta, textDecoration: "none" }}>
+                    {p.linkText}
+                  </a>
+                ) : (
+                  <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 15, color: C.terracotta, margin: 0 }}>
+                    {p.linkText}
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <ColorBar />
 
-      {/* ─── Section 8: Beach Girl Portrait ─── */}
-      <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
-        <img
-          src="/images/FH_bandana-lifestyle.png"
-          alt="The mark goes everywhere she goes"
-          style={{ maxWidth: 400, width: "100%", height: "auto", display: "block", margin: "0 auto", objectFit: "contain" }}
-        />
-        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 20, color: C.navy, marginTop: 32 }}>
-          The mark goes everywhere she goes.
-        </p>
-      </section>
-
-      <ColorBar />
-
-      {/* ─── Section 9: Rich Life ─── */}
+      {/* ─── Section 6: Rich Life ─── */}
       <section style={{ background: C.espresso, padding: "96px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <p style={{ fontFamily: font.body, fontWeight: 700, fontSize: 11, letterSpacing: "0.22em", textTransform: "uppercase", color: C.gold, marginBottom: 32 }}>
