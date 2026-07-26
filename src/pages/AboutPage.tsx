@@ -289,9 +289,7 @@ export default function AboutPage() {
 
           <div>
             <a
-              href="https://bizopssuite.ai"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/executive-suite"
               style={{ display: "inline-block", background: "transparent", border: "1px solid #B8973E", color: "#B8973E", fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.1em", padding: "14px 36px", textDecoration: "none" }}
             >
               Explore the Suite →
