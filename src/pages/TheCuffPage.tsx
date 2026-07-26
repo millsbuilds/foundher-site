@@ -169,7 +169,6 @@ const cuffColors = [
   { image: "/images/FH_cuff-terracotta-navy.png", name: "Terracotta \u00b7 Navy" },
   { image: "/images/FH_cuff-emerald.png", name: "Emerald" },
   { image: "/images/FH_cuff-black.png", name: "Black" },
-  { image: "/images/FH_navy-stack.png", name: "The Stack" },
 ];
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
@@ -283,22 +282,7 @@ export default function TheCuffPage() {
 
         <ColorBar />
 
-        {/* ─── Section 5: Bronco Lifestyle ─── */}
-        <img
-          src="/images/FH_bronco-lifestyle.png"
-          alt="Two women and a golden retriever in a white Bronco on PCH"
-          style={{
-            width: "100%",
-            height: isMobile ? "50vh" : "80vh",
-            objectFit: "cover",
-            objectPosition: "center center",
-            display: "block",
-          }}
-        />
-
-        <ColorBar />
-
-        {/* ─── Section 6: The Collection ─── */}
+        {/* ─── Section 5: The Collection ─── */}
         <section style={{ background: C.ivory, padding: isMobile ? "64px 24px" : "100px 24px", textAlign: "center" }}>
           <div style={{ maxWidth: 1100, margin: "0 auto" }}>
             <h2 style={{
@@ -310,7 +294,7 @@ export default function TheCuffPage() {
               marginBottom: isMobile ? 40 : 64,
               marginTop: 0,
             }}>
-              Seven colorways. One credential.
+              Six colorways. One credential.
             </h2>
 
             <div style={{
