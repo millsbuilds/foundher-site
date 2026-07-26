@@ -160,22 +160,22 @@ const PRODUCTS = [
     image: "/images/FH_terracotta-band.png",
     title: "The Cuff \u2014 Terracotta",
     description: "Gold-plated hardware. Enamel finish. The original founder credential.",
-    linkText: "Shop The Cuff \u2192",
-    linkHref: "/the-cuff",
+    linkText: "Choose your color \u2014 every Cuff is yours to make your own.",
+    linkHref: null,
   },
   {
     image: "/images/FH_navy-logoes-band.png",
     title: "The Cuff \u2014 Navy",
     description: "Gold-plated hardware. Enamel finish. For the founder who leads in navy.",
-    linkText: "Shop The Cuff \u2192",
-    linkHref: "/the-cuff",
+    linkText: "Choose your color \u2014 every Cuff is yours to make your own.",
+    linkHref: null,
   },
   {
     image: "/images/FH_gold-logo-band.png",
     title: "The Cuff \u2014 Gold",
     description: "Pure gold finish. No color. Just the mark.",
-    linkText: "Shop The Cuff \u2192",
-    linkHref: "/the-cuff",
+    linkText: "Choose your color \u2014 every Cuff is yours to make your own.",
+    linkHref: null,
   },
   {
     image: "/images/FH_navy-rope-bracelet.png",
@@ -214,7 +214,7 @@ export default function MembersPage() {
           The Shop
         </p>
         <h1 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 56px)", color: C.cream, letterSpacing: "-0.02em", lineHeight: 1.15, marginBottom: 16 }}>
-          Pride never looked so good.
+          The uniform of the unstoppable.
         </h1>
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 18, color: C.cream, fontWeight: 400, opacity: 0.8 }}>
           For women who mean business — everywhere they go.
@@ -227,6 +227,8 @@ export default function MembersPage() {
         alt="Lifestyle — Bronco"
         style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
       />
+
+      <ColorBar />
 
       {/* ─── Section 3: Couch Lifestyle ─── */}
       <img
@@ -247,12 +249,6 @@ export default function MembersPage() {
       {/* ─── Section 5: Product Grid ─── */}
       <section style={{ background: C.cream, padding: "96px 24px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px, 4vw, 48px)", color: C.navy, lineHeight: 1.2, marginBottom: 12 }}>
-            The Collection.
-          </h2>
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.7, marginBottom: 56, fontWeight: 300 }}>
-            Each piece carries the mark. Each piece tells the world who you are.
-          </p>
 
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 48 }}>
             {PRODUCTS.map((p) => (
@@ -269,11 +265,11 @@ export default function MembersPage() {
                   {p.description}
                 </p>
                 {p.linkHref ? (
-                  <a href={p.linkHref} style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 15, color: C.terracotta, textDecoration: "none" }}>
+                  <a href={p.linkHref} style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, textDecoration: "none" }}>
                     {p.linkText}
                   </a>
                 ) : (
-                  <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: 15, color: C.terracotta, margin: 0 }}>
+                  <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, margin: 0 }}>
                     {p.linkText}
                   </p>
                 )}
