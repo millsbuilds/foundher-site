@@ -108,7 +108,7 @@ function Nav() {
           </button>
         ) : (
           <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
-            <a href="/members" style={{ fontFamily: font.body, fontSize: 14, color: C.black, textDecoration: "none", fontWeight: 500 }}>The Shop</a>
+            <a href="/members" style={{ fontFamily: font.body, fontSize: 14, color: C.black, textDecoration: "none", fontWeight: 500 }}>The Lifestyle</a>
             <a href="mailto:hello@foundherai.ai" style={{ fontFamily: font.body, fontSize: 14, color: C.black, textDecoration: "none", fontWeight: 500 }}>Contact</a>
             <a href="/" style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.08em", color: C.white, background: C.black, padding: "10px 22px", textDecoration: "none", borderRadius: 0 }}>Explore</a>
           </div>
@@ -117,7 +117,7 @@ function Nav() {
 
       {isMobile && menuOpen && (
         <div style={{ background: C.white, borderTop: `1px solid ${C.lightgray}`, padding: "16px 24px" }}>
-          <a href="/members" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>The Shop</a>
+          <a href="/members" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>The Lifestyle</a>
           <a href="mailto:hello@foundherai.ai" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>Contact</a>
           <a href="/" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>Explore</a>
         </div>
