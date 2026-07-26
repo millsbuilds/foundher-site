@@ -81,7 +81,7 @@ function Nav() {
       >
         <a href="/" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
           <img src="/images/FH_mark_navy_terra_v2.png" alt="FoundHer AI" style={{ height: 40 }} />
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontStyle: "italic", fontSize: 11, color: "#B8973E", letterSpacing: "0.08em", margin: "2px 0 0", textAlign: "left" }}>Everyone who knows, knows.</p>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontStyle: "italic", fontSize: 11, color: "#C1603A", letterSpacing: "0.08em", margin: "2px 0 0", textAlign: "left" }}>Everyone who knows, knows.</p>
         </a>
 
         {isMobile ? (
@@ -218,6 +218,22 @@ export default function MembersPage() {
           alt="Cuff selection"
           style={{ maxWidth: 900, width: "100%", height: "auto", display: "block", margin: "0 auto 32px", objectFit: "contain" }}
         />
+        <div style={{ display: "flex", justifyContent: "center", gap: 24, flexWrap: "wrap", maxWidth: 900, margin: "32px auto 0" }}>
+          {[
+            { name: "Terracotta", color: "#C1603A" },
+            { name: "Navy", color: "#1B2A4A" },
+            { name: "Ivory", color: "#F4F1EA" },
+            { name: "Espresso", color: "#3B2A22" },
+            { name: "Oxblood", color: "#5A1F28" },
+            { name: "Emerald", color: "#1A4A3A" },
+            { name: "Black", color: "#1A1A1A" },
+          ].map((c) => (
+            <div key={c.name} style={{ textAlign: "center" }}>
+              <div style={{ width: 48, height: 48, borderRadius: "50%", backgroundColor: c.color, margin: "0 auto 8px", border: c.name === "Ivory" ? "1px solid #E0DDD6" : "none" }} />
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: "#3B2A22", margin: 0 }}>{c.name}</p>
+            </div>
+          ))}
+        </div>
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 26px)", color: C.navy, lineHeight: 1.5, maxWidth: 700, margin: "0 auto 16px", textAlign: "center" }}>
           Your FoundHer DNA is as much a part of who you are as your signature. Wear it like you love it — in the color of your choice.
         </p>
