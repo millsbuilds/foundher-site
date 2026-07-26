@@ -224,8 +224,8 @@ export default function MembersPage() {
       {/* ─── Section 6: The Stack ─── */}
       <div style={{ display: "flex", width: "100%" }}>
         <img
-          src="/images/FH_arm_stack.png"
-          alt="The Stack — wrist"
+          src="/images/FH_navy-stack.png"
+          alt="The Stack — navy"
           style={{ flex: 1, height: 500, objectFit: "cover", display: "block", minWidth: 0 }}
         />
         <img
@@ -267,11 +267,20 @@ export default function MembersPage() {
       <ColorBar />
 
       {/* ─── Section 9: MacBook Sleeve ─── */}
-      <img
-        src="/images/FH_macbook-sleeves-shoot.png"
-        alt="MacBook Sleeve"
-        style={{ width: "100%", height: 600, objectFit: "cover", display: "block" }}
-      />
+      <div style={{ display: "flex", width: "100%", height: 600, alignItems: "stretch" }}>
+        <img
+          src="/images/FH_macbook-sleeve-lifestyle.png"
+          alt="MacBook Sleeve lifestyle"
+          style={{ flex: "0 0 65%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+        />
+        <div style={{ flex: "0 0 35%", background: "#F4F1EA", display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 32px" }}>
+          <img
+            src="/images/FH_macbook-sleeves-shoot.png"
+            alt="MacBook Sleeve product"
+            style={{ width: "100%", height: "auto", maxHeight: 420, objectFit: "contain", display: "block" }}
+          />
+        </div>
+      </div>
 
       <ColorBar />
 
