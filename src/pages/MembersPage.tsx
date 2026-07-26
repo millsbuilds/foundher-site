@@ -262,9 +262,6 @@ export default function MembersPage() {
 
             {/* Product 1 */}
             <div style={{ textAlign: "center" }}>
-              <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, margin: "0 0 12px" }}>
-                Choose your color — every Cuff is yours to make your own.
-              </p>
               <img src="/images/FH_terracotta-band.png" alt="The Cuff — Terracotta" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
               <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Cuff — Terracotta</h3>
               <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>Gold-plated hardware. Enamel finish. The original founder credential.</p>
@@ -272,9 +269,6 @@ export default function MembersPage() {
 
             {/* Product 2 */}
             <div style={{ textAlign: "center" }}>
-              <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, margin: "0 0 12px" }}>
-                Choose your color — every Cuff is yours to make your own.
-              </p>
               <img src="/images/FH_navy-logoes-band.png" alt="The Cuff — Navy" style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }} />
               <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>The Cuff — Navy</h3>
               <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>Gold-plated hardware. Enamel finish. For the founder who leads in navy.</p>
