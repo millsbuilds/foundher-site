@@ -160,30 +160,31 @@ const PRODUCTS = [
     image: "/images/FH_terracotta-band.png",
     title: "The Cuff \u2014 Terracotta",
     description: "Gold-plated hardware. Enamel finish. The original founder credential.",
-    linkText: "Choose your color \u2014 every Cuff is yours to make your own.",
-    linkHref: null,
   },
   {
     image: "/images/FH_navy-logoes-band.png",
     title: "The Cuff \u2014 Navy",
     description: "Gold-plated hardware. Enamel finish. For the founder who leads in navy.",
-    linkText: "Choose your color \u2014 every Cuff is yours to make your own.",
-    linkHref: null,
   },
   {
     image: "/images/FH_gold-logo-band.png",
     title: "The Cuff \u2014 Gold",
     description: "Pure gold finish. No color. Just the mark.",
-    linkText: "Choose your color \u2014 every Cuff is yours to make your own.",
-    linkHref: null,
   },
   {
     image: "/images/FH_navy-rope-bracelet.png",
     title: "The Rope Bracelet",
     description: "Navy cord. Gold charm. Worn alone or stacked.",
-    linkText: "Coming Soon",
-    linkHref: null,
   },
+];
+
+const COLORWAYS = [
+  { image: "/images/FH_cuff-terracotta-navy.png", label: "Terracotta & Navy" },
+  { image: "/images/FH_cuff-ivory.png", label: "Ivory" },
+  { image: "/images/FH_cuff-espresso.png", label: "Espresso" },
+  { image: "/images/FH_cuff-oxblood.png", label: "Oxblood" },
+  { image: "/images/FH_cuff-emerald.png", label: "Emerald" },
+  { image: "/images/FH_cuff-black.png", label: "Black" },
 ];
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
@@ -228,78 +229,52 @@ export default function MembersPage() {
         style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
       />
 
-      {/* ─── Quote between Bronco and Couch ─── */}
+      {/* ─── Section 3: Quote ─── */}
       <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: C.navy, lineHeight: 1.3, maxWidth: 700, margin: "0 auto" }}>
-          Be. Do. &amp; Love yourself and who you are — proudly.
+          Be, Do, &amp; Love yourself and who you are — proudly.
         </h2>
       </section>
 
       <ColorBar />
 
-      {/* ─── Section 3: Couch Lifestyle ─── */}
+      {/* ─── Section 4: Couch Lifestyle ─── */}
       <img
         src="/images/FH_couch-lifeestyle.png"
         alt="Lifestyle — Couch"
         style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
       />
 
-      {/* ─── Terracotta Stack ─── */}
-      <img
-        src="/images/FH_terracotta-stack.png"
-        alt="The Cuff — Terracotta Stack"
-        style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
-      />
-
       <ColorBar />
 
-      {/* ─── Bandana Lifestyle ─── */}
-      <img
-        src="/images/FH_bandana-lifestyle.png"
-        alt="Lifestyle — Dog Bandana"
-        style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
-      />
-
-      <ColorBar />
-
-      {/* ─── Samples + Product Grid ─── */}
-      <section style={{ background: C.cream, padding: "96px 24px" }}>
-        <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
+      {/* ─── Section 5: Samples + DNA text + Color row ─── */}
+      <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          {/* 5a. Samples image */}
           <img
             src="/images/FH_samples.png"
             alt="Product samples"
             style={{ width: "100%", maxWidth: 800, height: "auto", display: "block", margin: "0 auto 32px", objectFit: "contain" }}
           />
+
+          {/* 5b. DNA tagline */}
           <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 26px)", color: C.navy, lineHeight: 1.5, maxWidth: 700, margin: "0 auto 16px", textAlign: "center" }}>
             Your FoundHer DNA is as much a part of who you are as your signature. Wear it like you love it.
           </p>
+
+          {/* 5c. Color choices line */}
           <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: C.gold, maxWidth: 700, margin: "0 auto 48px", textAlign: "center" }}>
             Every FoundHer piece comes in all seven color choices — because the only thing that matters is that it's yours.
           </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 48 }}>
-            {PRODUCTS.map((p) => (
-              <div key={p.title} style={{ textAlign: "center" }}>
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  style={{ width: "100%", height: "auto", display: "block", marginBottom: 20 }}
-                />
-                <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 22, color: C.navy, marginBottom: 8 }}>
-                  {p.title}
-                </h3>
-                <p style={{ fontFamily: font.body, fontSize: 15, color: C.navy, lineHeight: 1.6, fontWeight: 300, marginBottom: 12 }}>
-                  {p.description}
+          {/* 5d. Color row */}
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(3, 1fr)" : "repeat(6, 1fr)", gap: 24, maxWidth: 900, margin: "0 auto" }}>
+            {COLORWAYS.map((c) => (
+              <div key={c.label} style={{ textAlign: "center" }}>
+                <img src={c.image} alt={c.label} style={{ width: "100%", height: 120, objectFit: "contain", display: "block", marginBottom: 8 }} />
+                <p style={{ fontFamily: font.body, fontSize: 11, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: C.navy, margin: 0 }}>
+                  {c.label}
                 </p>
-                {p.linkHref ? (
-                  <a href={p.linkHref} style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, textDecoration: "none" }}>
-                    {p.linkText}
-                  </a>
-                ) : (
-                  <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, margin: 0 }}>
-                    {p.linkText}
-                  </p>
-                )}
               </div>
             ))}
           </div>
@@ -308,7 +283,44 @@ export default function MembersPage() {
 
       <ColorBar />
 
-      {/* ─── Section 6: Rich Life ─── */}
+      {/* ─── Section 6: Wrist Stack ─── */}
+      <img
+        src="/images/FH_terracotta-stack.png"
+        alt="The Cuff — Terracotta Stack"
+        style={{ width: "100%", height: 450, objectFit: "cover", objectPosition: "center", display: "block" }}
+      />
+
+      <ColorBar />
+
+      {/* ─── Section 7: Product Grid ─── */}
+      <section style={{ background: C.cream, padding: "64px 24px" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 48 }}>
+            {PRODUCTS.map((p) => (
+              <div key={p.title} style={{ textAlign: "center" }}>
+                <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 13, color: C.gold, margin: "0 0 12px" }}>
+                  Choose your color — every Cuff is yours to make your own.
+                </p>
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  style={{ width: "100%", height: 320, objectFit: "cover", display: "block", marginBottom: 16 }}
+                />
+                <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 24, color: C.navy, marginBottom: 8 }}>
+                  {p.title}
+                </h3>
+                <p style={{ fontFamily: font.body, fontSize: 16, color: C.navy, lineHeight: 1.6, fontWeight: 300, margin: 0 }}>
+                  {p.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ColorBar />
+
+      {/* ─── Section 8: Rich Life ─── */}
       <section style={{ background: C.espresso, padding: "96px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <p style={{ fontFamily: font.body, fontWeight: 700, fontSize: 11, letterSpacing: "0.22em", textTransform: "uppercase", color: C.gold, marginBottom: 32 }}>
