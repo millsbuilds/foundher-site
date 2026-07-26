@@ -284,13 +284,70 @@ export default function MembersPage() {
 
       <ColorBar />
 
-      {/* ─── Section 10: Girl with Dog ─── */}
-      <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
+      {/* ─── Section 10: Social Cuff ─── */}
+      <img
+        src="/images/FH_social-cuff.png"
+        alt="FoundHer in the world"
+        style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center top", display: "block" }}
+      />
+
+      <ColorBar />
+
+      {/* ─── Section 11: Beach Shower ─── */}
+      <section style={{ background: "#F4F1EA", padding: "64px 24px", display: "flex", justifyContent: "center" }}>
         <img
-          src="/images/FH_bandana-lifestyle.png"
-          alt="Girl with dog"
-          style={{ maxWidth: 500, width: "100%", height: "auto", display: "block", margin: "0 auto", objectFit: "contain" }}
+          src="/images/FH_beach-shower.png"
+          alt="Lifestyle"
+          style={{ width: 400, maxWidth: "100%", height: 600, objectFit: "cover", objectPosition: "center", display: "block" }}
         />
+      </section>
+
+      <ColorBar />
+
+      {/* ─── Section 12: Apple Watch + Phone Case ─── */}
+      <div style={{ display: "flex", width: "100%", height: 550, alignItems: "stretch", background: "#F4F1EA" }}>
+        <div style={{ flex: "0 0 60%", display: "flex", alignItems: "center", justifyContent: "center", padding: "48px" }}>
+          <img
+            src="/images/apple_watch.png"
+            alt="FoundHer Apple Watch band"
+            style={{ width: "100%", maxWidth: 420, height: "auto", objectFit: "contain", display: "block" }}
+          />
+        </div>
+        <div style={{ flex: "0 0 40%", display: "flex", alignItems: "center", justifyContent: "center", padding: "64px 48px" }}>
+          <img
+            src="/images/FH_orange_phone_casepng.png"
+            alt="FoundHer phone case"
+            style={{ width: "100%", maxWidth: 240, height: "auto", objectFit: "contain", display: "block" }}
+          />
+        </div>
+      </div>
+
+      <ColorBar />
+
+      {/* ─── Section 13: Team Portraits ─── */}
+      <section style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-start", gap: 64, flexWrap: "wrap", maxWidth: 900, margin: "0 auto" }}>
+          <div style={{ flex: "0 0 360px", maxWidth: "100%" }}>
+            <img
+              src="/images/FH_bandana-lifestyle.png"
+              alt="Chase T."
+              style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
+            />
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#3B2A22", letterSpacing: "0.12em", textTransform: "uppercase", textAlign: "center", marginTop: 20 }}>
+              Chase T., Creative Director
+            </p>
+          </div>
+          <div style={{ flex: "0 0 360px", maxWidth: "100%" }}>
+            <img
+              src="/images/FH_kendall-aviva.jpg"
+              alt="Kendall Aviva"
+              style={{ width: "100%", height: 480, objectFit: "cover", objectPosition: "center top", display: "block" }}
+            />
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#3B2A22", letterSpacing: "0.12em", textTransform: "uppercase", textAlign: "center", marginTop: 20 }}>
+              Kendall Aviva, Podcast Host & Media Director
+            </p>
+          </div>
+        </div>
       </section>
 
       <ColorBar />
