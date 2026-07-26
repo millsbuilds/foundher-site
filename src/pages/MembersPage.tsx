@@ -189,7 +189,7 @@ export default function MembersPage() {
       {/* ─── Section 3: Quote ─── */}
       <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: C.navy, lineHeight: 1.3, maxWidth: 700, margin: "0 auto" }}>
-          Be, Do, & Love yourself and who you are — proudly.
+          Be, Do, & Love yourself and what you do for a living — proudly.
         </h2>
       </section>
 
