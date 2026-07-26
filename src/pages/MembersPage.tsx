@@ -105,7 +105,7 @@ function Nav() {
           </button>
         ) : (
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
-            <a href="/members" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>The Shop</a>
+            <a href="/members" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>The Lifestyle</a>
             <a href="/about" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>About</a>
             <a href="mailto:hello@foundherai.ai" style={{ color: C.navy, fontSize: 15, fontWeight: 500, textDecoration: "none" }}>Contact</a>
           </div>
@@ -114,7 +114,7 @@ function Nav() {
 
       {isMobile && menuOpen && (
         <div style={{ background: C.white, borderTop: `1px solid ${C.lightgray}`, padding: "16px 24px 24px", display: "flex", flexDirection: "column", gap: 16 }}>
-          <a href="/members" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>The Shop</a>
+          <a href="/members" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>The Lifestyle</a>
           <a href="/about" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>About</a>
           <a href="mailto:hello@foundherai.ai" style={{ color: C.navy, fontSize: 16, fontWeight: 500, textDecoration: "none", padding: "4px 0" }}>Contact</a>
         </div>
@@ -212,10 +212,7 @@ export default function MembersPage() {
           style={{ maxWidth: 900, width: "100%", height: "auto", display: "block", margin: "0 auto 32px", objectFit: "contain" }}
         />
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 26px)", color: C.navy, lineHeight: 1.5, maxWidth: 700, margin: "0 auto 16px", textAlign: "center" }}>
-          Your FoundHer DNA is as much a part of who you are as your signature. Wear it like you love it.
-        </p>
-        <p style={{ fontFamily: font.body, fontWeight: 700, fontSize: 11, letterSpacing: "0.22em", textTransform: "uppercase", color: C.gold, margin: "0 auto 0", textAlign: "center" }}>
-          Every FoundHer piece comes in all seven color choices — because the only thing that matters is that it's yours.
+          Your FoundHer DNA is as much a part of who you are as your signature. Wear it like you love it — in the color of your choice.
         </p>
       </section>
 
