@@ -81,6 +81,7 @@ function Nav() {
       >
         <a href="/" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
           <img src="/images/FH_mark_navy_terra_v2.png" alt="FoundHer AI" style={{ height: 40 }} />
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontStyle: "italic", fontSize: 11, color: "#B8973E", letterSpacing: "0.08em", margin: "2px 0 0", textAlign: "left" }}>Everyone who knows, knows.</p>
         </a>
 
         {isMobile ? (
@@ -206,6 +207,12 @@ export default function MembersPage() {
 
       {/* ─── Section 5: Cuff Selection ─── */}
       <section style={{ background: C.cream, padding: "64px 24px", textAlign: "center" }}>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontStyle: "italic", fontSize: 18, color: "#B8973E", textAlign: "center", marginBottom: 12 }}>
+          When she wears The Cuff...
+        </p>
+        <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 44px)", color: "#1B2A4A", textAlign: "center", lineHeight: 1.2, marginBottom: 40 }}>
+          Everyone who knows, knows.
+        </h2>
         <img
           src="/images/FH_cuff-selection.png"
           alt="Cuff selection"
