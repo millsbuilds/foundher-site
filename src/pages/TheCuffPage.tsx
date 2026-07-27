@@ -282,6 +282,17 @@ export default function TheCuffPage() {
             }}>
               It's a declaration. A physician has a white coat. A founder has this. It says you're building something, you're doing it on purpose, and you mean business.
             </p>
+            <p style={{
+              fontFamily: font.body,
+              fontSize: isMobile ? 16 : 18,
+              color: C.ivory,
+              lineHeight: 1.8,
+              marginTop: 24,
+              marginBottom: 0,
+              opacity: 0.9,
+            }}>
+              A FoundHer isn't someone who can hang a shingle. A dentist, chiropractor, attorney, financial advisor, or physician earned something real — and something that holds. A license is their floor. A FoundHer builds without that floor. No credential, no safety net. Just vision, will, and the courage to begin anyway. And to begin again.
+            </p>
           </div>
         </section>
 
