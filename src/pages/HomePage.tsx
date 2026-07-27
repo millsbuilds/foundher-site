@@ -601,6 +601,46 @@ function _Founder() {
   );
 }
 
+// ─── FOUNDER STORY ─────────────────────────────────────────────────────────
+
+function FounderStory() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  return (
+    <section style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
+      <div style={{ maxWidth: 740, margin: "0 auto" }}>
+        <p style={{ fontFamily: font.body, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C1603A", marginBottom: 32 }}>
+          FOUNDER STORY
+        </p>
+        <video
+          src="/liz-bryant.mp4"
+          muted
+          autoPlay={!isMobile}
+          loop
+          playsInline
+          controls
+          preload={isMobile ? "metadata" : "auto"}
+          style={{ width: "100%", maxWidth: 640, height: "auto", display: "block", margin: "0 auto 40px" }}
+        />
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 28px)", color: "#1B2A4A", lineHeight: 1.5, marginBottom: 32 }}>
+          "I would rather jump head first into a goal, than stay stuck asking ChatGPT and Google how to carry out a dream."
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 17, color: "#1B2A4A", lineHeight: 1.8, fontWeight: 300 }}>
+          <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ color: "#C1603A", textDecoration: "none" }}>Liz Bryant</a> gave herself 30 days. She built it, launched it, and now she's scaling — <a href="https://localsmark.com" target="_blank" rel="noopener noreferrer" style={{ color: "#C1603A", textDecoration: "none" }}>Locals Mark</a> is in stores and expanding every week.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 // ─── HORSE SECTION ──────────────────────────────────────────────────────────
 
 function HorseSection() {
@@ -693,6 +733,8 @@ export default function HomePage() {
         </section>
         <ColorBar />
         <Collage />
+        <ColorBar />
+        <FounderStory />
         <ColorBar />
         <SheCouldBeAnyone />
         <ColorBar />
