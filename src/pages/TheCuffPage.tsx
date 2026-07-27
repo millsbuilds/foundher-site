@@ -280,7 +280,7 @@ export default function TheCuffPage() {
               margin: 0,
               opacity: 0.9,
             }}>
-              It's a declaration. It says you took the test, you know your FoundHer DNA type, and you're building with intention. Every woman who wears it has done the work. That's what makes it mean something.
+              It's a declaration. A physician has a white coat. A founder has this. It says you're building something, you're doing it on purpose, and you mean business.
             </p>
           </div>
         </section>
@@ -379,7 +379,7 @@ export default function TheCuffPage() {
               marginBottom: 36,
               opacity: 0.8,
             }}>
-              Your free full FoundHer DNA Report — including your matched AI agents and FoundHer DNA Evolution roadmap — is included with every Cuff.
+              Seven colors. One credential. Founding price $197 — $297 after the first run ships.
             </p>
             <a
               href="#"
@@ -397,7 +397,7 @@ export default function TheCuffPage() {
                 cursor: "pointer",
               }}
             >
-              Get The Cuff — $297
+              Pre-Order The Cuff — $197
             </a>
             <p style={{
               fontFamily: font.body,
@@ -406,7 +406,7 @@ export default function TheCuffPage() {
               opacity: 0.5,
               marginTop: 20,
             }}>
-              Ships worldwide.
+              Ships late November, in time for the holidays.
             </p>
           </div>
         </section>
