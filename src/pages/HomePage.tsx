@@ -675,6 +675,9 @@ function HorseSection() {
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 64px)", color: "#C16044", display: "block" }}>
           You're a FoundHer.
         </span>
+        <span style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: "clamp(18px, 2.5vw, 32px)", color: "#1B2A4A", display: "block", marginTop: 20 }}>
+          The H is silent. You are not.
+        </span>
       </div>
     </>
   );
