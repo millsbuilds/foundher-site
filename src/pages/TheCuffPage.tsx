@@ -392,7 +392,7 @@ export default function TheCuffPage() {
               marginBottom: 36,
               opacity: 0.8,
             }}>
-              Seven colors. One credential. Founding price $197 — $297 after the first run ships.
+              Seven colors. One credential. Pre-order $197 — $297 after the first run ships.
             </p>
             <a
               href="#"
