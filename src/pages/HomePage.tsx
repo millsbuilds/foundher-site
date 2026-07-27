@@ -456,60 +456,14 @@ function RunnerBreak() {
   }, []);
 
   return (
-    <>
-      <img
-        src="/images/FH_runner.png"
-        alt="FoundHer runner"
-        style={{ width: "100vw", height: isMobile ? "70vh" : "90vh", objectFit: "cover", objectPosition: "center top", display: "block", margin: 0, padding: 0 }}
-      />
-      <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
-        <span style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", color: "#1B3A6B", display: "block", marginBottom: 16 }}>
-          Stake your claim.
-        </span>
-        <span style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(22px, 3vw, 32px)", color: "#1B3A6B", display: "block", marginBottom: 16 }}>
-          Wear the brand of FoundHers.
-        </span>
-        <span style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: "clamp(16px, 2vw, 20px)", color: "#C16044", display: "block" }}>
-          The H is silent. She is not.
-        </span>
-      </div>
-    </>
+    <img
+      src="/images/FH_runner.png"
+      alt="FoundHer runner"
+      style={{ width: "100vw", height: isMobile ? "70vh" : "90vh", objectFit: "cover", objectPosition: "center top", display: "block", margin: 0, padding: 0 }}
+    />
   );
 }
 
-// ─── THE CUFF ───────────────────────────────────────────────────────────────
-
-function TheCuff() {
-  return (
-    <section style={{ fontFamily: font.body }}>
-      {/* Copy block on cream */}
-      <div style={{ background: "#F4F1EA", padding: "96px 24px", textAlign: "center" }}>
-        <div style={{ maxWidth: 680, margin: "0 auto" }}>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontWeight: 400, fontSize: "clamp(18px, 2vw, 22px)", color: C.coral, letterSpacing: "0.05em", textTransform: "uppercase", lineHeight: 1.6, marginBottom: 48 }}>
-            Not every woman is a FoundHer. But every FoundHer wears The Mark.
-          </p>
-
-          <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontWeight: 700, fontSize: "clamp(32px, 4.5vw, 52px)", color: C.navy, lineHeight: 1.2, marginBottom: 40 }}>
-            A FoundHer builds from nothing — no credential, no safety net. Just vision, will, and the courage to begin. The Cuff is her credential.
-          </h2>
-
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 8 }}>
-            The physician has the white coat.
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 17, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 0 }}>
-            Now women founders have The Cuff.
-          </p>
-        </div>
-      </div>
-
-      <div style={{ background: "#F4F1EA", padding: "48px 24px 96px", textAlign: "center" }}>
-        <a href="/the-cuff" style={{ display: "inline-block", background: "#C1603A", color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 15, padding: "16px 48px", textDecoration: "none", letterSpacing: "0.04em" }}>
-          Shop the Line
-        </a>
-      </div>
-    </section>
-  );
-}
 
 // ─── DESIGNED FOR LIFE ──────────────────────────────────────────────────────
 
@@ -673,10 +627,10 @@ function HorseSection() {
       <hr style={{ border: "none", borderTop: "1px solid #1B3A6B", margin: 0 }} />
       <div style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
         <span style={{ fontFamily: font.body, fontWeight: 300, fontSize: "clamp(16px, 2vw, 22px)", color: "#1B3A6B", display: "block", marginBottom: 24 }}>
-          Whatever your passions, wherever you go, and everywhere in between, let people know:
+          Whatever your passions, wherever you go — let people know:
         </span>
         <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(36px, 5vw, 64px)", color: "#C16044", display: "block" }}>
-          You Mean Business.
+          You're a FoundHer.
         </span>
       </div>
     </>
@@ -748,7 +702,7 @@ export default function HomePage() {
             <h3 style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.1, color: "#F4F1EA", marginBottom: 24, marginTop: 0 }}>The FoundHer in the room.</h3>
             <p style={{ fontFamily: font.body, fontSize: 16, color: "#B8973E", lineHeight: 1.8, marginBottom: 32, marginTop: 0 }}>Every woman who wears The Cuff carries the credential of a founder. She's building something. And everyone who knows, knows.</p>
             <div>
-              <button style={{ background: "transparent", border: "1px solid #B8973E", color: "#B8973E", padding: "14px 32px", fontSize: 13, letterSpacing: "0.1em", cursor: "pointer", fontFamily: font.body, borderRadius: 0 }}>Shop The Cuff</button>
+              <a href="/the-cuff" style={{ display: "inline-block", background: "transparent", border: "1px solid #B8973E", color: "#B8973E", padding: "14px 32px", fontSize: 13, letterSpacing: "0.1em", cursor: "pointer", fontFamily: font.body, borderRadius: 0, textDecoration: "none" }}>Pre-Order The Cuff</a>
             </div>
           </div>
         </div>
@@ -766,8 +720,6 @@ export default function HomePage() {
         <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 14, color: "#B8973E", textAlign: "center", padding: "20px 24px 0", margin: 0 }}>
           Seven color choices. One collection. Wear one, wear all — The Cuff is yours to collect.
         </p>
-        <ColorBar />
-        <TheCuff />
         <ColorBar />
         <BuildLaunchScale />
         <ColorBar />
