@@ -711,6 +711,11 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        <section style={{ background: "#F4F1EA", padding: "64px 24px", textAlign: "center" }}>
+          <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(24px, 3.5vw, 36px)", color: "#1B2A4A", margin: 0 }}>
+            The uniform of the unstoppable.
+          </p>
+        </section>
         <ColorBar />
         <img src="/images/FH_cuff-collection.png" alt="The Cuff — all seven colorways" style={{ width: "100%", display: "block" }} />
         <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 14, color: "#B8973E", textAlign: "center", padding: "20px 24px 0", margin: 0 }}>
