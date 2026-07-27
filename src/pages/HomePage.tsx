@@ -620,15 +620,19 @@ function FounderStory() {
         FOUNDER STORY
       </p>
       <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: isMobile ? "center" : "center", gap: isMobile ? 40 : 48, maxWidth: 1000, margin: "0 auto" }}>
-        <div style={{ flex: isMobile ? "none" : "1 1 50%", display: "flex", justifyContent: "center", width: isMobile ? "100%" : "auto" }}>
+        <div style={{ flex: isMobile ? "none" : "1 1 50%", display: "flex", flexDirection: "column", alignItems: "center", width: isMobile ? "100%" : "auto" }}>
           <video
             src="/liz-bryant.mp4"
+            poster="/images/liz-poster.jpg"
             muted
             playsInline
             controls
             preload="metadata"
             style={{ width: isMobile ? "100%" : "auto", maxWidth: isMobile ? 400 : "none", maxHeight: isMobile ? "none" : 520, height: "auto", display: "block" }}
           />
+          <p style={{ fontFamily: font.body, fontSize: 13, color: "#7A7569", marginTop: 12, marginBottom: 0 }}>
+            Watch Liz's story · 0:49
+          </p>
         </div>
         <div style={{ flex: isMobile ? "none" : "1 1 50%", textAlign: isMobile ? "center" : "left" }}>
           <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 28px)", color: "#1B2A4A", lineHeight: 1.5, marginBottom: 32, marginTop: 0 }}>
