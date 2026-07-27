@@ -157,7 +157,7 @@ function Hero() {
   if (isMobile) {
     return (
       <section style={{ fontFamily: font.body }}>
-        <img src="/images/FH_cuff-lifestyle-bar.png" alt="A founder wearing The Cuff in espresso" style={{ width: "100%", height: "90vh", objectFit: "cover", objectPosition: "center 20%", display: "block" }} />
+        <img src="/images/FH_hero-image-final.png" alt="FoundHer AI" style={{ width: "100%", height: "90vh", objectFit: "cover", objectPosition: "center 20%", display: "block" }} />
         <div style={{ background: C.white, padding: "40px 24px 64px" }}>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, lineHeight: 1.35, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Women have always built businesses.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.35, letterSpacing: "-0.02em", color: C.black, display: "block", marginBottom: 24 }}>Now they build empires.</span>
@@ -176,8 +176,8 @@ function Hero() {
   return (
     <section style={{ position: "relative", width: "100%", minHeight: "90vh", fontFamily: font.body, overflow: "hidden" }}>
       <img
-        src="/images/FH_cuff-lifestyle-bar.png"
-        alt="A founder wearing The Cuff in espresso"
+        src="/images/FH_hero-image-final.png"
+        alt="FoundHer AI"
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", display: "block", zIndex: 0 }}
       />
       <div style={{ position: "absolute", top: 24, left: "12%", zIndex: 3 }}>
