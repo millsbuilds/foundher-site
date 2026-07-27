@@ -110,6 +110,7 @@ function Nav() {
           <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
             <a href="/members" style={{ fontFamily: font.body, fontSize: 14, color: C.black, textDecoration: "none", fontWeight: 500 }}>The Lifestyle</a>
             <a href="/the-cuff" style={{ fontFamily: font.body, fontSize: 14, color: C.black, textDecoration: "none", fontWeight: 500 }}>The Cuff</a>
+            <a href="/executive-suite" style={{ fontFamily: font.body, fontSize: 14, color: C.black, textDecoration: "none", fontWeight: 500 }}>Executive Suite</a>
             <a href="/about" style={{ fontFamily: font.body, fontSize: 14, color: C.black, textDecoration: "none", fontWeight: 500 }}>About</a>
             <a href="mailto:hello@foundherai.ai" style={{ fontFamily: font.body, fontSize: 14, color: C.black, textDecoration: "none", fontWeight: 500 }}>Contact</a>
             <a href="https://foundherdna.com" target="_blank" rel="noopener noreferrer" style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, letterSpacing: "0.08em", color: C.white, background: C.terracotta, padding: "10px 22px", textDecoration: "none", borderRadius: 0 }}>Take the DNA Test</a>
@@ -121,6 +122,7 @@ function Nav() {
         <div style={{ background: C.white, borderTop: `1px solid ${C.lightgray}`, padding: "16px 24px" }}>
           <a href="/members" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>The Lifestyle</a>
           <a href="/the-cuff" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>The Cuff</a>
+          <a href="/executive-suite" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>Executive Suite</a>
           <a href="/about" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>About</a>
           <a href="mailto:hello@foundherai.ai" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, color: C.black, textDecoration: "none", padding: "12px 0", fontWeight: 500 }}>Contact</a>
           <a href="https://foundherdna.com" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} style={{ display: "block", fontFamily: font.body, fontSize: 15, fontWeight: 600, color: C.white, background: C.terracotta, textDecoration: "none", padding: "12px 20px", textAlign: "center", marginTop: 8, borderRadius: 0, border: "none", cursor: "pointer" }}>Take the DNA Test</a>
