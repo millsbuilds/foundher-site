@@ -241,7 +241,7 @@ export default function MembersPage() {
           ))}
         </div>
         <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 26px)", color: C.navy, lineHeight: 1.5, maxWidth: 700, margin: "0 auto 16px", textAlign: "center" }}>
-          Your FoundHer DNA is as much a part of who you are as your signature. Wear it like you love it — in the color of your choice.
+          What you're building is as much a part of who you are as your signature. Wear it like you love it — in one color, or a few.
         </p>
       </section>
 

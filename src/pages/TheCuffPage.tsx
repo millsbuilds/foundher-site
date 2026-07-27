@@ -315,19 +315,6 @@ export default function TheCuffPage() {
               Seven colors. One credential.
             </h2>
 
-            <img
-              src="/images/FH_cuff-collection.png"
-              alt="The Cuff — all seven colorways"
-              style={{
-                width: "100%",
-                maxWidth: 1100,
-                height: "auto",
-                objectFit: "contain",
-                display: "block",
-                margin: `0 auto ${isMobile ? 40 : 64}px`,
-              }}
-            />
-
             <div style={{
               display: "grid",
               gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(4, 1fr)",
@@ -362,6 +349,23 @@ export default function TheCuffPage() {
                   }}>
                     {cuff.name}
                   </p>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ display: "flex", justifyContent: "center", gap: 24, flexWrap: "wrap", maxWidth: 900, margin: "48px auto 0" }}>
+              {[
+                { name: "Oxblood", color: "#5A1F28" },
+                { name: "Ivory", color: "#F4F1EA" },
+                { name: "Espresso", color: "#3B2A22" },
+                { name: "Terracotta", color: "#C1603A" },
+                { name: "Navy", color: "#1B2A4A" },
+                { name: "Emerald", color: "#1A4A3A" },
+                { name: "Black", color: "#1A1A1A" },
+              ].map((c) => (
+                <div key={c.name} style={{ textAlign: "center" }}>
+                  <div style={{ width: 48, height: 48, borderRadius: "50%", backgroundColor: c.color, margin: "0 auto 8px", border: c.name === "Ivory" ? "1px solid #E0DDD6" : "none" }} />
+                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: "#3B2A22", margin: 0 }}>{c.name}</p>
                 </div>
               ))}
             </div>
