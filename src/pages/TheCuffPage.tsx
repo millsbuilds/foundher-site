@@ -236,7 +236,7 @@ export default function TheCuffPage() {
               lineHeight: 1.8,
               margin: 0,
             }}>
-              Women founders are building differently. Thinking bigger. Finding each other. FoundHer AI is where they build. The Cuff is how they show up.
+              Women founders are building differently. Thinking bigger. Spotting each other in a crowd. FoundHer AI is where they build. The Cuff is how they show up.
             </p>
           </div>
         </section>
