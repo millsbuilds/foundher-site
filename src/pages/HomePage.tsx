@@ -694,6 +694,11 @@ export default function HomePage() {
             Most people won't understand what this life costs. The ones who do will recognize you instantly.
           </p>
         </section>
+        <ColorBar />
+        <Collage />
+        <ColorBar />
+        <SheCouldBeAnyone />
+        <ColorBar />
         <div style={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
           <div style={{ width: "100%", minWidth: 0, flex: "1 1 55%" }}>
             <img src="/images/FH_cuff-lifestyle-networking.png" alt="FoundHer networking" style={{ width: "100%", height: 600, objectFit: "cover", objectPosition: "center 30%", display: "block" }} />
@@ -707,19 +712,15 @@ export default function HomePage() {
           </div>
         </div>
         <ColorBar />
-        <SheCouldBeAnyone />
-        <ColorBar />
-        <Collage />
+        <img src="/images/FH_cuff-collection.png" alt="The Cuff — all seven colorways" style={{ width: "100%", display: "block" }} />
+        <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 14, color: "#B8973E", textAlign: "center", padding: "20px 24px 0", margin: 0 }}>
+          Seven color choices. One collection. Wear one, wear all — The Cuff is yours to collect.
+        </p>
         <ColorBar />
         <AIBizOps />
         <BizOpsPillars />
         <ColorBar />
         <RunnerBreak />
-        <ColorBar />
-        <img src="/images/FH_cuff-collection.png" alt="The Cuff — all seven colorways" style={{ width: "100%", display: "block" }} />
-        <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 14, color: "#B8973E", textAlign: "center", padding: "20px 24px 0", margin: 0 }}>
-          Seven color choices. One collection. Wear one, wear all — The Cuff is yours to collect.
-        </p>
         <ColorBar />
         <BuildLaunchScale />
         <ColorBar />
