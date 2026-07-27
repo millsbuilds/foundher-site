@@ -716,7 +716,6 @@ export default function HomePage() {
             The uniform of the unstoppable.
           </p>
         </section>
-        <ColorBar />
         <img src="/images/FH_cuff-collection.png" alt="The Cuff — all seven colorways" style={{ width: "100%", display: "block" }} />
         <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 14, color: "#B8973E", textAlign: "center", padding: "20px 24px 0", margin: 0 }}>
           Seven color choices. One collection. Wear one, wear all — The Cuff is yours to collect.
