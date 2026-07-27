@@ -225,7 +225,7 @@ function _RichLife() {
           Remember, the goal isn't the business.
         </p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, lineHeight: 1.2, textAlign: "center", margin: 0 }}>
-          The goal is building the business that lets you live a rich life.
+          The goal is building the business that lets you live the life you started this for.
         </h2>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.gray, lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
           Not someday. Now. FoundHer AI organizes your foundation, streamlines your operations, and saves you the money on overhead expenses — so you can start living your life.

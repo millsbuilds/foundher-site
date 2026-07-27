@@ -280,7 +280,7 @@ export default function TheCuffPage() {
               margin: 0,
               opacity: 0.9,
             }}>
-              It's a declaration. It says you took the test, you know your Genome type, and you're building with intention. Every woman who wears it has done the work. That's what makes it mean something.
+              It's a declaration. It says you took the test, you know your FoundHer DNA type, and you're building with intention. Every woman who wears it has done the work. That's what makes it mean something.
             </p>
           </div>
         </section>
@@ -307,10 +307,11 @@ export default function TheCuffPage() {
               alt="The Cuff — all seven colorways"
               style={{
                 width: "100%",
+                maxWidth: 1100,
                 height: "auto",
-                objectFit: "cover",
+                objectFit: "contain",
                 display: "block",
-                marginBottom: isMobile ? 40 : 64,
+                margin: `0 auto ${isMobile ? 40 : 64}px`,
               }}
             />
 
@@ -378,7 +379,7 @@ export default function TheCuffPage() {
               marginBottom: 36,
               opacity: 0.8,
             }}>
-              Your free full Genome Report — including your matched AI agents and Genome Evolution roadmap — is included with every Cuff.
+              Your free full FoundHer DNA Report — including your matched AI agents and FoundHer DNA Evolution roadmap — is included with every Cuff.
             </p>
             <a
               href="#"
@@ -418,7 +419,7 @@ export default function TheCuffPage() {
               Remember, the goal isn't the business.
             </p>
             <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: "#1B3A6B", lineHeight: 1.2, textAlign: "center", margin: 0 }}>
-              The goal is building the business that lets you live a rich life.
+              The goal is building the business that lets you live the life you started this for.
             </h2>
             <p style={{ fontFamily: font.body, fontSize: 18, color: "#1B3A6B", lineHeight: 1.6, margin: "24px auto 0", textAlign: "center" }}>
               Not someday. Now. FoundHer AI organizes your foundation, streamlines your operations, and saves you the money on overhead expenses — so you can start living your life.

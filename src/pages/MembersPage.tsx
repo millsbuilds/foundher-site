@@ -394,7 +394,7 @@ export default function MembersPage() {
             Remember, the goal isn't the business.
           </p>
           <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(28px, 4vw, 44px)", color: C.cream, lineHeight: 1.25, marginBottom: 28 }}>
-            The goal is building the business that lets you live a rich life.
+            The goal is building the business that lets you live the life you started this for.
           </h2>
           <p style={{ fontFamily: font.body, fontSize: 17, color: "rgba(244,241,234,0.85)", lineHeight: 1.85, marginBottom: 20 }}>
             Not someday. Now. FoundHer AI organizes your foundation, streamlines your operations, and saves you the money on overhead expenses — so you can start living your life.
