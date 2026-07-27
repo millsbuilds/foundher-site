@@ -769,7 +769,7 @@ export default function HomePage() {
         <ColorBar />
         <RunnerBreak />
         <ColorBar />
-        <img src="/images/FH_cuff-selection.png" alt="The FoundHer Cuff collection" style={{ width: "100%", display: "block" }} />
+        <img src="/images/FH_cuff-collection.png" alt="The Cuff — all seven colorways" style={{ width: "100%", display: "block" }} />
         <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 14, color: "#B8973E", textAlign: "center", padding: "20px 24px 0", margin: 0 }}>
           Seven color choices. One collection. Wear one, wear all — The Cuff is yours to collect.
         </p>
