@@ -203,8 +203,8 @@ export default function TheCuffPage() {
 
         {/* ─── Section 1: Hero Image ─── */}
         <img
-          src="/images/FH_social-cuff.png"
-          alt="Woman at event wearing The Cuff"
+          src="/images/FH_cuff-lifestyle-bar.png"
+          alt="A founder wearing The Cuff in espresso"
           style={{
             width: "100%",
             height: isMobile ? "60vh" : "85vh",
