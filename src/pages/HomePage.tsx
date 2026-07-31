@@ -6,6 +6,7 @@ const C = {
   offwhite: "#F7F7F7",
   black: "#1B3A6B",
   coral: "#C16044",
+  terracotta: "#B0552F",
   navy: "#1B3A6B",
   gray: "#1B3A6B",
   lightgray: "#F0F0F0",
@@ -161,13 +162,15 @@ function Hero() {
         <div style={{ background: C.white, padding: "40px 24px 64px" }}>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, lineHeight: 1.35, letterSpacing: "-0.02em", color: C.black, display: "block" }}>Women have always built businesses.</span>
           <span style={{ fontFamily: font.display, fontWeight: 700, fontSize: 36, lineHeight: 1.35, letterSpacing: "-0.02em", color: C.black, display: "block", marginBottom: 24 }}>Now they build empires.</span>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 16 }}>
-            This is your platform. Your credential. Your edge.
+          <p style={{ fontFamily: font.display, fontWeight: 700, fontSize: 20, color: C.black, lineHeight: 1.3, marginBottom: 8 }}>
+            Discover your FoundHer DNA.
           </p>
-          <p style={{ fontFamily: font.body, fontSize: 16, color: C.gray, lineHeight: 1.75, marginBottom: 0 }}>
-            Wear it. Flaunt it. Build with it.
+          <p style={{ fontFamily: font.body, fontStyle: "italic", fontSize: 14, color: C.gray, lineHeight: 1.6, marginBottom: 24 }}>
+            Free. 5 minutes. Yours forever.
           </p>
-          <span style={{ position: "relative", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "100%", marginTop: 16 }}><img src="/images/FH_mark_navy_terra_v2.png" alt="FoundHer Mark" style={{ width: 60 }} /><sup style={{ fontSize: 10, color: "inherit", verticalAlign: "super", marginLeft: 2 }}>™</sup></span>
+          <a href="https://foundherdna.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: C.terracotta, color: "#FFFFFF", fontFamily: font.body, fontWeight: 600, fontSize: 14, padding: "16px 28px", textDecoration: "none", letterSpacing: "0.04em", minHeight: 44 }}>
+            Take the Quiz →
+          </a>
         </div>
       </section>
     );
