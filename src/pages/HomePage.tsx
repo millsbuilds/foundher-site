@@ -278,6 +278,9 @@ function SheCouldBeAnyone() {
   return (
     <section style={{ background: "#F4F1EA", padding: "96px 24px", fontFamily: font.body, textAlign: "center" }}>
       <div style={{ maxWidth: 740, margin: "0 auto" }}>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(16px, 2vw, 24px)", color: C.navy, marginBottom: 16, marginTop: 0 }}>
+          Liz isn't the exception. She's the pattern.
+        </p>
         <h2 style={{ fontFamily: font.display, fontWeight: 700, fontSize: "clamp(32px,4vw,48px)", color: C.navy, letterSpacing: "-0.02em", marginBottom: 32 }}>
           They were always here. The tools weren't.
         </h2>
@@ -288,7 +291,7 @@ function SheCouldBeAnyone() {
           With the power of AI, millions of women are building. The ones who do it with intention, with identity, with the right tools — those are the FoundHers. Join us.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.navy, lineHeight: 1.8, fontWeight: 300, marginBottom: 0 }}>
-          Thousands of women founders have already taken the FoundHer DNA test and counted themselves among us. Be one of them.
+          Find out who you are as a founder — before you build anything else.
         </p>
         <div style={{ marginTop: "2rem", display: "flex", justifyContent: "center" }}>
           {joinSubmitted ? (
