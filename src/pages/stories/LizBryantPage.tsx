@@ -188,7 +188,7 @@ export default function LizBryantPage() {
 
       <section style={{ background: C.cream, padding: "64px 24px" }}>
         <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: isMobile ? "center" : "center", gap: isMobile ? 40 : 48, maxWidth: 1000, margin: "0 auto" }}>
-          <div style={{ flex: isMobile ? "none" : "1 1 50%", textAlign: isMobile ? "center" : "left" }}>
+          <div style={{ flex: isMobile ? "none" : "1 1 55%", textAlign: isMobile ? "center" : "left" }}>
             <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 28px)", color: C.navy, lineHeight: 1.5, marginBottom: 32, marginTop: 0 }}>
               "I would rather jump head first into a goal, than stay stuck asking ChatGPT and Google how to carry out a dream."
             </p>
@@ -196,7 +196,7 @@ export default function LizBryantPage() {
               <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ color: C.terracotta, textDecoration: "none" }}>Liz Bryant</a> gave herself 30 days. She built it, launched it, and now she's scaling — <a href="https://localsmark.com" target="_blank" rel="noopener noreferrer" style={{ color: C.terracotta, textDecoration: "none" }}>Locals Mark</a> is in stores up the California coast and expanding every week.
             </p>
           </div>
-          <div style={{ flex: isMobile ? "none" : "1 1 50%", display: "flex", flexDirection: "column", alignItems: "center", width: isMobile ? "100%" : "auto" }}>
+          <div style={{ flex: isMobile ? "none" : "1 1 45%", display: "flex", flexDirection: "column", alignItems: "center", width: isMobile ? "100%" : "auto" }}>
             <video
               src="/liz-bryant.mp4"
               poster="/images/liz-poster.jpg"
