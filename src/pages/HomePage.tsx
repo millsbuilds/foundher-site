@@ -726,9 +726,9 @@ export default function HomePage() {
         <ColorBar />
         <Collage />
         <ColorBar />
-        <FounderStory />
-        <ColorBar />
         <SheCouldBeAnyone />
+        <ColorBar />
+        <FounderStory />
         <ColorBar />
         <div style={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
           <div style={{ width: "100%", minWidth: 0, flex: "1 1 55%" }}>
