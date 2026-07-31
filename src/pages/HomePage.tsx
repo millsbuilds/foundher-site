@@ -607,44 +607,21 @@ function _Founder() {
 // ─── FOUNDER STORY ─────────────────────────────────────────────────────────
 
 function FounderStory() {
-  const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
   return (
     <section style={{ background: "#F4F1EA", padding: "80px 24px", textAlign: "center" }}>
-      <p style={{ fontFamily: font.body, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C1603A", marginBottom: 48 }}>
-        FOUNDER STORY
-      </p>
-      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: isMobile ? "center" : "center", gap: isMobile ? 40 : 48, maxWidth: 1000, margin: "0 auto" }}>
-        <div style={{ flex: isMobile ? "none" : "1 1 50%", display: "flex", flexDirection: "column", alignItems: "center", width: isMobile ? "100%" : "auto" }}>
-          <video
-            src="/liz-bryant.mp4"
-            poster="/images/liz-poster.jpg"
-            muted
-            playsInline
-            controls
-            preload="metadata"
-            style={{ width: isMobile ? "100%" : "auto", maxWidth: isMobile ? 400 : "none", maxHeight: isMobile ? "none" : 520, height: "auto", display: "block" }}
-          />
-          <p style={{ fontFamily: font.body, fontSize: 13, color: "#7A7569", marginTop: 12, marginBottom: 0 }}>
-            Watch Liz's story · 0:49
-          </p>
-        </div>
-        <div style={{ flex: isMobile ? "none" : "1 1 50%", textAlign: isMobile ? "center" : "left" }}>
-          <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 28px)", color: "#1B2A4A", lineHeight: 1.5, marginBottom: 32, marginTop: 0 }}>
-            "I would rather jump head first into a goal, than stay stuck asking ChatGPT and Google how to carry out a dream."
-          </p>
-          <p style={{ fontFamily: font.body, fontSize: 17, color: "#1B2A4A", lineHeight: 1.8, fontWeight: 300, margin: 0 }}>
-            <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ color: "#C1603A", textDecoration: "none" }}>Liz Bryant</a> gave herself 30 days. She built it, launched it, and now she's scaling — <a href="https://localsmark.com" target="_blank" rel="noopener noreferrer" style={{ color: "#C1603A", textDecoration: "none" }}>Locals Mark</a> is in stores up the California coast and expanding every week.
-          </p>
-        </div>
+      <div style={{ maxWidth: 700, margin: "0 auto" }}>
+        <p style={{ fontFamily: font.body, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C1603A", marginBottom: 48 }}>
+          FOUNDER STORY
+        </p>
+        <p style={{ fontFamily: font.display, fontStyle: "italic", fontSize: "clamp(20px, 3vw, 28px)", color: "#1B2A4A", lineHeight: 1.5, marginBottom: 32, marginTop: 0 }}>
+          "I would rather jump head first into a goal, than stay stuck asking ChatGPT and Google how to carry out a dream."
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 17, color: "#1B2A4A", lineHeight: 1.8, fontWeight: 300, marginBottom: 32 }}>
+          <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ color: "#C1603A", textDecoration: "none" }}>Liz Bryant</a> gave herself 30 days. She built it, launched it, and now she's scaling — <a href="https://localsmark.com" target="_blank" rel="noopener noreferrer" style={{ color: "#C1603A", textDecoration: "none" }}>Locals Mark</a> is in stores up the California coast and expanding every week.
+        </p>
+        <a href="/stories/liz-bryant" style={{ fontFamily: font.body, fontSize: 15, color: "#C1603A", textDecoration: "none" }}>
+          Read Liz's story →
+        </a>
       </div>
     </section>
   );
