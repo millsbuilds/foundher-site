@@ -620,7 +620,7 @@ function FounderStory() {
           <a href="https://www.instagram.com/localsmarkco" target="_blank" rel="noopener noreferrer" style={{ color: "#C1603A", textDecoration: "none" }}>Liz Bryant</a> gave herself 30 days. She built it, launched it, and now she's scaling — <a href="https://localsmark.com" target="_blank" rel="noopener noreferrer" style={{ color: "#C1603A", textDecoration: "none" }}>Locals Mark</a> is in stores up the California coast and expanding every week.
         </p>
         <a href="/stories/liz-bryant" style={{ fontFamily: font.body, fontSize: 15, color: "#C1603A", textDecoration: "none" }}>
-          Read Liz's story →
+          See Liz's founder story →
         </a>
       </div>
     </section>
